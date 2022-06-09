@@ -1,0 +1,159 @@
+# Ingesting Data from a File
+
+We're excited to show you how to make data from a file accessible via a RESTful API endpoint in minutes. Here you will create a dataset from a CSV file of example data. You will define the dataset schema, store the dataset, and read the data immediately from an auto-generated API.
+
+```{note}
+You can of course, follow along using your own data, but for creating a dataset your first time we suggest using this small example data.
+```
+
+## File Ingestion Example
+
+Start ingesting your file, following these steps:
+
+1.  Go to the IEX Cloud Console at <https://iexcloud.io/console>. The
+    new product home page appears.
+
+    ![](./ingesting-data-from-a-file/workspace-home.png)
+
+2.  In the console, click **Create a dataset**. The dataset
+    creation page appears with options for choosing data.
+
+    ![](./ingesting-data-from-a-file/create-a-dataset-focus-on-file.png)
+
+    ```{important}
+    **20,000,000 record limit per ingestion.** During the Early Access program, each data ingestion is limited to 20,000,000 records.
+    ```
+
+3.  Before continuing in the Create a Dataset page, create a data file on your local machine by adding the following example car data (it's in CSV format) into a plain text file.
+
+    ```{note}
+    The product supports CSV files that use the following common data delimiters: comma (,), tab, or pipe (\|) characters. JSON and JSONL files are also supported.
+    ```
+
+    **Data**
+
+    ```
+    vin,make,model,year,purchase_date,estimated_value,mileage,owner_count,accident_count
+    XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-13,45955.00,32000,2,0
+    SD089VN7678997566,Ford,F-150,2022,2022-01-11,38650.00,8900,1,1
+    59ADFG60929087DAH,Toyota,Prius,2018,2019-09-23,22876.00,76000,1,0
+    ```
+
+    **Example Command**
+    
+    These commands create the data file on Linux, MacOS, and Windows.
+
+    ```{tab} Linux/MacOS
+        echo "vin,make,model,year,purchase_date,estimated_value,mileage,owner_count,accident_count
+        XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-13,45955.00,32000,2,0
+        SD089VN7678997566,Ford,F-150,2022,2022-01-11,38650.00,8900,1,1
+        59ADFG60929087DAH,Toyota,Prius,2018,2019-09-23,22876.00,76000,1,0" \
+        >>cars
+    ```
+
+    ```{tab} Windows
+        (
+        echo vin,make,model,year,purchase_date,estimated_value,mileage,owner_count,accident_count
+        echo XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-13,45955.00,32000,2,0
+        echo SD089VN7678997566,Ford,F-150,2022,2022-01-11,38650.00,8900,1,1
+        echo 59ADFG60929087DAH,Toyota,Prius,2018,2019-09-23,22876.00,76000,1,0
+        cars
+        )>cars
+    ```
+
+4.  In the Create a Dataset page's **Choose Source Type** menu, **File** is selected by default. Keep that setting for uploading your file.
+
+    Upload your CSV file you by either dragging it into the file upload area or by clicking **Choose file** to browse to it and select it. The file uploads and the **[Edit schema** interface appears.
+
+    ![](./ingesting-data-from-a-file/cars-schema.png)
+
+    The product ingested your file and made a best effort to name your dataset (see *Dataset ID*) and specify your properties (see the *Properties* table) and your data's Unique Index, composed of primary, secondary, and date indexes.
+
+    ```{important}
+    The *Dataset ID* cannot be changed once you've submitted your dataset. Make sure to specify the ID you want in this step.
+    ```
+
+    Below the *Properties* table there's more.
+
+    ![cars-more-on-schema-page.png](./ingesting-data-from-a-file/cars-more-on-schema-page.png)
+
+    The product created a **Sample API Call** for getting the data by the value of the date property that is currently assigned the *Date* index (see in the properties table under *Unique Index*).
+
+    Your current *Unique Index* shows in the **Unique Index Example**. The Unique Index is composed of the Primary index, Secondary index (optional), and Date index. You have not yet assigned the Primary index or a Secondary index. The Date index, in this example, is currently assigned to the *purchase_date* property. In the next step, you will set your Unique Index by setting these three indexes.
+
+    The **Sample Data Preview** table at the bottom shows your ingested data.
+
+    Lastly, the **Opt in to IEX Cloud's Metadata Graph** section provides the opportunity to map a [financial identifier](../delivering-data-to-apps/financial-identifiers.md) property to IEX Cloud's metadata data graph. This allows you to enrich your dataset by joining it to IEX Cloud core equities data or any other dataset that is also opted in. Furthermore, you can ingest data into and query for data in this dataset using IEX Cloud's supported [financial identifiers](../delivering-data-to-apps/financial-identifiers.md).
+
+    ![](./ingesting-data-from-a-file/cars-metadata-graph-opt-in.png)
+
+    Let's edit the schema.
+
+5.  In the **Edit schema** interface, modify the schema to specify the dataset ID, property characteristics, and Unique Index using the following values.
+
+    **Dataset ID:** `CARS`
+
+    **Unique ID related Properties**
+
+    | Required | Allow null | Property | Index |
+    | -------- | ---------- | -------- | ----- |
+    | x |   | vin (string)| Primary |
+    | x |   | make (string) | Secondary |
+    | x |   | purchase_date (date) | Date |
+
+    **Remaining Properties**
+
+    | Required       | Allow null       | Property |
+    | -------------- | ---------------- | -------- |
+    | x |  | model (string) |
+    | x |  | year (integer) |
+    |   |  | estimated_value (number) |
+    | x |  | mileage (integer) |
+    |   |  | owner_count (integer) |
+    |   |  | accident_count (interger) |
+
+
+    **Opt in to IEX Cloud's Metadata Graph:** unselect
+
+    Make sure to unselect the **Opt in** check box, since the example cars data has no relevant financial identifier properties.
+    
+    Notice the Sample API Call value and Unique Index Example values in sync with your property settings.
+
+    ![](./ingesting-data-from-a-file/cars-unique-index.png)
+
+    When you're done specifying the schema values, click **Create Dataset Now**. Your dataset builds and your dataset overview appears.
+
+    ![](./ingesting-data-from-a-file/cars-dataset-overview.png)
+
+    ```{note}
+    If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Logs](../monitoring-logs.md).
+    ```
+
+    From here you can manage and monitor your dataset, open/share the API docs, execute an example request on your dataset, and create different views to your data.
+
+6.  In your dataset overview page, get your data by clicking the **Example Request** URL. The URL opens in a new browser tab and the dataset data response (in JSON) appears.
+
+    ![](./ingesting-data-from-a-file/cars-response-last-1.png)
+
+    It's that easy for apps to use your data!
+
+7.  **Bonus step - visit your API docs** by clicking **API Docs**
+    in your dataset's overview page. Your API docs open in a new tab.
+
+    ![](./ingesting-data-from-a-file/cars-api-docs.png)
+
+    Your auto-documented dataset is ready for consumption.
+
+Congratulations on making data available using a dataset!
+
+## What's Next
+
+Now that you are familiar with creating a dataset from a CSV file, you can create datasets using your own CSV, JSON, or JSONL file. You can also add more data to your datasets (click **Ingest data**) in the dataset overview or modify data via the dataset's **Database** page.
+
+Got a URL you want to tap into for data? See [Ingesting Data from a URL](../storing-data-in-iex-cloud/ingesting-data-from-a-url.md).
+
+Interested in creating datasets programmatically? Checkout [Getting Started with the Datasets API](../using-the-api/getting-started-with-the-datasets-api.md).
+
+Want to learn more about creating and managing datasets? Read [Understanding Dataset Schemas](../storing-data-in-iex-cloud/understanding-dataset-schemas.md).
+
+Want to get more teammates involved? [Add them to your team](../managing-users.md).
