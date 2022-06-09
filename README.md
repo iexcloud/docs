@@ -48,18 +48,21 @@ cd docs
 make html
 ```
 
-The static HTML files are written to `<root>/build/html`.
+The static HTML files are written to `docs/build/html`.
 
 ### Serving the Site
 
-Any web server can host the site by pointing to `<root>/build/html/index.html`.
+Any web server can host the site by pointing to `docs/build/html/index.html`.
 
 #### Previewing the Site
 
 If you want to build the site locally to preview it, you can use a web server such as Python's SimpleHTTPServer. Here are commands for running it:
 
 ```bash
-cd <root>/build/html
+cd docs/build/html
+```
+
+```bash
 python3 -m http.server 8000
 ```
 
