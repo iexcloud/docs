@@ -1,3 +1,3 @@
-# Core Data Basics
+# IEX Cloud Core Data Basics
 
 Coming soon!

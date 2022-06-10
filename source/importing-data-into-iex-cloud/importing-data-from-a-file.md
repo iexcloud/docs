@@ -83,7 +83,7 @@ Start ingesting your file, following these steps:
 
     The **Sample Data Preview** table at the bottom shows your ingested data.
 
-    Lastly, the **Opt in to IEX Cloud's Metadata Graph** section provides the opportunity to map a [financial identifier](../financial-identifiers.md) property to IEX Cloud's metadata data graph. This allows you to enrich your dataset by joining it to IEX Cloud core equities data or any other dataset that is also opted in. Furthermore, you can ingest data into and query for data in this dataset using IEX Cloud's supported [financial identifiers](../financial-identifiers.md).
+    Lastly, the **Opt in to IEX Cloud's Metadata Graph** section provides the opportunity to map a [financial identifier](../reference/financial-identifiers.md) property to IEX Cloud's metadata data graph. This allows you to enrich your dataset by joining it to IEX Cloud core equities data or any other dataset that is also opted in. Furthermore, you can ingest data into and query for data in this dataset using IEX Cloud's supported [financial identifiers](../reference/financial-identifiers.md).
 
     ![](./importing-data-from-a-file/cars-metadata-graph-opt-in.png)
 
@@ -126,7 +126,7 @@ Start ingesting your file, following these steps:
     ![](./importing-data-from-a-file/cars-dataset-overview.png)
 
     ```{note}
-    If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Logs](../examining-activity-logs.md).
+    If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Logs](../administration/monitoring-deployments.md).
     ```
 
     From here you can manage and monitor your dataset, open/share the API docs, execute an example request on your dataset, and create different views to your data.
@@ -156,4 +156,4 @@ Interested in creating datasets programmatically? Checkout [Getting Started with
 
 Want to learn more about creating and managing datasets? Read [Understanding Dataset Schemas](../importing-data-into-iex-cloud/understanding-dataset-schemas.md).
 
-Want to get more teammates involved? [Add them to your team](../managing-users.md).
+Want to get more teammates involved? [Add them to your team](../administration/managing-users.md).

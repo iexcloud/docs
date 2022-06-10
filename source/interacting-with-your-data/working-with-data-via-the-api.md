@@ -1,5 +1,13 @@
 # Working with Data via the API
 
+```{toctree}
+:maxdepth: 1
+
+working-with-data-via-the-api/understanding-the-dataset-object.md
+working-with-data-via-the-api/understanding-the-job-object.md
+working-with-data-via-the-api/getting-the-apperate-oas-document.md
+```
+
 ```{admonition} Early Access
 The new data infrastructure product is available exclusively to select Early Access program participants. If you’d like to participate in an upcoming Early Access phase, please contact `product@iexcloud.io`.
 ```

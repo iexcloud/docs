@@ -3,14 +3,7 @@
 :maxdepth: 1
 
 getting-started.md
-```
-
-```{toctree}
-:maxdepth: 1
-:caption: Fundamentals
-
 what-is-iex-cloud-apperate.md
-what-is-iex-cloud-core-data.md
 ```
 
 ```{toctree}
@@ -33,8 +26,9 @@ using-data-in-your-apps/using-endpoints-in-python.md
 
 ```{toctree}
 :maxdepth: 1
-:caption: Using Core Data
+:caption: Using IEX Cloud Core Data
 
+what-is-iex-cloud-core-data.md
 core-data-basics.md
 core-data-api.md
 ```
@@ -43,16 +37,20 @@ core-data-api.md
 :maxdepth: 1
 :caption: Administration
 
-access-and-security.md
-examining-activity-logs.md
-managing-users.md
+administration/access-and-security.md
+administration/business-analytics.md
+administration/managing-users.md
+administration/monitoring-deployments.md
+administration/pricing-and-credit-usage.md
 ```
 
 ```{toctree}
 :maxdepth: 1
 :caption: Reference
 
-changelog.md
-financial-identifiers.md
-glossary.md
+reference/changelog.md
+reference/limits.md
+reference/financial-identifiers.md
+reference/glossary.md
+reference/reserved-keywords.md
 ```

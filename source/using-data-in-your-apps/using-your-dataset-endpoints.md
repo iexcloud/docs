@@ -1,3 +1,3 @@
-# Using Dataset Endpoints
+# Using Your Endpoints
 
 Coming soon!

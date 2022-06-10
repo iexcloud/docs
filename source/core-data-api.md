@@ -1,4 +1,4 @@
-# Core Data API
+# IEX Cloud Core Data API
 
 Coming soon!
 

@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started with Apperate
 
 ```{admonition} Early Access
 The new data infrastructure product is available exclusively to select Early Access program participants. If you’d like to participate in an upcoming Early Access phase, please contact `product@iexcloud.io`.
@@ -86,4 +86,4 @@ Interested in creating datasets programmatically? Checkout [Getting Started with
 
 Want to learn more about creating and managing datasets? Read [Understanding Dataset Schemas](./importing-data-into-iex-cloud/understanding-dataset-schemas.md).
 
-Want to get more teammates involved? [Add them to your team](./managing-users.md).
+Want to get more teammates involved? [Add them to your team](./administration/managing-users.md).

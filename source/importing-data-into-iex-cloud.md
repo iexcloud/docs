@@ -1,4 +1,4 @@
-# Importing Data in IEX Cloud
+# Importing Data
 
 ```{toctree}
 :maxdepth: 1

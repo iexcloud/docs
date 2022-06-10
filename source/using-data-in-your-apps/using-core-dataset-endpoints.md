@@ -1,3 +1,3 @@
-# Using Core Dataset Endpoints
+# Using Core Endpoints
 
 Coming soon!
