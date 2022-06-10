@@ -1,4 +1,4 @@
-# Getting Started with the Datasets API
+# Working with Data via the API
 
 ```{admonition} Early Access
 The new data infrastructure product is available exclusively to select Early Access program participants. If you’d like to participate in an upcoming Early Access phase, please contact `product@iexcloud.io`.
@@ -6,7 +6,7 @@ The new data infrastructure product is available exclusively to select Early Acc
 
 The datasets API has RESTful endpoints for building datasets programmatically. They are documented in the IEX Cloud API docs site's [Datasets API](https://iexcloud.io/docs/datasets-api) section.
 
-![](./getting-started-with-the-datasets-api/datasets-api-in-docs.png)
+![](./working-with-data-via-the-api/datasets-api-in-docs.png)
 
 Here you will learn the basics of using the datasets API, create a dataset using the API, and get data from the dataset using the auto-generated RESTful API.
 
@@ -30,7 +30,7 @@ In the example here, you will use the above base URL.
 
 The API endpoint requests you will run have these requirements.
 
-- **Workspace name** -- You must qualify your HTTP requests with your workspace name. See [Creating a Workspace](/hc/en-us/articles/5520042683667-Creating-a-Workspace) to learn more.
+- **Workspace name** -- You must qualify your HTTP requests with your workspace name. See [Creating a Workspace](https://iexcloud.zendesk.com/hc/en-us/articles/5520042683667-Creating-a-Workspace) to learn more.
 - **Secret API token** -- You must submit your secret API token as a query parameter with your HTTP requests. See [API Tokens](https://iexcloud.io/docs/getting-started/api-tokens) for more information.
 
 ```{important}
@@ -219,7 +219,7 @@ A RESTful API endpoint was automatically created for your dataset.
 
     **URL:** `https://iexcloud.io/docs/datasets/YOUR_DATASET` 
 
-    ![](./getting-started-with-the-datasets-api/custom-dataset-api-docs.png)
+    ![](./working-with-data-via-the-api/custom-dataset-api-docs.png)
 
 2. As a test, get your last record by copying this URL in your browser, replacing *WORKSPACE, YOUR_DATASET* and *SK_NUMBER*. 
 

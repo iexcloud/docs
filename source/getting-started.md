@@ -6,10 +6,6 @@ The new data infrastructure product is available exclusively to select Early Acc
 
 We're excited to show you how to use datasets to make data accessible to apps in minutes. Here you load sample data into a dataset, define its schema, and read the data immediately from an auto-generated API.
 
-```{note}
-You can of course, follow along using your own data, but for creating a dataset your first time we suggest using the sample data.
-```
-
 ## Example: Delivering Data
 
 Start using datasets, following these steps:
@@ -51,10 +47,10 @@ Start using datasets, following these steps:
 
     **Unique Index Example** - Illustrates the current Unique Index, composed of the Primary index, Secondary index (optional), and Date index.
 
-    **Opt in to IEX Cloud's Metadata Graph** - Provides the opportunity to map a property to IEX Cloud's metadata data graph of [financial identifiers](./delivering-data-to-apps/financial-identifiers.md). This allows you to enrich your dataset by joining it to IEX Cloud core equities data or any other dataset that is also opted in. Furthermore, you can ingest data into and query for data in this dataset using IEX Cloud's supported financial identifiers.
+    **Opt in to IEX Cloud's Metadata Graph** - Provides the opportunity to map a property to IEX Cloud's metadata data graph of [financial identifiers](./interacting-with-your-data/joining-on-financial-identifiers.md). This allows you to enrich your dataset by joining it to IEX Cloud core equities data or any other dataset that is also opted in. Furthermore, you can ingest data into and query for data in this dataset using IEX Cloud's supported financial identifiers.
 
     ```{seealso}
-    You can learn more about dataset schemas by reading [Understanding Dataset Schemas](./storing-data-in-iex-cloud/understanding-dataset-schemas.md).
+    You can learn more about dataset schemas by reading [Understanding Dataset Schemas](./importing-data-into-iex-cloud/understanding-dataset-schemas.md).
     ```
 
     IEX Cloud correctly identified the *symbol* property as containing financial identifiers and therefore opted the dataset in to IEX Cloud's metadata graph.
@@ -84,10 +80,10 @@ Congratulations on making data available using a dataset!
 
 ## What's Next
 
-Now that you are familiar with creating a dataset from the sample data, you can create datasets using your own data from a [file](./storing-data-in-iex-cloud/ingesting-data-from-a-file.md) (e.g., from a CSV, JSON, or JSONL file) or from a [URL](./storing-data-in-iex-cloud/ingesting-data-from-a-url.md). You can also add more data to your datasets (click **Ingest data**) in the dataset overview or modify data via the dataset's **Database** page.
+Now that you are familiar with creating a dataset from the sample data, you can create datasets using your own data from a [file](./importing-data-into-iex-cloud/importing-data-from-a-file.md) (e.g., from a CSV, JSON, or JSONL file) or from a [URL](./importing-data-into-iex-cloud/importing-data-from-a-url.md). You can also add more data to your datasets (click **Ingest data**) in the dataset overview or modify data via the dataset's **Database** page.
 
-Interested in creating datasets programmatically? Checkout [Getting Started with the Datasets API](./using-the-api/getting-started-with-the-datasets-api.md).
+Interested in creating datasets programmatically? Checkout [Getting Started with the Datasets API](./interacting-with-your-data/working-with-data-via-the-api.md).
 
-Want to learn more about creating and managing datasets? Read [Understanding Dataset Schemas](./storing-data-in-iex-cloud/understanding-dataset-schemas.md).
+Want to learn more about creating and managing datasets? Read [Understanding Dataset Schemas](./importing-data-into-iex-cloud/understanding-dataset-schemas.md).
 
 Want to get more teammates involved? [Add them to your team](./managing-users.md).
