@@ -1,3 +1,3 @@
-# Setting Up Your Workspace (Coming soon)
+# Setting Up Your Workspace
 
 Coming soon!
