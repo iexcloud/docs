@@ -1,12 +1,4 @@
-# Working with Data via the API
-
-```{toctree}
-:maxdepth: 1
-
-working-with-data-via-the-api/understanding-the-dataset-object.md
-working-with-data-via-the-api/understanding-the-job-object.md
-working-with-data-via-the-api/getting-the-apperate-oas-document.md
-```
+# Apperate API Basics
 
 ```{admonition} Early Access
 The new data infrastructure product is available exclusively to select Early Access program participants. If you’d like to participate in an upcoming Early Access phase, please contact `product@iexcloud.io`.
@@ -14,7 +6,7 @@ The new data infrastructure product is available exclusively to select Early Acc
 
 The datasets API has RESTful endpoints for building datasets programmatically. They are documented in the IEX Cloud API docs site's [Datasets API](https://iexcloud.io/docs/datasets-api) section.
 
-![](./working-with-data-via-the-api/datasets-api-in-docs.png)
+![](./apperate-api-basics/datasets-api-in-docs.png)
 
 Here you will learn the basics of using the datasets API, create a dataset using the API, and get data from the dataset using the auto-generated RESTful API.
 
@@ -227,7 +219,7 @@ A RESTful API endpoint was automatically created for your dataset.
 
     **URL:** `https://iexcloud.io/docs/datasets/YOUR_DATASET` 
 
-    ![](./working-with-data-via-the-api/custom-dataset-api-docs.png)
+    ![](./apperate-api-basics/custom-dataset-api-docs.png)
 
 2. As a test, get your last record by copying this URL in your browser, replacing *WORKSPACE, YOUR_DATASET* and *SK_NUMBER*. 
 

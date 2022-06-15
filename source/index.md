@@ -15,19 +15,12 @@ getting-started/production-ready-core-data.md
 :maxdepth: 1
 :caption: Development
 
-importing-data-into-iex-cloud.md
+migrating-and-importing-data.md
+managing-your-data.md
 interacting-with-your-data.md
-using-data-in-your-apps/using-your-dataset-endpoints.md
-using-data-in-your-apps/using-core-dataset-endpoints.md
-using-data-in-your-apps/using-endpoints-in-javascript.md
-using-data-in-your-apps/using-endpoints-in-python.md
-core-data-basics.md
-core-data-api.md
-reference/changelog.md
-reference/limits.md
-reference/financial-identifiers.md
-reference/glossary.md
-reference/reserved-keywords.md
+using-data-in-your-apps.md
+using-core-data.md
+reference.md
 ```
 
 ```{toctree}

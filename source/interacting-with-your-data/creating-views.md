@@ -1,3 +1,0 @@
-# Creating Views
-
-Coming soon!
