@@ -2,8 +2,9 @@
 ```{toctree}
 :maxdepth: 1
 
-getting-started.md
 what-is-iex-cloud-apperate.md
+getting-started-with-an-example-dataset.md
+getting-started/setting-up-your-workspace.md
 ```
 
 ```{toctree}

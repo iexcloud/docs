@@ -1,4 +1,4 @@
-# Getting Started with Apperate
+# Getting Started with an Example Dataset
 
 ```{admonition} Early Access
 The new data infrastructure product is available exclusively to select Early Access program participants. If you’d like to participate in an upcoming Early Access phase, please contact `product@iexcloud.io`.
@@ -13,17 +13,17 @@ Start using datasets, following these steps:
 1.  Go to the IEX Cloud Console at <https://iexcloud.io/console>. The
     new product home page appears.
 
-    ![](./getting-started/welcome-to-your-workspace.png)
+    ![](./getting-started-with-an-example-dataset/welcome-to-your-workspace.png)
     
 2.  In the console, click **Create a dataset**. The dataset
     creation page appears with options for choosing a data source. In
     the bottom right, there is a button labeled **Use IEX Cloud's sample file**.
 
-    ![](./getting-started/use-sample-file.png)
+    ![](./getting-started-with-an-example-dataset/use-sample-file.png)
 
 3.  Load the sample data file by clicking **Use IEX Cloud's sample file** in the bottom right. The file uploads and the **Edit schema** interface appears.
 
-    ![](./getting-started//sample-aapl-dataset-edit-schema.png)
+    ![](./getting-started-with-an-example-dataset//sample-aapl-dataset-edit-schema.png)
 
     **Dataset ID** - Name your dataset by giving it a unique ID. On data ingestion, the product makes a best effort to name your dataset, using the data source name (e.g., file name). If a dataset exists with that name, the product suggests a suffix to make the dataset ID unique. You can name the dataset what you like as long as it is unique.
 
@@ -41,7 +41,7 @@ Start using datasets, following these steps:
 
     There are more options and content below the *Properties* table.
 
-    ![edit-schema-bottom-sections.png](./getting-started/edit-schema-bottom-sections.png)
+    ![edit-schema-bottom-sections.png](./getting-started-with-an-example-dataset/edit-schema-bottom-sections.png)
 
     **Sample API Call** - Shows a URL for getting data from the dataset using the current Unique Index.
 
@@ -57,7 +57,7 @@ Start using datasets, following these steps:
     
     Since this schema defines our dataset the way we want, click **Create Dataset Now**. The product builds and stores your dataset and your dataset overview appears.
 
-    ![](./getting-started/sample-appl-dataset-overview.png)
+    ![](./getting-started-with-an-example-dataset/sample-appl-dataset-overview.png)
 
     **Milestone alert!** In just **four clicks**, you
     loaded data, defined the data's types and its unique time series compatible
@@ -65,14 +65,14 @@ Start using datasets, following these steps:
 
 4.  In your dataset overview, get your dataset's last record by clicking the **Example Request** URL. The URL opens in a new browser tab and the dataset data response (in JSON) appears.
 
-    ![](./getting-started/sample-appl-execute-query.png)
+    ![](./getting-started-with-an-example-dataset/sample-appl-execute-query.png)
 
 In only a few minutes, you loaded data into the IEX Cloud data infrastructure platform and retrieved it using an auto-generated RESTful API! It's just that easy to get data to your app!!
 
 **Bonus step - visit your API docs** by clicking **Open API Docs**
 in your dataset's overview page. Your API docs open in a new tab.
 
-![](./getting-started/sample-appl-dataset-api-docs.png)
+![](./getting-started-with-an-example-dataset/sample-appl-dataset-api-docs.png)
 
 Your auto-documented dataset is ready for consumption.
 
