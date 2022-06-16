@@ -7,5 +7,5 @@ reference/changelog.md
 reference/limits.md
 reference/financial-identifiers.md
 reference/glossary.md
-reference/reserved-keywords.md
+reference/reserved-keywords-and-prefixes.md
 ```
