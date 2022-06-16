@@ -58,11 +58,13 @@ Here are the steps:
 
 1. Click **Create AWS Integration**. The **Add Integration** dialog appears.
 
+    ![](./accessing-s3-via-storage-integration/add-integration-dialog.png)
+
 1. Enter your IAM Role ARN (you copied it earlier) and submit. An External ID and User ARN appear in the Add Ingetration dialog.
 
     ![](./accessing-s3-via-storage-integration/aws-external-id-and-use-arn.png)
 
-1. Close the dialog; the External ID and User ARN, along with the Role ARN, appear in the AWS Integration section at the bottom of your **Credentials** page. In the next step, you'll copy these values into your AWS IAM role. 
+1. Click **Go to credentials**. The External ID and User ARN, along with the Role ARN, appear in the AWS Integration section at the bottom of your **Credentials** page. In the next step, you'll copy these values into your AWS IAM role in the AWS console. 
 
     ![](./accessing-s3-via-storage-integration/aws-integration-section.png)
 
@@ -77,12 +79,12 @@ Here are the steps:
         {
           "Effect": "Allow",
           "Principal": {
-            "AWS": "<user>"
+            "AWS": "USER"
           },
           "Action": "sts:AssumeRole",
           "Condition": {
             "StringEquals": {
-              "sts:ExternalId": "<external id>"
+              "sts:ExternalId": "EXTERNAL_ID"
             }
           }
         }
@@ -90,14 +92,14 @@ Here are the steps:
     }
     ```
 
-Your AWS S3 bucket is now integrated with your IEX Cloud workspace.
+Your AWS S3 bucket is now integrated with your IEX Cloud workspace. When you parse data or ingest data from an AWS S3 bucket data source, Apperate uses your AWS integration by default, unless you select a [credential instance](./accessing-s3-via-your-access-key.md) to use.
 
 ```{note}
 You can optionally integrate additional buckets with your workspace using your AWS IAM policy.
 ```
 
 ```{note}
-When AWS storage integration is configured, your Credentials page shows a **Remove AWS integration** button in place of the **Create AWS integration** button.
+An Apperate workspace has up to one AWS integration External ID and User ARN. If  you want to remove the integration, click **Remove AWS integration** in the Credential page's **AWS Integration** section. You can create a new integration by clicking **Create AWS integration** at the top of the page and entering your IAM Role ARN.
 ```
 
 ## What's Next?
