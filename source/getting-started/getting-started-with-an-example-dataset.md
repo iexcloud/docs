@@ -25,10 +25,10 @@ Start using datasets, following these steps:
 
     ![](./getting-started-with-an-example-dataset//sample-aapl-dataset-edit-schema.png)
 
-    **Dataset ID** - Name your dataset by giving it a unique ID. On data ingestion, the product makes a best effort to name your dataset, using the data source name (e.g., file name). If a dataset exists with that name, the product suggests a suffix to make the dataset ID unique. You can name the dataset what you like as long as it is unique.
+    **Dataset ID** - Name your dataset by giving it a unique ID. On data ingestion, the product makes a best effort to name your dataset, using the data source name (e.g., file name). If a dataset exists with that name, the product suggests a suffix to make the dataset ID unique. 
 
-    ```{warning}
-    The *Dataset ID* cannot be changed once you've submitted your dataset. Make sure to specify the ID you want in this step.
+    ```{important}
+    The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix your dataset ID or dataset property names with `_system`.
     ```
 
     **Properties (table)** The product makes a best effort to

@@ -64,6 +64,10 @@ Here you will create a dataset as specified in a JSON text file.
 
 1. Create a .json file that has the following content. Replace `you@company.com`, `Your Company`, and `Your Dataset`, with your own values.
 
+    ```{important}
+    The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix dataset IDs and dataset property names with `_system`.
+    ```
+
     ```javascript
     { 
         "dataset": { 
