@@ -227,7 +227,7 @@ A RESTful API endpoint was automatically created for your dataset.
 
 2. As a test, get your last record by copying this URL in your browser, replacing *WORKSPACE, YOUR_DATASET* and *SK_NUMBER*. 
 
-    **URL:** `https://cloud.iexapis.com/v1/query/WORKSPACE/YOUR_DATASET?last=1&token=SK_NUMBER`
+    **URL:** `https://cloud.iexapis.com/v1/data/WORKSPACE/YOUR_DATASET?last=1&token=SK_NUMBER`
 
     **Sample response:** 
 

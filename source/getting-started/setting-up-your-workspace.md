@@ -11,13 +11,13 @@ Here is the URL format with respect to the workspace name and an example URL.
 **Workspace URL format:**
 
 ```
-https://WORKSPACE.iex.cloud/v1/query/WORKSPACE/
+https://WORKSPACE.iex.cloud/v1/data/WORKSPACE/
 ```
 
 **Example Workspace URL:**
 
 ```
-https://mycompany.iex.cloud/v1/query/MYCOMPANY/
+https://mycompany.iex.cloud/v1/data/MYCOMPANY/
 ```
 
 It's time to create your workspace.
