@@ -83,6 +83,6 @@ To re-enable your ingestion schedule, select on your schedule in the list and cl
 
 ## What's Next
 
-To create views, see [Managing Your Data](../managing-your-data/creating-and-managing-views.md).
+To create views, see [Creating and Managing Views](../managing-your-data/creating-and-managing-views.md).
 
 If you want to understand schema indexing better, visit [Understanding Dataset Schemas](https://iexcloud.zendesk.com/hc/en-us/articles/5403333387667-Understanding-Dataset-Schemas).
