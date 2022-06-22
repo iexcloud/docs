@@ -9,36 +9,38 @@ Here are the steps:
 1. In the IAM AWS service, create a policy for accessing your S3 bucket. The policy can be specified using JSON that looks like the following code (replace BUCKET and PREFIX with your values).
 
     ```javascript
-    s3 policy { 
-      "Version": "2012-10-17",
-      "Statement": [ 
-        { 
-          "Effect": "Allow",
-          "Action": [ 
-            "s3:PutObject",
-            "s3:GetObject",
-            "s3:GetObjectVersion",
-            "s3:DeleteObject",
-            "s3:DeleteObjectVersion"
-          ],
-          "Resource": "arn:aws:s3:::BUCKET/PREFIX/*"
-        },
-        {
-          "Effect": "Allow",
-          "Action": [
-            "s3:ListBucket",
-            "s3:GetBucketLocation"
-          ],
-          "Resource": "arn:aws:s3:::BUCKET",
-          "Condition": {
-            "StringLike": {
-              "s3:prefix": [
-                "PREFIX/*"
-              ]
+    s3 policy {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Effect": "Allow",
+                "Action": "s3:ListBucket",
+                "Resource": "arn:aws:s3:::BUCKET",
+                "Condition": {
+                    "StringLike": {
+                        "s3:prefix": "*"
+                    }
+                }
+            },
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "s3:GetObject",
+                    "s3:GetObjectVersion"
+                ],
+                "Resource": "arn:aws:s3:::BUCKET/*"
+            },
+            {
+                "Effect": "Allow",
+                "Action": "s3:GetBucketLocation",
+                "Resource": "arn:aws:s3:::BUCKET"
+            },
+            {
+                "Effect": "Allow",
+                "Action": "s3:ListBucket",
+                "Resource": "arn:aws:s3:::BUCKET"
             }
-          }
-        }
-      ]
+        ]
     }
     ```
 
