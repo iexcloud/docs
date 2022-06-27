@@ -1,8 +1,6 @@
 # Getting Started with an Example Dataset
 
-```{admonition} Early Access
-The new data infrastructure product is available exclusively to select Early Access program participants. If you’d like to participate in an upcoming Early Access phase, please contact `product@iexcloud.io`.
-```
+> **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or the upcoming Beta, please email us at `product@iexcloud.io`.
 
 We're excited to show you how to use datasets to make data accessible to apps in minutes. Here you load sample data into a dataset, define its schema, and read the data immediately from an auto-generated API.
 
@@ -49,9 +47,7 @@ Start using datasets, following these steps:
 
     **Opt in to IEX Cloud's Metadata Graph** - Provides the opportunity to map a property to IEX Cloud's metadata data graph of [financial identifiers](../managing-your-data/creating-and-managing-views/joining-on-core-data.md). This allows you to enrich your dataset by joining it to IEX Cloud core equities data or any other dataset that is also opted in. Furthermore, you can ingest data into and query for data in this dataset using IEX Cloud's supported financial identifiers.
 
-    ```{seealso}
-    You can learn more about dataset schemas by reading [Understanding Dataset Schemas](../managing-your-data/defining-schemas/data-model-concepts.md).
-    ```
+    > **See Also:** You can learn more about dataset schemas by reading [Understanding Datasets](../managing-your-data/understanding-datasets.md).
 
     IEX Cloud correctly identified the *symbol* property as containing financial identifiers and therefore opted the dataset in to IEX Cloud's metadata graph.
     
@@ -82,8 +78,8 @@ Congratulations on making data available using a dataset!
 
 Now that you are familiar with creating a dataset from the sample data, you can create datasets using your own data from a [file](../migrating-and-importing-data/loading-data-from-a-file.md) (e.g., from a CSV, JSON, or JSONL file) or from a [URL](../migrating-and-importing-data/loading-data-from-a-url.md). You can also add more data to your datasets (click **Ingest data**) in the dataset overview or modify data via the dataset's **Database** page.
 
-Interested in creating datasets programmatically? Checkout [Getting Started with the Datasets API](../interacting-with-your-data/apperate-api-basics.md).
+Interested in creating datasets programmatically? Check out [Apperate API Basics](../interacting-with-your-data/apperate-api-basics.md).
 
-Want to learn more about creating and managing datasets? Read [Understanding Dataset Schemas](../managing-your-data/defining-schemas/data-model-concepts.md).
+Want to learn more about creating and managing datasets? Read [Understanding Datasets](../managing-your-data/understanding-datasets.md).
 
 Want to get more teammates involved? [Add them to your team](../administration/managing-users.md).

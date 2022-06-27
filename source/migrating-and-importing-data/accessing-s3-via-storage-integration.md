@@ -6,7 +6,7 @@ Apperate's AWS storage integration provides a flexible way to connect with your 
 
 Here are the steps:
 
-1. In the IAM AWS service, create a policy for accessing your S3 bucket. The policy can be specified using JSON that looks like the following code (replace BUCKET and PREFIX with your values).
+1. In the IAM AWS service, create a policy for accessing your S3 bucket. The policy can be specified using JSON that looks like the following code (replace `BUCKET` and `PREFIX` with your values).
 
     ```javascript
     s3 policy {
@@ -52,9 +52,7 @@ Here are the steps:
     - **Add permission policy:** select the policy you created
     - **Role name:** (arbitrary value)
 
-    ```{important}
-    Copy the role's ARN (Amazon Resource Name). For additional information on working with roles, see the AWS documentation [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html).
-    ```
+    > **Important:** Copy the role's ARN (Amazon Resource Name). For additional information on working with roles, see the AWS documentation [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html).
 
 1. Start creating an AWS integration in IEX Cloud by navigating to **Sources > Credentials**. The Credentials page appears.
 
@@ -72,7 +70,7 @@ Here are the steps:
 
 1. In AWS, edit your IAM role. Replace the principal AWS user account and the external ID with the values from the **AWS Integration** section of your **Credentials** page in your IEX Cloud console.
 
-    The JSON for your role may look like the following code, except **USER** and **EXTERNAL_ID** should be replaced with the values from your AWS integration.
+    The JSON for your role may look like the following code, except `USER` and `EXTERNAL_ID` should be replaced with the values from your AWS integration.
 
     ```javascript
     {
@@ -96,13 +94,9 @@ Here are the steps:
 
 Your AWS S3 bucket is now integrated with your IEX Cloud workspace. When you parse data or ingest data from an AWS S3 bucket data source, Apperate uses your AWS integration by default, unless you select a [credential instance](./accessing-s3-via-your-access-key.md) to use.
 
-```{note}
-You can optionally integrate additional buckets with your workspace using your AWS IAM policy.
-```
+> **Note:** You can optionally integrate additional buckets with your workspace using your AWS IAM policy.
 
-```{note}
-An Apperate workspace has up to one AWS integration External ID and User ARN. If  you want to remove the integration, click **Remove AWS integration** in the Credential page's **AWS Integration** section. You can create a new integration by clicking **Create AWS integration** at the top of the page and entering your IAM Role ARN.
-```
+> **Note:** An Apperate workspace has up to one AWS integration External ID and User ARN. If  you want to remove the integration, click **Remove AWS integration** in the Credential page's **AWS Integration** section. You can create a new integration by clicking **Create AWS integration** at the top of the page and entering your IAM Role ARN.
 
 ## What's Next?
 

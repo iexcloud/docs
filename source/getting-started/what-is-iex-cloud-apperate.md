@@ -1,8 +1,6 @@
 # What is IEX Cloud Apperate?
 
-```{admonition} Early Access
-The new data infrastructure product is available exclusively to select Early Access program participants. If you’d like to participate in an upcoming Early Access phase, please contact `product@iexcloud.io`.
-```
+> **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or the upcoming Beta, please email us at `product@iexcloud.io`.
 
 **We're developing a new product: an out-of-the-box data infrastructure that makes it quick and easy to ingest and deliver data into your application.** 
 
@@ -52,4 +50,4 @@ We’re excited to show you how to deliver data to apps in a few clicks.
 
 ## Next steps
 
-Upload data to IEX Apperate and access the data in the generated API REST endpoints fast, following [Getting Started!](./getting-started-with-an-example-dataset.md).
+Upload data to IEX Apperate and access the data in the generated API REST endpoints fast, following [Getting Started with an Example Dataset](./getting-started-with-an-example-dataset.md).

@@ -2,9 +2,7 @@
 
 We're excited to show you how to make data from a file accessible via a RESTful API endpoint in minutes. Here you will create a dataset from a CSV file of example data. You will define the dataset schema, store the dataset, and read the data immediately from an auto-generated API.
 
-```{note}
-You can of course, follow along using your own data, but for creating a dataset your first time we suggest using this small example data.
-```
+> **Note:** You can of course, follow along using your own data, but for creating a dataset your first time we suggest using this small example data.
 
 ## File Ingestion Example
 
@@ -15,20 +13,16 @@ Start ingesting your file, following these steps:
 
     ![](./loading-data-from-a-file/workspace-home.png)
 
-2.  In the console, click **Create a dataset**. The dataset
+1.  In the console, click **Create a dataset**. The dataset
     creation page appears with options for choosing data.
 
     ![](./loading-data-from-a-file/create-a-dataset-focus-on-file.png)
 
-    ```{important}
-    **20,000,000 record limit per ingestion.** During the Early Access program, each data ingestion is limited to 20,000,000 records.
-    ```
+    > **Important:** 20,000,000 record limit per ingestion.** During the Early Access program, each data ingestion is limited to 20,000,000 records.
 
-3.  Before continuing in the Create a Dataset page, create a data file on your local machine by adding the following example car data (it's in CSV format) into a plain text file.
+1.  Before continuing in the Create a Dataset page, create a data file on your local machine by adding the following example car data (it's in CSV format) into a plain text file.
 
-    ```{note}
-    The product supports CSV files that use the following common data delimiters: comma (,), tab, or pipe (\|) characters. JSON and JSONL files are also supported.
-    ```
+    > **Note:** The product supports CSV files that use the following common data delimiters: comma (,), tab, or pipe (\|) characters. JSON and JSONL files are also supported.
 
     **Data**
 
@@ -43,7 +37,9 @@ Start ingesting your file, following these steps:
     
     These commands create the data file on Linux, MacOS, and Windows.
 
-    ```{tab} Linux/MacOS
+    Linux/MacOS
+
+    ```bash
         echo "vin,make,model,year,purchase_date,estimated_value,mileage,owner_count,accident_count
         XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-13,45955.00,32000,2,0
         SD089VN7678997566,Ford,F-150,2022,2022-01-11,38650.00,8900,1,1
@@ -51,7 +47,9 @@ Start ingesting your file, following these steps:
         >>cars
     ```
 
-    ```{tab} Windows
+    Windows
+
+    ```
         (
         echo vin,make,model,year,purchase_date,estimated_value,mileage,owner_count,accident_count
         echo XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-13,45955.00,32000,2,0
@@ -61,17 +59,15 @@ Start ingesting your file, following these steps:
         )>cars
     ```
 
-4.  In the Create a Dataset page's **Choose Source Type** menu, **File** is selected by default. Keep that setting for uploading your file.
+1.  In the Create a Dataset page's **Choose Source Type** menu, **File** is selected by default. Keep that setting for uploading your file.
 
-    Upload your CSV file you by either dragging it into the file upload area or by clicking **Choose file** to browse to it and select it. The file uploads and the **[Edit schema** interface appears.
+    Upload your CSV file you by either dragging it into the file upload area or by clicking **Choose file** to browse to it and select it. The file uploads and the **Edit schema** interface appears.
 
     ![](./loading-data-from-a-file/cars-schema.png)
 
     The product ingested your file and made a best effort to name your dataset (see *Dataset ID*) and specify your properties (see the *Properties* table) and your data's Unique Index, composed of primary, secondary, and date indexes.
 
-    ```{important}
-    The *Dataset ID* cannot be changed once you've submitted your dataset. Make sure to specify the ID you want in this step.
-    ```
+    > **Note:** The *Dataset ID* cannot be changed once you've submitted your dataset. Make sure to specify the ID you want in this step.
 
     Below the *Properties* table there's more.
 
@@ -89,7 +85,7 @@ Start ingesting your file, following these steps:
 
     Let's edit the schema.
 
-5.  In the **Edit schema** interface, modify the schema to specify the dataset ID, property characteristics, and Unique Index using the following values.
+1.  In the **Edit schema** interface, modify the schema to specify the dataset ID, property characteristics, and Unique Index using the following values.
 
     **Dataset ID:** `CARS`
 
@@ -112,9 +108,7 @@ Start ingesting your file, following these steps:
     |   |  | owner_count (integer) |
     |   |  | accident_count (interger) |
 
-    ```{important}
-    The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix your dataset ID or dataset property names with `_system`.
-    ```
+    > **Important:** The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix your dataset ID or dataset property names with `_system`.
 
     **Opt in to IEX Cloud's Metadata Graph:** unselect
 
@@ -128,9 +122,7 @@ Start ingesting your file, following these steps:
 
     ![](./loading-data-from-a-file/cars-dataset-overview.png)
 
-    ```{note}
-    If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Logs](../administration/monitoring-deployments.md).
-    ```
+    > **Note:** If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Logs](../administration/monitoring-deployments.md).
 
     From here you can manage and monitor your dataset, open/share the API docs, execute an example request on your dataset, and create different views to your data.
 
@@ -153,10 +145,10 @@ Congratulations on making data available using a dataset!
 
 Now that you are familiar with creating a dataset from a CSV file, you can create datasets using your own CSV, JSON, or JSONL file. You can also add more data to your datasets (click **Ingest data**) in the dataset overview or modify data via the dataset's **Database** page.
 
-Got a URL you want to tap into for data? See [Ingesting Data from a URL](../migrating-and-importing-data/loading-data-from-a-url.md).
+Got a URL you want to tap into for data? See [Loading Data from a URL](https://iexcloud.zendesk.com./5794922253459-loading-data-from-a-URL).
 
-Interested in creating datasets programmatically? Checkout [Getting Started with the Datasets API](../interacting-with-your-data/apperate-api-basics.md).
+Interested in creating datasets programmatically? Checkout [Apperate API Basics](../interacting-with-your-data/apperate-api-basics.md).
 
-Want to learn more about creating and managing datasets? Read [Understanding Dataset Schemas](../managing-your-data/defining-schemas/data-model-concepts.md).
+Want to learn more about creating and managing datasets? Read [Understanding Datasets](../managing-your-data/understanding-datasets.md).
 
 Want to get more teammates involved? [Add them to your team](../administration/managing-users.md).

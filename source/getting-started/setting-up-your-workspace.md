@@ -1,8 +1,6 @@
 # Setting Up Your Workspace
 
-```{admonition} Early Access
-The new data infrastructure product is available exclusively to select Early Access program participants. If you’d like to participate in an upcoming Early Access phase, please email product@iexcloud.io.
-```
+> **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or the upcoming Beta, please email us at `product@iexcloud.io`.
 
 A *workspace* is your unique domain for writing data and querying it, and delivering data to your apps. Your workspace name appears in your API URLs.
 
@@ -58,8 +56,8 @@ To continue with the example of delivering data to apps, see [Getting Started wi
 
 If you want to start importing data for your apps, see one of the following articles:
 
-- [Loading Data from a URL](../migrating-and-importing-data/loading-data-from-a-url.md)
-- [Loading Data from AWS S3](../migrating-and-importing-data/loading-data-from-aws-s3.md)
+- [Loading Data from a URL](https://iexcloud.zendesk.com./5794922253459-loading-data-from-a-URL)
+- [Loading Data from AWS S3](https://iexcloud.zendesk.com./6123321712915-loading-data-from-AWS-S3)
 - [Loading Data from a File](../migrating-and-importing-data/loading-data-from-a-file.md)
 
-If you want to sign up your teammates, click the gear icon at the bottom of the console nav and select **Team**. Team management is demonstrated [here](https://iexcloud.zendesk.com/hc/en-us/articles/1500012487601-Can-I-add-other-team-members-to-my-IEX-Cloud-Account-).
+If you want to sign up your teammates, click the gear icon at the bottom of the console nav and select **Team**. Team management is demonstrated [here](../administration/managing-users.md).

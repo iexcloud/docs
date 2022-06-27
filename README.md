@@ -1,83 +1,85 @@
-# IEX Cloud Documentation Site
+# IEX Cloud Early Access Program
 
-This is a prototype for the IEX Cloud Documentation site. The site uses the [Sphinx](https://www.sphinx-doc.org/en/master/index.html) static site generator (SSG). The articles are written in Markdown and then converted to static HTML files using Sphinx and the [MyST parser](https://myst-parser.readthedocs.io/en/latest/). This site uses [ReStructured Text](https://docutils.sourceforge.io/docs/user/rst/quickref.html) (RST) text in the index.rst file and in section Markdown files to specify the site tree.
+Welcome to IEX Cloud's Early Access Program documentation for Apperate: a serverless multi-model database that makes it easy to ingest, validate, normalize, and deliver data into applications. It comes with production-ready Core data for powering fintech apps and more.
 
-## Building Instructions
+> **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or the upcoming Beta, please email us at `product@iexcloud.io`. 
 
-Building the docs site requires Python and several external plugins for Sphinx. Running the build generates HTML files to the `build/html` folder. Any web server can serve up the site by pointing to the `index.html` file.
+The [Early Access Program Info Hub](TODO) article notes the latest happenings in the Apperate product Alpha. 
 
-### Requirements
+The product documentation is listed below. If you're new to Apperate, get acquainted with it by reading our **Getting Started** articles. Enjoy!
 
-Note: You can install the following software packages using [MiniConda](https://docs.conda.io/en/latest/miniconda.html) (includes Python) or a similar software installer. ([MiniConda3 for Linux 64-bit](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh))
+## Table of Contents
 
-Required software:
+### Getting Started
 
-- [Python](https://www.python.org/downloads/): Sphinx is written in Python and requires Python 3.6+.
+[What is IEX Cloud Apperate?](./source/getting-started/what-is-iex-cloud-apperate.md)
 
-- [Sphinx](https://www.sphinx-doc.org/en/master/usage/installation.html): Provides the static site generator and infrastructure. 
+[Setting Up Your Workspace](./source/getting-started/setting-up-your-workspace.md)
 
-    ```bash
-    sudo yum install python-sphinx
-    ```
+[Getting Started with an Example Dataset](./source/getting-started/getting-started-with-an-example-dataset.md)
 
-- [Furo Theme](https://github.com/pradyunsg/furo): Furo is a rich, responsive theme that includes key features such as a local table of contents (TOC) for each article. Please refer to the [Furo documentation](https://pradyunsg.me/furo/) site which explains using the Furo theme and of course uses it).
+[Writing and Fetching a Record](./source/getting-started/writing-and-fetching-a-record.md)
 
-    ```bash
-    conda install -c conda-forge furo
-    ```
+### Development
 
-- Sphinx extensions
+#### Migrating and Importing Data
 
-    - MyST Parser: Enables writing articles in Markdown and structuring the file tree using RST-like declarations. The parser converts the Markdown files to HTML.
-    - Other extensions below provide authoring features to use in our documentation.
+[Loading Data from a URL](./source/migrating-and-importing-data/loading-data-from-a-url.md)
 
-    ```bash
-    conda install -c conda-forge myst-parser
-    conda install -c conda-forge sphinx-copybutton
-    conda install -c conda-forge sphinx-design
-    conda install -c conda-forge sphinx-inline-tabs
-    ```
+[Loading Data from AWS S3](./source/migrating-and-importing-data/loading-data-from-aws-s3.md)
 
-### Building the Site
+[Loading Data from a File](./source/migrating-and-importing-data/loading-data-from-a-file.md)
 
-```bash
-cd docs
-```
+[Accessing Nested JSON Data](./source/migrating-and-importing-data/working-with-nested-json-data.md)
 
-```bash
-make html
-```
+[Scheduling Data Ingestion](./source/migrating-and-importing-data/scheduling-data-ingestion.md)
 
-The static HTML files are written to `docs/build/html`.
+[Accessing AWS S3 via Storage Integration](./source/migrating-and-importing-data/accessing-s3-via-storage-integration.md)
 
-### Serving the Site
+[Accessing S3 via Your Access Key](./source/migrating-and-importing-data/accessing-s3-via-your-access-key.md)
 
-Any web server can host the site by pointing to `docs/build/html/index.html`.
+#### Managing Your Data
 
-#### Previewing the Site
+[Defining Schemas](./source/managing-your-data/defining-schemas.md)
 
-If you want to build the site locally to preview it, you can use a web server such as Python's SimpleHTTPServer. Here are commands for running it:
+[Normalization](./source/managing-your-data/defining-schemas/normalization.md)
 
-```bash
-cd docs/build/html
-```
+[Understanding Datasets](./source/managing-your-data/understanding-datasets.md)
 
-```bash
-python3 -m http.server 8000
-```
+[Creating and Managing Indexes](./source/managing-your-data/creating-and-managing-indexes.md)
 
-The site is available locally at port `8000`: <http://0.0.0.0:8000/>
+[Creating and Managing Views](./source/managing-your-data/creating-and-managing-views.md)
 
-#### Running on a Remote Machine
+[Joining on Core Data](./source/managing-your-data/creating-and-managing-views/joining-on-core-data.md)
 
-If you are running the site from a remote machine dev box, forward the port on your laptop by running this command on your laptop, making sure to replace `username` (laptop user), username (e.g., `firstname.lastname`), and dev box IP address `10.101.0.30` with your values.
+#### Interacting with Your Data
 
-```bash
-ssh -F /Users/username/.ssh/config -i /Users/username/.ssh/id_rsa -L 8000:127.0.0.1:8000 -C -N firstname.lastname@10.101.0.30 &
-```
+[Apperate API Basics](./source/interacting-with-your-data/apperate-api-basics.md)
 
-The site is available here: <http://0.0.0.0:8000/>
+[Querying Data](./source/interacting-with-your-data/querying-data.md)
 
-## Contributing Fixes
+[Updating Data](./source/interacting-with-your-data/updating-data.md)
 
-You can contribute documentation fixes by editing the articles (`.md` files nested in the `source` folder) in a branch and sending your branch in a pull request to the `main` branch here on GitHub.
+#### Using Core Data
+
+[IEX Cloud Core Data Basics](./source/using-core-data/core-data-basics.md)
+
+[Core Data API Reference](./source/using-core-data/core-data-api.md)
+
+#### Reference
+
+[Changelog](./source/reference/changelog.md)
+
+[Financial Identifiers](./source/reference/financial-identifiers.md)
+
+[Glossary](./source/reference/glossary.md)
+
+[Reserved Keywords and Prefixes](./source/reference/reserved-keywords-and-prefixes.md)
+
+### Administration
+
+[Access and Security](./source/administration/access-and-security.md)
+
+[Managing Users](./source/administration/managing-users.md)
+
+[Monitoring Deployments](./source/administration/monitoring-deployments.md)

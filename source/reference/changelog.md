@@ -32,15 +32,15 @@ Here are the notable changes.
 
 ## 2022-06-03
 
-- Support downloading a data ingestion's [invalid records](https://iexcloud.zendesk.com/hc/en-us/articles/6756010042643-Monitoring-Logs) as a CSV file.
+- Support downloading a data ingestion's [invalid records](https://iexcloud.zendesk.com./6756010042643-Monitoring-Logs) as a CSV file.
 
 ## 2022-06-02
 
-- Show job ID in the [log stream](https://iexcloud.zendesk.com/hc/en-us/articles/6756010042643-Monitoring-Logs).
+- Show job ID in the [log stream](https://iexcloud.zendesk.com./6756010042643-Monitoring-Logs).
 
 ## 2022-05-31
 
-- Save console messages to the [log stream](https://iexcloud.zendesk.com/hc/en-us/articles/6756010042643-Monitoring-Logs).
+- Save console messages to the [log stream](https://iexcloud.zendesk.com./6756010042643-Monitoring-Logs).
 - Add aliases as suggested words in the SQL editor.
 
 ## 2022-05-27
@@ -58,7 +58,7 @@ Here are the notable changes.
 
 ## 2022-05-19
 
-- Support SQL views. See it in action at [Combining Data into Views](https://iexcloud.zendesk.com/hc/en-us/articles/6670289316115-Combining-Data-into-Views).
+- Support SQL views. See it in action at [Combining Data into Views](https://iexcloud.zendesk.com./6670289316115-Combining-Data-into-Views).
 - Limit dataset query results to 1000.
 - Display AWS user ARN for [AWS integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md).
 
@@ -77,7 +77,7 @@ Here are the notable changes.
 
 ## 2022-05-11
 
-- Support sampling JSON data with JSONPath and displaying in the UI. For details, go to [Accessing Data Nested in JSON](https://iexcloud.zendesk.com/hc/en-us/articles/6187037773971-Accessing-Data-Nested-in-JSON).
+- Support sampling JSON data with JSONPath and displaying in the UI. For details, go to [Accessing Data Nested in JSON](https://iexcloud.zendesk.com./6187037773971-Accessing-Data-Nested-in-JSON).
 
 ## 2022-05-10
 
@@ -106,7 +106,7 @@ Here are the notable changes.
 
 ## 2022-04-20
 
-- Improve logging for dataset jobs and console events. Learn more at [Monitoring Logs](https://iexcloud.zendesk.com/hc/en-us/articles/6756010042643-Monitoring-Logs).
+- Improve logging for dataset jobs and console events. Learn more at [Monitoring Logs](https://iexcloud.zendesk.com./6756010042643-Monitoring-Logs).
 
 ## 2022-04-18
 
