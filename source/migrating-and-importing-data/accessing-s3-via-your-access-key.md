@@ -8,11 +8,11 @@ Here's how to add your AWS S3 credentials:
 
 1. Go to the **Credentials** page by navigating to **Sources > Credentials**. The Credentials page appears.
 
-    ![](./accessing-s3-via-your-access-key/aws-external-id-and-use-arn.png)
+    ![](./accessing-s3-via-your-access-key/credentials-list.png)
 
 1. Click **Add credential**. The Add Credential page appears.
 
-    ![](./accessing-s3-via-your-access-key/aws-integration-section.png)
+    ![](./accessing-s3-via-your-access-key/add-credential.png)
 
     Enter your AWS IAM user's **access key ID** and **secret access key**. For information on managing access keys, refer to the [AWS documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey). After entering your ID and key, click **Save**. The credentials list appears and includes your newly added credential.
 
