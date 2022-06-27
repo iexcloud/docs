@@ -40,25 +40,23 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 #### Managing Your Data
 
-[Defining Schemas](./source/managing-your-data/defining-schemas.md)
+[Defining Schemas \(Coming soon\)](./source/managing-your-data/defining-schemas.md)
 
-[Normalization](./source/managing-your-data/defining-schemas/normalization.md)
+[Normalization \(Coming soon\)](./source/managing-your-data/defining-schemas/normalization.md)
 
 [Understanding Datasets](./source/managing-your-data/understanding-datasets.md)
 
-[Creating and Managing Indexes](./source/managing-your-data/creating-and-managing-indexes.md)
+[Creating and Managing Indexes \(Coming soon\)](./source/managing-your-data/creating-and-managing-indexes.md)
 
 [Creating and Managing Views](./source/managing-your-data/creating-and-managing-views.md)
-
-[Joining on Core Data](./source/managing-your-data/creating-and-managing-views/joining-on-core-data.md)
 
 #### Interacting with Your Data
 
 [Apperate API Basics](./source/interacting-with-your-data/apperate-api-basics.md)
 
-[Querying Data](./source/interacting-with-your-data/querying-data.md)
+[Querying Data \(Coming soon\)](./source/interacting-with-your-data/querying-data.md)
 
-[Updating Data](./source/interacting-with-your-data/updating-data.md)
+[Updating Data \(Coming soon\)](./source/interacting-with-your-data/updating-data.md)
 
 #### Using Core Data
 
