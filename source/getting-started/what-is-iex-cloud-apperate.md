@@ -10,15 +10,13 @@ If you're building a new app and need to set up its data infrastructure quickly,
 
 This new functionality is now in alpha, with its first functionality ready for early use. **To read the full story on why we're building this and the problems it helps solve, check out our product manifesto.**
 
-![IEX Cloud Apperate platform](./what-is-iex-cloud-apperate/apperate-platform.png)
+![](./what-is-iex-cloud-apperate/apperate-platform.png)
 
-```{note}
-While this product is in alpha, certain functionality shown in the schematic above will be in active development.
-```
+> **Note:** While this product is in alpha, certain functionality shown in the schematic above will be in active development.
 
 ## How does the Apperate functionality help me?
 
-- **If you’re building an MVP – skip time-consuming backend work and get to market faster.** Connect our new platform into your application to have a data infrastructure that works in minutes, rather than months. Hand us your data, and we‘ll create an auto-documented, ready-to-use, scalable API instantly to help you deliver  No code necessary. 
+- **If you’re building an MVP – skip time-consuming backend work and get to market faster.** Connect your application to Apperate for a data infrastructure that works in minutes, rather than months. Hand us your data, and we‘ll create an auto-documented, ready-to-use, scalable API instantly to help you deliver  No code necessary. 
 
 - **This is a system that already supports 1M operations per second, 2.5B API calls per day, and 150,000+ registered users.** If you’re spending significant time maintaining data infrastructure, we'll help support you. You’ll get to power your application with the same backend capabilities that power IEX Cloud today.  
 

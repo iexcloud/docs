@@ -18,7 +18,7 @@ Start ingesting your file, following these steps:
 
     ![](./loading-data-from-a-file/create-a-dataset-focus-on-file.png)
 
-    > **Important:** 20,000,000 record limit per ingestion.** During the Early Access program, each data ingestion is limited to 20,000,000 records.
+    > **Important:** 20,000,000 record limit per ingestion. During the Early Access program, each data ingestion is limited to 20,000,000 records.
 
 1.  Before continuing in the Create a Dataset page, create a data file on your local machine by adding the following example car data (it's in CSV format) into a plain text file.
 

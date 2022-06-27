@@ -1,12 +1,12 @@
 # Monitoring Deployments
 
-The platform logs your workspace activities. The logs capture basic things such as when items are created, updated, and deleted and process milestones associated with dataset validation, data ingestion, and more. Click on **Logs** in the navigation to show the log pages.
+Apperate logs your workspace activities. The logs capture basic things such as when items are created, updated, and deleted and process milestones associated with dataset validation, data ingestion, and more. Click on **Logs** in the navigation to show the log pages.
 
 ![log-stream-2.png](./monitoring-deployments/log-stream-2.png)
 
 ## Log Stream
 
-The **Log Stream** lists platform activity messages in descending chronological order, most recent messages are at the top. Ingestion jobs include a `JobId`.
+The **Log Stream** lists activity messages in descending chronological order, most recent messages are at the top. Ingestion jobs include a `JobId`.
 
 For example, the messages for the data ingestion job in the image above include the *769ab8\** job ID. These messages capture the following data ingestion milestones:
 

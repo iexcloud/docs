@@ -25,9 +25,7 @@ Start using datasets, following these steps:
 
     **Dataset ID** - Name your dataset by giving it a unique ID. On data ingestion, the product makes a best effort to name your dataset, using the data source name (e.g., file name). If a dataset exists with that name, the product suggests a suffix to make the dataset ID unique. 
 
-    ```{important}
-    The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix your dataset ID or dataset property names with `_system`.
-    ```
+    > **Important:** The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix your dataset ID or dataset property names with `_system`.
 
     **Properties (table)** The product makes a best effort to
     derive data property names using the column names the dataset provides and
@@ -63,7 +61,7 @@ Start using datasets, following these steps:
 
     ![](./getting-started-with-an-example-dataset/sample-appl-execute-query.png)
 
-In only a few minutes, you loaded data into the IEX Cloud data infrastructure platform and retrieved it using an auto-generated RESTful API! It's just that easy to get data to your app!!
+In only a few minutes, you loaded data into the IEX Cloud Apperate and retrieved it using an auto-generated RESTful API! It's just that easy to get data to your app!!
 
 **Bonus step - visit your API docs** by clicking **Open API Docs**
 in your dataset's overview page. Your API docs open in a new tab.

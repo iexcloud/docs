@@ -30,9 +30,7 @@ Here's how to create your workspace:
 
 1. Name your workspace.
 
-    ```{important}
-    The workspace name is permanent, so make sure to name it exactly how you want it.
-    ```
+    > **Important:** The workspace name is permanent, so make sure to name it exactly how you want it.
 
     Workspace names have the following requirements.
 
