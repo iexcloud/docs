@@ -41,11 +41,10 @@ Check your workspace and secret API token by using the *GET /datasets/:workspace
 curl -X GET https://cloud.iexapis.com/v1/datasets/WORKSPACE?token=SK_NUMBER 
 ```
 
-The response should be a JSON array of your datasets, or an empty collection if you have no datasets. It looks like this:
+The response should be a JSON array of your datasets, or an empty collection if you have no datasets. The start of the reponses looks like this:
 
 ```json
-[{"columnMapping":{"date":"date","key":"symbol"},"symbologyColumn":{"name":"symbol","type":"E"},"date":1650483685000,"updated":1650483685000,"datasetId":"MSFT_ISIN_0YUMDPOZA","schema":{"properties":{"close":{"type":"number"},"date":{"format":"date","type":"string"},"high":{"type":"number"},"low":{"type":"number"},"open":{"type":"number"},"symbol":{"type":"string"},"volume":{"type":"string"}},"required":["symbol","date"],"type":"object"},"description":"","parentDatasetId":null,"keys":0,"records":1509},{"columnMapping":{"date":"date","key":"symbol"},"symbologyColumn":{"name":"symbol","type":"E"},"date":1650480716000,"updated":1650480716000,"datasetId":"MSFT_ISIN_YKSCGSJWB","schema":{"properties":{"close":{"type":"number"},"date":{"format":"date","type":"string"},"high":{"type":"number"},"low":{"type
-... 
+[{"columnMapping":{"date":"date","key":"symbol"},"symbologyColumn":{"name":"symbol","type":"E"},"date":1650483685000,"updated":1650483685000,"datasetId":"MSFT_ISIN_0YUMDPOZA","schema":{"properties":{"close":{"type":"number"},"date":{"format":"date","type":"string"},"high":{"type":"number"},"low":{"type":"number"},"open":{"type":"number"},"symbol":{"type":"string"},"volume":{"type":"string"}},"required":["symbol","date"],"type":"object"},"description":"","parentDatasetId":null,"keys":0,"records":1509}]
 ```
 
 > **Note:** If the response states The API key provided is not valid[, your API token (key) is not valid. Make sure to use the secret API token available to copy from your console's [API tokens](https://iexcloud.io/console/tokens) page.
@@ -60,7 +59,7 @@ Here you will create a dataset as specified in a JSON text file.
 
     > **Important:** The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix dataset IDs and dataset property names with `_system`.
 
-    ```json
+    ```
     { 
         "dataset": { 
             "email": "you@company.com", 
@@ -121,7 +120,7 @@ Here you will create a dataset as specified in a JSON text file.
     **Sample response:**
     
     ```json
-    success":true,"message":"Dataset has been created","datasetId":"YOUR_DATASET"
+    {"success":true,"message":"Dataset has been created","datasetId":"YOUR_DATASET"}
     ```
 
 1. Verify the dataset by running a `GET /datasets/:workspace` request as described in [List datasets](https://iexcloud.io/docs/datasets-api/list-datasets). For example,
@@ -188,7 +187,7 @@ Here are the data file ingestion steps:
     **Sample response:** 
 
     ```json
-    {success":true,"message":"Data upload of 579B for YOUR_DATASET completed, jobId: 887b948762ff4b5c889112afb21ea463 has been created","jobId":"887b948762ff4b5c889112afb21ea463","jobUrl":"/v1/jobs/WORKSPACE/ingest/887b948762ff4b5c889112afb21ea463"}
+    {"success":true,"message":"Data upload of 579B for YOUR_DATASET completed, jobId: 887b948762ff4b5c889112afb21ea463 has been created","jobId":"887b948762ff4b5c889112afb21ea463","jobUrl":"/v1/jobs/WORKSPACE/ingest/887b948762ff4b5c889112afb21ea463"}
     ```
 
 1. Validate your dataset's record count using a `GET /datasets/:workspace/:id` request as described in [Get a dataset](https://iexcloud.io/docs/datasets-api/get-a-dataset). For example, use this command with your values:  

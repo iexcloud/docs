@@ -4,7 +4,7 @@ Welcome to IEX Cloud's Early Access Program documentation for Apperate: a server
 
 > **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or the upcoming Beta, please email us at `product@iexcloud.io`. 
 
-The [Early Access Program Info Hub](TODO) article notes the latest happenings in the Apperate product Alpha. 
+The [Early Access Program Info Hub](./source/getting-started/early-access-program-info-hub.md) article notes the latest happenings in the Apperate product Alpha. 
 
 The product documentation is listed below. If you're new to Apperate, get acquainted with it by reading our **Getting Started** articles. Enjoy!
 
@@ -30,7 +30,7 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 [Loading Data from a File](./source/migrating-and-importing-data/loading-data-from-a-file.md)
 
-[Accessing Nested JSON Data](./source/migrating-and-importing-data/working-with-nested-json-data.md)
+[Accessing Nested JSON Data](./source/migrating-and-importing-data/accessing-nested-json-data.md)
 
 [Scheduling Data Ingestion](./source/migrating-and-importing-data/scheduling-data-ingestion.md)
 
