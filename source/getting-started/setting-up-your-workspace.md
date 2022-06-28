@@ -55,7 +55,7 @@ To continue with the example of delivering data to apps, see [Getting Started wi
 If you want to start importing data for your apps, see one of the following articles:
 
 - [Loading Data from a URL](https://iexcloud.zendesk.com./5794922253459-loading-data-from-a-URL)
-- [Loading Data from AWS S3](https://iexcloud.zendesk.com./6123321712915-loading-data-from-AWS-S3)
+- [Loading Data from AWS S3](../migrating-and-importing-data/loading-data-from-aws-s3.md)
 - [Loading Data from a File](../migrating-and-importing-data/loading-data-from-a-file.md)
 
 If you want to sign up your teammates, click the gear icon at the bottom of the console nav and select **Team**. Team management is demonstrated [here](../administration/managing-users.md).
