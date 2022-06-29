@@ -1,6 +1,6 @@
 # Loading Data from a URL
 
-TODO
+If there's a URL that you would like to load data from, you can connect to it and store its data in a dataset for publishing to your apps. Here you will do just that.
 
 ## Creating a Dataset with Data from a URL
 
