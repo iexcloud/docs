@@ -1,9 +1,9 @@
 # Loading Data from AWS S3
 
-In few steps, you can import data from CSV, JSON, or JSONL data files in your S3 buckets. Accessing a bucket requires specifying the bucket and credentials to access it. You must configure bucket access *before* you create a dataset from that bucket's files. Here are the access types:
+In few steps, you can import data from CSV, JSON, or JSONL data files in your S3 buckets. Before creating a dataset that uses bucket files, you must configure credentials for accessing the bucket. Here are the credential types:
 
-- **Access Key:** Specify credentials composed of an access key and secret access key. For details, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
-- **AWS storage integration:** Grant Apperate's S3 user read access to your bucket. Learn how at [Accessing S3 via Storage Integration](./accessing-s3-via-storage-integration.md).
+- **Access Key:** Specify your bucket access key and secret access key. For details, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
+- **AWS Integration:** Grant Apperate's S3 user bucket read access. Learn how at [Accessing S3 via Storage Integration](./accessing-s3-via-storage-integration.md).
 
 Here we'll create a dataset from an S3 bucket file.
 
@@ -21,38 +21,44 @@ Here we'll create a dataset from an S3 bucket file.
 
     ![](./loading-data-from-aws-s3/credential-dataset.png)
 
-    - If you have AWS integration configured, you can select **AWS ingtegration**. 
+    - If you have configured AWS Integration, you can select **AWS Ingtegration**. 
     - If you have an access key credential, you can select that credential.
 
 1. Enter your AWS bucket name. Your bucket files (file keys) appear in a Bucket Contents list.
 
     ![](./loading-data-from-aws-s3/new-data-source-specified.png)
 
-1. Specify a file pattern for matching the files you want to load data from. The files matching the name pattern continue to show in the lists.
+1. Enter a file pattern that filters on the files you want to load. Files that match the pattern continue to show in the list.
 
-1. Select the file key to base your schema on and to load data from. A sample of the file contents appears in the Response panel.
+1. In the **Bucket Contents** section, select a file (file key) to base your schema on. That file's contents appear in the Response panel.
 
     > **Important:** To load data from JSON, the data must be specified in an array of objects.
 
-    If the resulting data shown in the panel specifies the object array you want, leave the JSONNPath field empty. Otherwise, use the JSONPath field to specify the path to the desired object array in your data. A panel on the bottom right shows the data resulting from your JSONPath.
+    If you selected a JSON file and the Response panel shows the object array you want, leave the JSONNPath field empty. Otherwise, use the JSONPath field to specify the path to the desired object array in the JSON file. A panel on the bottom right shows the data found at the JSONPath.
 
-    > **See also** [Accessing Nested JSON Data](./accessing-nested-json-data.md) for guidance on specifying JSONPath.
+    > **See also** [Accessing Nested JSON Data](./accessing-nested-json-data.md) for guidance on specifying JSONPath for JSON file data.
 
-    When you're done specifying the path to your data, click **Parse Data**. The schema editor appears.
+    When you're done specifying the file data, click **Parse Data**. The schema editor appears.
 
     ![](./loading-data-from-aws-s3/dataset-schema-editor.png)
 
-1. In the schema editor, check the property types and indexes, and specify whether to opt in an indexed property to the metadata graph. 
+1. In the schema editor, name your dataset, check the property types and indexes, and specify whether to opt in an indexed property to the metadata graph. 
 
-    > **Note:** the metadata graph opt-in, provides the opportunity to map a property to IEX Cloud's metadata data graph of [financial identifiers](../reference/financial-identifiers.md). This allows you to enrich your dataset by joining it to IEX Cloud core equities data or any other dataset that is also opted in. Furthermore, you can ingest data into and query for data in this dataset using IEX Cloud's supported financial identifiers.
+    > **Note:** the metadata graph opt-in, provides the opportunity to map a property to IEX Cloud's metadata data graph of [financial identifiers](../reference/financial-identifiers.md). This allows you to enrich your dataset by joining it to IEX Cloud core equities data or any other dataset that is also opted in. Furthermore, you can ingest data into and query for data in this dataset using IEX Cloud's supported financial identifiers. See [Normalization](../managing-your-data/defining-schemas/normalization.md) for examples.
 
-    > **See Also:** [Normalization](../managing-your-data/defining-schemas/normalization.md).
+    When you're happy with the schema, click **Create dataset now**.
 
-    When you're done confirming the schema, click **Create dataset now**.
+    Apperate creates the dataset, loads the data into it, and shows the dataset's **Overview** page.
 
-    Apperate ingests your data into a dataset and the dataset's **Overview** page appears.
+    ![](./loading-data-from-aws-s3/dataset-overview.png)
 
-Congratulations on creating a dataset from your AWS S3 bucket file!
+1. In the **Overview** page, fetch the last record by clicking on the **Example Request** URL. A browser tab opens to the URL and Apperate returns the record in a JSON object array. Here's an example array:
+
+    ```json
+    [{"change":-0.75,"changeOverTime":47.831683168316836,"changePercent":-0.005,"close":147.96,"date":"2022-06-08","fClose":147.96,"fHigh":149.8697,"fLow":147.46,"fOpen":148.58,"fVolume":53950201,"high":149.8697,"id":"HISTORICAL_PRICES","key":"AAPL","label":"Jun 8, 22","low":147.46,"marketChangeOverTime":47.831683168316836,"open":148.58,"subkey":"","symbol":"AAPL","uClose":147.96,"uHigh":149.8697,"uLow":147.46,"uOpen":148.58,"updated":1654736422000,"uVolume":53950201,"volume":53950201}]
+    ```
+
+Congratulations! You loaded data from your AWS S3 bucket into a dataset and that's ready to deliver that data to your apps.
 
 ## What's Next
 
