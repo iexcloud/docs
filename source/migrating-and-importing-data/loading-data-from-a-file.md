@@ -122,7 +122,7 @@ Start ingesting your file, following these steps:
 
     ![](./loading-data-from-a-file/cars-dataset-overview.png)
 
-    > **Note:** If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Logs](../administration/monitoring-deployments.md).
+    > **Note:** If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Deployments](../administration/monitoring-deployments.md).
 
     From here you can manage and monitor your dataset, open/share the API docs, execute an example request on your dataset, and create different views to your data.
 
