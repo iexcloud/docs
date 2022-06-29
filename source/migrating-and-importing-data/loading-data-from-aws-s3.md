@@ -28,17 +28,25 @@ Here we'll create a dataset from an S3 bucket file.
     - If you have an access key credential, you can select that credential.
     -->
 
-1. Enter your AWS bucket name. Your bucket files (file keys) appear in a Bucket Contents list.
+1. Enter your AWS bucket name. All of your bucket files (file keys) appear in the Bucket Contents list.
 
-    ![](./loading-data-from-aws-s3/new-data-source-specified.png)
+    ![](./loading-data-from-aws-s3/all-bucket-files.png)
 
-1. Enter a file pattern that filters on the files you want to load. Files that match the pattern continue to show in the list.
+1. Use a combination of the following options to specify the file(s) to load data from.
 
-1. In the **Bucket Contents** section, select a file (file key) to base your schema on. That file's contents appear in the Response panel.
+    **File pattern** - Enter a file pattern using `*`, `?`, and `[]` to match the file(s). You can specify a file path (bucket prefix + file key) too. The Bucket Contents updates to show files that match the pattern.
+
+    **Prefix** - Pare down the Bucket Contents by entering an S3 bucket prefix (i.e., a folder path) in the **Enter file prefix** field at the top-right of the Bucket Contents section.
+
+    **Select a file key** - Select a specific file.
+
+    An array of JSON objects based on a sample of the first matching file's data appears in the **Response** panel. Apperate uses this sample to build the dataset schema.
+
+    ![](./loading-data-from-aws-s3/list-files-at-prefix.png)
 
     > **Important:** To load data from JSON, the data must be specified in an array of objects.
 
-    If you selected a JSON file and the Response panel shows the object array you want, leave the JSONNPath field empty. Otherwise, use the JSONPath field to specify the path to the desired object array in the JSON file. A panel on the bottom right shows the data found at the JSONPath.
+    If you selected a JSON file and the Response panel shows the object array you want, leave the JSONNPath field empty. Otherwise, use the JSONPath field to specify the path to the desired object array in the JSON file. A **JSON Response** panel on the bottom right shows the data found at the JSONPath.
 
     > **See also** [Accessing Nested JSON Data](./accessing-nested-json-data.md) for guidance on specifying JSONPath for JSON file data.
 
