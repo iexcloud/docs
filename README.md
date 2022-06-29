@@ -42,7 +42,7 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 [Defining Schemas \(Coming soon\)](./source/managing-your-data/defining-schemas.md)
 
-[Normalization \(Coming soon\)](./source/managing-your-data/defining-schemas/normalization.md)
+[Normalization](./source/managing-your-data/defining-schemas/normalization.md)
 
 [Understanding Datasets](./source/managing-your-data/understanding-datasets.md)
 
