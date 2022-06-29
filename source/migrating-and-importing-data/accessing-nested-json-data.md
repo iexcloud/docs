@@ -70,4 +70,4 @@ Your data source is ready to access data nested in the URL's response JSON objec
 
 ## What's next?
 
-You can create a dataset from your data source data. See [Loading Data from a URL](https://iexcloud.zendesk.com./5794922253459-loading-data-from-a-URL) for details.
+You can create a dataset from your data source data. See [Loading Data from a URL](../migrating-and-importing-data/loading-data-from-a-url.md) for details.

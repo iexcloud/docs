@@ -54,7 +54,7 @@ To continue with the example of delivering data to apps, see [Getting Started wi
 
 If you want to start importing data for your apps, see one of the following articles:
 
-- [Loading Data from a URL](https://iexcloud.zendesk.com./5794922253459-loading-data-from-a-URL)
+- [Loading Data from a URL](../migrating-and-importing-data/loading-data-from-a-url.md)
 - [Loading Data from AWS S3](../migrating-and-importing-data/loading-data-from-aws-s3.md)
 - [Loading Data from a File](../migrating-and-importing-data/loading-data-from-a-file.md)
 

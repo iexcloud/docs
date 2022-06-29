@@ -145,7 +145,7 @@ Congratulations on making data available using a dataset!
 
 Now that you are familiar with creating a dataset from a CSV file, you can create datasets using your own CSV, JSON, or JSONL file. You can also add more data to your datasets (click **Ingest data**) in the dataset overview or modify data via the dataset's **Database** page.
 
-Got a URL you want to tap into for data? See [Loading Data from a URL](https://iexcloud.zendesk.com./5794922253459-loading-data-from-a-URL).
+Got a URL you want to tap into for data? See [Loading Data from a URL](../migrating-and-importing-data/loading-data-from-a-url.md).
 
 Interested in creating datasets programmatically? Checkout [Apperate API Basics](../interacting-with-your-data/apperate-api-basics.md).
 
