@@ -64,6 +64,8 @@ Here we'll create a dataset from an S3 bucket file.
 
     ![](./loading-data-from-aws-s3/dataset-overview.png)
 
+    > **Note:** If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Logs](../administration/monitoring-deployments.md).
+
 1. In the **Overview** page, fetch the last record by clicking on the **Example Request** URL. A browser tab opens to the URL and Apperate returns the record in a JSON object array. Here's an example array:
 
     ```json
