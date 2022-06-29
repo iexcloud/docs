@@ -57,7 +57,7 @@ The console is the easiest way to construct datasets.
     
     Set **id** as the Primary index, **country** as the Secondary index, and **date** as the Date index.
     
-    ![flash_news_schema_ui.png](./writing-and-fetching-a-record/flash_news_schema_ui.png)
+    ![](./writing-and-fetching-a-record/write-fetch-record-schema.png)
     
     Click **Create dataset** when you're done specifying the dataset. The dataset ID confirmation dialog appears.
     
@@ -68,14 +68,14 @@ Your dataset is ready for data.
 
 ## Add a Record
 
-You'll add your news record into the dataset using a POST /datasets/:workspace request. The [Create a dataset](https://iexcloud.io/docs/datasets-api/create-a-dataset) API doc describes this REST endpoint.
+You'll add your news record into the dataset using a `POST /datasets/:workspace` request. The [Create a dataset](https://iexcloud.io/docs/datasets-api/create-a-dataset) API doc describes this REST endpoint.
 
 Add a news record by entering the following command, replacing WORKSPACE and SK_TOKEN with your values.
 
 ```bash
 curl -H "Content-Type: application/json" 
  -X POST "https://cloud.iexapis.com/v1/data/WORKSPACE/FLASH_NEWS_DATASET?token=SK_TOKEN" 
- -d '[{"id": 12345, "summary": "Gold mother-load discovered.", "source": "Doug Dig", "country": "Canada", "state_province": "Yukon", "city": "Dawson City", "zip_code": "Y0B 0A3", "2022-06-13"}]'
+ -d '[{"id": 12345, "summary": "Gold mother-load discovered.", "source": "Doug Dig", "country": "Canada", "state_province": "Yukon", "city": "Dawson City", "zip_code": "Y0B 0A3", "date": "2022-06-13"}]'
 ```
 
 **Response:**
@@ -88,11 +88,11 @@ News of Doug Dig's gold discovery is now in the dataset.
 
 ### Fetch the Record
 
-You can fetch the record using a GET /data/:workspace/:id/:key?/:subkey? request. The [Query data](https://iexcloud.io/docs/datasets-api/query-data) API doc provides the REST endpoint details. 
+You can fetch the record using a `GET /data/:workspace/:id/:key?/:subkey?` request. The [Query data](https://iexcloud.io/docs/datasets-api/query-data) API doc provides the REST endpoint details. 
 
 The endpoint queries the dataset using a Primary index (key), an optional Secondary index (subkey), and a Date index (via the **on** request parameter).
 
-Open the following URL in your browser, replacing the WORKSPACE and SK_TOKEN with your values. 
+Open the following URL in your browser, replacing the `WORKSPACE` and `SK_TOKEN with` your values. 
 
 https://cloud.iexapis.com/v1/data/WORKSPACE/FLASH_NEWS_DATASET/12345?token=SK_TOKEN
 
