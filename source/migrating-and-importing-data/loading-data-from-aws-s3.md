@@ -2,8 +2,8 @@
 
 In few steps, you can import data from CSV, JSON, or JSONL data files in your S3 buckets. Before creating a dataset that uses bucket files, you must configure credentials for accessing the bucket. Here are the credential types:
 
-- **Access Key:** Specify your bucket access key and secret access key. For details, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
 - **AWS Integration:** Grant Apperate's S3 user bucket read access. Learn how at [Accessing S3 via AWS Integration](./accessing-s3-via-storage-integration.md).
+- **Access Key:** Specify your bucket access key and secret access key. For details, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md). (**Important:** This option is currently broken for creating a new dataset.)
 
 Here we'll create a dataset from an S3 bucket file.
 
@@ -17,12 +17,16 @@ Here we'll create a dataset from an S3 bucket file.
 
     ![](./loading-data-from-aws-s3/new-aws-data-source.png)
 
-1. Select your credential for accessing the bucket.
+1. Select the **AWS Integration** credential type.<!-- Select your credential for accessing the bucket.-->
 
     ![](./loading-data-from-aws-s3/credential-dataset.png)
 
+    > **Note:** The ability to access an AWS S3 source for creating a dataset is currently broken.
+
+    <!--
     - If you have configured AWS Integration, you can select **AWS Ingtegration**. 
     - If you have an access key credential, you can select that credential.
+    -->
 
 1. Enter your AWS bucket name. Your bucket files (file keys) appear in a Bucket Contents list.
 
