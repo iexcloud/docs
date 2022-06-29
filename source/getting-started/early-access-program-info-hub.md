@@ -11,19 +11,21 @@ We are excited that you are participating in the new data infrastructure product
 
 Please see the console home page's IEX Cloud Early Access **Ideas Table** and the [Changelog](https://github.com/iexcloud/docs/blob/main/source/reference/changelog.md).
 
-- You can remove an AWS Integration and configure a new one.
+- AWS S3: You can remove an [AWS Integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md) (credential) and configure a new one.
 
 ## Recently Fixed Bugs
 
 These notable bugs were recently fixed. 
 
-- AWS S3: You can create a dataset from an AWS S3 bucket data source.
+- AWS S3: You can create a dataset from an AWS S3 source.
 
 ## Known Issues
 
 Stear clear of the following bugs and unfinished features. When we resolve them, we'll update the appropriate sections above.
 
-- AWS S3: Using JSONPath with S3 bucket JSON files requires selecting a JSON file.
+- AWS S3: Creating a *new* dataset from an AWS S3 source requires the [AWS Integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md) credential type. 
+- AWS S3: Loading data from an AWS S3 source into a new or existing dataset requires the source to have a selected file key (file) or a file pattern that matches a file key.
+- AWS S3: Using JSONPath with S3 bucket JSON files requires selecting a JSON file key (file).
 
 ## Known Limitations
 
