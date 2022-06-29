@@ -3,7 +3,7 @@
 In few steps, you can import data from CSV, JSON, or JSONL data files in your S3 buckets. Before creating a dataset that uses bucket files, you must configure credentials for accessing the bucket. Here are the credential types:
 
 - **Access Key:** Specify your bucket access key and secret access key. For details, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
-- **AWS Integration:** Grant Apperate's S3 user bucket read access. Learn how at [Accessing S3 via Storage Integration](./accessing-s3-via-storage-integration.md).
+- **AWS Integration:** Grant Apperate's S3 user bucket read access. Learn how at [Accessing S3 via AWS Integration](./accessing-s3-via-storage-integration.md).
 
 Here we'll create a dataset from an S3 bucket file.
 
