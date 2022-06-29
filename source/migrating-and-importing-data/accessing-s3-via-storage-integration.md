@@ -1,8 +1,8 @@
-# Accessing AWS S3 via Storage Integration
+# Accessing AWS S3 via AWS Integration
 
-Apperate's AWS storage integration provides a flexible way to connect with your AWS S3 buckets from your workspace. The integration involves granting an AWS user from Apperate access to your bucket via an AWS IAM role and policy.
+Apperate's AWS Integration provides a flexible way to connect with your AWS S3 buckets from your workspace. The integration involves granting an AWS user from Apperate access to your bucket via an AWS IAM role and policy.
 
-## Configuring AWS Storage Integration
+## Configuring AWS Integration
 
 Here are the steps:
 
@@ -60,15 +60,15 @@ Here are the steps:
 
     ![](./accessing-s3-via-storage-integration/add-integration-dialog.png)
 
-1. Enter your IAM Role ARN (you copied it earlier) and submit. An External ID and User ARN appear in the Add Ingetration dialog.
+1. Enter your IAM Role ARN (you copied it earlier) and submit. An External ID and User ARN appear in the Add Integration dialog.
 
     ![](./accessing-s3-via-storage-integration/aws-external-id-and-use-arn.png)
 
-1. Click **Go to credentials**. The External ID and User ARN, along with the Role ARN, appear in the AWS Integration section at the bottom of your **Credentials** page. In the next step, you'll copy these values into your AWS IAM role in the AWS console. 
+1. Click **Go to credentials**. The new External ID, new User ARN, and your Role ARN, appear in the AWS Integration section at the bottom of your **Credentials** page. In the next step, you'll use the External ID and User ARN in your IAM role in the AWS console. 
 
     ![](./accessing-s3-via-storage-integration/aws-integration-section.png)
 
-1. In AWS, edit your IAM role. Replace the principal AWS user account and the external ID with the values from the **AWS Integration** section of your **Credentials** page in your IEX Cloud console.
+1. In the AWS console, edit your IAM role. Replace the principal AWS user account and the external ID with the values from the new External ID and new User ARN values.
 
     The JSON for your role may look like the following code, except `USER` and `EXTERNAL_ID` should be replaced with the values from your AWS integration.
 
@@ -100,6 +100,6 @@ Your AWS S3 bucket is now integrated with your IEX Cloud workspace. When you par
 
 ## What's Next?
 
-Now that you've configured AWS storage integration for your bucket, you can [load your bucket data into Apperate](./loading-data-from-aws-s3.md) for delivering to your apps.
+Now that you've configured AWS Integration for your bucket, you can [load your bucket data into Apperate](./loading-data-from-aws-s3.md) for delivering to your apps.
 
-If you're interested in adding your AWS credentials to your IEX Cloud workspace instead of using Apperate's AWS storage integration, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
+If you're interested in adding your AWS credentials to your IEX Cloud workspace instead of using Apperate's AWS Integration, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
