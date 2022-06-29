@@ -28,7 +28,7 @@ SELECT * FROM MY.`AAPL_ISIN` a where a.symbol='AAPL';
 **REST API URL:**
 
 ```
-https://my.iex.cloud/v1/query/WORKSPACE/AAPL_ISIN/AAPL?token=TOKEN
+https://my.iex.cloud/v1/data/WORKSPACE/AAPL_ISIN/AAPL?token=TOKEN
 ```
 
 **REST API URL Response:**
