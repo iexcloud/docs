@@ -48,7 +48,7 @@ Here we'll create a dataset from an S3 bucket file.
 
     An array of JSON objects based on a sample of the oldest matching file's data appears in the **Response** panel. Apperate uses this sample to build the dataset schema.
 
-    ![](./loading-data-from-aws-s3/list-files-at-prefix.png)
+    ![](./loading-data-from-aws-s3/file-pattern-folder-star.png)
 
     > **Important:** To load data from JSON, the response data must be an array of objects.
 
@@ -58,7 +58,7 @@ Here we'll create a dataset from an S3 bucket file.
 
     When you're done specifying the file data, click **Parse Data**. The schema editor appears.
 
-    ![](./loading-data-from-aws-s3/dataset-schema-editor.png)
+    ![](./loading-data-from-aws-s3/car-accidents-schema.png)
 
 1. In the schema editor, name your dataset, check the property types and indexes, and specify whether to opt in an indexed property to the metadata graph. 
 
@@ -68,14 +68,14 @@ Here we'll create a dataset from an S3 bucket file.
 
     Apperate creates the dataset, loads the data into it, and shows the dataset's **Overview** page.
 
-    ![](./loading-data-from-aws-s3/dataset-overview.png)
+    ![](./loading-data-from-aws-s3/car-accidents-dataset-overview.png)
 
     > **Note:** If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Deployments](../administration/monitoring-deployments.md).
 
 1. In the **Overview** page, fetch the last record by clicking on the **Example Request** URL. A browser tab opens to the URL and Apperate returns the record in a JSON object array. Here's an example array:
 
     ```json
-    [{"change":-0.75,"changeOverTime":47.831683168316836,"changePercent":-0.005,"close":147.96,"date":"2022-06-08","fClose":147.96,"fHigh":149.8697,"fLow":147.46,"fOpen":148.58,"fVolume":53950201,"high":149.8697,"id":"HISTORICAL_PRICES","key":"AAPL","label":"Jun 8, 22","low":147.46,"marketChangeOverTime":47.831683168316836,"open":148.58,"subkey":"","symbol":"AAPL","uClose":147.96,"uHigh":149.8697,"uLow":147.46,"uOpen":148.58,"updated":1654736422000,"uVolume":53950201,"volume":53950201}]
+    [{"city":"Harrisburg","date":"2022-02-03","est_damage":1500,"state":"PA","vin":"SD089VN7678997566"}]
     ```
 
 Congratulations! You loaded data from your AWS S3 bucket into a dataset and that's ready to deliver that data to your apps.
