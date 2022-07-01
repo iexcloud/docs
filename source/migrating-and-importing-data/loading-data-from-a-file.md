@@ -27,10 +27,10 @@ Start ingesting your file, following these steps:
     **Data**
 
     ```
-    vin,make,model,year,purchase_date,estimated_value,mileage,owner_count,accident_count
-    XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-13,45955.00,32000,2,0
-    SD089VN7678997566,Ford,F-150,2022,2022-01-11,38650.00,8900,1,1
-    59ADFG60929087DAH,Toyota,Prius,2018,2019-09-23,22876.00,76000,1,0
+    vin,make,model,year,purchase_date,estimated_value,mileage,owner_count
+    XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-13,45955.00,32000,2
+    SD089VN7678997566,Ford,F-150,2022,2022-01-11,38650.00,8900,1
+    59ADFG60929087DAH,Toyota,Prius,2018,2019-09-23,22876.00,76000,1
     ```
 
     **Example Command**
@@ -40,10 +40,10 @@ Start ingesting your file, following these steps:
     Linux/MacOS
 
     ```bash
-        echo "vin,make,model,year,purchase_date,estimated_value,mileage,owner_count,accident_count
-        XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-13,45955.00,32000,2,0
-        SD089VN7678997566,Ford,F-150,2022,2022-01-11,38650.00,8900,1,1
-        59ADFG60929087DAH,Toyota,Prius,2018,2019-09-23,22876.00,76000,1,0" \
+        echo "vin,make,model,year,purchase_date,estimated_value,mileage,owner_count
+        XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-13,45955.00,32000,2
+        SD089VN7678997566,Ford,F-150,2022,2022-01-11,38650.00,8900,1
+        59ADFG60929087DAH,Toyota,Prius,2018,2019-09-23,22876.00,76000,1" \
         >>cars
     ```
 
@@ -51,10 +51,10 @@ Start ingesting your file, following these steps:
 
     ```
         (
-        echo vin,make,model,year,purchase_date,estimated_value,mileage,owner_count,accident_count
-        echo XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-13,45955.00,32000,2,0
-        echo SD089VN7678997566,Ford,F-150,2022,2022-01-11,38650.00,8900,1,1
-        echo 59ADFG60929087DAH,Toyota,Prius,2018,2019-09-23,22876.00,76000,1,0
+        echo vin,make,model,year,purchase_date,estimated_value,mileage,owner_count
+        echo XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-13,45955.00,32000,2
+        echo SD089VN7678997566,Ford,F-150,2022,2022-01-11,38650.00,8900,1
+        echo 59ADFG60929087DAH,Toyota,Prius,2018,2019-09-23,22876.00,76000,1
         cars
         )>cars
     ```
@@ -106,7 +106,6 @@ Start ingesting your file, following these steps:
     |   |  | estimated_value (number) |
     | x |  | mileage (integer) |
     |   |  | owner_count (integer) |
-    |   |  | accident_count (interger) |
 
     > **Important:** The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix your dataset ID or dataset property names with `_system`.
 
