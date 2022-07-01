@@ -8,13 +8,7 @@ We're excited to show you how to make data from a file accessible via a RESTful 
 
 Start ingesting your file, following these steps:
 
-1.  Go to the IEX Cloud Console at <https://iexcloud.io/console>. The
-    new product home page appears.
-
-    ![](./loading-data-from-a-file/workspace-home.png)
-
-1.  In the console, click **Create a dataset**. The dataset
-    creation page appears with options for choosing data.
+1.  Click **Create a Dataset** at the top of the console or from the **Datasets** page. The **Create a Dataset** page appears.
 
     ![](./loading-data-from-a-file/create-a-dataset-focus-on-file.png)
 
@@ -22,15 +16,15 @@ Start ingesting your file, following these steps:
 
 1.  Before continuing in the Create a Dataset page, create a data file on your local machine by adding the following example car data (it's in CSV format) into a plain text file.
 
-    > **Note:** The product supports CSV files that use the following common data delimiters: comma (,), tab, or pipe (\|) characters. JSON and JSONL files are also supported.
+    > **Note:** Apperate supports CSV files that use the following common data delimiters: comma (,), tab, or pipe (\|) characters. JSON and JSONL files are also supported.
 
     **Data**
 
     ```
-    vin,make,model,year,purchase_date,estimated_value,mileage,owner_count
-    XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-13,45955.00,32000,2
-    SD089VN7678997566,Ford,F-150,2022,2022-01-11,38650.00,8900,1
-    59ADFG60929087DAH,Toyota,Prius,2018,2019-09-23,22876.00,76000,1
+    vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
+    XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-27,2020-03-13,45955.00,32000,2
+    SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
+    59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1
     ```
 
     **Example Command**
@@ -40,23 +34,22 @@ Start ingesting your file, following these steps:
     Linux/MacOS
 
     ```bash
-        echo "vin,make,model,year,purchase_date,estimated_value,mileage,owner_count
-        XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-13,45955.00,32000,2
-        SD089VN7678997566,Ford,F-150,2022,2022-01-11,38650.00,8900,1
-        59ADFG60929087DAH,Toyota,Prius,2018,2019-09-23,22876.00,76000,1" \
-        >>cars
+    echo "vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
+    XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-27,2020-03-13,45955.00,32000,2
+    SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
+    59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1" \
+    >>cars
     ```
 
     Windows
 
     ```
-        (
-        echo vin,make,model,year,purchase_date,estimated_value,mileage,owner_count
-        echo XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-13,45955.00,32000,2
-        echo SD089VN7678997566,Ford,F-150,2022,2022-01-11,38650.00,8900,1
-        echo 59ADFG60929087DAH,Toyota,Prius,2018,2019-09-23,22876.00,76000,1
-        cars
-        )>cars
+    (
+    echo vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
+    echo XV859643N98D98E7C,Chevrolet,Camaro,2020-03-27,2020,2020-03-13,45955.00,32000,2
+    echo SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
+    echo 59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1
+    )>cars
     ```
 
 1.  In the Create a Dataset page's **Choose Source Type** menu, **File** is selected by default. Keep that setting for uploading your file.
@@ -65,7 +58,7 @@ Start ingesting your file, following these steps:
 
     ![](./loading-data-from-a-file/cars-schema.png)
 
-    The product ingested your file and made a best effort to name your dataset (see *Dataset ID*) and specify your properties (see the *Properties* table) and your data's Unique Index, composed of primary, secondary, and date indexes.
+    Apperate ingested your file and made a best effort to name your dataset (see *Dataset ID*) and specify your properties (see the *Properties* table) and your data's Unique Index, composed of primary, secondary, and date indexes.
 
     > **Note:** The *Dataset ID* cannot be changed once you've submitted your dataset. Make sure to specify the ID you want in this step.
 
@@ -73,7 +66,7 @@ Start ingesting your file, following these steps:
 
     ![cars-more-on-schema-page.png](./loading-data-from-a-file/cars-more-on-schema-page.png)
 
-    The product created a **Sample API Call** for getting the data by the value of the date property that is currently assigned the *Date* index (see in the properties table under *Unique Index*).
+    Apperate created a **Sample API Call** for getting the data by the value of the date property that is currently assigned the *Date* index (see in the properties table under *Unique Index*).
 
     Your current *Unique Index* shows in the **Unique Index Example**. The Unique Index is composed of the Primary index, Secondary index (optional), and Date index. You have not yet assigned the Primary index or a Secondary index. The Date index, in this example, is currently assigned to the *purchase_date* property. In the next step, you will set your Unique Index by setting these three indexes.
 
@@ -95,7 +88,7 @@ Start ingesting your file, following these steps:
     | -------- | ---------- | -------- | ----- |
     | x |   | vin (string)| Primary |
     | x |   | make (string) | Secondary |
-    | x |   | purchase_date (date) | Date |
+    | x |   | current_date (date) | Date |
 
     **Remaining Properties**
 
@@ -106,6 +99,7 @@ Start ingesting your file, following these steps:
     |   |  | estimated_value (number) |
     | x |  | mileage (integer) |
     |   |  | owner_count (integer) |
+    | x |  | purchase_date (date) | Date |
 
     > **Important:** The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix your dataset ID or dataset property names with `_system`.
 
