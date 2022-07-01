@@ -17,13 +17,12 @@ Please see the console home page's IEX Cloud Early Access **Ideas Table** and th
 
 These notable bugs were recently fixed. 
 
-- AWS S3: You can create a dataset from an AWS S3 source accessed with the [AWS Integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md) credential type.
+- AWS S3: You can now create a dataset from AWS S3 data using any supported credential type: AWS Integration or an Access key + secret access key. 
 
 ## Known Issues
 
 Stear clear of the following bugs and unfinished features. When we resolve them, we'll update the appropriate sections above.
 
-- AWS S3: Creating a *new* dataset from an AWS S3 source requires the [AWS Integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md) credential type. 
 - AWS S3: Loading data from an AWS S3 source into a new or existing dataset requires the source to have a selected file key (file) or a file pattern that matches a file key.
 - AWS S3: Using JSONPath with S3 bucket JSON files requires selecting a JSON file key (file).
 - AWS S3: At most one S3 file is ingested during dataset creation.
