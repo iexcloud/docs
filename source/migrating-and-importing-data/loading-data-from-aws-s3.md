@@ -34,7 +34,7 @@ Here we'll create a dataset from an S3 bucket file.
     Use a combination of the following options to specify the file(s) to load data from.
     -->
 
-    **File pattern** - Enter a file pattern (regular expression) using `*`, `?`, and `[]` to match the file(s) you want to ingest. The Response updates to show contents of the oldest file that matches the pattern.
+    **File pattern** - Enter a file pattern (filename glob) using `*`, `?`, and `[]` to match the file(s) you want to ingest. Inside brackets `[]`, you can put "or" options to match individual characters or a character range (e.g., `foo[2-4]` matches `foo2` and `foo3` but not `foo5`). The Response updates to show contents of the oldest file that matches the pattern.
 
     <!-- Uncomment after PFM-1002 is fixed.
     **Select a file key** - Select a specific file. The file pattern and Response update to reflect the selected file.
