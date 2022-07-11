@@ -18,6 +18,12 @@ For example, the messages for the data ingestion job in the image above include 
 
 The Log Stream shows process milestones and the timing of concurrent processes.
 
+To see a log message's details, double-click the message. The message details appear.
+
+![](./monitoring-deployments/log-message-details.png)
+
+> **Note:** the log message timestamp is in UNIX epoch time.
+
 ## Ingestion Logs
 
 The **Ingestion Logs** page lists each data ingestion job and provides status, record ingestion/validation count, processing times, duplicate record handling type, and data source type. You can use the **Columns** and **Filters** drop downs to show the columns you want and filter on the jobs.
