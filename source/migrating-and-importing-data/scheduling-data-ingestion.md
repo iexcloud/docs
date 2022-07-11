@@ -39,9 +39,9 @@ Apperate facilitates loading (ingesting) data into a dataset at regular interval
 
     You can specify the frequency using either of these ways:
 
-    - Leave **Use custom** selected and specify the start time and frequency using cron notation. 
+    - Leave **Use custom** selected and specify the start time (UTC) and frequency using cron notation. 
     
-    - Unselect **Use custom** and specify the start time and frequency in the Minutes, Hour, or Daily tab.
+    - Unselect **Use custom** and specify the start time (UTC) and frequency in the Minutes, Hour, or Daily tab.
 
     When you've completed entering the frequency, click **Create Schedule**.
     
