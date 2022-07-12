@@ -28,31 +28,27 @@ Here we'll create a dataset from an S3 bucket file.
 
     ![](./loading-data-from-aws-s3/all-bucket-files.png)
 
-1. Enter a **File pattern** to specify the file(s) to load into the dataset.
+1. Specify the file(s) to load data from by selecting a file key or enter a file pattern.       
 
-    <!-- Replace the first sentence above with this one after PFM-1002 is fixed.
-    Use a combination of the following options to specify the file(s) to load data from.
-    -->
+    - **Select a file key** - Select a file from the Bucket Contents list. The *Response* panel updates to reflect the selected file's content.
 
-    **File pattern** - Enter a file pattern (filename glob) using `*`, `?`, and `[]` to match the file(s) you want to ingest. Inside brackets `[]`, you can put "or" options to match individual characters or a character range (e.g., `foo[2-4]` matches `foo2` and `foo3` but not `foo5`). The Response updates to show contents of the oldest file that matches the pattern.
+        ![](./loading-data-from-aws-s3/select-file-key.png)
 
-    <!-- Uncomment after PFM-1002 is fixed.
-    **Select a file key** - Select a specific file. The file pattern and Response update to reflect the selected file.
-    -->
+        > **Tip:** You can filter on files in a particular folder by entering a folder name in the *file prefix* field at the top-right of Bucket Contents.
 
-    > **Tip:** You can enter a prefix at the top-right of Bucket Contents to filter the display on files in/under a particular folder.
+    - **Enter a File pattern** - Enter a file pattern (filename glob) using `*`, `?`, and `[]` to match the file(s) you want to ingest. Inside brackets `[]`, you can put "or" options to match individual characters or a character range (e.g., `foo[2-4]` matches `foo2` and `foo3` but not `foo5`). The Response panel updates to show contents of a matching file that has the oldest modified timestamp.
 
-    An array of JSON objects based on a sample of the oldest matching file's data appears in the **Response** panel. Apperate uses this sample to build the dataset schema.
+        An array of JSON objects based on a sample of the oldest matching file's data appears in the **Response** panel. Apperate uses this sample to build the dataset schema.
 
-    ![](./loading-data-from-aws-s3/file-pattern-folder-star.png)
+        ![](./loading-data-from-aws-s3/file-pattern-folder-star.png) 
 
-    > **Important:** To load data from JSON, the response data must be an array of objects.
+    > **Important:** To load JSON data, the data must be an array of objects.
 
-    If you specified a JSON file(s) and the Response panel shows the object array you want, leave the JSONNPath field empty. Otherwise, use the JSONPath field to specify the path to the desired object array in the JSON file. A **JSON Response** panel on the bottom right shows the data found at the JSONPath.
+    If you specified a JSON file(s) and the Response panel shows the object array you want, leave the JSONNPath field empty. Otherwise, use the JSONPath field to specify the path to a desired object array in the JSON file. A **JSON Response** panel on the bottom right shows the data found at the JSONPath.
 
     > **See also** [Accessing Nested JSON Data](./accessing-nested-json-data.md) for guidance on specifying JSONPath for JSON file data.
 
-    When you're done specifying the file data, click **Parse Data**. The schema editor appears.
+    When you're done specifying the data, click **Parse Data**. The schema editor appears.
 
     ![](./loading-data-from-aws-s3/car-accidents-schema.png)
 
