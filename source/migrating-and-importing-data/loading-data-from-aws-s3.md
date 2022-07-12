@@ -28,7 +28,7 @@ Here we'll create a dataset from an S3 bucket file.
 
     ![](./loading-data-from-aws-s3/all-bucket-files.png)
 
-1. Specify the file(s) to load data from by selecting a file key or enter a file pattern.       
+1. Specify a file(s) to load data from by selecting a file key or entering a file pattern.      
 
     - **Select a file key** - Select a file from the Bucket Contents list. The *Response* panel updates to reflect the selected file's content.
 
