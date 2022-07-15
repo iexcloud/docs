@@ -23,8 +23,7 @@ These notable bugs were recently fixed.
 
 Stear clear of the following bugs and unfinished features. When we resolve them, we'll update the appropriate sections above.
 
-- Scheduling: Schedule entry summary error count does not update; last time run and records added information requires manual page refresh.
-- AWS S3: Ingesting AWS S3 data when creating a dataset requires [AWS Integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md).
+- Scheduling: Schedule entry summary error count does not update; a manual page refresh is required to see the updated last time run timestamps and records added counts.
 
 ## Known Limitations
 
