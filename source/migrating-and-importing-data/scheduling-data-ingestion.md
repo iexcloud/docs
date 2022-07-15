@@ -55,6 +55,8 @@ If your schedule has a start time, data ingestion starts then. Otherwise, the in
 
 Ingestions run per the interval specified in your schedule. The **Last Run** and **Next Run** values show the timestamp of the last data ingestion and the time remaining until the next data ingestion. The **Last 30 Days** column notes the dataset rows added and error count.
 
+For a schedule that uses an AWS S3 source, Apperate ingests **all** files that match the file pattern and have a last modified timestamp (per the bucket) that's newer than the previously uploaded file.
+
 ## Pausing Your Schedule
 
 You can pause your schedule whenever you like. This disables further ingestions.
