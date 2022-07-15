@@ -36,7 +36,7 @@ Here we'll create a dataset from an S3 bucket file.
 
         > **Tip:** You can filter on files in a particular folder by entering a folder name in the *file prefix* field at the top-right of Bucket Contents.
 
-    - **Enter a File pattern** - Enter a file pattern (filename glob) using `*`, `?`, and `[]` to match the file(s) you want to ingest. Inside brackets `[]`, you can put "or" options to match individual characters or a character range (e.g., `foo[2-4]` matches `foo2` and `foo3` but not `foo5`). The Response panel updates to show contents of a matching file that has the oldest modified timestamp.
+    - **Enter a File pattern** - Enter a file pattern (filename glob) using `*`, `?`, and `[]` to match the file(s) you want to ingest. Inside brackets `[]`, you can put "or" options to match individual characters or a character range (e.g., `foo[2-4]` matches `foo2` and `foo3` but not `foo5`). The Response panel updates to show contents of a matching file that has the oldest modified timestamp in the bucket.
 
         An array of JSON objects based on a sample of the oldest matching file's data appears in the **Response** panel. Apperate uses this sample to build the dataset schema.
 
@@ -58,7 +58,7 @@ Here we'll create a dataset from an S3 bucket file.
 
     When you're happy with the schema, click **Create dataset now**.
 
-    Apperate creates the dataset, loads the data into it, and shows the dataset's **Overview** page.
+    Apperate creates the dataset, loads the file's data into the dataset, and shows the dataset's **Overview** page.
 
     ![](./loading-data-from-aws-s3/car-accidents-dataset-overview.png)
 
