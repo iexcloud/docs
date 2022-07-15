@@ -11,3 +11,6 @@ migrating-and-importing-data/scheduling-data-ingestion.md
 migrating-and-importing-data/accessing-s3-via-storage-integration.md
 migrating-and-importing-data/accessing-s3-via-your-access-key.md
 ```
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

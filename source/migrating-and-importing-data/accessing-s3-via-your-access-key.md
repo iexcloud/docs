@@ -25,3 +25,6 @@ Now your credentials are available to use with your AWS S3 buckets.
 Now that you've configured credentials for your bucket, you can [load your bucket data into Apperate](./loading-data-from-aws-s3.md) for delivering to your apps.
 
 If you're interested in granting Apperate's S3 user read access to the bucket instead of using AWS credentials, see [Accessing S3 via Storage Integration](./accessing-s3-via-storage-integration.md).
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

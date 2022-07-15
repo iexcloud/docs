@@ -59,3 +59,6 @@ If you want to start importing data for your apps, see one of the following arti
 - [Loading Data from a File](../migrating-and-importing-data/loading-data-from-a-file.md)
 
 If you want to sign up your teammates, click the gear icon at the bottom of the console nav and select **Team**. Team management is demonstrated [here](../administration/managing-users.md).
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

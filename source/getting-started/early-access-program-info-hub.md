@@ -38,3 +38,6 @@ You can learn about the product's basic features and functionality in our docume
 -  [CUBE and ROLLUP](https://docs.singlestore.com/db/v7.8/en/reference/sql-reference/data-manipulation-language-dml/cube-and-rollup.html) are the only functions supported in the GROUP BY clause. 
 
 - AWS S3 bucket data source must have an explicit file path--file paths with globbing/wildcards are not currently supported.
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

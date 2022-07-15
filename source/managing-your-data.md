@@ -11,3 +11,6 @@ managing-your-data/transforming-data.md
 managing-your-data/creating-and-managing-views.md
 managing-your-data/transactions.md
 ```
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

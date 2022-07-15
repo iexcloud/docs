@@ -231,3 +231,6 @@ Congratulations on making your data available using the datasets API!
 ## What's Next
 
 [Now that you're familiar with using the datasets API to create and use datasets, you can explore more dataset API endpoints or execute [SQL queries](https://iexcloud.io/docs/datasets-api/sql-query) via the API.
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

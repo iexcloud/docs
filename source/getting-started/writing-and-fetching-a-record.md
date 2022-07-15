@@ -107,3 +107,6 @@ You "struck gold"! Well, no really ... you just verified the new event record th
 ## What's Next
 
 Now that you know how to add and fetch individual records, you can learn how to add and fetch records in batch. See [Apperate API Basics](../interacting-with-your-data/apperate-api-basics.md).
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

@@ -145,3 +145,6 @@ Interested in creating datasets programmatically? Checkout [Apperate API Basics]
 Want to learn more about creating and managing datasets? Read [Understanding Datasets](../managing-your-data/understanding-datasets.md).
 
 Want to get more teammates involved? [Add them to your team](../administration/managing-users.md).
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

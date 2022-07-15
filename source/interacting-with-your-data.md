@@ -10,3 +10,6 @@ interacting-with-your-data/updating-data.md
 interacting-with-your-data/deleting-data.md
 interacting-with-your-data/sql-reference.md
 ```
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

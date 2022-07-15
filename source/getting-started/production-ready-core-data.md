@@ -5,3 +5,6 @@ IEX Cloud's Core datasets are available in Apperate at [**Data > Datasets > Core
 ![](./production-ready-core-data/core-datasets.png)
 
 More Core Data details are coming soon!
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

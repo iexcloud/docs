@@ -103,3 +103,6 @@ Your AWS S3 bucket is now integrated with your IEX Cloud workspace. When you par
 Now that you've configured AWS Integration for your bucket, you can [load your bucket data into Apperate](./loading-data-from-aws-s3.md) for delivering to your apps.
 
 If you're interested in adding your AWS credentials to your IEX Cloud workspace instead of using Apperate's AWS Integration, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

@@ -49,3 +49,6 @@ We’re excited to show you how to deliver data to apps in a few clicks.
 ## Next steps
 
 Upload data to IEX Apperate and access the data in the generated API REST endpoints fast, following [Getting Started with an Example Dataset](./getting-started-with-an-example-dataset.md).
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)
