@@ -23,9 +23,8 @@ These notable bugs were recently fixed.
 
 Stear clear of the following bugs and unfinished features. When we resolve them, we'll update the appropriate sections above.
 
-- AWS S3: Loading data from an AWS S3 source into a new or existing dataset requires the source to have a selected file key (file) or a file pattern that matches a file key.
-- AWS S3: Using JSONPath with S3 bucket JSON files requires selecting a JSON file key (file).
-- AWS S3: At most one S3 file is ingested during dataset creation.
+- Scheduling: Schedule entry summary error count does not update; last time run and records added information requires manual page refresh.
+- AWS S3: Ingesting AWS S3 data when creating a dataset requires [AWS Integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md).
 
 ## Known Limitations
 
