@@ -64,11 +64,11 @@ Here are the steps:
 
     ![](./accessing-s3-via-storage-integration/aws-external-id-and-use-arn.png)
 
-1. Click **Go to credentials**. The new External ID, new User ARN, and your Role ARN, appear in the AWS Integration section at the bottom of your **Credentials** page. In the next step, you'll use the External ID and User ARN in your AWS IAM role. 
+1. Click **Go to credentials**. The AWS Integration section at the bottom of your **Credentials** page shows the new External ID and new User ARN. Keep this page open for copying the External ID and User ARN into your IAM role in the AWS console. 
 
     ![](./accessing-s3-via-storage-integration/aws-integration-section.png)
 
-1. In the AWS console, edit your IAM role. Replace the principal AWS user account and the external ID with the new External ID and new User ARN values.
+1. In the AWS console, edit your IAM role. Copy the **External ID** and **User ARN** values from the IEX console Credentials page (see previous step) and use them to replace the IAM role's principal AWS user account and the external ID in the AWS console.
 
     The JSON for your role may look like the following code, except `USER` and `EXTERNAL_ID` should be replaced with the values from your AWS integration.
 
