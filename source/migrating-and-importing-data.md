@@ -1,5 +1,6 @@
 # Migrating and Importing Data
 
+<!--
 ```{toctree}
 :maxdepth: 1
 
@@ -11,6 +12,7 @@ migrating-and-importing-data/scheduling-data-ingestion.md
 migrating-and-importing-data/accessing-s3-via-storage-integration.md
 migrating-and-importing-data/accessing-s3-via-your-access-key.md
 ```
+-->
 
 Learn how to load data from the following sources:
 

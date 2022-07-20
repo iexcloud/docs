@@ -1,11 +1,13 @@
 # Using Core Data
 
+<!--
 ```{toctree}
 :maxdepth: 1
 
 using-core-data/using-core-datasets.md
 using-core-data/using-the-core-data-api.md
 ```
+-->
 
 [Using Core Datasets](./using-core-data/using-core-datasets.md)
 
