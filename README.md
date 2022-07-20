@@ -20,6 +20,8 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 [Writing and Fetching a Record](./source/getting-started/writing-and-fetching-a-record.md)
 
+[Production-Ready Core Data](./source/getting-started/production-ready-core-data.md)
+
 ### Development
 
 #### Migrating and Importing Data
@@ -51,6 +53,8 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 [Creating and Managing Views](./source/managing-your-data/creating-and-managing-views.md)
 
 #### Interacting with Your Data
+
+[Interacting with Your Data](./source/interacting-with-your-data.md)
 
 [Apperate API Basics](./source/interacting-with-your-data/apperate-api-basics.md)
 
