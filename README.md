@@ -26,9 +26,9 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 #### Migrating and Importing Data
 
-[Loading Data from a URL](./source/migrating-and-importing-data/loading-data-from-a-url.md)
-
 [Loading Data from AWS S3](./source/migrating-and-importing-data/loading-data-from-aws-s3.md)
+
+[Loading Data from a URL](./source/migrating-and-importing-data/loading-data-from-a-url.md)
 
 [Loading Data from a File](./source/migrating-and-importing-data/loading-data-from-a-file.md)
 
