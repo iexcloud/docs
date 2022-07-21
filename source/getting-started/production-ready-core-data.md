@@ -12,6 +12,10 @@ IEX Cloud Apperate comes with built-in data to power fintech applications and mo
 - News
 - Symbols / Mappings
 
+Let's explore the Core Data.
+
+## Exploring Core Data
+
 All the data is available at REST API endpoints, and much of the data is available as [datasets](../reference/glossary.md#dataset) (requires Apperate plan) that you can also use in [views](../managing-your-data/creating-and-managing-views.md). Apperate lists these datasets (Core Data) at [**Data > Datasets > Core**](https://iexcloud.io/console/datasets/core).
 
 ![](./production-ready-core-data/core-datasets.png)
