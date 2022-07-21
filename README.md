@@ -26,6 +26,8 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 #### Migrating and Importing Data
 
+[Migrating and Importing Data](./source/migrating-and-importing-data.md)
+
 [Loading Data from AWS S3](./source/migrating-and-importing-data/loading-data-from-aws-s3.md)
 
 [Loading Data from a URL](./source/migrating-and-importing-data/loading-data-from-a-url.md)
@@ -63,6 +65,8 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 [Updating Data \(Coming soon\)](./source/interacting-with-your-data/updating-data.md)
 
 #### Using Core Data
+
+[Using Core Data](./source/using-core-data.md)
 
 [IEX Cloud Core Data Basics](./source/using-core-data/core-data-basics.md)
 
