@@ -1,6 +1,6 @@
 # What is IEX Cloud Apperate?
 
-> **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or the upcoming Beta, please email us at `product@iexcloud.io`.
+> **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or Beta, please email us at `product@iexcloud.io`.
 
 **We're developing a new product: an out-of-the-box data infrastructure that makes it quick and easy to ingest and deliver data into your application.** 
 

@@ -1,6 +1,6 @@
 # Getting Started with an Example Dataset
 
-> **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or the upcoming Beta, please email us at `product@iexcloud.io`.
+> **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or Beta, please email us at `product@iexcloud.io`.
 
 We're excited to show you how to use datasets to make data accessible to apps in minutes. Here you load sample data into a dataset, define its schema, and read the data immediately from an auto-generated API.
 

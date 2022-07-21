@@ -1,6 +1,6 @@
 # Apperate API Basics
 
-> **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or the upcoming Beta, please email us at `product@iexcloud.io`.
+> **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or Beta, please email us at `product@iexcloud.io`.
 
 The datasets API has RESTful endpoints for building datasets programmatically. They are documented in the IEX Cloud API docs site's [Datasets API](https://iexcloud.io/docs/datasets-api) section.
 
