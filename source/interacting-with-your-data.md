@@ -1,6 +1,5 @@
 # Interacting with Your Data
 
-<!--
 ```{toctree}
 :maxdepth: 1
 
@@ -11,7 +10,6 @@ interacting-with-your-data/updating-data.md
 interacting-with-your-data/deleting-data.md
 interacting-with-your-data/sql-reference.md
 ```
--->
 
 With Apperate, you can interact with your data programatically via the API or manually in the console via the UI and SQL editor. The articles in this section explore tackling data tasks using all these approaches.
 
