@@ -30,9 +30,9 @@ Here are models for the example dataset schema and data record.
 | city           | Dawson City |
 | zip_code       | Y0B 0A3 |
 
-Let's start with creating the schema.
+Let's start with creating a dataset from the schema.
 
-## Create a Dataset for Your Schema
+## Creating a Dataset for Your Schema
 
 The console is the easiest way to construct datasets.
 
@@ -66,7 +66,7 @@ The console is the easiest way to construct datasets.
 
 Your dataset is ready for data.
 
-## Add a Record
+## Adding a Record
 
 You'll add your news record into the dataset using a `POST /datasets/:workspace` request. The [Create a dataset](https://iexcloud.io/docs/datasets-api/create-a-dataset) API doc describes this REST endpoint.
 
@@ -86,7 +86,7 @@ curl -H "Content-Type: application/json"
 
 News of Doug Dig's gold discovery is now in the dataset.
 
-### Fetch the Record
+## Fetching the Record
 
 You can fetch the record using a `GET /data/:workspace/:id/:key?/:subkey?` request. The [Query data](https://iexcloud.io/docs/datasets-api/query-data) API doc provides the REST endpoint details. 
 
