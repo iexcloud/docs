@@ -10,6 +10,8 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 ## Table of Contents
 
+[Early Access Program Info Hub](./source/getting-started/early-access-program-info-hub.md)
+
 ### Getting Started
 
 [What is IEX Cloud Apperate?](./source/getting-started/what-is-iex-cloud-apperate.md)

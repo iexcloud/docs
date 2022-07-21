@@ -1,3 +1,8 @@
+```{toctree}
+:maxdepth: 1
+
+getting-started/early-access-program-info-hub.md
+```
 
 ```{toctree}
 :maxdepth: 1
@@ -9,7 +14,6 @@ getting-started/setting-up-your-workspace.md
 getting-started/getting-started-with-an-example-dataset.md
 getting-started/writing-and-fetching-a-record.md
 getting-started/production-ready-core-data.md
-getting-started/early-access-program-info-hub.md
 ```
 
 ```{toctree}
