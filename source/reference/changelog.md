@@ -2,6 +2,35 @@
 
 Here are the notable changes.
 
+## 2022-07-19
+
+- Deprecate the internal "platform" dataset.
+
+## 2022-07-07
+
+- Fix propagating indexed columns from nested views.
+
+## 2022-07-05
+
+- Correct storage limit to 5gb.
+
+## 2022-06-30
+
+- If you click an S3 bucket file name, select that file for ingestion.
+- If an S3 data source object isnt found, indicate the missing bucket or file, including its name path.
+- List each workspace's datasets.
+- If the user exceeds the storage limit, halt data ingestion jobs and print the amount of data currently stored.
+
+## 2022-06-28
+
+- Keep auto-generated data sources from creating datasets.
+
+## 2022-06-24
+
+- Fix ingestion schedule pause/re-enable functionality.
+- List bucket contents when creating dataset from an S3 bucket.
+- Add ability to create credentials in the Credentials dropdown.
+
 ## 2022-06-17
 
 - Add a dataset export mechanism.
