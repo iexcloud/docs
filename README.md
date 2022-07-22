@@ -62,7 +62,8 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 [Apperate API Basics](./source/interacting-with-your-data/apperate-api-basics.md)
 
-[Querying Data \(Coming soon\)](./source/interacting-with-your-data/querying-data.md)
+[Querying Data](./source/interacting-with-your-data/querying-data/querying-time-series-data.md)
+<!--[Querying Data](./source/interacting-with-your-data/querying-data.md)-->
 
 [Updating Data \(Coming soon\)](./source/interacting-with-your-data/updating-data.md)
 

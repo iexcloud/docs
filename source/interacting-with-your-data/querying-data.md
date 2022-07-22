@@ -3,11 +3,11 @@
 ```{toctree}
 :maxdepth: 1
 
-querying-data/apperate-query-api.md
+querying-data/querying-time-series-data.md
 querying-data/sql-query-in-the-api.md
 ```
 
-Coming soon!
+[Querying Time Series Data](./querying-data/querying-time-series-data.md)
 
 ---
 [Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)
