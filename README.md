@@ -46,11 +46,11 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 #### Managing Your Data
 
+[Understanding Datasets](./source/managing-your-data/understanding-datasets.md)
+
 [Defining Schemas \(Coming soon\)](./source/managing-your-data/defining-schemas.md)
 
 [Normalization](./source/managing-your-data/defining-schemas/normalization.md)
-
-[Understanding Datasets](./source/managing-your-data/understanding-datasets.md)
 
 [Creating and Managing Indexes \(Coming soon\)](./source/managing-your-data/creating-and-managing-indexes.md)
 
