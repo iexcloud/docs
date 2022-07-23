@@ -69,11 +69,11 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 #### Using Core Data
 
-[Using Core Data](./source/using-core-data.md)
+[Using Core Data \(Coming soon\)](./source/using-core-data.md)
 
-[IEX Cloud Core Data Basics](./source/using-core-data/core-data-basics.md)
+[Using Core Datasets \(Coming soon\)](./source/using-core-data/using-core-datasets.md)
 
-[Core Data API Reference](./source/using-core-data/core-data-api.md)
+[Using the Core Data API \(Coming soon\)](./source/using-core-data/using-the-core-data-api.md)
 
 #### Reference
 
