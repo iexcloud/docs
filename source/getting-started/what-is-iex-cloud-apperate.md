@@ -42,7 +42,7 @@ This product is designed to reduce months of backend work into a handful of simp
 - Your data is now available via an instantly generated API endpoint private for your own use. No code required.  
 - Control and monitor who accesses data (and how much) with built-in permissions and analytics. 
  
-![Two minute journey with Apperate](./what-is-iex-cloud-apperate/two-minute-journey.png)
+![](./what-is-iex-cloud-apperate/powering-app-with-apperate.png)
 
 We’re excited to show you how to deliver data to apps in a few clicks.
 
