@@ -1,39 +1,74 @@
-# Getting Started with an Example Dataset
+# Getting Started with Apperate
 
 > **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or Beta, please email us at `product@iexcloud.io`.
 
-We're excited to show you how to use datasets to make data accessible to apps in minutes. Here you load sample data into a dataset, define its schema, and read the data immediately from an auto-generated API.
+Here we'll set up a workspace, give you a quick tour of Apperate, and then go through an example of delivering data for apps to use.
+
+**Important:** If you don't already have an IEX Cloud account, create one [here](https://iexcloud.io/cloud-login#/register).
+
+## Setting Up Your Workspace
+
+A *workspace* is your unique domain for writing data and querying it, and delivering data to your apps. Your workspace name appears in your API URLs.
+
+**Workspace URL format:**
+
+```
+https://WORKSPACE.iex.cloud/v1/...
+```
+
+**Example Workspace URL:**
+
+```
+https://mycompany.iex.cloud/v1/...
+```
+
+In the URL above, the workspace name `mycompany` is used as a subdomain of `iex.cloud`. 
+
+Here's how to create your workspace:
+
+1. Click on the link in your Early Access program invitation email. The welcome page appears and prompts you to create your workspace.
+
+    ![](./getting-started-with-an-example-dataset/create-a-workspace.png)
+
+1. Name your workspace.
+
+    > **Important:** The workspace name is permanent, so make sure to name it exactly how you want it.
+
+    Workspace names have the following requirements.
+
+    **Name requirements:**
+
+    - Starts with a letter
+    - Ends with a letter or number
+    - Uses only lowercase alphanumeric characters and dashes
+    - Is between 2-63 characters long
+    - DOES NOT consist of ALL numeric values
+
+1. After agreeing to the terms, click **Submit**. The **Create a dataset** page appears.
+
+    ![](./getting-started-with-an-example-dataset/create-a-dataset.png)
+
+Your workspace is created and ready for delivering data to your apps!
 
 ## Example: Delivering Data
 
-Start using datasets, following these steps:
+Here you will load IEX Cloud's sample data file and then access the loaded data from a REST endpoint.
 
-1.  Go to the IEX Cloud Console at <https://iexcloud.io/console>. The
-    new product home page appears.
-
-    ![](./getting-started-with-an-example-dataset/welcome-to-your-workspace.png)
-    
-2.  In the console, click **Create a dataset**. The dataset
-    creation page appears with options for choosing a data source. In
-    the bottom right, there is a button labeled **Use IEX Cloud's sample file**.
+1. If you're not already in the **Create a dataset** page, click **Create a dataset** at the top right of the console. The **Create a dataset** page appears. The image below has **Use IEX Cloud's sample file** highlighted for clicking in the next step.
 
     ![](./getting-started-with-an-example-dataset/use-sample-file.png)
 
-3.  Load the sample data file by clicking **Use IEX Cloud's sample file** in the bottom right. The file uploads and the **Edit schema** interface appears.
+1.  In the **Create a dataset** page, load the sample data file by clicking **Use IEX Cloud's sample file** in the bottom right. The file uploads and the **Edit schema** interface appears.
 
     ![](./getting-started-with-an-example-dataset//sample-aapl-dataset-edit-schema.png)
 
-    **Dataset ID** - Name your dataset by giving it a unique ID. On data ingestion, the product makes a best effort to name your dataset, using the data source name (e.g., file name). If a dataset exists with that name, the product suggests a suffix to make the dataset ID unique. 
+    **Dataset ID** - Name your dataset by giving it a unique ID. On data ingestion, Apperate makes a best effort to name your dataset, using the data source name (e.g., file name). If a dataset exists with that name, Apperate suggests a suffix to make the dataset ID unique. 
 
-    > **Important:** The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix your dataset ID or dataset property names with `_system`.
+    > **Important:** The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. Do not start any dataset or dataset property names with `_system`.
 
-    **Properties (table)** The product makes a best effort to
-    derive data property names using the column names the dataset provides and
-    to derive data types from the data values. Lastly, the product attempted
-    to determine a Unique Index
-    composed of a primary index key, secondary index key (optional), and date index key.
+    **Properties (table)** The product makes a best effort to derive data property names using the column names the dataset provides and to derive data types from the data values. Lastly, Apperate attempted to determine a Unique Index composed of a primary index key, secondary index key (optional), and date index key.
 
-    In this case, the product correctly set *symbol* as the primary index key and *date* as the date index key. The property types were detected correctly too. We could set a secondary index key too, but we will decline.
+    In this case, Apperate correctly set *symbol* as the primary index key and *date* as the date index key. The property types were detected correctly too. We could set a secondary index key too, but we will decline.
 
     There are more options and content below the *Properties* table.
 
@@ -53,34 +88,30 @@ Start using datasets, following these steps:
 
     ![](./getting-started-with-an-example-dataset/sample-appl-dataset-overview.png)
 
-    **Milestone alert!** In just **four clicks**, you
-    loaded data, defined the data's types and its unique time series compatible
-    index, and generated its auto-documented API! Let's get some data, next.
+    **Milestone alert!** You just loaded data, defined the data's types and its unique time series compatible index, and generated its auto-documented API! Let's access the data, next.
 
-4.  In your dataset overview, get your dataset's last record by clicking the **Example Request** URL. The URL opens in a new browser tab and the dataset data response (in JSON) appears.
+1.  In your dataset overview, get your dataset's last record by clicking the **Example Request** URL. The URL opens in a new browser tab and the dataset data response (in JSON) appears.
 
     ![](./getting-started-with-an-example-dataset/sample-appl-execute-query.png)
 
-In only a few minutes, you loaded data into the IEX Cloud Apperate and retrieved it using an auto-generated RESTful API! It's just that easy to get data to your app!!
+You just loaded data into the IEX Cloud Apperate and retrieved it using an auto-generated RESTful API! It's just that easy to get data to your apps!!
 
 **Bonus step - visit your API docs** by clicking **Open API Docs**
-in your dataset's overview page. Your API docs open in a new tab.
+in your dataset's overview page. Your API docs structure appears.
 
 ![](./getting-started-with-an-example-dataset/sample-appl-dataset-api-docs.png)
 
-Your auto-documented dataset is ready for consumption.
+> **Tip:** You can document your dataset properties in the schema editor. To edit your dataset schema, click **Edit Schema** in the dataset's overview page.
 
 Congratulations on making data available using a dataset!
 
 ## What's Next
 
-Now that you are familiar with creating a dataset from the sample data, you can create datasets using your own data from a [file](../migrating-and-importing-data/loading-data-from-a-file.md) (e.g., from a CSV, JSON, or JSONL file) or from a [URL](../migrating-and-importing-data/loading-data-from-a-url.md). You can also add more data to your datasets (click **Ingest data**) in the dataset overview or modify data via the dataset's **Database** page.
-
-Interested in creating datasets programmatically? Check out [Apperate API Basics](../interacting-with-your-data/apperate-api-basics.md).
+Now that you are familiar with creating a dataset from the sample data, you can create datasets using your own data. See [Migrating and Importing Data](../migrating-and-importing-data.md) for details. 
 
 Want to learn more about creating and managing datasets? Read [Understanding Datasets](../managing-your-data/understanding-datasets.md).
 
-Want to get more teammates involved? [Add them to your team](../administration/managing-users.md).
+Otherwise, learn how to write a record to Apperate, just as you would write from an application, and then fetch that record. See [Writing and Fetching a Record](./writing-and-fetching-a-record.md)
 
 ---
 [Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)
