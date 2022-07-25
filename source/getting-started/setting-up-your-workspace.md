@@ -50,7 +50,7 @@ Your workspace is created and ready for delivering data to your apps!
 
 ## What's Next
 
-To continue with the example of delivering data to apps, see [Getting Started with an Example Dataset](./getting-started-with-an-example-dataset.md).
+To continue with the example of delivering data to apps, see [Getting Started with Apperate](./getting-started-with-an-example-dataset.md).
 
 If you want to start importing data for your apps, see one of the following articles:
 
