@@ -1,56 +1,38 @@
 # What is IEX Cloud Apperate?
 
-> **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or Beta, please email us at `product@iexcloud.io`.
+IEX Cloud Apperate is an application database that delivers data and back-end infrastructure to applications. Apperate combines the capabilities of data ingestion, normalization, transformation, observability, and delivery, all in one end-to-end solution for application development. It supports multiple data model concepts and specializes in time series data.
 
-**We're developing a new product: an out-of-the-box data infrastructure that makes it quick and easy to ingest and deliver data into your application.** 
+Here are some of Apperate's key characteristics.
 
-It combines the capabilities of ingestion, normalization, transformation, observability, and delivery, all in one end-to-end solution for application developers, growing businesses, and fintechs. 
+## Purpose-Built for Data-Driven Apps
 
-If you're building a new app and need to set up its data infrastructure quickly, we help provide one out-of-the-box. If you already have an existing infrastructure, we integrate smoothly with what you have and can help you ingest from new data sources, normalize across financial identifiers, and scale as you grow.
+Apperate enables you to configure data delivery from sources to your applications in seconds. You can load data from AWS S3 buckets, URLs, or CSV/JSON files on-demand or per a schedule. In <!-- one-step --> [dataset](../reference/glossary.md#dataset) creation, Apperate infers data types, constructs a schema, validates the data, and generates REST API endpoints automatically, so you can confidently focus on delivering reliable data to your apps.
 
-This new functionality is now in alpha, with its first functionality ready for early use. **To read the full story on why we're building this and the problems it helps solve, check out our product manifesto.**
-
-![](./what-is-iex-cloud-apperate/apperate-platform.png)
-
-> **Note:** While this product is in alpha, certain functionality shown in the schematic above will be in active development.
-
-## How does the Apperate functionality help me?
-
-- **If you’re building an MVP – skip time-consuming backend work and get to market faster.** Connect your application to Apperate for a data infrastructure that works in minutes, rather than months. Hand us your data, and we‘ll create an auto-documented, ready-to-use, scalable API instantly to help you deliver  No code necessary. 
-
-- **This is a system that already supports 1M operations per second, 2.5B API calls per day, and 150,000+ registered users.** If you’re spending significant time maintaining data infrastructure, we'll help support you. You’ll get to power your application with the same backend capabilities that power IEX Cloud today.  
-
-- **Skip months of normalization work (and the effort to maintain that over time).** We’re building the capability to normalize across datasets, starting with financial data identifiers. When you hand us equities data, we’ll automatically detect which financial data identifiers it uses and make all your data speak the same language.   
- 
-## How does Apperate work?
-
-This product is designed to reduce months of backend work into a handful of simple steps that take minutes. 
-
-### Step one: Connect your data.  
-
-- Drag-and-drop a file, schedule automated ingestion, or read, write and update data via API. Connect with common sources such as databases, data streams, AWS S3 buckets, data lakes and data warehouses. 
-- Upon ingestion, we automatically detect and organize your data into a time series schema.
-- If you provide equities data, we’ll take care of normalizing their identifiers with our fully-maintained financial data identification mapping.  
-
-### Step two: Optionally, further customize and define your data.
-
-- Create data views to perform quick data transforms on the fly. 
-- We automatically generate documentation around your data – you just customize as needed. 
-
-### Step three: Deliver your data. 
-
-- Your data is now available via an instantly generated API endpoint private for your own use. No code required.  
-- Control and monitor who accesses data (and how much) with built-in permissions and analytics. 
- 
 ![](./what-is-iex-cloud-apperate/powering-app-with-apperate.png)
 
-We’re excited to show you how to deliver data to apps in a few clicks.
+Apperate enables you to build back-end infrastructures quickly, while giving you flexibility to modify infrastructure and data whenever you want. Manage your data using Apperate's no-code tooling including the schema editor, SQL editor, and database UI, or use [Apperate's API](../interacting-with-your-data/apperate-api-basics.md). 
 
-## Next steps
+## Fine-Tuned for Fintech
 
-[Create an IEX Cloud account](./creating-an-iex-cloud-account.md) if don't already have one.
+Apperate is grounded in the IEX Cloud team's deep understanding of fintech data neads. It includes a semantic data layer for [normalizing financial data views](../managing-your-data/defining-schemas/normalization.md) and has production-ready financial data built-in.
 
-Then follow [Getting Started with an Example Dataset](./getting-started-with-an-example-dataset.md) to experience uploading data and fetching it from REST endpoints in seconds.
+The semantic data layer allows you to refer to an equity using any supported [financial identifier type \(format\)](../reference/financial-identifiers.md). Apperate relates equivalent symbols across the different types. You can, for example, use a CUSIP symbol to query datasets that refer to equities using ISIN, FIGI, or another supported type. Apperate, in effect, *normalizes* the financial identifiers.
+
+Apperate's curated, institutional-grade financial data ([Core Data](./production-ready-core-data.md)) includes real-time and historical stock prices, fundamentals, forex, and more. The data is available at REST API endpoints and as datasets for using in views.
+
+## Platform Reliability, Automatic Scaling, and Backups
+
+Apperate's high-performance architecture is built for rapid growth and enterprise scale. Data is stored to provide low latency access--our average observed read latency is <10ms. Our system currently handles 1.5 billion API calls per day and we sustain 1m data operations per second daily. Data storage is distributed and redundant, providing high availability, continuous backups, and recoverability. Scaling is seamless as you focus on using data in your apps.
+
+## Governance and Monitoring
+
+Dataset access and permissions are authorized via [API tokens](../administration/access-and-security.md) (keys), which you create and share as you like. You can limit tokens to specific domains and can set each token's dataset read/write/update/delete privileges. We also provide cryptographically signed request options. 
+
+Apperate tracks activities and makes usage statistics and logs available. Each dataset's overview page shows usage counts per API token and for the dataset overall. [Logs](../administration/monitoring-deployments.md) are persisted for workspace CRUD operations and process milestones, associated with dataset validation, data ingestion, and more.
+
+## What's Next
+
+Now that you understand what Apperate is, it's time to start using it. [Getting Started with Apperate](./getting-started-with-an-example-dataset.md) is next.
 
 ---
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)
+[Go to Docs Home](../../README.md)
