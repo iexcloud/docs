@@ -16,13 +16,15 @@ For example, the messages for the data ingestion job in the image above include 
 1. Data processing (i.e., populating the table)
 1. Ingestion completion
 
-The Log Stream shows process milestones and the timing of concurrent processes.
+The Log Stream shows log messages from the past hour. It's a great resource for tracking process milestones and concurrent process timing.
 
-To see a log message's details, double-click the message. The message details appear.
+> **Note:** To access older log messages, use the API. See the [Get logs](https://iexcloud.io/docs/datasets-api/get-logs) API reference.
+
+To see a log stream message's details, double-click the message. The message details appear.
 
 ![](./monitoring-deployments/log-message-details.png)
 
-> **Note:** the log message timestamp is in UNIX epoch time.
+> **Note:** Log message timestamps are in UNIX epoch time.
 
 ## Ingestion Logs
 
