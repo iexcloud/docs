@@ -4,6 +4,8 @@ You can grant users access to individual datasets, core data, and premium data b
 
 > **Important:** Your secret token allows you to perform any action on your data and account. NEVER share your secret token publicly.
 
+## Creating an API Token
+
 Here's how to create and use a public API token.
 
 1. Navigate to **Access & Security > API Tokens**. The API Tokens page appears, listing your tokens in order, oldest to newest.
