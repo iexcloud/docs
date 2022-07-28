@@ -20,7 +20,7 @@ If there's a particular task you want to do, jump ahead to the article that matc
 - [Updating Data](./interacting-with-your-data/updating-data.md)
 - [Deleting Data](./interacting-with-your-data/deleting-data.md)
 
-If you want to orient yourself with using the API, check out [Apperate API Basics](./interacting-with-your-data/apperate-api-basics.md).
+If you want to orient yourself with using the API, check out [Using Apperate's APIs](./interacting-with-your-data/apperate-api-basics.md).
 
 ---
 [Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

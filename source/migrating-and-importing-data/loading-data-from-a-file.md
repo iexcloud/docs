@@ -140,7 +140,7 @@ Now that you are familiar with creating a dataset from a CSV file, you can creat
 
 Got a URL you want to tap into for data? See [Loading Data from a URL](../migrating-and-importing-data/loading-data-from-a-url.md).
 
-Interested in creating datasets programmatically? Checkout [Apperate API Basics](../interacting-with-your-data/apperate-api-basics.md).
+Interested in creating datasets programmatically? Checkout [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
 
 Want to learn more about creating and managing datasets? Read [Understanding Datasets](../managing-your-data/understanding-datasets.md).
 
