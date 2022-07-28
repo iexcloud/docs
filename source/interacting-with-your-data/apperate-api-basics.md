@@ -2,23 +2,23 @@
 
 Apperate's APIs are based on [REST](https://en.wikipedia.org/wiki/Representational_state_transfer), have resource-oriented URLs, and return JSON-encoded responses and standard HTTP response codes. 
 
-The [API Reference](https://iexcloud.io/docs/) (<https://iexcloud.io/docs/>) site provides the reference documentation, and provides a Getting Started guide that explains the fundamentals. 
+The [API Reference](https://iexcloud.io/docs/) (<https://iexcloud.io/docs/>) site provides the reference documentation and a Getting Started guide. 
 
 Here's a screenshot of the [Getting Started](https://iexcloud.io/docs/getting-started) guide and the API Reference navigation:
 
 ![](./apperate-api-basics/api-reference-getting-started.png)
 
-The [Getting Started](https://iexcloud.io/docs/getting-started) guide is the best place to start learning the APIs.
+The [Getting Started](https://iexcloud.io/docs/getting-started) guide is the best place to start learning the API fundamentals.
 
 The tutorials here in this site compliment the Getting Started guide and API Reference by demonstrating how to complete different tasks using the APIs.
 
-Here are some of the task areas and links to tutorials and API Reference pages.
+Here are some of the task areas and links to related tutorials and API Reference pages.
 
 ## Querying Data
 
-The Data API's [Query data](https://iexcloud.io/docs/datasets-api/query-data) endpoint (i.e., `GET /data`) returns data from the dataset you specify. The endpoint supports using windowing functions to querying time series data. The [Datasets](https://iexcloud.io/docs/datasets) pages and [Core Data](https://iexcloud.io/docs/core) pages describe each dataset's query data endpoint parameters and response attributes.
+The Data API's [Query data](https://iexcloud.io/docs/datasets-api/query-data) endpoint (i.e., `GET /data`) returns data from the dataset you specify. The endpoint supports using windowing functions for querying time series data. The [Datasets](https://iexcloud.io/docs/datasets) pages and [Core Data](https://iexcloud.io/docs/core) pages describe each dataset's query data endpoint parameters and response attributes.
 
-The **Example Request** on each dataset's **Overview** page uses that dataset's query data endpoint.
+The **Example Request** on each dataset's **Overview** page demonstrates using the query data endpoint on that dataset.
 
 ![](./apperate-api-basics/example_request.png)
 
@@ -32,7 +32,7 @@ Data API instructions for the create, update, and delete operations accompany th
 
 ## Operations for Other Data-Related Entities
 
-API instructions for entities such as datasets, sources, schedules, credentials, logs, and more are being applied to articles that describe using them in the console. It's a work in progress.
+API instructions for managing datasets, sources, schedules, credentials, logs, and more are being applied to articles that demonstrate managing them in the console. It's a work in progress.
 
 ## Getting an API OAS Document
 
@@ -40,7 +40,7 @@ The [`/platform/swagger-json` endpoint](https://iexcloud.io/docs/datasets-api/ge
 
 ## What's Next
 
-A great way to learn the APIs is by following the API Reference's [Getting Started](https://iexcloud.io/docs/getting-started) guide and digesting the short articles that follow it. Then work with the data and data-related entities as demonstrated in the articles mentioned above.
+As mentioned above, a great way to learn the APIs is by following the API Reference's [Getting Started](https://iexcloud.io/docs/getting-started) guide and digesting the short articles that follow it. Then work with the data and data-related entities as demonstrated in the articles mentioned above.
 
 ---
 [Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)
