@@ -52,9 +52,9 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 [Creating and Managing Views](./source/managing-your-data/creating-and-managing-views.md)
 
-[Creating and Managing Indexes \(Coming soon\)](./source/managing-your-data/creating-and-managing-indexes.md)
+Creating and Managing Indexes \(Coming soon\)
 
-[Transforming Data \(Coming soon\)](./source/managing-your-data/transforming-data.md)
+Transforming Data \(Coming soon\)
 
 #### Interacting with Your Data
 
@@ -65,7 +65,7 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 [Querying Data](./source/interacting-with-your-data/querying-data/querying-time-series-data.md)
 <!--[Querying Data](./source/interacting-with-your-data/querying-data.md)-->
 
-[Updating Data \(Coming soon\)](./source/interacting-with-your-data/updating-data.md)
+Updating Data \(Coming soon\)
 
 #### Using Core Data
 

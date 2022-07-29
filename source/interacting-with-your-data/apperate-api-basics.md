@@ -30,7 +30,7 @@ The API Reference's [IEX Exchange](https://iexcloud.io/docs/iex-exchange), and [
 
 Data API instructions for the create, update, and delete operations accompany this article's CRUD-related sibling articles.
 
-## Operations for Other Data-Related Entities
+## Operations for Data-Related Entities
 
 API instructions for managing datasets, sources, schedules, credentials, logs, and more are being applied to articles that demonstrate managing them in the console. It's a work in progress.
 
