@@ -1,11 +1,5 @@
 # Creating and Managing Views
 
-```{toctree}
-:maxdepth: 1
-
-creating-and-managing-views/joining-on-core-data.md
-```
-
 Views enable you to aggregate data from various datasets, transform the data, and share the resulting data with applications. A *view* is a virtual dataset created by joining multiple datasets. The data aggregation and transformation enable you to enrich data for applications.
 
 Here we'll create a view of cars and related car accidents by joining a datasets containing each type of data.

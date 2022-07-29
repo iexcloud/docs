@@ -50,9 +50,11 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 [Normalization](./source/managing-your-data/defining-schemas/normalization.md)
 
+[Creating and Managing Views](./source/managing-your-data/creating-and-managing-views.md)
+
 [Creating and Managing Indexes \(Coming soon\)](./source/managing-your-data/creating-and-managing-indexes.md)
 
-[Creating and Managing Views](./source/managing-your-data/creating-and-managing-views.md)
+[Transforming Data \(Coming soon\)](./source/managing-your-data/transforming-data.md)
 
 #### Interacting with Your Data
 
