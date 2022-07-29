@@ -90,7 +90,11 @@ Here you will load IEX Cloud's sample data file and then access the loaded data 
 
     **Milestone alert!** You just loaded data, defined the data's types and its unique time series compatible index, and generated its auto-documented API! Let's access the data, next.
 
-1.  In your dataset overview, get your dataset's last record by clicking the **Example Request** URL. The URL opens in a new browser tab and the dataset data response (in JSON) appears.
+1.  In your dataset overview, get your dataset's last record by clicking the **Example Request** URL.
+
+    ![](./getting-started-with-an-example-dataset/example-request-highlighted.png)
+
+    The URL opens in a new browser tab and the REST endpoint JSON response appears.
 
     ![](./getting-started-with-an-example-dataset/sample-appl-execute-query.png)
 
