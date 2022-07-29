@@ -35,4 +35,4 @@ Apperate tracks activities and makes usage statistics and logs available. Each d
 Now that you understand what Apperate is, it's time to start using it. [Getting Started with Apperate](./getting-started-with-an-example-dataset.md) is next.
 
 ---
-[Go to Docs Home](../../README.md)
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)
