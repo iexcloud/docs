@@ -34,9 +34,9 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 [Loading Data from a File](./source/migrating-and-importing-data/loading-data-from-a-file.md)
 
-[Accessing Nested JSON Data](./source/migrating-and-importing-data/accessing-nested-json-data.md)
-
 [Scheduling Data Ingestion](./source/migrating-and-importing-data/scheduling-data-ingestion.md)
+
+[Accessing Nested JSON Data](./source/migrating-and-importing-data/accessing-nested-json-data.md)
 
 [Accessing AWS S3 via Storage Integration](./source/migrating-and-importing-data/accessing-s3-via-storage-integration.md)
 
