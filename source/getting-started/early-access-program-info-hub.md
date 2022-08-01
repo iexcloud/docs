@@ -35,7 +35,7 @@ You can learn about the product's basic features and functionality in our docume
 
 - Dataset query does not currently support Common Table Expressions (CTEs)
 
--  [CUBE and ROLLUP](https://docs.singlestore.com/db/v7.8/en/reference/sql-reference/data-manipulation-language-dml/cube-and-rollup.html) are the only functions supported in the GROUP BY clause. 
+- `CUBE` and `ROLLUP` are the only functions supported in `GROUP BY` clauses. 
 
 ---
 [Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)
