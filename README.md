@@ -62,8 +62,7 @@ Transforming Data \(Coming soon\)
 
 [Using Apperate's APIs](./source/interacting-with-your-data/apperate-api-basics.md)
 
-[Querying Data](./source/interacting-with-your-data/querying-data/querying-time-series-data.md)
-<!--[Querying Data](./source/interacting-with-your-data/querying-data.md)-->
+[Querying Data](./source/interacting-with-your-data/querying-data.md)
 
 Updating Data \(Coming soon\)
 
