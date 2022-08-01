@@ -23,3 +23,6 @@ jobs:
         run: |
           cd build/html
           zip -r ~/iexcloud-docs.zip *
+      - name: Create release
+        run: |
+          gh release create 0.0.1 ~/iexcloud-docs.zip --target "test-workflow"
