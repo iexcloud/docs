@@ -1,7 +1,14 @@
 name: release-docs
+#on:
+# push:
+#    branches: [ test-workflow ]
 on:
-  push:
-    branches: [ test-workflow ]
+  workflow_dispatch:
+    inputs:
+      docset_version:
+        description: 'Docset version'
+        required: true
+        default: '0.0.1'
 jobs:
   release-docs:
     runs-on: ubuntu-latest
