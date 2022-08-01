@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: install software
+      - name: Install software
         run: |
           sudo apt-get install python3-sphinx
           sudo pip install furo==2022.4.7
@@ -15,7 +15,11 @@ jobs:
           sudo pip install sphinx-copybutton==0.5.0
           sudo pip install sphinx-design==0.1.0
           sudo pip install sphinx-inline-tabs==2022.1.2b11
-      - name: make html
+      - name: Build docs
         run: |
           ls
           make html
+      - name: Package docs
+        run: |
+          cd build/html
+          zip -r ~/iexcloud-docs.zip *
