@@ -66,7 +66,7 @@ The console is the easiest way to construct datasets.
 
 Your dataset is ready for data.
 
-## Adding a Record
+## Writing a Record
 
 You'll add your news record into the dataset using a `POST /datasets/:workspace` request. The [Create a dataset](https://iexcloud.io/docs/datasets-api/create-a-dataset) API doc describes this REST endpoint.
 
