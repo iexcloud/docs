@@ -10,9 +10,13 @@ managing-your-data/creating-and-managing-indexes.md
 managing-your-data/creating-and-managing-views.md
 ```
 
-Learn about dataset schema components in [Understanding Datasets](./managing-your-data/understanding-datasets.md).
+[Understanding Datasets](./managing-your-data/understanding-datasets.md) - Learn about dataset schema components.
 
-Defining Schemas (Coming soon!)
+Defining Schemas
+
+- [Normalization](./managing-your-data/defining-schemas/normalization.md) - Learn about selecting financial data records using any supported [financial identifier type \(format\)](../reference/financial-identifiers.md).
+- Data Model Concepts (Coming soon!)
+- Data Model examples and Patterns (Coming soon!)
 
 Creating and Managing Indexes (Coming soon!)
 
