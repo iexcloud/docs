@@ -18,9 +18,9 @@ Learn how to load data from the following sources:
 - [URL](./migrating-and-importing-data/loading-data-from-a-url.md)
 - [File](./migrating-and-importing-data/loading-data-from-a-file.md)
 
-Then see [Scheduling Data Ingestion](./migrating-and-importing-data/scheduling-data-ingestion.md) when you're ready to import data regularly, 
+Then when you're ready to import data regularly per a schedule, see [Scheduling Data Ingestion](./migrating-and-importing-data/scheduling-data-ingestion.md). 
 
-Here are supporting articles:
+Here are additional supporting articles:
 
 - [Accessing Nested JSON Data](./migrating-and-importing-data/accessing-nested-json-data.md)
 - [Accessing S3 via AWS Integration](./migrating-and-importing-data/accessing-s3-via-storage-integration.md)
