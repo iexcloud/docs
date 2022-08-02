@@ -106,7 +106,11 @@ You "struck gold"! Well, no really ... you just verified the new event record th
 
 ## What's Next
 
-Now that you know how to add and fetch individual records, you can learn how to add and fetch records in batch. See [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
+Did you know that Apperate comes with lots of financial datasets built-in? Continue with [Production-Ready Core Data](./production-ready-core-data.md) to learn more.
+
+If you're ready to start importing your own existing data, go to [Migrating and Importing Data](../migrating-and-importing-data.md).
+
+And if you want to examine your data or perform operations on it, see [Interacting with Your Data](../interacting-with-your-data.md)
 
 ---
 [Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)
