@@ -99,7 +99,7 @@ Now you know how to use the API to execute SQL commands on your Apperate dataset
 
 ## Related Topics
 
-[Querying Time Series Data](./querying-time-series-data.md)
+[Querying Datasets](./querying-datasets.md)
 
 [Using Apperate's APIs](../apperate-api-basics.md)
 

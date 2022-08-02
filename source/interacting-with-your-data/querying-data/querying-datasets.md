@@ -1,4 +1,4 @@
-# Querying Time Series Data
+# Querying Datasets
 
 Datasets that have a primary index and date index (it's included by default) leverage time series. The time series excels at retrieving records within specific time ranges. The `GET /data/...` endpoint supports these features.
 
