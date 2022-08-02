@@ -18,9 +18,14 @@ If there's a particular task you want to do, jump ahead to the article that matc
 - [Deleting Data](./interacting-with-your-data/deleting-data.md)
 -->
 
-If you want to orient yourself with using the API, check out [Using Apperate's APIs](./interacting-with-your-data/apperate-api-basics.md).
+[Using Apperate's APIs](./interacting-with-your-data/apperate-api-basics.md) - Learn the basics of Apperate's APIS and start using them.
 
-Query time series data and more, [here](./interacting-with-your-data/querying-data/querying-datasets.md).
+Querying Data
+
+- [Querying Datasets](./interacting-with-your-data/querying-data/querying-datasets.md) - Query time series data and more.
+- [SQL Query API](./interacting-with-your-data/querying-data/sql-query-api.md) - Leverage SQL in working with your data.
+
+Updating Data (Coming soon!)
 
 ---
 [Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)
