@@ -1,3 +1,0 @@
-# Business Analytics
-
-Coming soon!

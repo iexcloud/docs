@@ -31,8 +31,6 @@ reference.md
 :caption: Administration
 
 administration/access-and-security.md
-administration/business-analytics.md
 administration/managing-users.md
 administration/monitoring-deployments.md
-administration/pricing-and-credit-usage.md
 ```
