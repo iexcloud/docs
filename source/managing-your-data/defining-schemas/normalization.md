@@ -1,6 +1,6 @@
 # Normalization
 
-In Apperate, you can refer to an equity symbol using any supported [financial identifier type \(format\)](../../reference/financial-identifiers.md). Apperate relates equivalent symbols across different identifier types. You can, for example, use a CUSIP symbol to query datasets that store symbols in ISIN, FIGI, or another supported identifier type. Apperate, in effect, *normalizes* the financial identifiers.
+In Apperate, you can refer to an equity symbol using any supported [financial identifier type](../../reference/financial-identifiers.md). Apperate relates equivalent symbols across different identifier types. You can, for example, use a CUSIP symbol to query datasets that store symbols in ISIN, FIGI, or another supported identifier type. Apperate, in effect, *normalizes* the financial identifiers.
 
 Subscribing to the financial identifier data would cost you tens of thousands of dollars annually. Implementing a mapping between the identifiers is complicated and time-consuming. We've normalized all this for you so you can concentrate on business logic for serving your customers.
 

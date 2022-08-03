@@ -14,7 +14,7 @@ managing-your-data/creating-and-managing-views.md
 
 Defining Schemas
 
-- [Normalization](./managing-your-data/defining-schemas/normalization.md) - Learn about selecting financial data records using any supported [financial identifier type \(format\)](../reference/financial-identifiers.md).
+- [Normalization](./managing-your-data/defining-schemas/normalization.md) - Learn about selecting financial data records using any supported [financial identifier type](../reference/financial-identifiers.md).
 - Data Model Concepts (Coming soon!)
 - Data Model examples and Patterns (Coming soon!)
 
