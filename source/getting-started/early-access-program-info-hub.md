@@ -9,7 +9,7 @@ We are excited that you are participating in the new data infrastructure product
 
 ## Newly Added Features
 
-Please see the console home page's IEX Cloud Early Access **Ideas Table** and the [Changelog](https://github.com/iexcloud/docs/blob/main/source/reference/changelog.md).
+Please see the console home page's IEX Cloud Early Access **Ideas Table** and the [Changelog](../reference/changelog.md).
 
 - AWS S3: You can remove an [AWS Integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md) (credential) and configure a new one.
 
