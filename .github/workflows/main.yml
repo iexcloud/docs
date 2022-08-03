@@ -32,4 +32,4 @@ jobs:
           zip -r ~/iexcloud-docs.zip *
       - name: Create release
         run: |
-          gh release create ${{ docset_version }} ~/iexcloud-docs.zip --target "test-workflow"
+          gh release create ${{ github.event.inputs.docset_version }} ~/iexcloud-docs.zip --target "test-workflow"
