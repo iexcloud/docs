@@ -18,6 +18,8 @@ Defining Schemas
 - Data Model Concepts (Coming soon!)
 - Data Model examples and Patterns (Coming soon!)
 
+[Creating and Managing Views](./managing-your-data/creating-and-managing-views.md) - Aggregate data from various datasets, transform the data, and share the results with applications.
+
 Creating and Managing Indexes (Coming soon!)
 
 Transforming Data (Coming soon!)
