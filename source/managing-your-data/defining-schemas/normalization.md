@@ -62,6 +62,3 @@ You can then create a view from the results by clicking **Create view**. Voila! 
 When you're ready to share the dataset publicly, you can create an access token for it. See [Access and Security](../../administration/access-and-security.md).
 
 Want to connect with the Core datasets? Browse them at **Data > Datasets > Core**.
-
----
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

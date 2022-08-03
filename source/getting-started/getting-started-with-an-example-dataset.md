@@ -116,6 +116,3 @@ Now that you are familiar with creating a dataset from the sample data, you can 
 Want to learn more about creating and managing datasets? Read [Understanding Datasets](../managing-your-data/understanding-datasets.md).
 
 Otherwise, learn how to write a record to Apperate, just as you would write from an application, and then fetch that record. See [Writing and Fetching a Record](./writing-and-fetching-a-record.md)
-
----
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

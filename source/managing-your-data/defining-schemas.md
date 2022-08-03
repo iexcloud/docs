@@ -11,6 +11,3 @@ Check out [Normalization](./defining-schemas/normalization.md) to learn about se
 Data Model Concepts (Coming soon!)
 
 Data Model examples and Patterns (Coming soon!)
-
----
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)
