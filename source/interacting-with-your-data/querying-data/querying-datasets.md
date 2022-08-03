@@ -62,3 +62,6 @@ There are parameters that facilitate filtering on specific quarters and semester
 ## What's Next
 
 If you want to get Core Data from IEX Cloud real-time (not time series) endpoints, please see [Using the Core Data API](../../using-core-data/using-the-core-data-api.md).
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

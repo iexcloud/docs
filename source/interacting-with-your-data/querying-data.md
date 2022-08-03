@@ -10,3 +10,6 @@ querying-data/sql-query-api.md
 [Querying Datasets](./querying-data/querying-datasets.md)
 
 [SQL Query API](./querying-data/sql-query-api.md)
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

@@ -191,3 +191,6 @@ Congratulations on combining data from two datasets into a view for your app to 
 ## Related Topics
 
 [Using Tokens to Access APIs](https://iexcloud.io/docs/getting-started/api-tokens)
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

@@ -18,3 +18,6 @@ using-core-data/using-the-core-data-api.md
 <!-- TODO Refer to core dataset instructions "Using Core Datasets" -->
 
 <!-- TODO Refer to core data endpoint instructions "Using the Core Data API" -->
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

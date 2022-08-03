@@ -41,3 +41,6 @@ The [`/platform/swagger-json` endpoint](https://iexcloud.io/docs/datasets-api/ge
 ## What's Next
 
 As mentioned above, a great way to learn the APIs is by following the API Reference's [Getting Started](https://iexcloud.io/docs/getting-started) guide and digesting the short articles that follow it. Then work with the data and data-related entities as demonstrated in the articles mentioned above.
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

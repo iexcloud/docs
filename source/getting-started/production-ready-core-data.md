@@ -37,3 +37,6 @@ If you have data that you'd like to use with your apps, pull it into Apperate as
 If you want to use Core Data in your apps, please see [Using Core Data](../using-core-data.md).
 
 > **Note:** IEX Cloud documentation for the legacy plan subscribers is at <https://iexcloud.io/docs/api/>.
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

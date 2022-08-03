@@ -26,3 +26,6 @@ Querying Data
 - [SQL Query API](./interacting-with-your-data/querying-data/sql-query-api.md) - Leverage SQL in working with your data.
 
 Updating Data (Coming soon!)
+
+---
+[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)
