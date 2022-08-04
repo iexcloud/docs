@@ -71,11 +71,7 @@ Updating Data \(Coming soon\)
 
 #### Using Core Data
 
-[Using Core Data \(Coming soon\)](./source/using-core-data.md)
-
-[Using Core Datasets \(Coming soon\)](./source/using-core-data/using-core-datasets.md)
-
-Using Core Data Endpoints (Coming soon)
+[Using Core Data](./source/using-core-data.md)
 
 #### Reference
 

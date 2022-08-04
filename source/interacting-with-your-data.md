@@ -23,7 +23,7 @@ If there's a particular task you want to do, jump ahead to the article that matc
 Querying Data
 
 - [Querying Datasets](./interacting-with-your-data/querying-data/querying-datasets.md) - Query time series data and more.
-- [SQL Query API](./interacting-with-your-data/querying-data/sql-query-api.md) - Leverage SQL in working with your data.
+- [SQL Query API](./interacting-with-your-data/querying-data/sql-query-with-the-api.md) - Leverage SQL in working with your data.
 
 Updating Data (Coming soon!)
 
