@@ -44,11 +44,13 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 #### Managing Your Data
 
+[Managing Your Data](./source/managing-your-data.md)
+
 [Understanding Datasets](./source/managing-your-data/understanding-datasets.md)
 
-[Defining Schemas \(Coming soon\)](./source/managing-your-data/defining-schemas.md)
-
 [Normalization](./source/managing-your-data/defining-schemas/normalization.md)
+
+[Creating a Dataset with the API](./source/managing-your-data/creating-a-dataset-with-the-api.md)
 
 [Creating and Managing Views](./source/managing-your-data/creating-and-managing-views.md)
 
