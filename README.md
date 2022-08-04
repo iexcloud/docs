@@ -30,6 +30,9 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 [Loading Data from AWS S3](./source/migrating-and-importing-data/loading-data-from-aws-s3.md)
 
+- [Accessing AWS S3 via Storage Integration](./source/migrating-and-importing-data/accessing-s3-via-storage-integration.md)
+- [Accessing S3 via Your Access Key](./source/migrating-and-importing-data/accessing-s3-via-your-access-key.md)
+
 [Loading Data from a URL](./source/migrating-and-importing-data/loading-data-from-a-url.md)
 
 [Loading Data from a File](./source/migrating-and-importing-data/loading-data-from-a-file.md)
@@ -37,10 +40,6 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 [Scheduling Data Ingestion](./source/migrating-and-importing-data/scheduling-data-ingestion.md)
 
 [Accessing Nested JSON Data](./source/migrating-and-importing-data/accessing-nested-json-data.md)
-
-[Accessing AWS S3 via Storage Integration](./source/migrating-and-importing-data/accessing-s3-via-storage-integration.md)
-
-[Accessing S3 via Your Access Key](./source/migrating-and-importing-data/accessing-s3-via-your-access-key.md)
 
 #### Managing Your Data
 
@@ -64,7 +63,9 @@ Transforming Data \(Coming soon\)
 
 [Using Apperate's APIs](./source/interacting-with-your-data/apperate-api-basics.md)
 
-[Querying Data](./source/interacting-with-your-data/querying-data.md)
+[Querying Datasets](./source/interacting-with-your-data/querying-data/querying-datasets.md)
+
+[SQL Query API](./source/interacting-with-your-data/querying-data/sql-query-api.md)
 
 Updating Data \(Coming soon\)
 
@@ -74,7 +75,7 @@ Updating Data \(Coming soon\)
 
 [Using Core Datasets \(Coming soon\)](./source/using-core-data/using-core-datasets.md)
 
-[Using the Core Data API \(Coming soon\)](./source/using-core-data/using-the-core-data-api.md)
+Using Core Data Endpoints (Coming soon)
 
 #### Reference
 

@@ -4,12 +4,11 @@
 :maxdepth: 1
 
 using-core-data/using-core-datasets.md
-using-core-data/using-the-core-data-api.md
 ```
 
 [Using Core Datasets](./using-core-data/using-core-datasets.md)
 
-[Using the Core Data API](./using-core-data/using-the-core-data-api.md)
+Using Core Data Endpoints (Coming soon!)
 
 > **Note:** IEX Cloud documentation for the legacy plan subscribers is at <https://iexcloud.io/docs/api/>.
 
