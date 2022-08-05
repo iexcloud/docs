@@ -5,6 +5,7 @@
 
 interacting-with-your-data/apperate-api-basics.md
 interacting-with-your-data/querying-data.md
+interacting-with-your-data/updating-a-data-record.md
 ```
 
 With Apperate, you can interact with your data programatically via the API or manually in the console via the UI and SQL editor. The articles in this section explore tackling data tasks using all these approaches.
@@ -20,12 +21,14 @@ If there's a particular task you want to do, jump ahead to the article that matc
 
 [Using Apperate's APIs](./interacting-with-your-data/apperate-api-basics.md) - Learn the basics of Apperate's APIS and start using them.
 
+[Writing and Fetching a Data Record](../getting-started/writing-and-fetching-a-record.md) - Use the API to write your app data to Apperate and retrieve it.
+
 Querying Data
 
 - [Querying Datasets](./interacting-with-your-data/querying-data/querying-datasets.md) - Query time series data and more.
 - [SQL Query API](./interacting-with-your-data/querying-data/sql-query-with-the-api.md) - Leverage SQL in working with your data.
 
-Updating Data (Coming soon!)
+[Updating a Data Record](./interacting-with-your-data/updating-a-data-record.md) - Modify data records in the console or with the API.
 
 ---
 [Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

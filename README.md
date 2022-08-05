@@ -67,7 +67,7 @@ Transforming Data \(Coming soon\)
 
 [SQL Query API](./source/interacting-with-your-data/querying-data/sql-query-api.md)
 
-Updating Data \(Coming soon\)
+[Updating a Data Record](./source/interacting-with-your-data/updating-a-data-record.md)
 
 #### Using Core Data
 
