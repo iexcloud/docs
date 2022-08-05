@@ -38,8 +38,6 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 [Normalization](./source/managing-your-data/defining-schemas/normalization.md)
 
-[Creating a Dataset with the API](./source/managing-your-data/creating-a-dataset-with-the-api.md)
-
 [Creating and Managing Views](./source/managing-your-data/creating-and-managing-views.md)
 
 Creating and Managing Indexes \(Coming soon\)
@@ -51,6 +49,8 @@ Transforming Data \(Coming soon\)
 [Interacting with Your Data](./source/interacting-with-your-data.md)
 
 [Using Apperate's APIs](./source/interacting-with-your-data/apperate-api-basics.md)
+
+[Writing and Fetching a Record](./source/getting-started/writing-and-fetching-a-record.md)
 
 [Querying Datasets](./source/interacting-with-your-data/querying-data/querying-datasets.md)
 
