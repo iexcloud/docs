@@ -62,6 +62,3 @@ If you haven't already queried the Core Datasets using the Data API, try it out 
 - [SQL Query with the API](./interacting-with-your-data/querying-data/sql-query-with-the-api.md)
 
 If want to combine Core Dataset data with data from other datasets, check out [Creating and Managing Views](./managing-your-data/creating-and-managing-views.md).
-
----
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

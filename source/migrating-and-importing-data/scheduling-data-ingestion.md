@@ -80,6 +80,3 @@ To re-enable your ingestion schedule, select on your schedule in the list and cl
 To create views, see [Creating and Managing Views](../managing-your-data/creating-and-managing-views.md).
 
 If you want to understand schema indexing better, visit [Understanding Dataset Schemas](../managing-your-data/understanding-datasets.md).
-
----
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

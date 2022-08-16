@@ -1,6 +1,5 @@
 # Using Endpoints in Python
 
-Coming soon!
+For now, please see the [pyEX Library](https://github.com/iexcloud/pyEX/).
 
----
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)
+More is coming soon!

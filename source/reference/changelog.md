@@ -144,6 +144,3 @@ Here are the notable changes.
 ## 2022-04-13
 
 - Support scheduled ingestion. In the Console, see [Scheduling Data Ingestion](../migrating-and-importing-data/scheduling-data-ingestion.md).
-
----
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

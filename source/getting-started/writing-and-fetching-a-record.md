@@ -110,7 +110,4 @@ Did you know that Apperate comes with lots of financial datasets built-in? Conti
 
 If you're ready to start importing your own existing data, go to [Migrating and Importing Data](../migrating-and-importing-data.md).
 
-And if you want to examine your data or perform operations on it, see [Interacting with Your Data](../interacting-with-your-data.md)
-
----
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)
+And if you want to examine your data or perform operations on it, see [Interacting with Your Data](../interacting-with-your-data.md).
