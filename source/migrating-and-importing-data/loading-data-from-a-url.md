@@ -6,42 +6,46 @@ If there's a URL that you would like to load data from, you can connect to it an
 
 1. Click **Create a Dataset** at the top of the console or from the **Datasets** page. The **Create a dataset** page appears.
 
-    ![](./loading-data-from-a-url/create-dataset.png)
+    ![](./loading-data-from-a-url/create-a-dataset.png)
 
-1. In the **Use a new data source** section, choose **URL** in the source type. The URL fields appear.
+1. For **Source Type**, choose **URL**. The **Data Source** selector appears.
 
-    ![](./loading-data-from-a-url/use-new-url-data-source.png)
+    ![](./loading-data-from-a-url/select-data-source.png)
 
-1. Specify the data at a URL by entering these details:
+    You can create a dataset from a new or existing data source. We'll create a new data source.
 
-    **Enter a URL:** (the URL)
+1. For **Data Source**, choose **Create a source** at the bottom of the list.
 
-    **JSONPath:** (see below)
+    ![](./loading-data-from-a-url/data-source-selector.png)
 
-    **Headers:** (add any required name/value pairs)
+    The URL fields appear.
 
-    If the URL returns a JSON response, check your data's location in the **Response** panel.
+    ![](./loading-data-from-a-url/create-a-url-source-for-dataset.png)
 
-    - If the data you want is in the top level records (as shown in the image below), leave JSONPath blank.
-    - If the data you want is nested deeper within the JSON object, specify the path to it using JSONPath. Refer to [Accessing Nested JSON Data](./accessing-nested-json-data.md) for details.
+1. Specify the URL that provides the data you want. The response data appears in the **Response** panel.
 
-    > **Important:** The URL response passed to Apperate must be an array of objects.
+    ![](./loading-data-from-a-url/set-url.png)
+
+1. If your URL requires any headers, add them under **Headers** as name/value pairs.
+
+    ![](./loading-data-from-a-url/headers.png)
+
+1. If the URL response is in JSON, check your data's location in the **Response** panel.
+
+    - If the data you want is in the top level records (as shown in the image below), leave the **JSONPath** field blank.
+    - If the data you want is nested deeper within the JSON object, specify the path to it in the **JSONPath** field. Refer to [Accessing Nested JSON Data](./accessing-nested-json-data.md) for more information on specifying JSONPath values.
+
+    > **Important:** For JSON data, Apperate requires an array of objects.
 
     The URL below, for example, is good because it returns a JSON object array with all data in the top level objects.
 
     ![](./loading-data-from-a-url/aapl-chart-data-max-url-data-source.png)
 
-    When you're done specifying the data source, click **Parse data**. The schema editor appears.
+1. If you want to save the data source for future data ingestion, select the **Save this data source?** option.
 
-    ![](./loading-data-from-a-url/dataset-schema-editor.png)
+    > **Note:** After creating the dataset, the data source will be saved with an auto-generated name. To find the data source, navigate to **Sources** and sort the list by **Last Updated**. The data source should be one most recently updated.
 
-1. In the schema editor, name your dataset, check the property types and indexes, and specify whether to opt in an indexed property to the metadata graph. 
-
-    > **Note:** the metadata graph opt-in, provides the opportunity to map a property to IEX Cloud's metadata data graph of [financial identifiers](../reference/financial-identifiers.md). This allows you to enrich your dataset by joining it to IEX Cloud core equities data or any other dataset that is also opted in. Furthermore, you can ingest data into and query for data in this dataset using IEX Cloud's supported financial identifiers. See [Normalization](../managing-your-data/defining-schemas/normalization.md) for examples.
-
-    When you're happy with the schema, click **Create dataset now**.
-
-    Apperate creates the dataset, loads the data into it, and shows the dataset's **Overview** page.
+1. When you're done specifying the data, click **Create Dataset**. Apperate creates the dataset, loads the data into it, and shows the dataset's **Overview** page.
 
     ![](./loading-data-from-a-url/dataset-overview.png)
 
@@ -53,7 +57,7 @@ If there's a URL that you would like to load data from, you can connect to it an
     [{"change":-0.75,"changeOverTime":47.831683168316836,"changePercent":-0.005,"close":147.96,"date":"2022-06-08","fClose":147.96,"fHigh":149.8697,"fLow":147.46,"fOpen":148.58,"fVolume":53950201,"high":149.8697,"id":"HISTORICAL_PRICES","key":"AAPL","label":"Jun 8, 22","low":147.46,"marketChangeOverTime":47.831683168316836,"open":148.58,"subkey":"","symbol":"AAPL","uClose":147.96,"uHigh":149.8697,"uLow":147.46,"uOpen":148.58,"updated":1654736422000,"uVolume":53950201,"volume":53950201}]
     ```
 
-Congratulations! You loaded data from a URL into a dataset and that's ready to deliver that data to your apps.
+Congratulations! You loaded data from a URL into a dataset and it is ready to deliver that data to apps.
 
 ## What's Next
 
