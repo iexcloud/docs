@@ -182,6 +182,3 @@ Congratulations on making your data available using the datasets API!
 ## What's Next
 
 Learn more about the Apperate APIs at [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
-
----
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

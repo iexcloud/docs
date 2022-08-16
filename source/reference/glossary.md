@@ -57,6 +57,3 @@ Your unique domain for building and publishing datasets. The URL format and ex
 URL Format: `https://workspace.iex.cloud/v1/data/WORKSPACE/DATASET`
 
 Example: `https://my.iex.cloud/v1/data/MY/CARS`
-
----
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

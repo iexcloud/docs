@@ -25,6 +25,3 @@ Here are additional supporting articles:
 - [Accessing Nested JSON Data](./migrating-and-importing-data/accessing-nested-json-data.md)
 - [Accessing S3 via AWS Integration](./migrating-and-importing-data/accessing-s3-via-storage-integration.md)
 - [Accessing S3 via Your Access Key](./migrating-and-importing-data/accessing-s3-via-your-access-key.md)
-
----
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

@@ -25,6 +25,3 @@ following financial identifiers.
 - Refinitiv PermID
 
 - RIC (Reuters Instrument Code)
-
----
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

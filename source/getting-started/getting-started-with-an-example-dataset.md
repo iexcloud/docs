@@ -107,6 +107,3 @@ After creating a dataset, you can edit its schema to meet your needs. For more i
 Here you loaded data from a file but you can load data from other sources, including URLs and AWS S3 buckets. To learn more about using other sources and scheduling automated data ingestion, check out [Migrating and Importing Data](../migrating-and-importing-data.md).
 
 Otherwise, learn how to write a record to a dataset as you would write from an application, and then fetch that record. [Writing and Fetching a Record](./writing-and-fetching-a-record.md) shows you how.
-
----
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)

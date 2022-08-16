@@ -115,7 +115,4 @@ After you create your dataset, there is more you can start doing from your datas
 - Query your data (click the **Data Viewer** tab)
 - Get data via the API (click **Open API Docs**)
 
-Interested in creating datasets programmatically? Checkout [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md)
-
----
-[Go to Docs Home](https://github.com/iexcloud/docs/blob/main/README.md)
+Interested in creating datasets programmatically? Checkout [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
