@@ -26,6 +26,9 @@ jobs:
         run: |
           ls
           make clean html
+      - name: Customize docs
+        run: |
+          cp -rf custom/* build
       - name: Package docs
         run: |
           cd build/html
