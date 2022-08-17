@@ -56,7 +56,7 @@ Here you will load IEX Cloud's sample data file and then access the loaded data 
 
 1. If you're not already in the **Create a dataset** page, click **Create a dataset** at the top right of the console. The **Create a dataset** page appears. The image below highlights the sample file link that you will click in the next step.
 
-    ![](./getting-started-with-an-example-dataset/try-using-sample-file.png)
+    ![](./getting-started-with-an-example-dataset/try-our-sample-file.png)
 
     Optionally, enter a more meaninfgul the dataset ID.
 
