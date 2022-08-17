@@ -40,7 +40,7 @@ In few steps, you can import data from a CSV, JSON, or JSONL data file in your S
 
     If you want to use an access key credential, you can select an existing one from the **Credential** selector or select the bottom-most option **Create a credential**.
 
-    ![](./loading-data-from-aws-s3/credential-a-credential.png)
+    ![](./loading-data-from-aws-s3/create-a-credential.png)
 
     > **Note:** For more information on configuring access to S3 buckets via access keys, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
 
