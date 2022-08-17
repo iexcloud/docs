@@ -1,38 +1,58 @@
 # Loading Data from AWS S3
 
-In few steps, you can import data from CSV, JSON, or JSONL data files in your S3 buckets. Before creating a dataset that uses bucket files, you must configure credentials for accessing the bucket. Here are the credential types:
+In few steps, you can import data from a CSV, JSON, or JSONL data file in your S3 bucket.
 
-- **AWS Integration:** Grant Apperate's S3 user bucket read access. Learn how at [Accessing S3 via AWS Integration](./accessing-s3-via-storage-integration.md).
-- **Access Key:** Specify your bucket access key and secret access key. For details, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
-
-Here we'll create a dataset from an S3 bucket file.
-
-## Creating a Dataset with Data from an S3 Bucket
+## Creating a Dataset From an S3 Bucket File
 
 1. Click **Create a Dataset** at the top of the console or from the **Datasets** page. The **Create a Dataset** page appears.
 
     ![](./loading-data-from-aws-s3/create-a-dataset.png)
 
-1. In the **Use a new data source** section, choose **AWS S3** in the source type. The AWS S3 bucket fields appear.
+1. Enter an ID for your dataset.
 
-    ![](./loading-data-from-aws-s3/new-aws-data-source.png)
+1. For **Source Type**, select **AWS S3**.
 
-1. Select your credential for accessing the bucket.
+    ![](./loading-data-from-aws-s3/source-type-aws-s3.png)
 
-    ![](./loading-data-from-aws-s3/credential-dataset.png)
+    The AWS data source fields appear.
 
-    - If you want to use AWS Integration, you can select **AWS Ingtegration** to use your configuration or to configure it if you haven't configured it already. 
-    - If you want to use an access key credential, you can select an existing access key credential or create one.
+    ![](./loading-data-from-aws-s3/aws-data-source-fields.png)
 
-1. Enter your AWS bucket name. All of your bucket files (file keys) appear in the Bucket Contents list.
+1. For **Data Source**, select the bottom-most option **Create a source**.
 
-    ![](./loading-data-from-aws-s3/all-bucket-files.png)
+    ![](./loading-data-from-aws-s3/create-a-source-aws.png)
 
-1. Specify a file(s) to load data from by selecting a file key or entering a file pattern.      
+    The bucket-related fields appear.
+
+    ![](./loading-data-from-aws-s3/bucket-related-fields.png)
+
+1. There are various credential options.
+
+    If you haven't already created AWS Integration as a credential, the **Credential** field appears in red.
+
+    ![](./loading-data-from-aws-s3/no-aws-storage-integration.png)
+
+    If you want to configure AWS Integration, select **enter your AWS role ARN** link and then enter your AWS IAM Role ARN in the field.
+
+    ![](./loading-data-from-aws-s3/enter-aws-iam-role-arn.png)
+
+    > **Important:** Make sure to grant Apperate's S3 user access to your role by configuring the returned S3 User and External ID in your role. Ssee [Accessing S3 via AWS Integration](./accessing-s3-via-storage-integration.md) for details.
+
+    If you want to use an access key credential, you can select an existing one from the **Credential** selector or select the bottom-most option **Create a credential**.
+
+    ![](./loading-data-from-aws-s3/credential-a-credential.png)
+
+    > **Note:** For more information on configuring access to S3 buckets via access keys, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
+
+1. Enter your AWS bucket name. All of your bucket files (file keys) appear in the Bucket Contents panel on the right.
+
+    ![](./loading-data-from-aws-s3/bucket-contents.png)
+
+1. Specify a file to load data by selecting a file key or entering a file pattern.      
 
     - **Select a file key** - Select a file from the Bucket Contents list. The *Response* panel updates to reflect the selected file's content.
 
-        ![](./loading-data-from-aws-s3/select-file-key.png)
+        ![](./loading-data-from-aws-s3/select-a-file-key.png)
 
         > **Tip:** You can filter on files in a particular folder by entering a folder name in the *file prefix* field at the top-right of Bucket Contents.
 
@@ -48,17 +68,11 @@ Here we'll create a dataset from an S3 bucket file.
 
     > **See also** [Accessing Nested JSON Data](./accessing-nested-json-data.md) for guidance on specifying JSONPath for JSON file data.
 
-    When you're done specifying the data, click **Parse Data**. The schema editor appears.
+1. If you want to save the data source for future data ingestion, select the **Save this data source?** option.
 
-    ![](./loading-data-from-aws-s3/car-accidents-schema.png)
+    > **Note:** After creating the dataset, the data source will be saved with an auto-generated name. To find the data source, navigate to **Sources** and sort the list by **Last Updated**. The data source should be one most recently updated.
 
-1. In the schema editor, name your dataset, check the property types and indexes, and specify whether to opt in an indexed property to the metadata graph. 
-
-    > **Note:** the metadata graph opt-in, provides the opportunity to map a property to IEX Cloud's metadata data graph of [financial identifiers](../reference/financial-identifiers.md). This allows you to enrich your dataset by joining it to IEX Cloud core equities data or any other dataset that is also opted in. Furthermore, you can ingest data into and query for data in this dataset using IEX Cloud's supported financial identifiers. See [Normalization](../managing-your-data/defining-schemas/normalization.md) for examples.
-
-    When you're happy with the schema, click **Create dataset now**.
-
-    Apperate creates the dataset, loads the file's data into the dataset, and shows the dataset's **Overview** page.
+1. When you're done specifying the data, click **Create Dataset**. Apperate creates the dataset, loads the file data into the dataset, and shows the dataset's **Overview** page.
 
     ![](./loading-data-from-aws-s3/car-accidents-dataset-overview.png)
 
@@ -70,7 +84,7 @@ Here we'll create a dataset from an S3 bucket file.
     [{"city":"Harrisburg","date":"2022-02-03","est_damage":1500,"state":"PA","vin":"SD089VN7678997566"}]
     ```
 
-Congratulations! You loaded data from your AWS S3 bucket into a dataset and that's ready to deliver that data to your apps.
+Congratulations! You loaded data from your AWS S3 bucket into a dataset and it is ready to deliver that data to apps.
 
 ## What's Next
 
