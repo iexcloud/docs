@@ -38,14 +38,17 @@ The console is the easiest way to construct datasets.
 
 1. In the console, click **Create a dataset.** The dataset creation page appears.
 
-1. Click **Create a schema manually.** The schema editor appears.
+1. Enter an arbitrary dataset ID, like `FLASH_NEWS_DATASET`.
 
-1. In the schema editor, enter your dataset ID and properties
-    
-    **Dataset ID:** Enter a unique name. For example, FLASH_NEWS_DATASET. 
-    
-    **Properties:**
-    Add each property by typing its name and clicking Enter. The properties appear in the schema table.
+1. For **Source type** select **Create without data**.
+
+    ![](./writing-and-fetching-a-record/create-dataset-without-data.png)
+
+    The schema editor fields appear.
+
+    ![](./writing-and-fetching-a-record/schema-editor-no-data.png)
+
+1. In the **+ Add Property** field, enter your properties by typing each one's name and clicking `Enter`. The properties appear in the **Properties** table.
 
     > **Tip:** When creating a dataset manually, it can be easiest to first enter each property name and then update the property type and index.
 
@@ -59,10 +62,7 @@ The console is the easiest way to construct datasets.
     
     ![](./writing-and-fetching-a-record/write-fetch-record-schema.png)
     
-    Click **Create dataset** when you're done specifying the dataset. The dataset ID confirmation dialog appears.
-    
-
-1. **Create dataset now** to create the dataset. The dataset overview appears with zero rows.
+1. Click **Create dataset** when you're done specifying the dataset. The dataset overview appears with zero rows.
 
 Your dataset is ready for data.
 
