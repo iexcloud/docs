@@ -11,7 +11,7 @@ Here we'll create a dataset from an S3 bucket file.
 
 1. Click **Create a Dataset** at the top of the console or from the **Datasets** page. The **Create a Dataset** page appears.
 
-    ![](./loading-data-from-aws-s3/create-dataset.png)
+    ![](./loading-data-from-aws-s3/create-a-dataset.png)
 
 1. In the **Use a new data source** section, choose **AWS S3** in the source type. The AWS S3 bucket fields appear.
 

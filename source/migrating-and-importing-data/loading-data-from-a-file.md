@@ -10,7 +10,7 @@ Start ingesting your file, following these steps:
 
 1.  Click **Create a Dataset** at the top of the console or from the **Datasets** page. The **Create a Dataset** page appears.
 
-    ![](./loading-data-from-a-file/create-a-dataset-focus-on-file.png)
+    ![](./loading-data-from-a-file/create-a-dataset.png)
 
     > **Important:** 20,000,000 record limit per ingestion. During the Early Access program, each data ingestion is limited to 20,000,000 records.
 

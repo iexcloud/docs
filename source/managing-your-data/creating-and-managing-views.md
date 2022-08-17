@@ -83,7 +83,7 @@ Here we'll create a view of cars and related car accidents by joining a datasets
 
 1. Click **Create a Dataset** at the top of the console or from the **Datasets** page. The **Create a Dataset** page appears.
 
-    ![](./creating-and-managing-views/create-dataset.png)
+    ![](./creating-and-managing-views/create-a-dataset.png)
 
 1. In the **Use a new data source** section, choose **File** in the source type, drag your `cars` file onto the page, drop it, and click `Parse data`.  The file uploads and the **Edit schema** interface appears.
 
