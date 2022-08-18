@@ -2,7 +2,7 @@
 
 Apperate's APIs are based on [REST](https://en.wikipedia.org/wiki/Representational_state_transfer), have resource-oriented URLs, and return JSON-encoded responses and standard HTTP response codes. 
 
-The [API Reference](https://iexcloud.io/docs/) (<https://iexcloud.io/docs/>) site provides the reference documentation and a Getting Started guide. 
+The [Apperate API Reference](https://iexcloud.io/docs/) (<https://iexcloud.io/docs/>) site provides the reference documentation and a Getting Started guide. 
 
 Here's a screenshot of the [Getting Started](https://iexcloud.io/docs/getting-started) guide and the API Reference navigation:
 
@@ -17,6 +17,8 @@ Here are some of the task areas and links to related tutorials and API Reference
 ## Querying Data
 
 The Data API's [Query data](https://iexcloud.io/docs/datasets-api/query-data) endpoint (i.e., `GET /data`) returns data from the dataset you specify. The endpoint supports using windowing functions for Querying Datasets. The [Datasets](https://iexcloud.io/docs/datasets) pages and [Core Data](https://iexcloud.io/docs/core) pages describe each dataset's query data endpoint parameters and response attributes.
+
+> **Important:** Apperate's Core Data is a subset of IEX Cloud Core Data that includes only time series data. To access all IEX Cloud data, including real-time stock data, please see the [Legacy API Reference](https://iexcloud.io/docs/api/).
 
 The **Example Request** on each dataset's **Overview** page demonstrates using the query data endpoint on that dataset.
 

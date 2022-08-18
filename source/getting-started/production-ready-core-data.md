@@ -12,6 +12,8 @@ IEX Cloud Apperate comes with built-in data to power fintech applications and mo
 - News
 - Symbols / Mappings
 
+> **Important:** Apperate's Core Data is a subset of IEX Cloud Core Data that includes only time series data. To access all IEX Cloud data, including real-time stock data, please see the [Legacy API Reference](https://iexcloud.io/docs/api/).
+
 Let's explore the Core Data.
 
 ## Exploring Core Data
