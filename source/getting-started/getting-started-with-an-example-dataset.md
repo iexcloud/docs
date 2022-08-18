@@ -1,8 +1,6 @@
 # Getting Started with Apperate
 
-> **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or Beta, please email us at `product@iexcloud.io`.
-
-Here we'll set up a workspace and then make data available for apps to use in seconds.
+Here we'll set up a workspace and then in a matter of seconds make data available for apps to use.
 
 **Important:** If you don't already have an IEX Cloud account, create one [here](https://iexcloud.io/cloud-login#/register).
 
@@ -26,7 +24,7 @@ In the URL above, the workspace name `mycompany` is used as a subdomain of `iex.
 
 Here's how to create your workspace:
 
-1. Click on the link in your Early Access program invitation email. The welcome page appears and prompts you to create your workspace.
+1. Click on the link in your invitation email. The welcome page appears and prompts you to create your workspace.
 
     ![](./getting-started-with-an-example-dataset/create-a-workspace.png)
 

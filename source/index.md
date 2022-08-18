@@ -1,11 +1,5 @@
 ```{toctree}
 :maxdepth: 1
-
-getting-started/early-access-program-info-hub.md
-```
-
-```{toctree}
-:maxdepth: 1
 :caption: Getting Started
 
 getting-started/what-is-iex-cloud-apperate.md

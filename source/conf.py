@@ -124,7 +124,6 @@ html_theme = 'furo'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    # "announcement": "The new data infrastructure product is available exclusively to select Early Access program participants. If you would like to participate in an upcoming Early Access phase, please contact us at product@iexcloud.io.",
     "navigation_with_keys": True,
     "sidebar_hide_name": True,
     "light_logo": "logo-black.svg",

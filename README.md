@@ -1,16 +1,8 @@
-# IEX Cloud Early Access Program
-
-Welcome to IEX Cloud's Early Access Program documentation for Apperate: a serverless multi-model database that makes it easy to ingest, validate, normalize, and deliver data into applications. It comes with production-ready Core data for powering fintech apps and more.
-
-> **Note:** IEX Cloud Apperate is available exclusively to select Early Access Program participants If you would like to participate in the Early Access Program or the upcoming Beta, please email us at `product@iexcloud.io`. 
-
-The [Early Access Program Info Hub](./source/getting-started/early-access-program-info-hub.md) article notes the latest happenings in the Apperate product Alpha. 
+# IEX Cloud Apperate Documentation 
 
 The product documentation is listed below. If you're new to Apperate, get acquainted with it by reading our **Getting Started** articles. Enjoy!
 
 ## Table of Contents
-
-[Early Access Program Info Hub](./source/getting-started/early-access-program-info-hub.md)
 
 ### Getting Started
 
