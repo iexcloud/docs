@@ -5,7 +5,7 @@
 getting-started/what-is-iex-cloud-apperate.md
 getting-started/getting-started-with-apperate.md
 getting-started/writing-and-fetching-a-record.md
-getting-started/getting-financial-data.md
+getting-started/production-ready-core-data.md
 ```
 
 ```{toctree}

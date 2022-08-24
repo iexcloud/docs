@@ -106,7 +106,7 @@ You "struck gold"! Well, no really ... you just verified the new event record th
 
 ## What's Next
 
-Did you know that Apperate comes with lots of financial datasets built-in? Continue with [Production-Ready Core Data](./getting-financial-data.md) to learn more.
+Did you know that Apperate comes with lots of financial datasets built-in? Continue with [Production-Ready Core Data](./production-ready-core-data.md) to learn more.
 
 If you're ready to start importing your own existing data, go to [Migrating and Importing Data](../migrating-and-importing-data.md).
 

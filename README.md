@@ -8,7 +8,7 @@ The product documentation is listed below. If you're new to Apperate, get acquai
 
 [What is IEX Cloud Apperate?](./source/getting-started/what-is-iex-cloud-apperate.md)
 
-[Getting Started with Apperate](./source/getting-started/getting-started-with-an-example-dataset.md)
+[Getting Started with Apperate](./source/getting-started/getting-started-with-apperate.md)
 
 [Writing and Fetching a Record](./source/getting-started/writing-and-fetching-a-record.md)
 
