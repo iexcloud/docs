@@ -6,7 +6,9 @@ Building the docs site requires Python and several external plugins for Sphinx. 
 
 ### Requirements
 
-Note: You can install the following software packages using [MiniConda](https://docs.conda.io/en/latest/miniconda.html) (includes Python) or a similar software installer. ([MiniConda3 for Linux 64-bit](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh))
+Note: You can install the following software packages using Pip, [MiniConda](https://docs.conda.io/en/latest/miniconda.html) (includes Python), or a similar software installer. ([MiniConda3 for Linux 64-bit](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)).
+
+> **Note:** The [.github/workflows/main.yml] file demonstrates installing all of the software.
 
 Required software:
 
@@ -26,7 +28,8 @@ Required software:
 
 - Sphinx extensions
 
-    - MyST Parser: Enables writing articles in Markdown and structuring the file tree using RST-like declarations. The parser converts the Markdown files to HTML.
+    - MyST Parser enables writing articles in Markdown and structuring the file tree using RST-like declarations. The parser converts the Markdown files to HTML.
+    - [Sphinx Rediraffe extenstion](https://pypi.org/project/sphinxext-rediraffe/) enables redirecting HTTP requests for an removed/replaced article with to a replacement article.
     - Other extensions below provide authoring features to use in our documentation.
 
     ```bash
@@ -34,6 +37,10 @@ Required software:
     conda install -c conda-forge sphinx-copybutton
     conda install -c conda-forge sphinx-design
     conda install -c conda-forge sphinx-inline-tabs
+    ```
+
+    ```bash
+    sudo pip install sphinxext-rediraffe==v0.2.7
     ```
 
 ### Building the Site
