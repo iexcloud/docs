@@ -39,6 +39,7 @@ extensions = [
     "sphinx_copybutton",
     "sphinx_design",
     "sphinx_inline_tabs",
+    "sphinxext.rediraffe",
 ]
 
 # -- Options for Markdown files ----------------------------------------------
@@ -283,3 +284,7 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
+
+# -- Options for Rediraffe redirects with Rederaffe ----------------------------
+
+rediraffe_redirects = "redirects.txt"
