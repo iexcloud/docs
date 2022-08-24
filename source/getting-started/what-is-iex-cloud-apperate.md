@@ -18,7 +18,7 @@ Apperate is grounded in the IEX Cloud team's deep understanding of fintech data 
 
 The semantic data layer allows you to refer to an equity using any supported [financial identifier type](../reference/financial-identifiers.md). Apperate relates equivalent symbols across the different types. You can, for example, use a CUSIP symbol to query datasets that refer to equities using ISIN, FIGI, or another supported type. Apperate, in effect, *normalizes* the financial identifiers.
 
-Apperate includes curated, institutional-grade time series financial data ([Core Data](./production-ready-core-data.md)). It is available as datasets for accessing via REST API endpoints and using with views.
+Apperate includes curated, institutional-grade time series financial data ([Core Data](./getting-financial-data.md)). It is available as datasets for accessing via REST API endpoints and using with views.
 
 > **Important:** Apperate's Core Data is a subset of IEX Cloud Core Data that includes only time series data. To access all IEX Cloud data, including real-time stock data, please see the [Legacy API Reference](https://iexcloud.io/docs/api/).
 
@@ -34,4 +34,4 @@ Apperate tracks activities and makes usage statistics and logs available. Each d
 
 ## What's Next
 
-Now that you understand what Apperate is, it's time to start using it. [Getting Started with Apperate](./getting-started-with-an-example-dataset.md) is next.
+Now that you understand what Apperate is, it's time to start using it. [Getting Started with Apperate](./getting-started-with-apperate.md) is next.

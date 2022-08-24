@@ -48,6 +48,6 @@ Now the token can be used in calling the specified APIs.
 
 ## What's Next?
 
-Ready to call some dataset APIs? See [Getting Started with Apperate](../getting-started/getting-started-with-an-example-dataset.md).
+Ready to call some dataset APIs? See [Getting Started with Apperate](../getting-started/getting-started-with-apperate.md).
 
 Want to get your teammates involved? Learn how to add teammates at [Managing Users](./managing-users.md).

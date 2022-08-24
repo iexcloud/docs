@@ -1,2 +1,2 @@
 # comments start with "#"
-#getting-started/getting-started-with-an-example-dataset.md getting-started/getting-started-with-apperate.md
+getting-started/getting-started-with-an-example-dataset.md getting-started/getting-started-with-apperate.md

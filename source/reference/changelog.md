@@ -139,7 +139,7 @@ Here are the notable changes.
 
 ## 2022-04-18
 
-- Opt-in to map a property to our financial identifier metadata graph. See [Getting Started with an Example Dataset](../getting-started/getting-started-with-an-example-dataset.md).
+- Opt-in to map a property to our financial identifier metadata graph. See [Getting Started with an Example Dataset](../getting-started/getting-started-with-apperate.md).
 
 ## 2022-04-13
 

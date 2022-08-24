@@ -26,7 +26,7 @@ Here's how to create your workspace:
 
 1. Click on the link in your invitation email. The welcome page appears and prompts you to create your workspace.
 
-    ![](./getting-started-with-an-example-dataset/create-a-workspace.png)
+    ![](./getting-started-with-apperate/create-a-workspace.png)
 
 1. Name your workspace.
 
@@ -44,7 +44,7 @@ Here's how to create your workspace:
 
 1. After agreeing to the terms, click **Submit**. The **Create a dataset** page appears.
 
-    ![](./getting-started-with-an-example-dataset/create-a-dataset.png)
+    ![](./getting-started-with-apperate/create-a-dataset.png)
 
 Your workspace is created and ready for delivering data to your apps!
 
@@ -54,13 +54,13 @@ Here you will load IEX Cloud's sample data file and then access the loaded data 
 
 1. If you're not already in the **Create a dataset** page, click **Create a dataset** at the top right of the console. The **Create a dataset** page appears. The image below highlights the sample file link that you will click in the next step.
 
-    ![](./getting-started-with-an-example-dataset/try-our-sample-file.png)
+    ![](./getting-started-with-apperate/try-our-sample-file.png)
 
     Optionally, enter a more meaninfgul the dataset ID.
 
 1.  In the **Create a dataset** page, keep the source type set to **Local file** and load the sample data file by clicking **Try using our sample file**. Apperate loads the data into a new dataset, generates a REST endpoint for the dataset, and shows the dataset overview in the console.
 
-    ![](./getting-started-with-an-example-dataset/sample-dataset-overview.png)
+    ![](./getting-started-with-apperate/sample-dataset-overview.png)
 
     Notice these fields:
 
@@ -88,7 +88,7 @@ Here you will load IEX Cloud's sample data file and then access the loaded data 
 
 1. Get your dataset's last row by clicking the **Example request** URL.
 
-    ![](./getting-started-with-an-example-dataset/sample-dataset-example-request.png)
+    ![](./getting-started-with-apperate/sample-dataset-example-request.png)
 
     The URL opens in a new browser tab and the response appears as a JSON object.
 
