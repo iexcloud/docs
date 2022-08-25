@@ -2,27 +2,21 @@
 
 The IEX Cloud API is based on REST, has resource-oriented URLs, returns JSON-encoded responses, and returns standard HTTP [response codes](https://iexcloud.io/docs/api/#error-codes). We support [JSONP](https://en.wikipedia.org/wiki/JSONP) for all endpoints.
 
-Here you'll determine your base URL and call the stock quote endpoint to get the latest quote for a stock.
+The API's base URL comprises the API's domain and latest version.
+
+**Base URL:** `https://cloud.iexapis.com/v1`
+
+As an example of getting real-time core data, you'll call the stock quote endpoint to get the latest quote for a stock.
 
 **Prerequisites:**
 
 - **IEX Cloud Apperate account** - Create one [here](https://iexcloud.io/cloud-login#/register).
 
-Start with the base URL.
-
-## Determining the Base URL
-
-The [Introduction](https://iexcloud.io/docs/api/#introduction) section posts the domain URL and states the latest API version. Together, they make the following base URL.
-
-**Base URL:** `https://cloud.iexapis.com/v1`
-
-Let's get financial data by calling a Core Data endpoint using the base URL.
-
 ## Getting a Stock Quote
 
 Here we'll get the latest quote for Apple.
 
-1. Open the [IEX Cloud API Reference](https://iexcloud.io/docs/api/) in your browser. The IEX Cloud API Reference appears.
+1. Open the [Legacy API Reference](https://iexcloud.io/docs/api/) in your browser. The IEX Cloud API Reference appears.
 
     ![](./getting-real-time-core-financial-data/iexcloud-api-reference.png)
 
@@ -114,7 +108,7 @@ Congratulations! You know how to get IEX Cloud production-ready financial data f
 
 ## What's Next
 
-Now that you know how to get real-time IEX Cloud data, explore the [API Reference](https://iexcloud.io/docs/api/) for more data to use in your apps.
+Now that you know how to get real-time IEX Cloud data, explore the [Legacy API Reference](https://iexcloud.io/docs/api/) for more data to use in your apps.
 
 If you're interested in historical time series data, check out [Getting Time Series Core Financial Data](getting-time-series-core-financial-data.md).
 

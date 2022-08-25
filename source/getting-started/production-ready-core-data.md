@@ -35,7 +35,7 @@ Now you're familiar with Core Data.
 
 ## What's Next
 
-If you want to use IEX Cloud Core Data in your apps, please see [Using Core Data](../using-core-data.md).
+If you want to use IEX Cloud Core Data in your apps, please see [Using IEX Cloud Core Financial Data](../using-core-data.md).
 
 If you need to store application data, learn how at [Writing and Fetching a Data Record](../getting-started/writing-and-fetching-a-record.md).
 

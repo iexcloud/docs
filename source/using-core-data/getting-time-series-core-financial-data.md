@@ -16,7 +16,7 @@ Apperate's Core Datasets provide historical time series financial data. Here are
 
     ![](./getting-time-series-core-financial-data/core-datasets.png)
 
-1. Click on a dataset you want data from. For example, if you want to get cash flow records, click the CASH_FLOW dataset. The dataset overview appears.
+1. Click on the dataset you want data from. For example, if you want to get cash flow records, click the CASH_FLOW dataset. The dataset overview appears.
 
     ![](./getting-time-series-core-financial-data/cash-flow-overview.png)
 
@@ -75,7 +75,7 @@ Apperate's Core Datasets provide historical time series financial data. Here are
     ```{note} The response will be different for you because records are continuously being added.
     ```
 
-1. Update the URL to get Apple's latest cash flow record by adding the `AAPL` symbol as the `key` path parameter after `CASH_FLOw`. Replace `WORKSPACE` and `TOKEN` with your values.
+1. Update the URL to get Apple's latest cash flow record: add the `AAPL` symbol as a path parameter (the `key` path parameter) after `CASH_FLOW` and replace `WORKSPACE` and `TOKEN` with your values.
 
     ```
     https://WORKSPACE.iex.cloud/v1/data/CORE/CASH_FLOW/AAPL?last=1&token=TOKEN
@@ -123,12 +123,12 @@ Congratulations on getting core financial time series data.
 
 If you want to get real-time IEX Cloud financial data, see [Getting Real-Time Core Financial Data](./getting-real-time-core-financial-data.md).
 
-Apperate's API is easy to use. For starters, visit [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
-
 To dive into more Core Dataset queries using the Data API, see these articles:
 
 - [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md)
 - [SQL Query with the API](../interacting-with-your-data/querying-data/sql-query-with-the-api.md)
+
+To learn more about Apperate's APIs, visit [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
 
 If want to combine Core Dataset data with data from other datasets, check out [Creating and Managing Views](../managing-your-data/creating-and-managing-views.md).
 
