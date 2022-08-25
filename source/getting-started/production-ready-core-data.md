@@ -12,7 +12,8 @@ IEX Cloud Apperate comes with built-in data to power fintech applications and mo
 - News
 - Symbols / Mappings
 
-> **Important:** Apperate includes only historical time series Core Data at this time. We are in the process of migrating real-time legacy data, including stock quotes, into Apperate. In the meantime, please see the [Legacy API Reference](https://iexcloud.io/docs/api/) for the real-time legacy data.
+```{important} Apperate includes only historical time series Core Data at this time. We are in the process of migrating real-time legacy data, including stock quotes, into Apperate. In the meantime, please see the [Legacy API Reference](https://iexcloud.io/docs/api/) for the real-time legacy data.
+```
 
 Let's explore the Core Data.
 
@@ -34,8 +35,11 @@ Now you're familiar with Core Data.
 
 ## What's Next
 
+If you want to use IEX Cloud Core Data in your apps, please see [Using Core Data](../using-core-data.md).
+
+If you need to store application data, learn how at [Writing and Fetching a Data Record](../getting-started/writing-and-fetching-a-record.md).
+
 If you have data that you'd like to use with your apps, pull it into Apperate as demonstrated in [Migrating and Importing Data](../migrating-and-importing-data.md).
 
-If you want to use Core Data in your apps, please see [Using Core Data](../using-core-data.md).
-
-> **Note:** IEX Cloud documentation for the legacy plan subscribers is at <https://iexcloud.io/docs/api/>.
+```{note} IEX Cloud documentation for the legacy plan subscribers is at <https://iexcloud.io/docs/api/>.
+```

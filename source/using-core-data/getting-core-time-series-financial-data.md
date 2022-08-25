@@ -1,6 +1,7 @@
 # Getting Core Time Series Financial Data
 
-> **Important:** Apperate includes only historical time series Core Data at this time. We are in the process of migrating real-time legacy data, including stock quotes, into Apperate. In the meantime, please see the [Legacy API Reference](https://iexcloud.io/docs/api/) for the real-time legacy data.
+```{important} Apperate includes only historical time series Core Data at this time. We are in the process of migrating real-time legacy data, including stock quotes, into Apperate. In the meantime, please see the [Legacy API Reference](https://iexcloud.io/docs/api/) for the real-time legacy data.
+```
 
 Apperate's Core Datasets provide historical time series financial data. Here are steps for getting this financial data.
 
@@ -71,7 +72,8 @@ Apperate's Core Datasets provide historical time series financial data. Here are
     ]
     ```
 
-    > **Note:** The response will be different for you because records are continuously being added.
+    ```{note} The response will be different for you because records are continuously being added.
+    ```
 
 1. Update the URL to get Apple's latest cash flow record by adding the `AAPL` symbol as the `key` path parameter after `CASH_FLOw`. Replace `WORKSPACE` and `TOKEN` with your values.
 
@@ -119,6 +121,8 @@ Congratulations on getting core financial time series data.
 
 ## What's Next
 
+If you want to get real-time IEX Cloud financial data, see [Getting IEX Cloud Financial Data](./getting-iex-cloud-financial-data.md).
+
 Apperate's API is easy to use. For starters, visit [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
 
 To dive into more Core Dataset queries using the Data API, see these articles:
@@ -127,3 +131,5 @@ To dive into more Core Dataset queries using the Data API, see these articles:
 - [SQL Query with the API](../interacting-with-your-data/querying-data/sql-query-with-the-api.md)
 
 If want to combine Core Dataset data with data from other datasets, check out [Creating and Managing Views](../managing-your-data/creating-and-managing-views.md).
+
+If you need to store application data, learn how at [Writing and Fetching a Data Record](../getting-started/writing-and-fetching-a-record.md).
