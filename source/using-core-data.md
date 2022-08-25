@@ -1,6 +1,12 @@
 # Using Core Data
 
-> **Important:** Apperate includes only historical time series Core Data at this time. We are in the process of migrating real-time legacy data, including stock quotes, into Apperate. In the meantime, please see the [Legacy API Reference](https://iexcloud.io/docs/api/) for the real-time legacy data.
+```{toctree}
+:maxdepth: 1
+
+using-core-data/getting-core-time-series-financial-data.md
+```
+
+> **Important:** Apperate includes only historical time series Core Data at this time. We are in the process of migrating real-time legacy data, including stock quotes, into Apperate. In the meantime, please see the [Legacy API Reference](https://iexcloud.io/docs/api/) for the IEX Cloud real-time data.
 
 Apperate's [production-ready Core Data](./getting-started/production-ready-core-data.md) has REST endpoints and [datasets](./reference/glossary.md#dataset) that you can join with other datasets for creating views.
 
