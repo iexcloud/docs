@@ -1,6 +1,6 @@
 # Building Instructions
 
-The site uses the [Sphinx](https://www.sphinx-doc.org/en/master/index.html) static site generator (SSG). The articles are written in Markdown and then converted to static HTML files using Sphinx and the [MyST parser](https://myst-parser.readthedocs.io/en/latest/). This site uses [ReStructured Text](https://docutils.sourceforge.io/docs/user/rst/quickref.html) (RST) text in the index.rst file and in section Markdown files to specify the site tree.
+The site uses the [Sphinx](https://www.sphinx-doc.org/en/master/index.html) static site generator (SSG). The articles are written in Markdown and then converted to static HTML files using Sphinx and the [MyST parser](https://myst-parser.readthedocs.io/en/latest/). This site uses [ReStructured Text](https://docutils.sourceforge.io/docs/user/rst/quickref.html) (RST) text in the `index.rst` file and in section Markdown files to specify the site tree.
 
 Building the docs site requires Python and several external plugins for Sphinx. Running the build generates HTML files to the `build/html` folder. Any web server can serve up the site by pointing to the `index.html` file.
 

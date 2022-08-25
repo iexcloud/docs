@@ -1,73 +1,23 @@
 # IEX Cloud Apperate Documentation 
 
-The product documentation is listed below. If you're new to Apperate, get acquainted with it by reading our **Getting Started** articles. Enjoy!
+The Apperate documentation is published to <https://iexcloud.io/documentation/>.
 
-## Table of Contents
+We write Markdown files that use an expansion syntax called MyST. Here are some helpful Markdown MyST articles.
 
-### Getting Started
+- [CommonMark](https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html) basic syntax.
+- [Articles](https://pradyunsg.me/furo/reference/) that contain additional examples that include extensions we use via the Euro theme. Make sure to view examples via the Markdown (MyST) tabs.
 
-[What is IEX Cloud Apperate?](./source/getting-started/what-is-iex-cloud-apperate.md)
+All of the articles are nested in the `source/` folder. The article/section hierarchy follows the `source/` folder's nested hierarchy of Markdown files (`.md`) and folders. 
 
-[Getting Started with Apperate](./source/getting-started/getting-started-with-apperate.md)
+Here is a representative sampling of repository files:
 
-[Writing and Fetching a Record](./source/getting-started/writing-and-fetching-a-record.md)
+| File | Description |
+| --- | --- |
+| `source/administration/managing-users.md` | A regular article. |
+| `source/administration/access-and-security/` | Folder containing the article’s image files. |
+| `source/migrating-and-importing-data.md` | A section intro article (i.e., a parent article). It lists the section articles and can also contain Markdown text. |
+| `source/migrating-and-importing-data/` | This folder…<br> - Contains the parent article’s image files<br>- Contains the child articles and their image file folders |
 
-[Production-Ready Core Data](./source/getting-started/production-ready-core-data.md)
+## Related Topics
 
-### Development
-
-#### Migrating and Importing Data
-
-[Migrating and Importing Data](./source/migrating-and-importing-data.md)
-
-[Scheduling Data Ingestion](./source/migrating-and-importing-data/scheduling-data-ingestion.md)
-
-#### Managing Your Data
-
-[Managing Your Data](./source/managing-your-data.md)
-
-[Understanding Datasets](./source/managing-your-data/understanding-datasets.md)
-
-[Normalization](./source/managing-your-data/defining-schemas/normalization.md)
-
-[Creating and Managing Views](./source/managing-your-data/creating-and-managing-views.md)
-
-Creating and Managing Indexes \(Coming soon\)
-
-Transforming Data \(Coming soon\)
-
-#### Interacting with Your Data
-
-[Interacting with Your Data](./source/interacting-with-your-data.md)
-
-[Using Apperate's APIs](./source/interacting-with-your-data/apperate-api-basics.md)
-
-[Writing and Fetching a Record](./source/getting-started/writing-and-fetching-a-record.md)
-
-[Querying Datasets](./source/interacting-with-your-data/querying-data/querying-datasets.md)
-
-[SQL Query API](./source/interacting-with-your-data/querying-data/sql-query-api.md)
-
-[Updating a Data Record](./source/interacting-with-your-data/updating-a-data-record.md)
-
-#### Using Core Data
-
-[Using Core Data](./source/using-core-data.md)
-
-#### Reference
-
-[Changelog](./source/reference/changelog.md)
-
-[Financial Identifiers](./source/reference/financial-identifiers.md)
-
-[Glossary](./source/reference/glossary.md)
-
-[Reserved Keywords and Prefixes](./source/reference/reserved-keywords-and-prefixes.md)
-
-### Administration
-
-[Access and Security](./source/administration/access-and-security.md)
-
-[Managing Users](./source/administration/managing-users.md)
-
-[Monitoring Deployments](./source/administration/monitoring-deployments.md)
+[Build instrutions](./BUILD_INSTRUCTIONS.md)
