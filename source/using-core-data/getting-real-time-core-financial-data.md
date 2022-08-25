@@ -1,4 +1,4 @@
-# Getting IEX Cloud Financial Data
+# Getting Real-Time Core Financial Data
 
 The IEX Cloud API is based on REST, has resource-oriented URLs, returns JSON-encoded responses, and returns standard HTTP [response codes](https://iexcloud.io/docs/api/#error-codes). We support [JSONP](https://en.wikipedia.org/wiki/JSONP) for all endpoints.
 
@@ -24,11 +24,11 @@ Here we'll get the latest quote for Apple.
 
 1. Open the [IEX Cloud API Reference](https://iexcloud.io/docs/api/) in your browser. The IEX Cloud API Reference appears.
 
-    ![](./getting-iex-cloud-financial-data/iexcloud-api-reference.png)
+    ![](./getting-real-time-core-financial-data/iexcloud-api-reference.png)
 
 1. Navigate to the **Core Data &rarr; Stocks / Equities &rarr; Quote** reference [page](https://iexcloud.io/docs/api/#quote). The Quote reference page appears.
 
-    ![](./getting-iex-cloud-financial-data/quote-reference-page.png)
+    ![](./getting-real-time-core-financial-data/quote-reference-page.png)
 
     We'll call the `GET /stock/{symbol}/quote` method to get an entire quote.
 
@@ -116,6 +116,6 @@ Congratulations! You know how to get IEX Cloud production-ready financial data f
 
 Now that you know how to get real-time IEX Cloud data, explore the [API Reference](https://iexcloud.io/docs/api/) for more data to use in your apps.
 
-If you're interested in historical time series data, check out [Getting Core Time Series Financial Data](getting-core-time-series-financial-data.md).
+If you're interested in historical time series data, check out [Getting Time Series Core Financial Data](getting-time-series-core-financial-data.md).
 
 If you need to store application data, learn how at [Writing and Fetching a Data Record](../getting-started/writing-and-fetching-a-record.md).

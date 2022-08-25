@@ -1,4 +1,4 @@
-# Getting Core Time Series Financial Data
+# Getting Time Series Core Financial Data
 
 ```{important} Apperate includes only historical time series Core Data at this time. We are in the process of migrating real-time legacy data, including stock quotes, into Apperate. In the meantime, please see the [Legacy API Reference](https://iexcloud.io/docs/api/) for the real-time legacy data.
 ```
@@ -14,11 +14,11 @@ Apperate's Core Datasets provide historical time series financial data. Here are
 
 1. Browse the Core Datasets in the console at [**Data > Datasets > Core**](https://iexcloud.io/console/datasets/core). The Core Datasets list appears.
 
-    ![](./getting-core-time-series-financial-data/core-datasets.png)
+    ![](./getting-time-series-core-financial-data/core-datasets.png)
 
 1. Click on a dataset you want data from. For example, if you want to get cash flow records, click the CASH_FLOW dataset. The dataset overview appears.
 
-    ![](./getting-core-time-series-financial-data/cash-flow-overview.png)
+    ![](./getting-time-series-core-financial-data/cash-flow-overview.png)
 
     > **Note:** From a dataset's **Database** page, you can query its data, export the query results to a CSV, and share your query in a URL. 
     
@@ -121,7 +121,7 @@ Congratulations on getting core financial time series data.
 
 ## What's Next
 
-If you want to get real-time IEX Cloud financial data, see [Getting IEX Cloud Financial Data](./getting-iex-cloud-financial-data.md).
+If you want to get real-time IEX Cloud financial data, see [Getting Real-Time Core Financial Data](./getting-real-time-core-financial-data.md).
 
 Apperate's API is easy to use. For starters, visit [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
 

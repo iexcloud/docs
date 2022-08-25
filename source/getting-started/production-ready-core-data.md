@@ -1,6 +1,6 @@
 # Production-Ready Core Data
 
-IEX Cloud Apperate comes with built-in data to power fintech applications and more. Here are some of the data types:
+IEX Cloud Apperate comes with 5+ terabytes of built-in data to power fintech applications and more. Here are some of the data types:
 
 - Stocks / Equities
 - Forex / Currencies

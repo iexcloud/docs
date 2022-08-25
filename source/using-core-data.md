@@ -3,27 +3,27 @@
 ```{toctree}
 :maxdepth: 1
 
-using-core-data/getting-iex-cloud-financial-data.md
-using-core-data/getting-core-time-series-financial-data.md
+using-core-data/getting-real-time-core-financial-data.md
+using-core-data/getting-time-series-core-financial-data.md
 ```
 
 ```{important} Apperate includes only historical time series Core Data at this time. We are in the process of migrating real-time IEX Cloud data, including stock quotes, into Apperate. In the meantime, please see the [Legacy API Reference](https://iexcloud.io/docs/api/) for the IEX Cloud real-time data.
 ```
 
-[Current plans](https://iexcloud.io/pricing/) include Apperate's historical time series financial data and IEX Cloud's real-time financial data. Both types of data are described here.
+IEX Cloud Apperate comes with 5+ terabytes of built-in data to power fintech applications. It includes real-time financial data and historical time series financial data. Both data types are described here.
 
-##  IEX Cloud Financial Data
+##  Real-Time Financial Data
 
-IEX Cloud provides real-time financial data. The [Legacy IEX Cloud API Reference](https://iexcloud.io/docs/api/) describes everything you need to get IEX Cloud real-time data.
+The [Legacy API Reference](https://iexcloud.io/docs/api/) describes everything you need to get IEX Cloud real-time financial data.
 
 ![](./using-core-data/iexcloud-api-reference.png)
 
-Here's an overview of the site:
+Here's an overview:
 
-- [Introduction](https://iexcloud.io/docs/api/#introduction) - Covers API basics including how credits work, authentication, limits, support, and more.
-- [Guides](https://iexcloud.io/docs/api/#guides) - Shows how to call REST endpoints and use the API in Microsoft Excel.
+- [Introduction](https://iexcloud.io/docs/api/#introduction) - Covers API basics including authentication, limits, support, how credits work (applicable for legacy plans) and more.
+- [Guides](https://iexcloud.io/docs/api/#guides) - Shows how to call REST endpoints and use endpoint data in Microsoft Excel.
 - [Developer Tools and Open Source](https://iexcloud.io/docs/api/#developer-tools-and-open-source) - Describes JavaScript and Python SDK libraries and a sandbox for testing API calls.
-- [API Usage](https://iexcloud.io/docs/api/#api-usage) - Demonstrates using query parameters, querying time series data, making batch requests, streaming data, and more.
+- [API Usage](https://iexcloud.io/docs/api/#api-usage) - Demonstrates using query parameters, making batch requests, streaming data, and more.
 - [Rules Engine](https://iexcloud.io/docs/api/#rules-engine-beta) - Details configuring event-based notifications.
 - [Account](https://iexcloud.io/docs/api/#account) - Provides service management information. 
 - [API System Metadata](https://iexcloud.io/docs/api/#api-system-metadata) - Links to a live status dashboard and describes the status API.
@@ -44,55 +44,30 @@ Here's an overview of the site:
     - [Reference Data](https://iexcloud.io/docs/api/#reference-data)
     - [Investors Exchange Data](https://iexcloud.io/docs/api/#investors-exchange-data)
 
-Each endpoint reference description includes the HTTP request structure, data weighting (for legacy subscriptions), data timing and schedule, data sources, examples, path/query parameters, and response attributes.
+Each endpoint reference includes the HTTP request structure, data weighting (for legacy subscriptions), data timing and schedule, data sources, examples, path/query parameters, and response attributes.
 
-## Apperate Core Datasets
+To start calling these endpoints, see [Getting Real-Time Core Financial Data](./using-core-data/getting-real-time-core-financial-data.md).
 
-Apperate's built-in historical time series data is available as [datasets](./reference/glossary.md#dataset) (a.k.a. Core Datasets) that you can join with other datasets for creating views.
-You can browse them in the console at [**Data > Datasets > Core**](https://iexcloud.io/console/datasets/core).
+## Time Series Financial Data
+
+Apperate's built-in historical time series data is available as [datasets](./reference/glossary.md#dataset) (a.k.a. Core Datasets) that you can query and join with other datasets to create views.
+The datasets are available in the console at [**Data > Datasets > Core**](https://iexcloud.io/console/datasets/core).
 
 ![](./using-core-data/core-datasets.png)
 
-Each dataset's **Overview** page provides an example request URL that returns the dataset's last record. You can get a dataset's last record by clicking the **Example Request** URL.
+Each dataset **Overview** page provides an example request URL that you can click to get the dataset's last record. The Overview page's **Open Docs** button opens dataset's `GET /data` endpoint reference page. 
 
-For example, clicking on the **CORE.ADVANCED_BONUS** dataset's **Example Request** returns a record like this:
+![](./using-core-data/cash_flow_dataset_api_docs.png)
 
-```javascript
-[
-    {
-        "countryCode": "US",
-        "created": "2022-02-01",
-        "currency": "",
-        "description": "Global X MSCI China Industrials ETF",
-        "exDate": "2022-12-29",
-        "figi": "BBG000PYH302",
-        "flag": "",
-        "fromFactor": 0,
-        "lastUpdated": "2022-02-01",
-        "notes": null,
-        "parValue": 0,
-        "parValueCurrency": "USD",
-        "paymentDate": "2023-01-09",
-        "recordDate": "2022-12-30",
-        "refid": "2433108",
-        "securityType": "Exchange Traded Fund",
-        "symbol": "CHII",
-        "toFactor": 0,
-        "id": "ADVANCED_BONUS",
-        "key": "CHII",
-        "subkey": "2433108",
-        "date": 1672272000000,
-        "updated": 1652531939424.008
-    }
-]
+```{note} A dataset's **Database** page provides an interface for modifying data records and a SQL editor for querying the dataset or combine it with other datasets to create views.
 ```
 
-Now you're familiar with the API references for the [real-time IEX Cloud financial data](https://iexcloud.io/docs/api/) and the [historical time-series financial data](https://iexcloud.io/docs).
+Now you're familiar with the API references for the [core real-time financial data](https://iexcloud.io/docs/api/) and the [core historical time-series financial data](https://iexcloud.io/docs).
 
 ## What's Next
 
-If you want to get real-time IEX Cloud financial data, see [Getting IEX Cloud Financial Data](./using-core-data/getting-iex-cloud-financial-data.md).
+To get real-time IEX Cloud financial data, see [Getting Real-Time Core Financial Data](./using-core-data/getting-real-time-core-financial-data.md).
 
-If you're interested in historical time series data, check out [Getting Core Time Series Financial Data](./using-core-data/getting-core-time-series-financial-data.md).
+To get historical time series data, check out [Getting Time Series Core Financial Data](./using-core-data/getting-time-series-core-financial-data.md).
 
-If you need to store application data, learn how at [Writing and Fetching a Data Record](../getting-started/writing-and-fetching-a-record.md)
+If you need to store application data, learn how at [Writing and Fetching a Data Record](../getting-started/writing-and-fetching-a-record.md).
