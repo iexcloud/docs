@@ -20,4 +20,4 @@ Here is a representative sampling of repository files:
 
 ## Related Topics
 
-[Build instrutions](./BUILD_INSTRUCTIONS.md)
+[Build instructions](./BUILD_INSTRUCTIONS.md)
