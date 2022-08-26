@@ -1,54 +1,13 @@
-# Getting Started with Apperate
+# Creating an Example Dataset
 
-Here we'll set up a workspace and then in a matter of seconds make data available for apps to use.
+Here we'll create a dataset with example data in seconds and read the data back from the dataset's auto-generated REST endpoint.
 
-**Important:** If you don't already have an IEX Cloud account, create one [here](https://iexcloud.io/cloud-login#/register).
+**Prerequisites:**
 
-## Setting Up Your Workspace
+- **IEX Cloud Apperate account** - Create one [here](https://iexcloud.io/cloud-login#/register).
+- **Apperate workspace** - See [Creating a Workspace](../getting-started/creating-a-workspace.md). 
 
-A *workspace* is your unique domain for writing data and querying it, and delivering data to your apps. Your workspace name appears in your API URLs.
-
-**Workspace URL format:**
-
-```
-https://WORKSPACE.iex.cloud/...
-```
-
-**Example Workspace URL:**
-
-```
-https://mycompany.iex.cloud/...
-```
-
-In the URL above, the workspace name `mycompany` is used as a subdomain of `iex.cloud`. 
-
-Here's how to create your workspace:
-
-1. Click on the link in your invitation email. The welcome page appears and prompts you to create your workspace.
-
-    ![](./getting-started-with-apperate/create-a-workspace.png)
-
-1. Name your workspace.
-
-    > **Important:** The workspace name is permanent, so make sure to name it exactly how you want it.
-
-    Workspace names have the following requirements.
-
-    **Name requirements:**
-
-    - Starts with a letter
-    - Ends with a letter or number
-    - Uses only lowercase alphanumeric characters and dashes
-    - Is between 2-63 characters long
-    - DOES NOT consist of ALL numeric values
-
-1. After agreeing to the terms, click **Submit**. The **Create a dataset** page appears.
-
-    ![](./getting-started-with-apperate/create-a-dataset.png)
-
-Your workspace is created and ready for delivering data to your apps!
-
-## Delivering Data
+## Creating and Using an Example Dataset
 
 Here you will load IEX Cloud's sample data file and then access the loaded data from an auto-generated REST endpoint.
 

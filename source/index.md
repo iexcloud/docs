@@ -3,6 +3,7 @@
 :caption: Getting Started
 
 getting-started/what-is-iex-cloud-apperate.md
+getting-started/creating-a-workspace.md
 getting-started/getting-started-with-apperate.md
 getting-started/writing-and-fetching-a-record.md
 getting-started/production-ready-core-data.md

@@ -3,14 +3,16 @@
 ```{important} Apperate includes only historical time series Core Data at this time. We are in the process of migrating real-time legacy data, including stock quotes, into Apperate. In the meantime, please see the [Legacy API Reference](https://iexcloud.io/docs/api/) for the real-time legacy data.
 ```
 
-Apperate's Core Datasets provide historical time series financial data. Here are steps for getting this financial data.
+Apperate's Core Datasets provide historical time series financial data. Let's call an endpoint to get this financial data.
 
 **Prerequisites:**
 
 - **IEX Cloud Apperate account** - Create one [here](https://iexcloud.io/cloud-login#/register).
-- **Apperate workspace** - See [Setting Up Your Workspace](../getting-started/getting-started-with-apperate.md#setting-up-your-workspace). 
+- **Apperate workspace** - See [Creating a Workspace](../getting-started/creating-a-workspace.md). 
 
 ## Steps
+
+Here are steps for getting this core financial data.
 
 1. Browse the Core Datasets in the console at [**Data > Datasets > Core**](https://iexcloud.io/console/datasets/core). The Core Datasets list appears.
 

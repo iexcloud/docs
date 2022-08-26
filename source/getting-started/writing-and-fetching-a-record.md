@@ -5,7 +5,7 @@ As with any database, you can add individual records to Apperate and fetch them.
 **Prerequisites:**
 
 - **IEX Cloud Apperate account** - Create one [here](https://iexcloud.io/cloud-login#/register).
-- **Apperate workspace** - See [Setting Up Your Workspace](./getting-started-with-apperate.md#setting-up-your-workspace). 
+- **Apperate workspace** - See [Creating a Workspace](./creating-a-workspace.md). 
 
 Let's start with creating a dataset from the schema.
 
