@@ -1,13 +1,15 @@
 # Writing and Fetching a Record
 
-As with any database, you can add individual records to Apperate and fetch them. You can do this manually in the UI or do it programmatically using the REST API. Here we'll add and fetch a record using the REST API. In this example we'll create a dataset for news events (e.g., news related to financial data), add a news even, and fetch that news event record.
+As with any database, you can add individual records to Apperate and fetch them. You can do this manually in the UI or do it programmatically using the REST API.
+
+Here we'll add and fetch a record using the REST API. We'll create a dataset for news events (e.g., news related to financial data), add a news event record, and fetch that record.
 
 **Prerequisites:**
 
 - **IEX Cloud Apperate account** - Create one [here](https://iexcloud.io/cloud-login#/register).
 - **Apperate workspace** - See [Creating a Workspace](./creating-a-workspace.md). 
 
-Let's start with creating a dataset from the schema.
+Let's start with creating a dataset from a simple schema.
 
 ## Creating a Dataset for Your Schema
 
@@ -15,16 +17,16 @@ Here are models for the example dataset schema and data record.
 
 **Dataset schema**
 
-| Required | Allow null | Property | Index |
-| -------- | ---------- | -------- | ----- |
-| x |   | id (integer)            | Primary |
-| x |   | date (date > date)      | Date |
-| x |   | summary (string)        |  |
-| x |   | source (string)         |  |
-| x |   | country (string)        | Secondary |
-| x |   | state_province (string) |  |
-|   | x | city (string)           |  |
-|   | x | zip_code (string)       |  |
+| Property | Index | Required | Allow null |
+| -------- | ----- | -------- | ---------- |
+| id (integer)            | Primary | x |   |
+| date (date > date)      | Date | x |   |
+| summary (string)        |   | x |   |
+| source (string)         |   | x |   |
+| country (string)        | Secondary | x |   |
+| state_province (string) |   | x |   |
+| city (string)           |   |   | x |
+| zip_code (string)       |   |   | x |
 
 **Data record**
 
@@ -39,9 +41,11 @@ Here are models for the example dataset schema and data record.
 | city           | Dawson City |
 | zip_code       | Y0B 0A3 |
 
-The console is the easiest way to construct datasets.
+Here's how to create a dataset based on the models:
 
-1. In the console, click **Create a dataset.** The dataset creation page appears.
+1. In the console, click **Create a dataset**. The dataset creation page appears.
+
+    ![](./writing-and-fetching-a-record/create-a-dataset.png)
 
 1. Enter an arbitrary dataset ID, like `FLASH_NEWS_DATASET`.
 
@@ -49,31 +53,64 @@ The console is the easiest way to construct datasets.
 
     ![](./writing-and-fetching-a-record/create-dataset-without-data.png)
 
-    The schema editor fields appear.
+    ```{tip} Another easy way to create a dataset is to upload a sample data file (CSV or JSON) with the column names and an example record. Apperate automatically makes a best effort to detect column data types and indexes. See [Loading Data From a File](../migrating-and-importing-data/loading-data-from-a-file.md) to learn how.
+    ```
+
+    The schema editor appears.
 
     ![](./writing-and-fetching-a-record/schema-editor-no-data.png)
 
-1. In the **+ Add Property** field, enter your properties by typing each one's name and clicking `Enter`. The properties appear in the **Properties** table.
+1. In the **Properties** section's **+ Add Property** field, enter your properties.
 
-    > **Tip:** When creating a dataset manually, it can be easiest to first enter each property name and then update the property type and index.
+    ```{tip} A fast way to add properties is enter their names only and hit **Enter** after each one. After adding them by name, update each property's type and attributes in the table.
+    ```
 
-    Select *number* for the id property's type.
+    The properties appear in the **Properties** table.
 
-    Select *date > date* (format) for the date property.
+    ![](./writing-and-fetching-a-record/property-names-in-schema.png)
 
-    Select *string* for all other properties.
+    In the **Property** column:
     
-    Set **id** as the Primary index, **country** as the Secondary index, and **date** as the Date index.
+    - Select *number* for the `id` property's type.
+    - Select *date > date* (format) for the `date` property.
+    - Select *string* for all other properties.
+
+    In the **Unique Index** column area:
+
+    - Set `id` as the **Primary** index
+    - Set `country` as the **Secondary** index
+    - Set `date` as the **Date** index
+
+    ```{note} For Primary and Secondary index properties, the empty star icon in a property box's top-right corner allows you to opt in either property to Apperate's symbolic metadata graph. For example, if you opt in an index property that holds financial symbols, Apperate's metadata graph associates 10+ [financial identifier](../reference/financial-identifiers.md) types with them.
+    ```
     
     ![](./writing-and-fetching-a-record/write-fetch-record-schema.png)
     
-1. Click **Create dataset** when you're done specifying the dataset. The dataset overview appears with zero rows.
+1. When you're done specifying the dataset, click **Create dataset**. The dataset overview appears.
+
+    ![](./writing-and-fetching-a-record/my-flash-dataset-empty.png)
+
+    The dataset has no rows, but the **Example request** field and **HTTP Request** panel refer to the auto-generated REST API endpoint.
+
+    **Example request**
+
+    ```
+    https://WORKSPACE.iex.cloud/v1/data/MY/FLASH_NEWS_DATASET?last=1&token=TOKEN
+    ```
+    
+    **HTTP Request**
+    
+    ```
+    GET /data/MY/FLASH_NEWS_DATASET
+    ```
+
+1. Click **Open Docs**. The dataset's `GET /data` endpoint reference page appears.
 
 Your dataset is ready for data.
 
 ## Writing a Record
 
-You'll add your news record into the dataset using a `POST /datasets/:workspace` request. The [Create a dataset](https://iexcloud.io/docs/datasets-api/create-a-dataset) API doc describes this REST endpoint.
+You'll add the example news record into the dataset using the Data API's [`POST /data`](https://iexcloud.io/docs/datasets-api/ingest-data) method.
 
 Add a news record by entering the following command, replacing WORKSPACE with your workspace name and SK_TOKEN with your secret token value.
 
@@ -94,7 +131,15 @@ curl -H "Content-Type: application/json"
 }
 ```
 
-News of Doug Dig's gold discovery is now in the dataset.
+News of Doug Dig's gold discovery is now in the dataset and available to read from the dataset's auto-generated API.
+
+<!-- TODO end the writing article here. Link to reading/fetching article. Jim
+## What's Next
+
+Now that you've written to Apperate, why not read that data back? Learn how at [Reading Data From Apperate](./reading-data-from-apperate.md).
+
+If you're interested in loading data other ways or migrating data to Apperate, please visit [Migrating and Importing Data](../migrating-and-importing-data.md).
+-->
 
 ## Fetching the Record
 
@@ -102,9 +147,11 @@ You can fetch the record using a `GET /data/:workspace/:id/:key?/:subkey?` reque
 
 The endpoint queries the dataset using a Primary index (key), an optional Secondary index (subkey), and a Date index (via the **on** request parameter).
 
-Open the following URL in your browser, replacing the `WORKSPACE` and `SK_TOKEN with` your values. 
+Open the following URL in your browser, replacing the `WORKSPACE` and `SK_TOKEN` with your values. 
 
+```
 https://WORKSPACE.iex.cloud/v1/data/WORKSPACE/FLASH_NEWS_DATASET/12345?token=SK_TOKEN
+```
 
 **Response:**
 
