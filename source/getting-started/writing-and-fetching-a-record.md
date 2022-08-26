@@ -1,6 +1,15 @@
 # Writing and Fetching a Record
 
-As with any database, you can add individual records to Apperate and fetch them. You can do this manually in the UI or do it programmatically using the REST API. Here we'll demonstrate adding and fetching a record using the REST API. In this example we'll create a dataset for news events (e.g., news related to financial data), add a news even, and fetch that news event record.
+As with any database, you can add individual records to Apperate and fetch them. You can do this manually in the UI or do it programmatically using the REST API. Here we'll add and fetch a record using the REST API. In this example we'll create a dataset for news events (e.g., news related to financial data), add a news even, and fetch that news event record.
+
+**Prerequisites:**
+
+- **IEX Cloud Apperate account** - Create one [here](https://iexcloud.io/cloud-login#/register).
+- **Apperate workspace** - See [Setting Up Your Workspace](./getting-started-with-apperate.md#setting-up-your-workspace). 
+
+Let's start with creating a dataset from the schema.
+
+## Creating a Dataset for Your Schema
 
 Here are models for the example dataset schema and data record.
 
@@ -29,10 +38,6 @@ Here are models for the example dataset schema and data record.
 | state_province | Yukon |
 | city           | Dawson City |
 | zip_code       | Y0B 0A3 |
-
-Let's start with creating a dataset from the schema.
-
-## Creating a Dataset for Your Schema
 
 The console is the easiest way to construct datasets.
 
@@ -70,44 +75,60 @@ Your dataset is ready for data.
 
 You'll add your news record into the dataset using a `POST /datasets/:workspace` request. The [Create a dataset](https://iexcloud.io/docs/datasets-api/create-a-dataset) API doc describes this REST endpoint.
 
-Add a news record by entering the following command, replacing WORKSPACE and SK_TOKEN with your values.
+Add a news record by entering the following command, replacing WORKSPACE with your workspace name and SK_TOKEN with your secret token value.
 
 ```bash
 curl -H "Content-Type: application/json" 
- -X POST "https://cloud.iexapis.com/v1/data/WORKSPACE/FLASH_NEWS_DATASET?token=SK_TOKEN" 
+ -X POST "https://WORKSPACE.iex.cloud/v1/data/WORKSPACE/FLASH_NEWS_DATASET?token=SK_TOKEN" 
  -d '[{"id": 12345, "summary": "Gold mother-load discovered.", "source": "Doug Dig", "country": "Canada", "state_province": "Yukon", "city": "Dawson City", "zip_code": "Y0B 0A3", "date": "2022-06-13"}]'
 ```
 
 **Response:**
 
 ```
-{"success":true,"message":"Data upload of 196B for FLASH_NEWS_DATASET completed, jobId: cd0b432203474ac7b67e9a97d54a420d has been created","jobId":"cd0b432203474ac7b67e9a97d54a420d","jobUrl":"/v1/jobs/MY/ingest/cd0b432203474ac7b67e9a97d54a420d"}
+{
+    "success": true,
+    "message": "Data upload of 196B for FLASH_NEWS_DATASET completed, jobId: cd0b432203474ac7b67e9a97d54a420d has been created",
+    "jobId": "cd0b432203474ac7b67e9a97d54a420d",
+    "jobUrl": "/v1/jobs/MY/ingest/cd0b432203474ac7b67e9a97d54a420d"
+}
 ```
 
 News of Doug Dig's gold discovery is now in the dataset.
 
 ## Fetching the Record
 
-You can fetch the record using a `GET /data/:workspace/:id/:key?/:subkey?` request. The [Query data](https://iexcloud.io/docs/datasets-api/query-data) API doc provides the REST endpoint details. 
+You can fetch the record using a `GET /data/:workspace/:id/:key?/:subkey?` request. The [GET /data](https://iexcloud.io/docs/datasets-api/query-data) API reference provides the REST endpoint details. 
 
 The endpoint queries the dataset using a Primary index (key), an optional Secondary index (subkey), and a Date index (via the **on** request parameter).
 
 Open the following URL in your browser, replacing the `WORKSPACE` and `SK_TOKEN with` your values. 
 
-https://cloud.iexapis.com/v1/data/WORKSPACE/FLASH_NEWS_DATASET/12345?token=SK_TOKEN
+https://WORKSPACE.iex.cloud/v1/data/WORKSPACE/FLASH_NEWS_DATASET/12345?token=SK_TOKEN
 
 **Response:**
 
-```
-[{"city":"Dawson City","country":"Canada","id":12345,"source":"Doug Dig","state_province":"Yukon","summary":"Gold mother-load discovered.","zip_code":"Y0B 0A3","date":"2022-06-13"}]
+```javascript
+[
+    {
+        "city": "Dawson City",
+        "country": "Canada",
+        "id": 12345,
+        "source": "Doug Dig",
+        "state_province": "Yukon",
+        "summary": "Gold mother-load discovered.",
+        "zip_code": "Y0B 0A3",
+        "date": "2022-06-13"
+    }
+]
 ```
 
-You "struck gold"! Well, no really ... you just verified the new event record that Doug Dig struck gold.
+You "struck gold"! Well, not really ... you just verified the new event record that Doug Dig struck gold.
 
 ## What's Next
 
-Did you know that Apperate comes with lots of financial datasets built-in? Continue with [Production-Ready Core Data](./production-ready-core-data.md) to learn more.
+Did you know that Apperate comes with 5+ terabytes of built-in financial data? See [Production-Ready Core Data](./production-ready-core-data.md) to learn more.
 
 If you're ready to start importing your own existing data, go to [Migrating and Importing Data](../migrating-and-importing-data.md).
 
-And if you want to examine your data or perform operations on it, see [Interacting with Your Data](../interacting-with-your-data.md).
+And if you want to perform more operations on your data, see [Interacting with Your Data](../interacting-with-your-data.md).
