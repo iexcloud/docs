@@ -22,7 +22,7 @@ Here's an overview:
 
 - [Introduction](https://iexcloud.io/docs/api/#introduction) - Covers API basics including authentication, limits, support, how credits work (for legacy plans) and more.
 - [Guides](https://iexcloud.io/docs/api/#guides) - Shows how to call REST endpoints and use endpoint data in Microsoft Excel.
-- [Developer Tools and Open Source](https://iexcloud.io/docs/api/#developer-tools-and-open-source) - Describes JavaScript and Python SDK libraries and a sandbox for testing API calls.
+- [Developer Tools and Open Source](https://iexcloud.io/docs/api/#developer-tools-and-open-source) - Describes JavaScript and Python SDK libraries.
 - [API Usage](https://iexcloud.io/docs/api/#api-usage) - Demonstrates using query parameters, making batch requests, streaming data, and more.
 - [Rules Engine](https://iexcloud.io/docs/api/#rules-engine-beta) - Details configuring event-based notifications.
 - [Account](https://iexcloud.io/docs/api/#account) - Provides service management information. 
