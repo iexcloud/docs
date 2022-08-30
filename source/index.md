@@ -2,6 +2,7 @@
 :maxdepth: 1
 :caption: Getting Started
 
+getting-started/introducing-iex-cloud-apperate.md
 getting-started/benefits-of-using-apperate.md
 getting-started/creating-a-workspace.md
 getting-started/getting-started-with-apperate.md
