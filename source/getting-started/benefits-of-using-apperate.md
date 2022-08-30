@@ -1,4 +1,4 @@
-# What is IEX Cloud Apperate?
+# Benefits of Using Apperate?
 
 IEX Cloud Apperate is an application database that delivers data and back-end infrastructure to applications. Apperate combines the capabilities of data ingestion, normalization, transformation, observability, and delivery, all in one end-to-end solution for application development. It supports multiple data model concepts and specializes in time series data.
 
@@ -8,7 +8,7 @@ Here are some of Apperate's key characteristics.
 
 Apperate enables you to configure data delivery from sources to your applications in seconds. You can load data from AWS S3 buckets, URLs, or CSV/JSON files on-demand or per a schedule. In <!-- one-step --> [dataset](../reference/glossary.md#dataset) creation, Apperate infers data types, constructs a schema, validates the data, and generates REST API endpoints automatically, so you can confidently focus on delivering reliable data to your apps.
 
-![](./what-is-iex-cloud-apperate/powering-app-with-apperate.png)
+![](./benefits-of-using-apperate/powering-app-with-apperate.png)
 
 Apperate enables you to build back-end infrastructures quickly, while giving you flexibility to modify infrastructure and data whenever you want. Manage your data using Apperate's no-code tooling including the schema editor, SQL editor, and database UI, or use [Apperate's API](../interacting-with-your-data/apperate-api-basics.md). 
 
