@@ -4,6 +4,7 @@
 
 getting-started/introducing-iex-cloud-apperate.md
 getting-started/benefits-of-using-apperate.md
+getting-started/im-a-legacy-iex-cloud-user-why-use-apperate.md
 getting-started/creating-a-workspace.md
 getting-started/getting-started-with-apperate.md
 getting-started/writing-and-fetching-a-record.md
