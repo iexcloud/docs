@@ -18,6 +18,7 @@ managing-your-data.md
 interacting-with-your-data.md
 using-data-in-your-apps.md
 using-core-data.md
+faqs.md
 reference.md
 ```
 

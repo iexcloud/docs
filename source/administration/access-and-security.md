@@ -1,5 +1,11 @@
 # Access and Security
 
+```{toctree}
+:maxdepth: 1
+
+access-and-security/restricting-data-access-to-specific-domains.md
+```
+
 You can grant users access to individual datasets, core data, and premium data by giving them public API tokens. 
 
 > **Important:** Your secret token allows you to perform any action on your data and account. NEVER share your secret token publicly.
