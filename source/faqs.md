@@ -40,8 +40,7 @@ Pricing for this data is typically high and requires a direct contract between e
 
 An alternative is to display ETFs that match those indices, such as SPY for the S&P 500, DIA for Dow Jones, and IWM for Russell 2000.
 
-
-**Restrict Domains For Calls Made With A Publishable Key**
+### How do I grant API access to only specific domains?
 
 Please see [Restricting Data Access to Specific Domains](./administration/access-and-security/restricting-data-access-to-specific-domains.md).
 
