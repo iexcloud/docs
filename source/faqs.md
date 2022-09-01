@@ -4,6 +4,20 @@ Here are some frequently asked questions (FAQs) about IEX Cloud.
 
 ## Account, Billing, and Pricing
 
+### How do Apperate credits work with Core Data?
+
+Core Data is available as a separate workspace within Apperate and separated into datasets. You can access any dataset from Apperate or through the legacy API using standard database operation pricing.
+
+How many credits you'll use to pull data can be predicted based on:
+
+- **How many records you query** – at a rate of 0.000001 credits per record (another way to look at it, is 1M records per credit)
+- **The size of data transferred out** – Each credit gets you 10GB of data transfer. 
+
+Add those two together, and that's your total credit usage for accessing data. If you're a legacy user, you might be used to "data weights" – for simplicity, we've eliminated those for Apperate users.
+
+```{note} **All Core Data resides in Apperate without any storage cost** – so rather than storing Core Data in your own database (and paying for it), you can query it directly.
+```
+
 ### How can I make changes to my plan?
 
 You can request upgrading, downgrading, or cancelling your subscription at any time via the console's [Manage Plan](https://iexcloud.io/console/manage-plan) page.
@@ -15,6 +29,25 @@ When you upgrade your plan, the new subscription goes into effect immediately.
 ### When do plan downgrades take affect?
 
 We don't provide prorated refunds for downgrades or cancellations. When you downgrade or cancel, you will remain on your higher-tier subscription through the end of your current term. You can see your current term's next renewal date in the console's [Billing](https://iexcloud.io/console/billing) section. Once your next renewal date comes around, you will automatically be placed on your downgraded subscription. 
+
+### I have a legacy plan; do I have to change anything?
+
+If you don't want to use any of the new Apperate features, you can continue using IEX Cloud as you do today. You don't need to make any changes.
+
+### Compared to legacy plans, how is Apperate billing different?
+
+Apperate is a fully-managed cloud database with integrated data services. Much like other serverless cloud databases, you pay for using the system. We track usage of the system using credits. Here's what usage includes:
+
+- Standard database operations (reads, writes, and updates) – for any data. IEX Cloud Core Data ****or** your own data.
+- Storage of your own data.
+
+```{note} Apperate credits are displayed in smaller units. A credit is represented as 1/1,000,000th smaller than in the past. For example, 100 credits is now represented as 0.0001.
+```
+
+The bonuses with Apperate are:
+
+- You **don’t** pay for the storage of Core Data in Apperate – so you essentially get a database that is preloaded with 5TB of financial data without any work (something you wouldn’t get with any other cloud database).
+- You query using standard SQL, build views, run transforms and perform joins within Apperate and access the data with our standard API or our new data management UI. Now you don't have to ETL data from IEX Cloud into another database.
 
 ### (Legacy) Can I add or remove packages on my legacy plan?
 
