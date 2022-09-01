@@ -1,8 +1,8 @@
-# Understanding Apperate Pricing
+# Credits and Pricing
 
 Our pricing now operates a lot like other cloud database tools. It’s also designed to be one-to-one with how much you use the system, without complex if-this-then-that calculations. 
 
-## How Pricing Works
+## How Credits Work
 
 One credit equates to any of the following: 
 
@@ -24,3 +24,14 @@ You can get the flexibility of month-to-month billing, or get a 37% discount for
 ### Added Benefits of New Annual Plans vs Legacy Annual Plans 
 
 With our new annual billing, you don't pay for usage until you pass your minimum use commitment anytime throughout the year. Upgrading to our new annual plans gives you an added benefit compared to our legacy annual plans, where unused credits expire at the end of each month.
+
+```{seealso} The [FAQs](../faqs.md#account-billing-and-pricing) provide additional answers to credit and pricing related questions.
+```
+
+## What's Next
+
+Now that you understand Apperate pricing, you can get started with using Apperate. Here are some topics to get you started:
+
+- [Creating an Example Dataset](../getting-started/getting-started-with-apperate.md)
+- [Writing and Fetching a Record](../getting-started/writing-and-fetching-a-record.md)
+- [Using Core Data](../using-core-data.md)

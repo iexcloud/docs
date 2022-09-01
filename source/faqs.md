@@ -18,6 +18,9 @@ Add those two together, and that's your total credit usage for accessing data. I
 ```{note} **All Core Data resides in Apperate without any storage cost** – so rather than storing Core Data in your own database (and paying for it), you can query it directly.
 ```
 
+```{seealso} [Credits and Pricing](./administration/credits-and-pricing.md) explains how you simply pay for what you use.
+```
+
 ### How can I make changes to my plan?
 
 You can request upgrading, downgrading, or cancelling your subscription at any time via the console's [Manage Plan](https://iexcloud.io/console/manage-plan) page.
@@ -48,6 +51,9 @@ The bonuses with Apperate are:
 
 - You **don’t** pay for the storage of Core Data in Apperate – so you essentially get a database that is preloaded with 5TB of financial data without any work (something you wouldn’t get with any other cloud database).
 - You query using standard SQL, build views, run transforms and perform joins within Apperate and access the data with our standard API or our new data management UI. Now you don't have to ETL data from IEX Cloud into another database.
+
+```{seealso} [Credits and Pricing](./administration/credits-and-pricing.md) explains how you simply pay for what you use.
+```
 
 ### (Legacy) Can I add or remove packages on my legacy plan?
 

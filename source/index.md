@@ -7,7 +7,6 @@ getting-started/creating-a-workspace.md
 getting-started/getting-started-with-apperate.md
 getting-started/writing-and-fetching-a-record.md
 getting-started/production-ready-core-data.md
-getting-started/understanding-apperate-pricing.md
 ```
 
 ```{toctree}
@@ -28,6 +27,7 @@ reference.md
 :caption: Administration
 
 administration/access-and-security.md
+administration/credits-and-pricing.md
 administration/managing-users.md
 administration/monitoring-deployments.md
 ```
