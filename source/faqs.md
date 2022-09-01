@@ -4,6 +4,10 @@ Here are some frequently asked questions (FAQs) about IEX Cloud.
 
 ## Account, Billing, and Pricing
 
+### What is your favorite color?
+
+Red; ... no, blue!
+
 ### How do Apperate credits work with Core Data?
 
 Core Data is available as a separate workspace within Apperate and separated into datasets. You can access any dataset from Apperate or through the legacy API using standard database operation pricing.
