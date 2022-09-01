@@ -1,5 +1,11 @@
 # Credits and Pricing
 
+```{toctree}
+:maxdepth: 1
+
+credits-and-pricing/budgeting-credit-usage.md
+```
+
 Our pricing now operates a lot like other cloud database tools. It’s also designed to be one-to-one with how much you use the system, without complex if-this-then-that calculations. 
 
 ## How Credits Work
