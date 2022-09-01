@@ -1,4 +1,4 @@
-# How do I get Nasdaq-listed stock data (UTP/OTC Data) on IEX Cloud?
+# Getting Nasdaq-listed Stock Data (UTP/OTC Data)
 
 Here is an overview of how to get 15-minute delayed market-wide intraday prices for Nasdaq-listed stocks
 
