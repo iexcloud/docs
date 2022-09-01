@@ -16,7 +16,7 @@ A source from which data is ingested into IEX Cloud.
 
 ## Dataset
 
-A modifiable data collection that is defined by a schema, stored in IEX Cloud, and delivered via permissioned, auto-generated APIs. 
+A modifiable data collection (or table) that is defined by a schema, stored in IEX Cloud Apperate, and delivered via permissioned, auto-generated APIs. 
 
 ## Date Index
 

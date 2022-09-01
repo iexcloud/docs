@@ -1,4 +1,6 @@
-# Creating an Example Dataset
+# Getting Started with IEX Cloud Apperate
+
+A great way to get familiar with Apperate is to create a dataset and write data to it. A [dataset](../reference/glossary.md#dataset) is like any common database table: it is defined by a schema and can hold data records. Datasets have several additional benefits in that although they can store any data model, they are optimized for time series data. Additionally, Apperate automatically generates an API for accessing the dataset (via a permissioned token, of course).
 
 Here we'll create a dataset with example data in seconds and read the data back from the dataset's auto-generated REST endpoint.
 
