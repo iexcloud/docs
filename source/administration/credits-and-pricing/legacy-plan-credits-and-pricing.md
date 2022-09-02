@@ -18,27 +18,19 @@ legacy-plan-credits-and-pricing/caching-data-in-legacy-plans.md
 
 Included with Individual plans ($9 per month with an annual subscription, or $19 per month with a monthly subscription):
 
-Five million [credits (or messages)](#legacy-credits) per month.
-
-One API token.
-
-One user login.
-
-Additional features, such as free access to [Cloud Cache](legacy-credits-and-pricing/legacy-cloud-cache.md). More detail coming soon.
-
-Both commercial and personal use.
+- Five million credits (or messages) per month.
+- One API token.
+- One user login.
+- Additional features, such as free access to [Cloud Cache](./legacy-plan-credits-and-pricing/caching-data-in-legacy-plans.md). 
+- Both commercial and personal use.
 
 Included with Business plans ($199 per month with an annual subscription, or $299 per month with a monthly subscription):
 
-150 million [credits (or messages)](#legacy-credits) per month.
-
-Four API tokens.
-
-Four user logins.
-
-Full feature access – everything included with Individual plus more. More detail coming soon.
-
-Both commercial and personal use.
+- 150 million credits (or messages) per month.
+- Four API tokens.
+- Four user logins.
+- Full feature access – everything included with Individual plus more. More detail coming soon.
+- Both commercial and personal use.
 
 Both plans provide the following:
 
