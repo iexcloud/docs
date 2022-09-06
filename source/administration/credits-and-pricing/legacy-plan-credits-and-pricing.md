@@ -1,5 +1,11 @@
 # Legacy Plan Credits and Pricing
 
+``` {toctree}
+:maxdepth: 1
+
+legacy-plan-credits-and-pricing/cloud-cache-for-legacy-plans.md
+```
+
 ```{important} Here is information on credits and pricing for IEX Cloud legacy plans. For credits and pricing on current plans, see [Credits and Pricing](../credits-and-pricing.md).
 ```
 
@@ -290,5 +296,9 @@ Please note that you cannot provide IEX Cloud data via your own API to users or 
 
 Cloud Cache is IEX Cloud's fully managed data storage infrastructure. It saves you credits by automatically storing the data that you've already queried from IEX Cloud. When you request that data again, you'll only use one credit rather than the full data weight, so that you don't pay for the same data twice.
 
-Note that any data stored by Cloud Cache is "reset" at the start of each calendar month. This is so we can keep our data storage as high-performant as possible.
+Note that any data stored by Cloud Cache is "reset" at the start of each calendar month. This is so we can keep our data storage as high-performant as possible. 
+
 Cloud Cache is automatically enabled for all legacy Individual plan and legacy Business plan users – no setup or additional costs required.
+
+``` {seealso} [Cloud Cache for Legacy Plans](./legacy-plan-credits-and-pricing/cloud-cache-for-legacy-plans.md).
+```
