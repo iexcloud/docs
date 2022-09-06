@@ -8,7 +8,8 @@ Here you will create a dataset as specified in a JSON file.
 
 1. Create a `.json` file that has the following content. Replace `you@company.com`, `Your Company`, and `Your Dataset`, with your own values.
 
-    > **Important:** The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You must not prefix dataset IDs or dataset property names with `_system`.
+    ``` {important} The \_system prefix (case-insensitive) is reserved for Apperate system tables and columns. You must not prefix dataset IDs or dataset property names with \_system.
+    ```
 
     ```javascript
     { 
@@ -86,7 +87,8 @@ Let's add data to the dataset.
 
 Here you will specify data in a CSV file and submit the file in your request to create a dataset
 
-> **Note:** You can specify data in text files that use CSV, JSON, and JSONL formats. The product supports CSV files that use the following common data delimiters: comma (,), tab, or pipe (|) characters.
+``` {note} You can specify data in text files that use CSV, JSON, and JSONL formats. The product supports CSV files that use the following common data delimiters: comma (,), tab, or pipe (\|) characters.
+```
 
 Here are the data file ingestion steps:
 
@@ -101,7 +103,8 @@ Here are the data file ingestion steps:
     27.8925,2016-11-28,28.1163,27.8475,27.8575,AAPL,108775932
     ```
 
-    > **Tip:** Create the file using the following Example Command for your operating system.
+    ``` {tip} Create the file using the following Example Command for your operating system.
+    ```
 
     **Example Command** 
 

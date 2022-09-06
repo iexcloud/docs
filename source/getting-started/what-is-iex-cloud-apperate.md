@@ -20,7 +20,8 @@ The semantic data layer allows you to refer to an equity using any supported [fi
 
 Apperate includes curated, institutional-grade time series financial data ([Core Data](./production-ready-core-data.md)). It is available as datasets for accessing via REST API endpoints and using with views.
 
-> **Important:** Apperate's Core Data is a subset of IEX Cloud Core Data that includes only time series data. To access all IEX Cloud data, including real-time stock data, please see the [Legacy API Reference](https://iexcloud.io/docs/api/).
+``` {important} Apperate's Core Data is a subset of IEX Cloud Core Data that includes only time series data. To access all IEX Cloud data, including real-time stock data, please see the [Legacy API Reference](https://iexcloud.io/docs/api/).
+```
 
 ## Platform Reliability, Automatic Scaling, and Backups
 

@@ -22,7 +22,8 @@ Here are steps for getting this core financial data.
 
     ![](./getting-time-series-core-financial-data/cash-flow-overview.png)
 
-    > **Note:** From a dataset's **Database** page, you can query its data, export the query results to a CSV, and share your query in a URL. 
+    ``` {note} From a dataset's **Database** page, you can query its data, export the query results to a CSV, and share your query in a URL. 
+    ```
     
 1. Examine the the **Example Request** URL.
 

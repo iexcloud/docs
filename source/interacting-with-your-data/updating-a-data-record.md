@@ -4,7 +4,8 @@ Updating data records is done by overwriting them. That is, you post a record da
 
 Here we'll demonstrate updating a record using the UI and the Data API. 
 
-> **Note:** Values of indexed properties are immutable. If you want to "change" the value of an indexed record's property, you can in essence replace the record bhy adding a new record with the values you want and deleting the old record.
+``` {note} Values of indexed properties are immutable. If you want to "change" the value of an indexed record's property, you can in essence replace the record by adding a new record with the values you want and deleting the old record.
+```
 
 Alternatively, you can update records in the console's SQL editor.
 
@@ -20,7 +21,8 @@ Apperate's SQL editor is available on the **Datasets** page and in each dataset'
 
     ![](./updating-a-data-record/select-a-car.png)
 
-    > **Important:** Make sure the record you want is in the first row. Otherwise, narrow your search so that it's the only record returned. 
+    ``` {important} Make sure the record you want is in the first row. Otherwise, narrow your search so that it's the only record returned. 
+    ```
 
 1. Double click on the record in the first row. The row editor appears.
 
@@ -34,11 +36,13 @@ You've updated the data record. Editing records using the API is easy too.
 
 The Data API's [`POST /data/:workspace/:id`](https://iexcloud.io/docs/datasets-api/ingest-data) endpoint enables you to write new data records and overwrite existing ones. We'll do the latter by specifying the `overwrite=true` query parameter.
 
-> **Note:** If you're just getting started with the API, check out the API's [Getting Started](https://iexcloud.io/docs/getting-started) guide.
+``` {note} If you're just getting started with the API, check out the API's [Getting Started](https://iexcloud.io/docs/getting-started) guide.
+```
 
 The `wait` query parameter is another one to consider. By default, the endpoint responds immediately after uploading the data and creating the ingestion job. If you prefer to wait for a response after ingestion job completion, set query parameter `wait=true`.
 
-> **Note:** You can also check ingestion job status in the console's [Logs pages](../administration/monitoring-deployments.md) or via the [logs API enpoint](https://iexcloud.io/docs/datasets-api/get-logs). 
+``` {note} You can also check ingestion job status in the console's [Logs pages](../administration/monitoring-deployments.md) or via the [logs API enpoint](https://iexcloud.io/docs/datasets-api/get-logs). 
+```
 
 Let's update a record with the API.
 

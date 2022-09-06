@@ -10,7 +10,8 @@ Properties define the dataset's content. Each property has a type, is required o
 
 ![sample-aapl-dataset-edit-schema.png](./understanding-datasets/sample-aapl-dataset-edit-schema.png)
 
-> **Important:** The  `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix dataset IDs or dataset property names with  `_system` (case-insensitive).
+``` {important} The  \_system prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix dataset IDs or dataset property names with  \_system (case-insensitive).
+```
 
 Let's visit each of the property characteristics, starting with type.
 
@@ -37,7 +38,8 @@ A property can be marked as **Required** or left as optional. Data ingestion fai
 
 Allows null values for the property when checked, *unselect* the **Allows null** option for properties that must never be null.
 
-> **Note:** For CSV files, an empty field is interpreted as an empty string; it is never interpreted as null.
+``` {note} For CSV files, an empty field is interpreted as an empty string; it is never interpreted as null.
+```
 
 Indexing is next.
 
@@ -51,7 +53,8 @@ Each dataset has a *Unique Index* composed of a primary index, secondary index (
 
 **date index:** Set this to any date property or leave it unset to use the current date. The property mapped to the date index will be the primary mechanism by which your data is time-sorted. 
 
-> **Note:** A property can be set to one index at most.
+``` {note} A property can be set to one index at most.
+```
 
 The following examples illustrate ways to use primary index, and date indexes with your data.
 

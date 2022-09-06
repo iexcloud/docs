@@ -18,7 +18,8 @@ Here's how to add your AWS S3 credentials:
 
 Now your credentials are available to use with your AWS S3 buckets.
 
-> **Note:** Access key IDs and access secrets are encrypted in the IEX Cloud database. Your credential access key IDs and access secrets are visible only in your workspace.
+``` {note} Access key IDs and access secrets are encrypted in the IEX Cloud database. Your credential access key IDs and access secrets are visible only in your workspace.
+```
 
 ## What's Next?
 

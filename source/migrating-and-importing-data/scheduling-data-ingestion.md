@@ -7,9 +7,8 @@ Apperate facilitates loading (ingesting) data into a dataset at regular interval
 - Source: AWS S3 bucket or URL
 - Dataset: Provides the table and schema for storing and indexing the data.
 
-> **Tip:** You can create a data source automatically as your create a dataset. After you create the dataset, you can verify the data source on the Data Sources page by sorting the data sources on the **Last updated** column.
-
-> **Coming soon!** Apperate will provide the ability to schedule data ingestions for a new dataset (and its data source) as you create the dataset.
+``` {tip} You can create a data source automatically as your create a dataset. After you create the dataset, you can verify the data source on the Data Sources page by sorting the data sources on the **Last updated** column.
+```
 
 ## Configure Your Schedule
 
@@ -65,9 +64,11 @@ To pause ingestions for your schedule, select on your schedule in the list and c
 
 ![](./scheduling-data-ingestion/pause-schedule.png)
 
-> **Important:** Pausing a schedule DOES NOT stop any current ingestion, it only disables upcoming ingestions.
+``` {important} Pausing a schedule DOES NOT stop any current ingestion, it only disables upcoming ingestions.
+```
 
-> **Important:** The **Ingestion Schedules** page continues to show the time until the next data ingestion for each schedule. This gives you context for enabling the schedules with regards to their upcoming ingestions.
+``` {important} The **Ingestion Schedules** page continues to show the time until the next data ingestion for each schedule. This gives you context for enabling the schedules with regards to their upcoming ingestions.
+```
 
 ## Re-enabling Your Schedule
 

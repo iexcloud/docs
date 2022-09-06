@@ -8,7 +8,8 @@ access-and-security/restricting-data-access-to-specific-domains.md
 
 You can grant users access to individual datasets, core data, and premium data by giving them public API tokens. 
 
-> **Important:** Your secret token allows you to perform any action on your data and account. NEVER share your secret token publicly.
+``` {warning} Your secret token allows you to perform any action on your data and account. **NEVER** share your secret token publicly.
+```
 
 ## Creating an API Token
 
@@ -48,7 +49,8 @@ Here's how to create and use a public API token.
 
 1. When you're done specifying the token, click **Done**. The token's permissions take affect in a couple minutes. Then you can make the specified API calls using the token.
 
-> **Note:** A token's permissions take affect a couple minutes after creating the token.
+``` {note} A token's permissions take affect a couple minutes after creating the token.
+```
 
 Now the token can be used in calling the specified APIs.
 

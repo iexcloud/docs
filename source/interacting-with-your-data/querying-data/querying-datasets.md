@@ -37,7 +37,8 @@ For example, this URL returns a dataset record for the key value `AAPL`:
 https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/SAMPLE_AAPL_DATASET_M3RCT0SSX/AAPL?token=TOKEN
 ```
 
-> **Note:** The query data endpoint returns one record at most unless you specify a date subkey, `range`, or a higher `limit` value.
+``` {note} The query data endpoint returns at most one record unless you specify a date subkey, range, or a higher limit value.
+```
 
 Let's explore filtering on a time range next.
 

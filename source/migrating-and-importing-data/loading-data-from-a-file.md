@@ -2,7 +2,8 @@
 
 We're excited to show you how to make data from a file accessible via a RESTful API endpoint in minutes. Here you will create a dataset from a CSV file of example data. You will define the dataset schema, store the dataset, and read the data immediately from an auto-generated API.
 
-> **Note:** You can of course, follow along using your own data, but for creating a dataset your first time we suggest using this small example data.
+``` {note} You can of course, follow along using your own data, but for creating a dataset your first time we suggest using this small example data.
+```
 
 ## File Ingestion Example
 
@@ -12,11 +13,13 @@ Start ingesting your file, following these steps:
 
     ![](./loading-data-from-a-file/create-a-dataset.png)
 
-    > **Important:** 20,000,000 record limit per ingestion.
+    ``` {important} 20,000,000 record limit per ingestion.
+    ```
 
 1.  Before continuing in the Create a Dataset page, create a data file on your local machine by adding the following example car data (it's in CSV format) into a plain text file.
 
-    > **Note:** Apperate supports CSV files that use the following common data delimiters: comma (,), tab, or pipe (\|) characters. JSON and JSONL files are also supported.
+    ``` {note} Apperate supports CSV files that use the following common data delimiters: comma (,), tab, or pipe (\|) characters. JSON and JSONL files are also supported.
+    ```
 
     **Data**
 
@@ -60,8 +63,6 @@ Start ingesting your file, following these steps:
 
     Apperate ingested your file and made a best effort to name your dataset (see *Dataset ID*) and specify your properties (see the *Properties* table) and your data's Unique Index, composed of primary, secondary, and date indexes.
 
-    > **Note:** The *Dataset ID* cannot be changed once you've submitted your dataset. Make sure to specify the ID you want in this step.
-
     Below the *Properties* table there's more.
 
     ![cars-more-on-schema-page.png](./loading-data-from-a-file/cars-more-on-schema-page.png)
@@ -101,7 +102,8 @@ Start ingesting your file, following these steps:
     |   |  | owner_count (integer) |
     | x |  | purchase_date (date) | Date |
 
-    > **Important:** The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix your dataset ID or dataset property names with `_system`.
+    ``` {important} The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix your dataset ID or dataset property names with `_system`.
+    ```
 
     **Opt in to IEX Cloud's Metadata Graph:** unselect
 
@@ -115,7 +117,8 @@ Start ingesting your file, following these steps:
 
     ![](./loading-data-from-a-file/cars-dataset-overview.png)
 
-    > **Note:** If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Deployments](../administration/monitoring-deployments.md).
+    ``` {tip} If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Deployments](../administration/monitoring-deployments.md).
+    ```
 
     From here you can manage and monitor your dataset, open/share the API docs, execute an example request on your dataset, and create different views to your data.
 

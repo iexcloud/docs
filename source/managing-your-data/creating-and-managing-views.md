@@ -4,13 +4,15 @@ Views enable you to aggregate data from various datasets, transform the data, an
 
 Here we'll create a view of cars and related car accidents by joining a datasets containing each type of data.
 
-> **Note:** You can apply these principles to combine data from any datasets that can be joined on equivalent indexed properties.
+``` {note} You can apply these principles to combine data from any datasets that can be joined on equivalent indexed properties.
+```
 
 ## Create example data files
 
 1. Create a plain text data file called `cars` on your local machine from the following example car data (it's in CSV format).
 
-    > **Note:** The product supports CSV files that use the following common data delimiters: comma (`,`), tab, or pipe (`|`) characters. JSON and JSONL files are also supported.
+    ``` {note} The product supports CSV files that use the following common data delimiters: comma (,), tab, or pipe (\|) characters. JSON and JSONL files are also supported.
+    ```
 
     **Data**
 
@@ -91,7 +93,8 @@ Here we'll create a view of cars and related car accidents by joining a datasets
 
 1.  In the **Edit schema** interface, modify the schema to specify the dataset ID, property characteristics, and Unique Index using the following values.
 
-    > **Important:** The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix dataset IDs, view IDs, and dataset property names with `_system` (case-insensitive).
+    ``` {important} The \_system prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix dataset IDs, view IDs, and dataset property names with \_system (case-insensitive).
+    ```
 
     **Dataset ID:** `CARS`
 
@@ -171,8 +174,8 @@ Follow these steps to create the example car accidents view:
     ![](./creating-and-managing-views/name-car-accidents-view.png)
 1. Name your view (or go with the unique auto-generated name) and click **Create View**. Your new view's **Overview** page appears.
 
-    > **Important:** The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix dataset IDs, view IDs, and dataset property names with `_system` (case-insensitive).
-
+    ``` {important} The \_system prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix dataset IDs, view IDs, and dataset property names with \_system (case-insensitive).
+    ```
     
     ![](./creating-and-managing-views/car_accidents_view_overview.png)
 
@@ -186,7 +189,8 @@ Follow these steps to create the example car accidents view:
 
 Congratulations on combining data from two datasets into a view for your app to use.
 
-> **Note:** The Example Request returns just one record by using the LIMIT 1 condition. In your app, make sure to lift that limit by removing that condition from your URL's SQL query.
+``` {note} The Example Request returns just one record by using the LIMIT 1 condition. In your app, make sure to lift that limit by removing that condition from your URL's SQL query.
+```
 
 ## Related Topics
 

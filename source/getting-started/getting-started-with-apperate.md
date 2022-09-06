@@ -29,7 +29,8 @@ Here you will load IEX Cloud's sample data file and then access the loaded data 
     - **Rows** shows the dataset's row count is 1,257.
     - **Detected symbol** is the data property designated as the primary index. Apperate makes a best effort to determine a primary index. 
     
-    > **Note:** you can change the primary index and other parts of the dataset schema using the schema editor available by clicking **Edit schema**.
+    ``` {note} you can change the primary index and other parts of the dataset schema using the schema editor available by clicking **Edit schema**.
+    ```
 
     The **HTTP request** panel shows the dataset's last row as a JSON object.
 

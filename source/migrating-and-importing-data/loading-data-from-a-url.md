@@ -35,7 +35,8 @@ If there's a URL that you would like to load data from, you can connect to it an
     - If the data you want is in the top level records (as shown in the image below), leave the **JSONPath** field blank.
     - If the data you want is nested deeper within the JSON object, specify the path to it in the **JSONPath** field. Refer to [Accessing Nested JSON Data](./accessing-nested-json-data.md) for more information on specifying JSONPath values.
 
-    > **Important:** For JSON data, Apperate requires an array of objects.
+    ``` {important} For JSON data, Apperate requires an array of objects.
+    ```
 
     The URL below, for example, is good because it returns a JSON object array with all data in the top level objects.
 
@@ -43,13 +44,15 @@ If there's a URL that you would like to load data from, you can connect to it an
 
 1. If you want to save the data source for future data ingestion, select the **Save this data source?** option.
 
-    > **Note:** After creating the dataset, the data source will be saved with an auto-generated name. To find the data source, navigate to **Sources** and sort the list by **Last Updated**. The data source should be one most recently updated.
+    ``` {note} After creating the dataset, the data source will be saved with an auto-generated name. To find the data source, navigate to **Sources** and sort the list by **Last Updated**. The data source should be one most recently updated.
+    ```
 
 1. When you're done specifying the data, click **Create Dataset**. Apperate creates the dataset, loads the data into it, and shows the dataset's **Overview** page.
 
     ![](./loading-data-from-a-url/dataset-overview.png)
 
-    > **Note:** If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Deployments](../administration/monitoring-deployments.md).
+    ``` {tip} If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Deployments](../administration/monitoring-deployments.md).
+    ```
 
 1. In the **Overview** page, fetch the last record by clicking on the **Example Request** URL. A browser tab opens to the URL and Apperate returns the record in a JSON object array. Here's an example array:
 

@@ -36,13 +36,15 @@ In few steps, you can import data from a CSV, JSON, or JSONL data file in your S
 
     ![](./loading-data-from-aws-s3/enter-aws-iam-role-arn.png)
 
-    > **Important:** Make sure to grant Apperate's S3 user access to your role by configuring the returned S3 User and External ID in your role. Ssee [Accessing S3 via AWS Integration](./accessing-s3-via-storage-integration.md) for details.
+    ``` {important} Make sure to grant Apperate's S3 user access to your role by configuring the returned S3 User and External ID in your role. See [Accessing S3 via AWS Integration](./accessing-s3-via-storage-integration.md) for details.
+    ```
 
     If you want to use an access key credential, you can select an existing one from the **Credential** selector or select the bottom-most option **Create a credential**.
 
     ![](./loading-data-from-aws-s3/create-a-credential.png)
 
-    > **Note:** For more information on configuring access to S3 buckets via access keys, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
+    ``` {seealso} For more information on configuring access to S3 buckets via access keys, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
+    ```
 
 1. Enter your AWS bucket name. All of your bucket files (file keys) appear in the Bucket Contents panel on the right.
 
@@ -54,7 +56,8 @@ In few steps, you can import data from a CSV, JSON, or JSONL data file in your S
 
         ![](./loading-data-from-aws-s3/select-a-file-key.png)
 
-        > **Tip:** You can filter on files in a particular folder by entering a folder name in the *file prefix* field at the top-right of Bucket Contents.
+        ``` {tip} You can filter on files in a particular folder by entering a folder name in the *file prefix* field at the top-right of Bucket Contents.
+        ```
 
     - **Enter a File pattern** - Enter a file pattern (filename glob) using `*`, `?`, and `[]` to match the file(s) you want to ingest. Inside brackets `[]`, you can put "or" options to match individual characters or a character range (e.g., `foo[2-4]` matches `foo2` and `foo3` but not `foo5`). The Response panel updates to show contents of a matching file that has the oldest modified timestamp in the bucket.
 
@@ -62,21 +65,25 @@ In few steps, you can import data from a CSV, JSON, or JSONL data file in your S
 
         ![](./loading-data-from-aws-s3/file-pattern-folder-star.png) 
 
-    > **Important:** To load JSON data, the data must be an array of objects.
+    ``` {important} To load JSON data, the data must be an array of objects.
+    ```
 
     If you specified a JSON file(s) and the Response panel shows the object array you want, leave the JSONNPath field empty. Otherwise, use the JSONPath field to specify the path to a desired object array in the JSON file. A **JSON Response** panel on the bottom right shows the data found at the JSONPath.
 
-    > **See also** [Accessing Nested JSON Data](./accessing-nested-json-data.md) for guidance on specifying JSONPath for JSON file data.
+    ``` {seealso} [Accessing Nested JSON Data](./accessing-nested-json-data.md) for guidance on specifying JSONPath for JSON file data.
+    ```
 
 1. If you want to save the data source for future data ingestion, select the **Save this data source?** option.
 
-    > **Note:** After creating the dataset, the data source will be saved with an auto-generated name. To find the data source, navigate to **Sources** and sort the list by **Last Updated**. The data source should be one most recently updated.
+    ``` {note} After creating the dataset, the data source will be saved with an auto-generated name. To find the data source, navigate to **Sources** and sort the list by **Last Updated**. The data source should be one most recently updated.
+    ```
 
 1. When you're done specifying the data, click **Create Dataset**. Apperate creates the dataset, loads the file data into the dataset, and shows the dataset's **Overview** page.
 
     ![](./loading-data-from-aws-s3/car-accidents-dataset-overview.png)
 
-    > **Note:** If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Deployments](../administration/monitoring-deployments.md).
+    ``` {note} If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Deployments](../administration/monitoring-deployments.md).
+    ```
 
 1. In the **Overview** page, fetch the last record by clicking on the **Example Request** URL. A browser tab opens to the URL and Apperate returns the record in a JSON object array. Here's an example array:
 

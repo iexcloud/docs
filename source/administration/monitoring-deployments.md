@@ -18,13 +18,15 @@ For example, the messages for the data ingestion job in the image above include 
 
 The Log Stream shows log messages from the past hour. It's a great resource for tracking process milestones and concurrent process timing.
 
-> **Note:** To access older log messages, use the API. See the [Get logs](https://iexcloud.io/docs/datasets-api/get-logs) API reference.
+``` {note} To access older log messages, use the API. See the [Get logs](https://iexcloud.io/docs/datasets-api/get-logs) API reference.
+```
 
 To see a log stream message's details, double-click the message. The message details appear.
 
 ![](./monitoring-deployments/log-message-details.png)
 
-> **Note:** Log message timestamps are in UNIX epoch time.
+``` {note} Log message timestamps are in UNIX epoch time.
+```
 
 ## Ingestion Logs
 
@@ -34,7 +36,8 @@ The **Ingestion Logs** page lists each data ingestion job and provides status, r
 
 If ingestion fails, the **Last Good Status** column indicates how far the job progressed (e.g., *Validating*). Click on **Current Status** to see the offending error message.  
 
-> **Tip:** To get additional context for an ingestion, search the **Log Stream** for messages mentioning the job ID (shown in the **Datasets** column under the dataset name).
+``` {tip} To get additional context for an ingestion, search the **Log Stream** for messages mentioning the job ID (shown in the **Datasets** column under the dataset name).
+```
 
 If ingestion completes, the **Current Status** is *Ingested*.
 

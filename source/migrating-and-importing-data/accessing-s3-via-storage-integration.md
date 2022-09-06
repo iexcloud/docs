@@ -52,7 +52,8 @@ Here are the steps:
     - **Add permission policy:** select the policy you created
     - **Role name:** (arbitrary value)
 
-    > **Important:** Copy the role's ARN (Amazon Resource Name). For additional information on working with roles, see the AWS documentation [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html).
+    ``` {important} Copy the role's ARN (Amazon Resource Name). For additional information on working with roles, see the AWS documentation [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html).
+    ```
 
 1. In IEX Cloud console, start creating an AWS integration by navigating to **Sources > Credentials**. The Credentials page appears.
 
@@ -94,9 +95,10 @@ Here are the steps:
 
 Your AWS S3 bucket is now integrated with your IEX Cloud workspace. When you parse data or ingest data from an AWS S3 bucket data source, Apperate uses your AWS integration by default, unless you select a [credential instance](./accessing-s3-via-your-access-key.md) to use.
 
-> **Note:** You can optionally integrate additional buckets with your workspace using your AWS IAM policy.
+Note:** You can optionally integrate additional buckets with your workspace using your AWS IAM policy.
 
-> **Note:** An Apperate workspace has up to one AWS integration External ID and User ARN. If  you want to remove the integration, click **Remove AWS integration** in the Credential page's **AWS Integration** section. You can create a new integration by clicking **Create AWS integration** at the top of the page and entering your IAM Role ARN.
+``` {note} An Apperate workspace has up to one AWS integration External ID and User ARN. If  you want to remove the integration, click **Remove AWS integration** in the Credential page's **AWS Integration** section. You can create a new integration by clicking **Create AWS integration** at the top of the page and entering your IAM Role ARN.
+```
 
 ## What's Next?
 
