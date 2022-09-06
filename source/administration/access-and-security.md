@@ -6,7 +6,7 @@
 access-and-security/restricting-data-access-to-specific-domains.md
 ```
 
-You can grant users access to individual datasets, core data, and premium data by giving them public API tokens. 
+You connect your application or project to your IEX Cloud account via API tokens (also referred to simplay as tokens). Tokens allow you to track, control, and throttle platform usage. You can grant users access to datasets by giving them public API tokens. 
 
 ``` {warning} Your secret token allows you to perform any action on your data and account. **NEVER** share your secret token publicly.
 ```

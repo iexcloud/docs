@@ -29,6 +29,16 @@ You can request upgrading, downgrading, or cancelling your subscription at any t
 
 When you upgrade your plan, the new subscription goes into effect immediately.
 
+### How many tokens do I need?
+
+You may want to use separate tokens to track, control, and throttle usage by different projects, apps, or end users. Here are a couple examples for using multiple tokens:
+
+- you have multiple applications or projects that use IEX Cloud.
+- your business has multiple teams that share your IEX Cloud account.
+
+``` {seealso} [Access and Security](./administration/access-and-security.md).
+```
+
 ### When do plan downgrades take affect?
 
 We don't provide prorated refunds for downgrades or cancellations. When you downgrade or cancel, you will remain on your higher-tier subscription through the end of your current term. You can see your current term's next renewal date in the console's [Billing](https://iexcloud.io/console/billing) section. Once your next renewal date comes around, you will automatically be placed on your downgraded subscription. 
