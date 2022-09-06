@@ -120,6 +120,9 @@ Here are steps for getting this core financial data.
     ]
     ```
 
+    ``` {important} key and subkey path parameters are restricted to primary and secondary indexes, respectively. For more information on the Unique Index components, see [Understanding Datasets](../managing-your-data/understanding-datasets.md#unique-index-and-examples).
+    ```
+
 Congratulations on getting core financial time series data.
 
 ## What's Next

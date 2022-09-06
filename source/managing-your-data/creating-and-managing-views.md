@@ -169,6 +169,9 @@ Follow these steps to create the example car accidents view:
     
     ![](./creating-and-managing-views/join-cars-and-car-accidents.png)
 
+    ``` {important} WHERE clauses and ON clauses must only operate on indexed properties (columns). See the Unique Index components [here](./understanding-datasets.md#unique-index-and-examples).
+    ```
+
 1. Create a view from the data results by clicking the **Create view** button at the top right of the results table. The **Create a view using SQL** dialog appears.
     
     ![](./creating-and-managing-views/name-car-accidents-view.png)

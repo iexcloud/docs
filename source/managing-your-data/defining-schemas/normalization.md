@@ -55,6 +55,9 @@ SELECT ceo, companyName, city, a.date, open, close, high, low, volume, ceo, comp
 
 ![](./normalization/join-aapl-w-isin-symbol.png)
 
+``` {important} WHERE clauses and ON clauses must only operate on indexed properties (columns). See the Unique Index components [here](../understanding-datasets.md#unique-index-and-examples).
+```
+
 You can then create a view from the results by clicking **Create view**. Voila! You're view dataset is available to use like any other dataset.
 
 ## What's Next

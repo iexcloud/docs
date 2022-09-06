@@ -69,6 +69,10 @@ No user may provide IEX Cloud data via their own API to users, or provide a mech
 
 Attribution is required for all users. It is as simple as putting “Data provided by IEX Cloud” somewhere on your site or app and linking that text to <https://iexcloud.io>.
 
+### I'm selecting on a valid column. Why does Apperate report *cannot select by 'someColumn'  (00ED50F1BF0332)*? 
+
+You can only select on indexed properties (columns). A property must be a primary, secondary, or date index (See [Unique Index components](./managing-your-data/understanding-datasets.md#unique-index-and-examples))to query on it via SQL `WHERE` clauses, SQL `JOIN` `ON` clauses, or via the data query endpoint key/subkey path parameters.
+
 ### How do I get data on the S&P 500, Dow Jones Industrial Average, or other major stock indices?
 
 Data on major stock indices is not currently available on IEX Cloud
