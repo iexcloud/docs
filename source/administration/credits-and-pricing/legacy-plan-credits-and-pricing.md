@@ -302,3 +302,48 @@ Cloud Cache is automatically enabled for all legacy Individual plan and legacy B
 
 ``` {seealso} [Cloud Cache for Legacy Plans](./legacy-plan-credits-and-pricing/cloud-cache-for-legacy-plans.md).
 ```
+
+## One Additional Credit Used Per API Call
+
+Starting July 15, 2021, each API call uses one additional credit on top of the endpoint’s data weight.
+
+For instance, if the data weight for an endpoint is 100 credits per request, each API call would use a total of 101 credits. Or if you’re using free real-time stock prices from IEX, you would use a total of one credit per API call.
+
+If you’re streaming data, you would use one additional credit per connection.
+
+This applies to all production API calls (API calls **not** made in our Sandbox environment).
+
+### Why is one extra credit used per API call?
+
+This one-credit covers our operational costs for delivering data and enables us to keep the costs lower across dozens of endpoints. This also allows us to continue investing in scalable infrastructure.
+
+For most users, this adds minimal cost – a few cents to a few dollars per month in usage. For instance, if you make one million API calls per month, this update would add roughly $1 per month in credit usage.
+
+### What about sandbox API calls?
+
+``` {attention} The Sandbox environment is deprecated
+```
+
+Sandbox API calls are free and unlimited and do not use any of your monthly credit allocations.
+
+Sandbox API calls can also be used to help show how many credits would be used if that same API call were performed in the production. You’ll see this one credit reflected in “sandbox data weight” that’s returned in the API request’s response header to help you accurately estimate how many credits you would use.
+
+### Does this apply to Premium Data, Rules Engine, and other add-ons?
+
+Every production API call across the platform will use one additional credit. This includes:
+
+- Core Data and Reference Data.
+- Premium Data. (The additional credit used will be a core credit, rather than a Premium Data credit.)
+- Add-ons such as Rules Engines, the Excel plug-in, and Stock Price Widgets.
+- API calls that use Cloud Cache. (link)
+
+This does NOT include:
+
+- Every SSE streaming or Firehose update. Streaming will use one additional credit per connection made – not per update.
+- Sandbox API calls (deprecated).
+
+### How does this work with Cloud Cache?
+
+[Cloud Cache](./legacy-plan-credits-and-pricing/cloud-cache-for-legacy-plans.md) keeps track of the API calls you’ve already made, so if you make the same request twice, you only pay a data weight of one credit rather than the full data weight. 
+
+This one credit is added **on top** of the one-credit data weight provided by Cloud Cache. So if Cloud Cache returned data to you for one credit, you would use two credits total.
