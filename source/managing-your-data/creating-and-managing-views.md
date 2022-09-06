@@ -27,25 +27,21 @@ Here we'll create a view of cars and related car accidents by joining a datasets
     
     These commands create the data file on Linux, MacOS, and Windows.
 
-    Linux/MacOS
-
-    ```bash
-    echo "vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
-    XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-27,2020-03-13,45955.00,32000,2
-    SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
-    59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1" \
-    >>CARS
+    ```{tab} Linux/MacOS
+        echo "vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
+        XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-27,2020-03-13,45955.00,32000,2
+        SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
+        59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1" \
+        >>CARS
     ```
 
-    Windows
-
-    ```
-    (
-    echo vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
-    echo XV859643N98D98E7C,Chevrolet,Camaro,2020-03-27,2020,2020-03-13,45955.00,32000,2
-    echo SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
-    echo 59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1
-    )>CARS
+    ```{tab} Windows
+        (
+        echo vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
+        echo XV859643N98D98E7C,Chevrolet,Camaro,2020-03-27,2020,2020-03-13,45955.00,32000,2
+        echo SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
+        echo 59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1
+        )>CARS
     ```
 
 1. Create a file called `car_accidents` from the following example car accident data.

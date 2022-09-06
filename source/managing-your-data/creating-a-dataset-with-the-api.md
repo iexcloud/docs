@@ -108,9 +108,7 @@ Here are the data file ingestion steps:
 
     **Example Command** 
 
-    Linux/MacOS
-
-    ```bash
+    ```{tab} Linux/MacOS
         echo " close,date,high,low,open,symbol,volume
         27.72,2016-11-09,27.83,27.0125,27.47,AAPL,236705444
         27.9475,2016-11-25,27.9675,27.7375,27.7825,AAPL,45903688
@@ -119,9 +117,7 @@ Here are the data file ingestion steps:
         >> aapl
     ```
 
-    Windows
-
-    ```
+    ```{tab} Windows
         (
         echo close,date,high,low,open,symbol,volume
         echo 27.72,2016-11-09,27.83,27.0125,27.47,AAPL,236705444

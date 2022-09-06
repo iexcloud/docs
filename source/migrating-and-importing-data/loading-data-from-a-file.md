@@ -34,25 +34,21 @@ Start ingesting your file, following these steps:
     
     These commands create the data file on Linux, MacOS, and Windows.
 
-    Linux/MacOS
-
-    ```bash
-    echo "vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
-    XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-27,2020-03-13,45955.00,32000,2
-    SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
-    59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1" \
-    >>cars
+    ```{tab} Linux/MacOS
+        echo "vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
+        XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-27,2020-03-13,45955.00,32000,2
+        SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
+        59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1" \
+        >>cars
     ```
 
-    Windows
-
-    ```
-    (
-    echo vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
-    echo XV859643N98D98E7C,Chevrolet,Camaro,2020-03-27,2020,2020-03-13,45955.00,32000,2
-    echo SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
-    echo 59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1
-    )>cars
+    ``` {tab} Windows
+        (
+        echo vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
+        echo XV859643N98D98E7C,Chevrolet,Camaro,2020-03-27,2020,2020-03-13,45955.00,32000,2
+        echo SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
+        echo 59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1
+        )>cars
     ```
 
 1.  In the Create a Dataset page's **Choose Source Type** menu, **File** is selected by default. Keep that setting for uploading your file.
