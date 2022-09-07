@@ -3,6 +3,7 @@
 ```{toctree}
 :maxdepth: 1
 
+credits-and-pricing/prorated-credits.md
 credits-and-pricing/budgeting-credit-usage.md
 credits-and-pricing/legacy-plan-credits-and-pricing.md
 ```
