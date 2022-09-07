@@ -42,9 +42,21 @@ Stands for JavaScript Object Notation. It is a text format for specifying object
 
 A property that serves as a record’s main identifier.
 
+<!-- ## Property (Schema Property) - TODO -->
+
+<!-- ## Publishable Key - TODO -->
+
+<!-- ## Schema (Dataset Schema) - TODO -->
+
 ## Secondary index
 
 A property that serves as an identifier that's used in addition to the Primary index.
+
+<!-- ## Secret Key - TODO -->
+
+<!-- ## Token (API Token) - TODO -->
+
+<!-- ## Transform - TODO -->
 
 ## Unique Index
 
