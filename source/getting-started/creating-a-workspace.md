@@ -54,9 +54,17 @@ Your workspace is created and ready for delivering data to your apps!
 
 ## What's Next
 
-If you want to use IEX Cloud Core Data in your apps, please see [Using IEX Cloud Core Financial Data](../using-core-data.md).
+Since you're on the **Create a Dataset** page, why not continue with creating a dataset?
 
-If you need to store application data, learn how at [Writing and Fetching a Data Record](../getting-started/writing-and-fetching-a-record.md).
+Got a CSV or JSON data file? Simply drop it onto any console page, and Apperate creates a new dataset from it! [Getting Started with Apperate](./getting-started-with-apperate.md) explains all that Apperate creates for new datasets and the options available from the dataset's **Overview** page, and more.
 
-If you have data that you'd like to use with your apps, pull it into Apperate as demonstrated in [Migrating and Importing Data](../migrating-and-importing-data.md).
+Or you can [create a dataset from our example data file](./getting-started-with-apperate.md) to experience creating a new database schema, adding those records to a dataset, and accessing the records via auto-generated APIs.
 
+You can also create a dataset schema without data, write a record to it using the data API, and fetch that record using dataset's auto-generated API. [Writing and Fetching a Data Record](../getting-started/writing-and-fetching-a-record.md) shows you how.
+
+Lastly regarding new datasets, you can explore various ways of [Migrating and Importing Data](../migrating-and-importing-data.md), including [loading data from an AWS S3 bucket](source/migrating-and-importing-data/loading-data-from-aws-s3.md) and [loading data from a URL](../migrating-and-importing-data/loading-data-from-a-url.md). You can even [schedule data ingestion](../migrating-and-importing-data/scheduling-data-ingestion.md) from any of the data sources.
+
+If you are interested in using IEX Cloud Core Financial Data in your apps, **Cancel** out of the **Create a Dataset** page and get started with core data at [Using IEX Cloud Core Financial Data](../using-core-data.md).
+
+``` {note} The Create a Dataset button is available on console top menu bar, from the console **Home** page, and from the **Datasets** pages.
+```
