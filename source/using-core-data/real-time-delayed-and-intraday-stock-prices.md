@@ -4,21 +4,21 @@ Here we'll describe the stock and equity market quotes IEX Cloud provides in rea
 
 ## Real-time and 15-minute delayed stock prices on IEX Cloud
 
-IEX Cloud provides both real-time stock prices and 15-minute delayed stock prices during market trading hours for U.S. stocks and ETFs. You can access this data via the Quote and Intraday Prices endpoints.
+IEX Cloud provides both real-time stock prices and 15-minute delayed stock prices during market trading hours for U.S. stocks and ETFs. You can access this data via the **Quote** and **Intraday Prices** endpoints.
 
 Real-time prices are based on all trades that occur on the [Investors Exchange](https://iextrading.com/) (IEX). 15-minute delayed stock prices reflect activity from all U.S. exchanges, and is provided by the [Securities Information Processor / Consolidate Tape Association](https://www.ctaplan.com/index) (SIP).
 
-While real-time prices for Nasdaq-listed stocks are available to all users, 15-minute delayed price data for Nasdaq-listed securities requires UTP authorization. Learn more [here](https://iexcloud.io/disclaimers/).
+While real-time prices for Nasdaq-listed stocks are available to all users, 15-minute delayed price data for Nasdaq-listed securities requires [UTP authorization](./getting-nasdaq-listed-utp-otc-stock-data.md). Learn more [here](https://iexcloud.io/disclaimers/).
 
 Note that real-time prices available via the IEX Cloud API are different from real-time prices available via direct connection from IEX. [Learn more](https://iexcloud.io/disclaimers/).
 
 ## Using the Quote and Intraday Prices Endpoints
 
-While there are several endpoints that provide stock price data on IEX Cloud in various formats, many users primarily use the Quote and Intraday Prices endpoints for current stock price data. Other endpoints that provide price data include Historical Prices, Delayed Quote, OHLC, Previous Day Price, and Price.
+While there are several endpoints that provide stock price data on IEX Cloud in various formats, many users primarily use the **Quote** and **Intraday Prices** endpoints for current stock price data. Other endpoints that provide price data include Historical Prices, Delayed Quote, OHLC, Previous Day Price, and Price.
 
 ### Using the Quote Endpoint
 
-Use the following fields on the Quote endpoint to access real-time stock prices:
+Use the following fields on the **Quote** endpoint to access real-time stock prices:
 
 **latestPrice**: The real-time price of a symbol, sourced from Investors Exchange (IEX) stock price data.
 
@@ -30,13 +30,13 @@ Outside of trading hours, this field will provide the last available closing pri
 
 **iexRealtimePrice**: The real-time price for a stock, using the last trade on IEX.
 
-**delayedPrice**: The 15-minute delayed price using SIP data. For Nasdaq-listed securities, this field and other delayed fields will be returned as null without UTP authorization and a paid IEX Cloud plan.
+**delayedPrice**: The 15-minute delayed price using SIP data. For Nasdaq-listed securities, this field and other delayed fields will be returned as null without [UTP authorization](./getting-nasdaq-listed-utp-otc-stock-data.md) and a paid IEX Cloud plan.
 
 Additional information is provided via this endpoint. See a full list of **Quote** endpoint fields [here](https://iexcloud.io/docs/api/#quote).
 
 ### Using Intraday Prices Endpoint
 
-You may also use the following fields on the Intraday Prices endpoint for the current trading day’s minute-by-minute price data:
+You may also use the following fields on the **Intraday Prices** endpoint for the current trading day’s minute-by-minute price data:
 
 **open**: IEX real-time data. First price during a given minute.
 
@@ -64,4 +64,16 @@ OTC stock 15-minute delayed prices are available through require a separate lice
 
 ADRs listed in the U.S. are supported on IEX Cloud and have price data available in the same way as regular stock symbols.
 
-Prices outside of market hours can be retrieved from the extendedPrice field from the Quote endpoint. These prices are 15-minute delayed, and cover the hours 4:00 a.m. E.T. – 9:30 a.m. E.T. and 4:00 p.m. E.T – 8:00 p.m. E.T. You can see a full list of data points returned for extended hours data in the [Quote endpoint’s API documentation](https://iexcloud.io/docs/api/#quote).
+Prices outside of market hours can be retrieved from the extendedPrice field from the **Quote** endpoint. These prices are 15-minute delayed, and cover the hours 4:00 a.m. E.T. – 9:30 a.m. E.T. and 4:00 p.m. E.T – 8:00 p.m. E.T. You can see a full list of data points returned for extended hours data in the [Quote endpoint’s API documentation](https://iexcloud.io/docs/api/#quote).
+
+## Legacy Plan Cost for Stock Price Data
+
+The **Quote** and **Intraday Prices** endpoints are available with free legacy plans, although specific fields – such as 15-minute delayed data – require a paid legacy plan. Without a paid legacy plan, those fields return `null`. For both legacy free and legacy paid users, the use of these endpoints requires credits (previously called messages).
+
+Furthermore, 15-minute delayed price data for Nasdaq-listed securities also requires [UTP authorization](./getting-nasdaq-listed-utp-otc-stock-data.md). 
+
+The **Quote** endpoint uses one credit per update per symbol. Similarly, the **Intraday Prices** endpoint uses one credit per update per symbol per interval – for instance, you might request minute-by-minute data for 30 minutes in one API call, which would use 30 credits.
+
+The **Intraday Prices** endpoint only charges you a maximum of 50 credits per update per symbol if you are querying for multiple-minute time intervals. For instance, if you request 90 minutes of data, while this would be 60 intervals, you are charged only 50 credits.
+
+Note that data provided by the Investors Exchange via the IEX Cloud API, including the real-time IEX prices, is free for use. You can access this using our [**TOPS** endpoint](https://iexcloud.io/docs/api/#tops) without using any credits. You can also apply the `chartIEXOnly` parameter to the **Intraday Prices** endpoint to access IEX-only minute-by-minute data from the current trading day free of charge.
