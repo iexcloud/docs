@@ -62,7 +62,7 @@ Or you can [create a dataset from our example data file](./getting-started-with-
 
 You can also create a dataset schema without data, write a record to it using the data API, and fetch that record using dataset's auto-generated API. [Writing and Fetching a Data Record](../getting-started/writing-and-fetching-a-record.md) shows you how.
 
-Lastly regarding new datasets, you can explore various ways of [Migrating and Importing Data](../migrating-and-importing-data.md), including [loading data from an AWS S3 bucket](source/migrating-and-importing-data/loading-data-from-aws-s3.md) and [loading data from a URL](../migrating-and-importing-data/loading-data-from-a-url.md). You can even [schedule data ingestion](../migrating-and-importing-data/scheduling-data-ingestion.md) from any of the data sources.
+Lastly regarding new datasets, you can explore various ways of [Migrating and Importing Data](../migrating-and-importing-data.md), including [loading data from an AWS S3 bucket](../migrating-and-importing-data/loading-data-from-aws-s3.md) and [loading data from a URL](../migrating-and-importing-data/loading-data-from-a-url.md). You can even [schedule data ingestion](../migrating-and-importing-data/scheduling-data-ingestion.md) from any of the data sources.
 
 If you are interested in using IEX Cloud Core Financial Data in your apps, **Cancel** out of the **Create a Dataset** page and get started with core data at [Using IEX Cloud Core Financial Data](../using-core-data.md).
 
