@@ -39,7 +39,7 @@ Here's how to create and use a public API token.
 
     **Dataset permissions:** Grants read/write/delete access to specified datasets.
 
-    **Allowed Domain(s):** Leaving blank allows requests with the token from any domain. Specifying a domain(s) limits requests to be from that domain(s). Read more at [Restrict Domains For Calls Made With A Publishable Key](https://iexcloud.zendesk.com/hc/en-us/articles/1500012485021).
+    **Allowed Domain(s):** Leaving blank allows requests with the token from any domain. Specifying a domain(s) limits requests to be from that domain(s). Read more at [Restrict Data Access to Specific Domains](./access-and-security/restricting-data-access-to-specific-domains.md).
 
     **Core Credit Usage Limit:** Restricts the number of core credits available to the token.
     
