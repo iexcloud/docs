@@ -55,7 +55,7 @@ Here are the steps:
     ``` {important} Copy the role's ARN (Amazon Resource Name). For additional information on working with roles, see the AWS documentation [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html).
     ```
 
-1. In IEX Cloud console, start creating an AWS integration by navigating to **Sources > Credentials**. The Credentials page appears.
+1. In IEX Cloud console, start creating an AWS integration by navigating to **Sources &rarr; Credentials**. The Credentials page appears.
 
 1. Click **Create AWS Integration**. The **Add Integration** dialog appears.
 

@@ -56,7 +56,7 @@ To start calling these endpoints, see [Getting Real-Time Core Financial Data](./
 ## Time Series Financial Data
 
 Apperate's built-in historical time series data is available as [datasets](./reference/glossary.md#dataset) (a.k.a. Core Datasets) that you can query and join with other datasets to create views.
-The datasets are available in the console at [**Data > Datasets > Core**](https://iexcloud.io/console/datasets/core).
+The datasets are available in the console at [**Data &rarr; Datasets &rarr; Core**](https://iexcloud.io/console/datasets/core).
 
 ![](./using-core-data/core-datasets.png)
 

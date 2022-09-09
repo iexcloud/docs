@@ -12,7 +12,7 @@ Apperate facilitates loading (ingesting) data into a dataset at regular interval
 
 ## Configure Your Schedule
 
-1. Go to **Schedules > Ingestions Schedules**.
+1. Go to **Schedules &rarr; Ingestions Schedules**.
 
     ![](./scheduling-data-ingestion/schedules-in-nav.png)
 
@@ -30,7 +30,7 @@ Apperate facilitates loading (ingesting) data into a dataset at regular interval
 
     **Description (optional):** Describe your scheduled ingestion.
 
-    **Destination Data Source:** An existing data source. To browse your data sources, go to **Sources > Data Sources**.
+    **Destination Data Source:** An existing data source. To browse your data sources, go to **Sources &rarr; Data Sources**.
 
     **Dataset:** The data destination. To browse your datasets, go to **Data** and select your workspace dropdown.
 

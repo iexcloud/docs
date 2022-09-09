@@ -15,7 +15,7 @@ You connect your application or project to your IEX Cloud account via API tokens
 
 Here's how to create and use a public API token.
 
-1. Navigate to **Access & Security > API Tokens**. The API Tokens page appears, listing your tokens in order, oldest to newest.
+1. Navigate to **Access & Security &rarr; API Tokens**. The API Tokens page appears, listing your tokens in order, oldest to newest.
 
 1. Click **Create new token**. A dialog window appears and asks if you are sure you want to add a publishable token.
     

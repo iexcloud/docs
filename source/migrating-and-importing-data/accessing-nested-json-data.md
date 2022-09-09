@@ -7,7 +7,7 @@ If the data you want is nested in JSON response objects, you can specify data lo
 
 Here's how to locate the data using the URL data source response preview and JSONPath.
 
-1. Access the Data Sources page, by navigating to **Sources > Data Sources**. The **Data Sources** page appears.
+1. Access the Data Sources page, by navigating to **Sources &rarr; Data Sources**. The **Data Sources** page appears.
     
     ![data-sources.png](./accessing-nested-json-data/data-sources.png)
 

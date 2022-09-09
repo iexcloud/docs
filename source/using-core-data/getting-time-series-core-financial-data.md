@@ -14,7 +14,7 @@ Apperate's Core Datasets provide historical time series financial data. Let's ca
 
 Here are steps for getting this core financial data.
 
-1. Browse the Core Datasets in the console at [**Data > Datasets > Core**](https://iexcloud.io/console/datasets/core). The Core Datasets list appears.
+1. Browse the Core Datasets in the console at [**Data &rarr; Datasets &rarr; Core**](https://iexcloud.io/console/datasets/core). The Core Datasets list appears.
 
     ![](./getting-time-series-core-financial-data/core-datasets.png)
 

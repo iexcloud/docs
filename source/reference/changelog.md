@@ -83,7 +83,7 @@ Here are the notable changes.
 ## 2022-05-24
 
 - Validate schemas during dataset generation.
-- Fix insert row on the **DATASET > Database** page.
+- Fix insert row on the **DATASET &rarr; Database** page.
 
 ## 2022-05-19
 

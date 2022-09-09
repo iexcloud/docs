@@ -20,7 +20,7 @@ Here are models for the example dataset schema and data record.
 | Property | Index | Required | Allow null |
 | -------- | ----- | -------- | ---------- |
 | id (integer)            | Primary | x |   |
-| date (date > date)      | Date | x |   |
+| date (date &rarr; date)      | Date | x |   |
 | summary (string)        |   | x |   |
 | source (string)         |   | x |   |
 | country (string)        | Secondary | x |   |
@@ -72,7 +72,7 @@ Here's how to create a dataset based on the models:
     In the **Property** column:
     
     - Select *number* for the `id` property's type.
-    - Select *date > date* (format) for the `date` property.
+    - Select *date &rarr; date* (format) for the `date` property.
     - Select *string* for all other properties.
 
     In the **Unique Index** column area:

@@ -6,7 +6,7 @@ An easy way to connect with your AWS S3 bucket is using your [AWS access key](ht
 
 Here's how to add your AWS S3 credentials:
 
-1. Go to the **Credentials** page by navigating to **Sources > Credentials**. The Credentials page appears.
+1. Go to the **Credentials** page by navigating to **Sources &rarr; Credentials**. The Credentials page appears.
 
     ![](./accessing-s3-via-your-access-key/credentials-list.png)
 
