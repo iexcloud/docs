@@ -1,167 +1,193 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="_static/cloud.css">
-  <title>Docs | IEX Cloud</title>
-</head>
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="_static/cloud.css">
+    <title>Docs | IEX Cloud</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta name="description" content="IEX Cloud Apperate Documentation">
+    <meta name="theme-color" content="#f7f8fb">
+    <meta property="og:title" content="Docs | IEX Cloud">
+    <meta property="og:description" content="IEX Cloud Apperate Documentation">
+    <meta property="og:type" content="article">
+    <!-- <meta property="og:image" content="/images/share-card.png"> -->
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@iexcloud">
+    <meta name="twitter:title" content="Docs | IEX Cloud">
+    <meta name="twitter:description" content="IEX Cloud Apperate Documentation">
+    <meta name="twitter:creator" content="@iexcloud">
+    <!-- <meta name="twitter:image" content="/images/share-card.png"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="apple-mobile-web-app-title" content="IEX Cloud">
+    
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="mask-icon" href="/images/favicon.png">
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <meta name="msapplication-TileImage" content="/images/favicon.png">
+     -->
+    <!-- <link rel="preload" href="/css/fonts/graphik-font.min.css" as="style">
+    <link rel="preload" href="/css/fonts/monospace-font.css" as="style"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap">
+
+    <!-- <link rel="stylesheet" type="text/css" href="/css/fonts/graphik-font.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="/css/fonts/monospace-font.css"> -->
+    <!-- <link rel="stylesheet" href="/build/common/index.css"> -->
+  </head>
 <body>
 
-<div class="container z1 px2 border-box flex-1 col-12 relative">
-	<header class="cloud-header community-header" id="cloud-header">
-		<div class="relative">
-			<nav class="z1 px2 border-box flex flex-center flex-justify">
-				<div class="border-box flex-1 flex flex-center mr3">
-					<a class="border-box cloud-header-logo block fit-content pr2" href="https://iexcloud.io">
-						<div style="width: 60px;">
-                <img src="_static/cloud-logo-full.svg" alt="IEX Cloud logo"/>
-            </div>
-					</a>
-					<a class="border-left-light py1" href="getting-started/what-is-iex-cloud-apperate.html"><p class="mb0 line-height-1 ml2 border-box h5 bolder">Documentation</p></a>
-				</div>
-				<div class="lg-show-as-flex flex-center border-box flex-4 flex flex-justify-center">
-					<div class="cloud-nav-btn px2">
-						<div class="relative">
-							<a class="color-inherit bolder" href="https://iexcloud.io/docs/" target="_blank">API Reference</a>
-						</div>
-					</div>
-					<div class="cloud-nav-btn px2">
-						<div class="relative">
-							<a class="color-inherit bolder" href="https://iexcloud.io/community/" target="_blank">Community</a>
-						</div>
-					</div>
-					<div class="cloud-nav-btn px2">
-						<div class="relative">
-							<a class="color-inherit bolder" href="https://iexcloud.io/support/" target="_blank">Support</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="py2 lg-hide border-box">
-					<!--#include virtual="/shared/mobile-menu.html" -->
-				</div>
-			</nav>
-		</div>
-	</header>
-</div>
-
-<div class="relative overflow-hidden">
-    <section class="relative pb4">
-      <div class="container px2 py4 clearfix border-box">
-        <div class="page-header-container">
-          <h1 class="page-header">Getting started on IEX Cloud</h1>
-          <p class="header-subtitle md-col-10 mb4">Learn how to deliver data to your apps in seconds on IEX Cloud.</p>
-        </div>
-        <div class="md-flex md-mxn1">
-          <a href="using-core-data.html" target="_blank" rel="noreferrer" class="p3 border-pale-blue bg-palest-blue-on-hover rounded border-box flex-1 block navy-1 navy-1-on-hover m1 md-mb0 mb2">
-            <div class="md-flex flex-center">
-              <div class="flex-1 border-box md-pl3">
-                <p class="h3 bolder mb1">Get IEX Cloud Core Financial Data</p>
-                <p>Access 40+ financial datasets, with built-in symbology mapping.</p>
-                <p class="bolder magenta-on-hover mb0 navy-1 underline">Get financial data&rarr;</p>
+  <div class="container z1 px2 border-box flex-1 col-12 relative">
+    <header class="cloud-header community-header">
+      <div class="relative">
+        <nav class="z1 px2 border-box flex flex-center flex-justify">
+          <div class="border-box flex-1 flex flex-center md-mr3 mr1">
+            <a class="border-box cloud-header-logo block fit-content pr2" href="https://iexcloud.io">
+              <div style="width: 60px;">
+                  <img src="_static/cloud-logo-full.svg" alt="IEX Cloud logo"/>
               </div>
-            </div>
-          </a>
-          <a href="getting-started/writing-and-fetching-a-record.html" target="_blank" rel="noreferrer" class="p3 border-pale-blue bg-palest-blue-on-hover rounded border-box flex-1 block navy-1 navy-1-on-hover m1 md-mb0 mb2">
-            <div class="md-flex flex-center">
-              <div class="flex-1 border-box md-pl3">
-                <p class="h3 bolder mb1">Write and Read Data in Apperate</p>
-                <p>Create a data schema, write to it, and read from the generated endpoint.</p>
-                <p class="bolder magenta-on-hover mb0 navy-1 underline">Write to the Apperate database&rarr;</p>
-              </div>
-            </div>
-          </a>
-          <a href="getting-started/getting-started-with-apperate.html" target="_blank" rel="noreferrer" class="p3 border-pale-blue bg-palest-blue-on-hover rounded border-box flex-1 block navy-1 navy-1-on-hover m1 md-mb0 mb2">
-            <div class="md-flex flex-center">
-              <div class="flex-1 border-box md-pl3">
-                <p class="h3 bolder mb1">Create and Explore an Example Dataset</p>
-                <p>Build back-end infrastructure quickly and call generated endpoints.</p>
-                <p class="bolder magenta-on-hover mb0 navy-1 underline">Create a sample dataset&rarr;</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-</div>
-
-<footer class="cloud-footer">
-    <section class="container px2 clearfix border-box">
-      <div class="lg-flex md-py4 py3 flex-1">
-        <div class="border-box flex-1 lg-mb0 mb2 lg-pr4 md-pr3">
-          <a class="block fill-navy-1 fill-magenta-on-hover fit-content" href="https://iexcloud.io">
-            <div style="width: 60px;">
-                <img src="_static/cloud-logo-full.svg" alt="IEX Cloud logo"/>
-            </div>
-          </a>
-          <div class="cloud-margin-top">
-            <a class="opacity-on-hover transition-100 mr1 fill-navy-1 fill-magenta-on-hover no-underline-on-hover inline-block" href="https://github.com/iexcloud">
-                <svg class="block margin-auto border-box" width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                    <title>Github</title>
-                    <path d="M8,0A8,8,0,0,0,5.47,15.59c.4.07.55-.17.55-.39s0-.69,0-1.36c-2.23.48-2.69-1.07-2.69-1.07a2.12,2.12,0,0,0-.89-1.17c-.73-.5.05-.49.05-.49a1.68,1.68,0,0,1,1.23.82A1.7,1.7,0,0,0,6,12.6a1.71,1.71,0,0,1,.51-1.07c-1.78-.2-3.64-.89-3.64-4a3.09,3.09,0,0,1,.82-2.15A2.88,2.88,0,0,1,3.8,3.32s.67-.22,2.2.82a7.58,7.58,0,0,1,4,0c1.53-1,2.2-.82,2.2-.82a2.87,2.87,0,0,1,.08,2.12,3.09,3.09,0,0,1,.82,2.15c0,3.07-1.87,3.75-3.65,3.95A1.91,1.91,0,0,1,10,13c0,1.07,0,1.93,0,2.19s.14.46.55.38A8,8,0,0,0,8,0Z" style="fill-rule: evenodd"/>
-                </svg>
             </a>
-            <a class="opacity-on-hover transition-100 mr1 fill-navy-1 fill-magenta-on-hover no-underline-on-hover inline-block" href="https://twitter.com/iexcloud">
-                <svg class="block margin-auto border-box" width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
-                    <title>Twitter</title>
-                    <path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"/>
-                </svg>
+            <a class="md-show border-left-light py1" href="getting-started/what-is-iex-cloud-apperate.html"><p class="mb0 line-height-1 ml2 border-box h5 bolder">Documentation</p></a>
+          </div>
+          <div class="flex flex-center flex-wrap">
+            <div class="cloud-nav-btn">
+              <div class="relative">
+                <a class="color-inherit bolder" href="https://iexcloud.io/docs/" target="_blank">API Reference</a>
+              </div>
+            </div>
+            <div class="md-show cloud-nav-btn">
+              <div class="relative">
+                <a class="color-inherit bolder" href="https://iexcloud.io/community/" target="_blank">Community</a>
+              </div>
+            </div>
+            <div class="cloud-nav-btn">
+              <div class="relative">
+                <a class="color-inherit bolder" href="https://iexcloud.io/support/" target="_blank">Support</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="py2 lg-hide border-box">
+            <!--#include virtual="/shared/mobile-menu.html" -->
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <div class="relative overflow-hidden">
+      <section class="relative pb4">
+        <div class="container px2 py4 clearfix border-box">
+          <div class="page-header-container">
+            <h1 class="page-header">Getting started on IEX Cloud</h1>
+            <p class="header-subtitle md-col-10 mb4">Learn how to deliver data to your apps in seconds on IEX Cloud.</p>
+          </div>
+          <div class="md-flex md-mxn1">
+            <a href="using-core-data.html" target="_blank" rel="noreferrer" class="p3 border-pale-blue bg-palest-blue-on-hover rounded border-box block flex-1 block navy-1 navy-1-on-hover m1 md-mb0 mb2">
+              <p class="h3 bolder mb1">Get IEX Cloud Core Financial Data</p>
+              <p>Access 40+ financial datasets, with built-in symbology mapping.</p>
+              <p class="bolder magenta-on-hover mb0 navy-1 underline">Get financial data&rarr;</p>
+            </a>
+            <a href="getting-started/writing-and-fetching-a-record.html" target="_blank" rel="noreferrer" class="p3 border-pale-blue bg-palest-blue-on-hover rounded border-box block flex-1 block navy-1 navy-1-on-hover m1 md-mb0 mb2">
+              <p class="h3 bolder mb1">Write and Read Data in Apperate</p>
+              <p>Create a data schema, write to it, and read from the generated endpoint.</p>
+              <p class="bolder magenta-on-hover mb0 navy-1 underline">Write to the Apperate database&rarr;</p>
+            </a>
+            <a href="getting-started/getting-started-with-apperate.html" target="_blank" rel="noreferrer" class="p3 border-pale-blue bg-palest-blue-on-hover rounded border-box block flex-1 block navy-1 navy-1-on-hover m1 md-mb0 mb2">
+              <p class="h3 bolder mb1">Create and Explore an Example Dataset</p>
+              <p>Build back-end infrastructure quickly and call generated endpoints.</p>
+              <p class="bolder magenta-on-hover mb0 navy-1 underline">Create a sample dataset&rarr;</p>k
             </a>
           </div>
         </div>
-        <div class="border-box md-flex flex-5 lg-pl3">
-          <div class="border-box flex flex-wrap mxn2">
-            <div class="border-box lg-pl3 md-pr4 pl2 pr3 mb2">
-              <div class="cloud-footer-heading">Products</div>
-              <a class="cloud-footer-link" href="https://iexcloud.io/core-data/">Core Data</a>
-              <a class="cloud-footer-link" href="https://iexcloud.io/marketplace/">Marketplace</a>
-              <a class="cloud-footer-link" href="https://iexcloud.io/rules-engine/">Rules Engine</a>
-              <a class="cloud-footer-link" href="https://iexcloud.io/pricing/">Pricing</a>
+      </section>
+  </div>
+
+  <footer class="cloud-footer">
+      <section class="container px2 clearfix border-box">
+        <div class="lg-flex md-py4 py3 flex-1">
+          <div class="border-box flex-1 lg-mb0 mb2 lg-pr4 md-pr3">
+            <a class="block fill-navy-1 fill-magenta-on-hover fit-content" href="https://iexcloud.io">
+              <div style="width: 60px;">
+                  <img src="_static/cloud-logo-full.svg" alt="IEX Cloud logo"/>
+              </div>
+            </a>
+            <div class="cloud-margin-top">
+              <a class="opacity-on-hover transition-100 mr1 fill-navy-1 fill-magenta-on-hover no-underline-on-hover inline-block" href="https://github.com/iexcloud">
+                  <svg class="block margin-auto border-box" width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                      <title>Github</title>
+                      <path d="M8,0A8,8,0,0,0,5.47,15.59c.4.07.55-.17.55-.39s0-.69,0-1.36c-2.23.48-2.69-1.07-2.69-1.07a2.12,2.12,0,0,0-.89-1.17c-.73-.5.05-.49.05-.49a1.68,1.68,0,0,1,1.23.82A1.7,1.7,0,0,0,6,12.6a1.71,1.71,0,0,1,.51-1.07c-1.78-.2-3.64-.89-3.64-4a3.09,3.09,0,0,1,.82-2.15A2.88,2.88,0,0,1,3.8,3.32s.67-.22,2.2.82a7.58,7.58,0,0,1,4,0c1.53-1,2.2-.82,2.2-.82a2.87,2.87,0,0,1,.08,2.12,3.09,3.09,0,0,1,.82,2.15c0,3.07-1.87,3.75-3.65,3.95A1.91,1.91,0,0,1,10,13c0,1.07,0,1.93,0,2.19s.14.46.55.38A8,8,0,0,0,8,0Z" style="fill-rule: evenodd"/>
+                  </svg>
+              </a>
+              <a class="opacity-on-hover transition-100 mr1 fill-navy-1 fill-magenta-on-hover no-underline-on-hover inline-block" href="https://twitter.com/iexcloud">
+                  <svg class="block margin-auto border-box" width="18" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                      <title>Twitter</title>
+                      <path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"/>
+                  </svg>
+              </a>
             </div>
-            <div class="border-box lg-pl3 md-pr4 pl2 pr3 mb2">
-              <div class="cloud-footer-heading">Core Data</div>
-              <a class="cloud-footer-link" href="https://iexcloud.io/core-data-catalog">Stocks</a>
-              <a class="cloud-footer-link" href="https://iexcloud.io/core-data-catalog">Market</a>
-              <a class="cloud-footer-link" href="https://iexcloud.io/forex">Forex</a>
-              <a class="cloud-footer-link" href="https://iexcloud.io/core-data-catalog">Economic Data</a>
-            </div>
-            <div class="border-box lg-pl3 md-pr4 pl2 pr3 mb2">
-              <div class="cloud-footer-heading">Community</div>
-              <a class="cloud-footer-link" href="https://iexcloud.io/community/">Community</a>
-              <a class="cloud-footer-link" href="https://iexcloud.io/community/blog/">Blog</a>
-              <a class="cloud-footer-link" href="https://iexcloud.io/community/events/">Events</a>
-              <a class="cloud-footer-link" href="https://iexcloud.io/community/developer/">Developer</a>
-            </div>
-            <div class="border-box lg-pl3 md-pr4 pl2 pr3 mb2">
-              <div class="cloud-footer-heading">Support</div>
-              <a class="cloud-footer-link" href="https://iexcloud.io/documentation/">Documentation</a>
-              <a class="cloud-footer-link" href="https://iexcloud.io/docs/">API Reference</a>
-              <a class="cloud-footer-link" href="https://status.iexapis.com/">System Status</a>
-              <a class="cloud-footer-link" href="https://iexcloud.io/support/">Support</a>
-            </div>
-            <div class="border-box lg-pl3 md-pr4 pl2 pr3 mb2">
-              <div class="cloud-footer-heading">Company</div>
-              <a class="cloud-footer-link" href="https://iexcloud.io/about/">About</a>
-              <a class="cloud-footer-link" href="https://iexcloud.io/careers/">Careers <span class="h6 px1 py6 rounded ml6 bg-navy-1 white bolder card-shadow">We're hiring!</span></a>
-              <a class="cloud-footer-link" href="https://iexcloud.io/brand/">Brand Assets</a>
-              <a class="cloud-footer-link" href="https://iexcloud.io/support/#support-contact">Contact</a>
+          </div>
+          <div class="border-box md-flex flex-5 lg-pl3">
+            <div class="border-box flex flex-wrap mxn2">
+              <div class="border-box lg-pl3 md-pr4 pl2 pr3 mb2">
+                <div class="cloud-footer-heading">Products</div>
+                <a class="cloud-footer-link" href="https://iexcloud.io/core-data/">Core Data</a>
+                <a class="cloud-footer-link" href="https://iexcloud.io/marketplace/">Marketplace</a>
+                <a class="cloud-footer-link" href="https://iexcloud.io/rules-engine/">Rules Engine</a>
+                <a class="cloud-footer-link" href="https://iexcloud.io/pricing/">Pricing</a>
+              </div>
+              <div class="border-box lg-pl3 md-pr4 pl2 pr3 mb2">
+                <div class="cloud-footer-heading">Core Data</div>
+                <a class="cloud-footer-link" href="https://iexcloud.io/core-data-catalog">Stocks</a>
+                <a class="cloud-footer-link" href="https://iexcloud.io/core-data-catalog">Market</a>
+                <a class="cloud-footer-link" href="https://iexcloud.io/forex">Forex</a>
+                <a class="cloud-footer-link" href="https://iexcloud.io/core-data-catalog">Economic Data</a>
+              </div>
+              <div class="border-box lg-pl3 md-pr4 pl2 pr3 mb2">
+                <div class="cloud-footer-heading">Community</div>
+                <a class="cloud-footer-link" href="https://iexcloud.io/community/">Community</a>
+                <a class="cloud-footer-link" href="https://iexcloud.io/community/blog/">Blog</a>
+                <a class="cloud-footer-link" href="https://iexcloud.io/community/events/">Events</a>
+                <a class="cloud-footer-link" href="https://iexcloud.io/community/developer/">Developer</a>
+              </div>
+              <div class="border-box lg-pl3 md-pr4 pl2 pr3 mb2">
+                <div class="cloud-footer-heading">Support</div>
+                <a class="cloud-footer-link" href="https://iexcloud.io/documentation/">Documentation</a>
+                <a class="cloud-footer-link" href="https://iexcloud.io/docs/">API Reference</a>
+                <a class="cloud-footer-link" href="https://status.iexapis.com/">System Status</a>
+                <a class="cloud-footer-link" href="https://iexcloud.io/support/">Support</a>
+              </div>
+              <div class="border-box lg-pl3 md-pr4 pl2 pr3 mb2">
+                <div class="cloud-footer-heading">Company</div>
+                <a class="cloud-footer-link" href="https://iexcloud.io/about/">About</a>
+                <a class="cloud-footer-link" href="https://iexcloud.io/careers/">Careers <span class="h6 px1 py6 rounded ml6 bg-navy-1 white bolder card-shadow">We're hiring!</span></a>
+                <a class="cloud-footer-link" href="https://iexcloud.io/brand/">Brand Assets</a>
+                <a class="cloud-footer-link" href="https://iexcloud.io/support/#support-contact">Contact</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      
+      <section class="clearfix border-box">
+        <div class="container pb2 border-box md-flex flex-center">
+          <div class="border-box px2 navy-1 h5">&copy; <!--#config timefmt="%Y" --><!--#echo var="DATE_LOCAL" --> IEX Cloud Services LLC.</div>
+          <div class="border-box flex flex-center">
+            <a class="border-box px2 cloud-footer-link" href="https://iexcloud.io/terms/">Terms</a>
+            <div class="border-box">&bull;</div>
+            <a class="border-box px2 cloud-footer-link" href="https://iexcloud.io/privacy/">Privacy Policy</a>
+          </div>
+        </div>
+      </section>
     
-    <section class="clearfix border-box">
-      <div class="container pb2 border-box md-flex flex-center">
-        <div class="border-box px2 navy-1 h5">&copy; <!--#config timefmt="%Y" --><!--#echo var="DATE_LOCAL" --> IEX Cloud Services LLC.</div>
-        <div class="border-box flex flex-center">
-          <a class="border-box px2 cloud-footer-link" href="https://iexcloud.io/terms/">Terms</a>
-          <div class="border-box">&bull;</div>
-          <a class="border-box px2 cloud-footer-link" href="https://iexcloud.io/privacy/">Privacy Policy</a>
-        </div>
-      </div>
-    </section>
-  
-  </footer>  
+    </footer>  
 
-</body>
+  </body>
 </html>
