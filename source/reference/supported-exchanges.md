@@ -1,4 +1,4 @@
-# Supported Stock Exchanges
+# Supported Exchanges
 
 IEX Cloud offers real-time {sup}`**`, 15-minute delayed, intraday, and historical prices for securities listed on U.S. equity exchanges. The platform also offers historical end-of-day stock prices for securities listed on non-U.S. exchanges.
 
