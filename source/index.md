@@ -31,10 +31,3 @@ administration/credits-and-pricing.md
 administration/managing-users.md
 administration/monitoring-deployments.md
 ```
-
-```{toctree}
-:maxdepth: 1
-:caption: Community
-
-community/authors-at-iex-cloud-getting-published.md
-```
