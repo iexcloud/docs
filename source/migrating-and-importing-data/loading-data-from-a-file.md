@@ -98,7 +98,7 @@ Start ingesting your file, following these steps:
     |   |  | owner_count (integer) |
     | x |  | purchase_date (date) | Date |
 
-    ``` {important} The `_system` prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix your dataset ID or dataset property names with `_system`.
+    ``` {important} The *_system* prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix your dataset ID or dataset property names with *_system*.
     ```
 
     **Opt in to IEX Cloud's Metadata Graph:** unselect

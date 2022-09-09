@@ -47,7 +47,8 @@ Here's how to locate the data using the URL data source response preview and JSO
     
     ![test-json-path-response.png](./accessing-nested-json-data/test-json-path-response.png) 
 
-    >  **Important:** Always test your JSON Path to make sure you're getting the desired JSONPath Response.
+    ``` {important} Always test your JSON Path to make sure you're getting the desired JSONPath Response.
+    ```
     
     Make sure your JSONPath Response is an object array. Its format should look like the following JSON, where object *values* are of any JavaScript type.
 
