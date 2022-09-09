@@ -71,3 +71,19 @@ Reference data call to pull only mutual fund symbols can be found [here](https:/
 ## OTC Symbols
 
 Reference data call to pull only OTC symbols can be found [here](https://iexcloud.io/docs/api/#otc-symbols).
+
+## International Symbols
+
+You can see which international exchanges IEX Cloud provides price data for at [Supported Exchanges](../reference/supported-exchanges.md).
+
+To see the most up-to-date list of which international symbols are supported, you can use our reference data endpoints here to pull an array of symbols by region or exchange.
+
+To use non-U.S. symbols, add the corresponding exchange suffix to the symbol when making the API call. For example, the exchange suffix for TSX is '-CV', so the symbol for Armor Minerals (TSX: A) is 'A-CV'.
+
+Here is the quote call for A-CV:
+
+```
+https://cloud.iexapis.com/stable/stock/a-cv/quote?token=INSERT_TOKEN_HERE
+```
+
+You can find the suffixes for international exchanges by querying our [International Exchanges](https://iexcloud.io/docs/api/#international-exchanges) endpoint.
