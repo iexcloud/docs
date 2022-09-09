@@ -54,6 +54,15 @@ Here's how to create and use a public API token.
 
 Now the token can be used in calling the specified APIs.
 
+## How many tokens do I need?
+
+Depending on your use case, you may want to use multiple tokens rather than just one. You’ll typically want to use multiple tokens when tracking, controlling, and throttling usage for different projects, apps, or end users separately.
+
+Reasons to use multiple tokens:
+
+- You have multiple applications or projects using IEX Cloud
+- Multiple teams at your business are sharing your IEX Cloud account
+
 ## What's Next?
 
 Ready to call some dataset APIs? See [Getting Started with Apperate](../getting-started/getting-started-with-apperate.md).
