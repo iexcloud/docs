@@ -85,6 +85,6 @@ You're editing (and overwriting) data like a champ!
 
 If you need to delete a record, use the `DELETE /data/:workspace/:id/:key/:subkey?/:date?` endpoint described in the [Delete Data](https://iexcloud.io/docs/datasets-api/delete-data) reference page.
 
-If you haven't yet checked out the various ways to query data, see [Querying Data](./querying-data.md).
+If you haven't yet checked out the various ways to query (get) data, see [Querying Data](./querying-data.md).
 
 Do you want to combine and transform data using views? Check out [Creating and Managing Views](../managing-your-data/creating-and-managing-views.md)

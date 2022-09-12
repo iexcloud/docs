@@ -16,12 +16,12 @@ Here are some of the task areas and links to related tutorials and API Reference
 
 ## Querying Data
 
-The Data API's [Query data](https://iexcloud.io/docs/datasets-api/query-data) endpoint (i.e., `GET /data`) returns data from the dataset you specify. The endpoint supports using windowing functions for Querying Datasets. The [Datasets](https://iexcloud.io/docs/datasets) pages and [Core Data](https://iexcloud.io/docs/core) pages describe each dataset's query data endpoint parameters and response attributes.
+The Data API's [`GET /data`](https://iexcloud.io/docs/datasets-api/query-data) endpoint returns data from the dataset you specify. The endpoint supports using windowing functions for Querying Datasets. The [Datasets](https://iexcloud.io/docs/datasets) pages and [Core Data](https://iexcloud.io/docs/core) pages describe each dataset's `GET /data` endpoint parameters and response attributes.
 
 ``` {important} Apperate includes only historical time series Core Data at this time. We are in the process of migrating real-time legacy data, including stock quotes, into Apperate. In the meantime, please see the [Legacy API Reference](https://iexcloud.io/docs/api/) for the real-time legacy data.
 ```
 
-The **Example Request** on each dataset's **Overview** page demonstrates using the query data endpoint on that dataset.
+The **Example Request** on each dataset's **Overview** page demonstrates using the `GET /data` endpoint on that dataset.
 
 ![](./apperate-api-basics/example_request.png)
 

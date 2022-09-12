@@ -2,7 +2,7 @@
 
 Datasets that have a primary index and date index (it's included by default) leverage time series. The time series excels at retrieving records within specific time ranges. The `GET /data/...` endpoint supports these features.
 
-Here you'll get familiar with the query data endpoint and use time series parameters to get dataset records that match a time range.
+Here you'll get familiar with the `GET /data` endpoint and use time series parameters to get dataset records that match a time range.
 
 ## Understanding the GET /data/ Endpoint
 
@@ -14,7 +14,7 @@ Apperate API URLs include your workspace [base URL](../apperate-api-basics.md), 
 BASE_URL/VERSION/ENDPOINT?token=TOKEN
 ```
 
-Here's the standard query data endpoint format:
+Here's the standard `GET /data` endpoint format:
 
 ```
 GET /data/:workspace/:id/:key?/:subkey?
@@ -40,7 +40,7 @@ For example, this URL returns a dataset record for the key value `AAPL`:
 https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/SAMPLE_AAPL_DATASET_M3RCT0SSX/AAPL?token=TOKEN
 ```
 
-``` {note} The query data endpoint returns at most one record unless you specify a date subkey, range, or a higher limit value.
+``` {note} The `GET /data` endpoint returns at most one record unless you specify a date subkey, range, or a higher limit value.
 ```
 
 Let's explore filtering on a time range next.

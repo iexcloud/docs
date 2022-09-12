@@ -200,7 +200,7 @@ Here are the notable changes.
 
 ## 2022-04-29
 
-- Get new/modified dataset data by calling `GET /data/:workspace/:id/:key?/:subkey?` specifying a previous query ID using the `queryId` query parameter. See [Query data](https://iexcloud.io/docs/datasets-api/query-data).
+- Get new/modified dataset data by calling `GET /data/:workspace/:id/:key?/:subkey?` specifying a previous query ID using the `queryId` query parameter. See [`GET /data`](https://iexcloud.io/docs/datasets-api/query-data).
 
 ## 2022-04-27
 
