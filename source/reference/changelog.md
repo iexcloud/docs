@@ -5,17 +5,16 @@ Here are the notable changes.
 ## 2022-09-08
 
 - Handle Paygo credit if needed at upgrade
-- Fix annual pooled credit grant end date
 
 ## 2022-08-31
 
-- Show data ingestion progress in dataset's overview
+- Show data ingestion progress in dataset overviews
 
 ## 2022-08-30
 
 - Speed up time series metadata API call
 - Fix schema index UI
-- Added missing routes to GET /platform/swagger-json response
+- Add missing routes to [GET /openapi-doc](https://iexcloud.io/docs/datasets-api/get-openapi-json) response
 
 ## 2022-08-29
 
@@ -32,11 +31,10 @@ Here are the notable changes.
 
 - Fix upgrade from legacy Individual plan
 - Disable Cloud Cache in Apperate
-- Allow free Apperate plan tiers to create data sources, schedules, and credentials
+- Enable free Apperate plan tiers to create data sources, schedules, and credentials
 
 ## 2022-08-22
 
-- Add a Financial Override for researchAndDevelopment field in the Income endpoint
 - Increase Minutebar transaction processing
 
 ## 2022-08-19
@@ -47,116 +45,141 @@ Here are the notable changes.
 
 ## 2022-08-18
 
-- Add a sharesOutstanding field override
 - Fix undefined data types in dataset API response attribute descriptions
 - Auto-enable pay-as-you-go in Apperate
 - Fix Core dataset API docs rendering speed
 - Restrict dataset names to alpha-numeric characters and underscores
 - Show console error message when max number of datasets reached
 
-<!-- Continue filling in entries between these dates - Jim -->
+## 2022-08-15
+
+- Add descriptions for all Core datasets
+
+## 2022-08-11
+
+- Fix dataset record counts
+
+## 2022-08-10
+
+- Provide one-step dataset creation--Apperate infers the schema
+
+## 2022-08-05
+
+- Support renaming datasets
+
+## 2022-08-03
+
+- Deconflict references to API docs for core and private datasets with the same name
+
+## 2022-07-26
+
+- Mark Core dataset indexed attributes in Core datasets sidebar
+
+## 2022-07-22
+
+- Fix displaying attribute types in datasets sidebar
 
 ## 2022-07-19
 
-- Deprecate the internal "platform" dataset.
+- Deprecate the internal "platform" dataset
 
 ## 2022-07-07
 
-- Fix propagating indexed columns from nested views.
+- Fix propagating indexed columns from nested views
 
 ## 2022-07-05
 
-- Correct storage limit to 5gb.
+- Correct storage limit to 5gb
 
 ## 2022-06-30
 
-- If you click an S3 bucket file name, select that file for ingestion.
-- If an S3 data source object isnt found, indicate the missing bucket or file, including its name path.
-- List each workspace's datasets.
-- If the user exceeds the storage limit, halt data ingestion jobs and print the amount of data currently stored.
+- If you click an S3 bucket file name, select that file for ingestion
+- If an S3 data source object isnt found, indicate the missing bucket or file, including its name path
+- List each workspace's datasets
+- If the user exceeds the storage limit, halt data ingestion jobs and print the amount of data currently stored
 
 ## 2022-06-28
 
-- Keep auto-generated data sources from creating datasets.
+- Keep auto-generated data sources from creating datasets
 
 ## 2022-06-24
 
-- Fix ingestion schedule pause/re-enable functionality.
-- List bucket contents when creating dataset from an S3 bucket.
-- Add ability to create credentials in the Credentials dropdown.
+- Fix ingestion schedule pause/re-enable functionality
+- List bucket contents when creating dataset from an S3 bucket
+- Add ability to create credentials in the Credentials dropdown
 
 ## 2022-06-17
 
-- Add a dataset export mechanism.
+- Add a dataset export mechanism
 
 ## 2022-06-16
 
-- Make indexed schema properties required; allow all others to be null.
+- Make indexed schema properties required; allow all others to be null
 
 ## 2022-06-15
 
-- Go to the create dataset page immediately upon creating a workspace.
-- Add an API to page through S3 bucket listings.
-- Make `_system` a reserved name prefix.
+- Go to the create dataset page immediately upon creating a workspace
+- Add an API to page through S3 bucket listings
+- Make `_system` a reserved name prefix
 
 ## 2022-06-13
 
-- Support using a regex in the [AWS ARN role](../migrating-and-importing-data/accessing-s3-via-storage-integration.md).
-- Support deleting an [AWS integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md).
+- Support using a regex in the [AWS ARN role](../migrating-and-importing-data/accessing-s3-via-storage-integration.md)
+- Support deleting an [AWS integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md)
 
 ## 2022-06-09
 
-- Map the symbology property to the primary index property.
-- Add APIs to generate schemas from remote data sources.
+- Map the symbology property to the primary index property
+- Add APIs to generate schemas from remote data sources
 
 ## 2022-06-08
 
-- Supprt selecting [data files](../migrating-and-importing-data/loading-data-from-a-file.md) that have any name suffix or no name suffix.
+- Supprt selecting [data files](../migrating-and-importing-data/loading-data-from-a-file.md) that have any name suffix or no name suffix
 
 ## 2022-06-03
 
-- Support downloading a data ingestion's [invalid records](../administration/monitoring-deployments.md) as a CSV file.
+- Support downloading a data ingestion's [invalid records](../administration/monitoring-deployments.md) as a CSV file
 
 ## 2022-06-02
 
-- Show job ID in the [log stream](../administration/monitoring-deployments.md).
+- Show job ID in the [log stream](../administration/monitoring-deployments.md)
 
 ## 2022-05-31
 
-- Save console messages to the [log stream](../administration/monitoring-deployments.md).
-- Add aliases as suggested words in the SQL editor.
+- Save console messages to the [log stream](../administration/monitoring-deployments.md)
+- Add aliases as suggested words in the SQL editor
 
 ## 2022-05-27
 
-- Improve [API docs](https://iexcloud.io/docs/datasets-api) URLs by replacing spaces with hyphens.
+- Improve [API docs](https://iexcloud.io/docs/datasets-api) URLs by replacing spaces with hyphens
 
 ## 2022-05-25
 
-- Fix [Core dataset](https://iexcloud.io/docs/core) overviews.
+- Fix [Core dataset](https://iexcloud.io/docs/core) overviews
 
 ## 2022-05-24
 
-- Validate schemas during dataset generation.
-- Fix insert row on the **DATASET &rarr; Database** page.
+- Validate schemas during dataset generation
+- Fix insert row on the **DATASET &rarr; Database** page
 
 ## 2022-05-19
 
 - Support SQL views. See it in action at [Creating and Managing Views](../managing-your-data/creating-and-managing-views.md).
-- Limit dataset query results to 1000.
-- Display AWS user ARN for [AWS integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md).
+- Limit dataset query results to 1000
+- Display AWS user ARN for [AWS integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md)
 
 ## 2022-05-17
 
-- Support `DISTINCT` in SQL queries.
-- Support changing a dataset's metadata graph (symbology) property.
+- Support `DISTINCT` in SQL queries
+- Support changing a dataset's metadata graph (symbology) property
 
 ## 2022-05-16
 
-- Support querying datasets that have hyphens in their names.
+- Support querying datasets that have hyphens in their names
 
 ## 2022-05-12
 
-- Generate JSON schema for SQL view datasets.
+- Generate JSON schema for SQL view datasets
 
 ## 2022-05-11
 
@@ -164,16 +187,16 @@ Here are the notable changes.
 
 ## 2022-05-10
 
-- Improved [API docs](https://iexcloud.io/docs/) load time.
+- Improved [API docs](https://iexcloud.io/docs/) load time
 
 ## 2022-05-09
 
-- Make table lookup case-insensitive.
+- Make table lookup case-insensitive
 - Add SQL support for column aliases. Try it in your dataset **Databse** page's SQL editor.
 
 ## 2022-05-06
 
-- Support `GROUP BY` in SQL queries.
+- Support `GROUP BY` in SQL queries
 
 ## 2022-04-29
 
