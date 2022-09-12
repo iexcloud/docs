@@ -2,6 +2,60 @@
 
 Here are the notable changes.
 
+## 2022-09-08
+
+- Handle Paygo credit if needed at upgrade
+- Fix annual pooled credit grant end date
+
+## 2022-08-31
+
+- Show data ingestion progress in dataset's overview
+
+## 2022-08-30
+
+- Speed up time series metadata API call
+- Fix schema index UI
+- Added missing routes to GET /platform/swagger-json response
+
+## 2022-08-29
+
+- Deprecate the Sandbox testing environment
+- For a dataset's **Share API Docs** token selector, show only tokens that have access to that dataset
+- Detect updates to time-series-inventory metadata, even when the dataset has not records
+
+## 2022-08-25
+
+- Return an error code in the message when an entity can't be created
+- Fix workspace creation on upgrades from legacy plans
+
+## 2022-08-23
+
+- Fix upgrade from legacy Individual plan
+- Disable Cloud Cache in Apperate
+- Allow free Apperate plan tiers to create data sources, schedules, and credentials
+
+## 2022-08-22
+
+- Add a Financial Override for researchAndDevelopment field in the Income endpoint
+- Increase Minutebar transaction processing
+
+## 2022-08-19
+
+- Fix creating a dataset without any data source
+- Fix creating a dataset manually
+- Refactor Minutebar to consume less resources
+
+## 2022-08-18
+
+- Add a sharesOutstanding field override
+- Fix undefined data types in dataset API response attribute descriptions
+- Auto-enable pay-as-you-go in Apperate
+- Fix Core dataset API docs rendering speed
+- Restrict dataset names to alpha-numeric characters and underscores
+- Show console error message when max number of datasets reached
+
+<!-- Continue filling in entries between these dates - Jim -->
+
 ## 2022-07-19
 
 - Deprecate the internal "platform" dataset.
