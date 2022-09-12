@@ -44,7 +44,7 @@ The Data API's [`POST /data/:workspace/:id`](https://iexcloud.io/docs/datasets-a
 
 The `wait` query parameter is another one to consider. By default, the endpoint responds immediately after uploading the data and creating the ingestion job. If you prefer to wait for a response after ingestion job completion, set query parameter `wait=true`.
 
-``` {note} You can also check ingestion job status in the console's [Logs pages](../administration/monitoring-deployments.md) or via the [logs API enpoint](https://iexcloud.io/docs/datasets-api/get-logs). 
+``` {note} You can also check ingestion job status in the console's [Logs pages](../administration/monitoring-deployments.md) or via the [Logs API endpoint](https://iexcloud.io/docs/datasets-api/get-logs). 
 ```
 
 Let's update a record with the API.
@@ -83,7 +83,7 @@ You're editing (and overwriting) data like a champ!
 
 ## What's Next
 
-If you need to delete a record, use the `DELETE /data/:workspace/:id/:key/:subkey?/:date?` endpoint described in the [Delete Data](https://iexcloud.io/docs/datasets-api/delete-data) reference.
+If you need to delete a record, use the `DELETE /data/:workspace/:id/:key/:subkey?/:date?` endpoint described in the [Delete Data](https://iexcloud.io/docs/datasets-api/delete-data) reference page.
 
 If you haven't yet checked out the various ways to query data, see [Querying Data](./querying-data.md).
 
