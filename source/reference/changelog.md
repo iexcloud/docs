@@ -14,7 +14,7 @@ Here are the notable changes.
 
 - Speed up time series metadata API call
 - Fix schema index UI
-- Add missing routes to [GET /openapi-doc](https://iexcloud.io/docs/datasets-api/get-openapi-json) response
+- Add missing routes to [GET /openapi-doc](https://iexcloud.io/docs/apperate-apis/get-openapi-json) response
 
 ## 2022-08-29
 
@@ -151,7 +151,7 @@ Here are the notable changes.
 
 ## 2022-05-27
 
-- Improve [API docs](https://iexcloud.io/docs/datasets-api) URLs by replacing spaces with hyphens
+- Improve [API docs](https://iexcloud.io/docs/apperate-apis) URLs by replacing spaces with hyphens
 
 ## 2022-05-25
 
@@ -200,15 +200,15 @@ Here are the notable changes.
 
 ## 2022-04-29
 
-- Get new/modified dataset data by calling `GET /data/:workspace/:id/:key?/:subkey?` specifying a previous query ID using the `queryId` query parameter. See [`GET /data`](https://iexcloud.io/docs/datasets-api/query-data).
+- Get new/modified dataset data by calling `GET /data/:workspace/:id/:key?/:subkey?` specifying a previous query ID using the `queryId` query parameter. See [`GET /data`](https://iexcloud.io/docs/apperate-apis/query-data).
 
 ## 2022-04-27
 
-- Support synchronous ingestion using "wait" query parameter. You can ingest data synchronously when calling the `POST /data/:workspace/:id` endpoint by setting the `wait` query parameter to `true`. See [Ingest data](https://iexcloud.io/docs/datasets-api/ingest-data).
+- Support synchronous ingestion using "wait" query parameter. You can ingest data synchronously when calling the `POST /data/:workspace/:id` endpoint by setting the `wait` query parameter to `true`. See [Ingest data](https://iexcloud.io/docs/apperate-apis/ingest-data).
 
 ## 2022-04-25
 
-- Add API endpoint to GET log messages. You can fetch your logs by executing the `GET /logs/:workspace`. endpoint. See [Get logs](https://iexcloud.io/docs/datasets-api/get-logs).
+- Add API endpoint to GET log messages. You can fetch your logs by executing the `GET /logs/:workspace`. endpoint. See [Get logs](https://iexcloud.io/docs/apperate-apis/get-logs).
 
 ## 2022-04-20
 

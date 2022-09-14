@@ -1,6 +1,6 @@
 # SQL Query with the API
 
-Apperate is MySQL compliant and supports time series functions, vector functions, and more. You can execute SQL commands programatically via the [`GET /sql-query/:workspace`](https://iexcloud.io/docs/datasets-api/sql-query-dataset-data) endpoint. 
+Apperate is MySQL compliant and supports time series functions, vector functions, and more. You can execute SQL commands programatically via the [`GET /sql-query/:workspace`](https://iexcloud.io/docs/apperate-apis/sql-query-dataset-data) endpoint. 
 
 ## Executing a SQL Query
 

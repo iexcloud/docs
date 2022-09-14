@@ -36,8 +36,8 @@ Here are steps for getting this core financial data.
     | URL Component | Description |
     | --- | --- |
     | `https://WORKSPACE.iex.cloud/v1` | Base URL consisting of the domain (your workspace is the subdomain) and the API version. |
-    | `/data/CORE/CASH_FLOW` | The Data API's [`GET /data/` method](https://iexcloud.io/docs/datasets-api/query-data) followed by path parameter values `CORE` for the dataset namespace and `CASH_FLOW` for the dataset ID. |
-    | `?last=1&token=TOKEN` | Method parameters `last=1` to return the last record and `token=TOKEN` to authorize access. Please see the [`GET /data/` method](https://iexcloud.io/docs/datasets-api/query-data) reference for additional parameters. See [Security and Access](../administration/access-and-security.md) to create public access tokens. |
+    | `/data/CORE/CASH_FLOW` | The Data API's [`GET /data/` method](https://iexcloud.io/docs/apperate-apis/query-data) followed by path parameter values `CORE` for the dataset namespace and `CASH_FLOW` for the dataset ID. |
+    | `?last=1&token=TOKEN` | Method parameters `last=1` to return the last record and `token=TOKEN` to authorize access. Please see the [`GET /data/` method](https://iexcloud.io/docs/apperate-apis/query-data) reference for additional parameters. See [Security and Access](../administration/access-and-security.md) to create public access tokens. |
 
 1. Get the latest record by clicking the **Example Request** URL. Apperate opens the request in a new browser tab and the A JSON array appears in the response like this:
 
