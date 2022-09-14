@@ -143,7 +143,7 @@ If you're interested in loading data other ways or migrating data to Apperate, p
 
 ## Fetching the Record
 
-You can fetch the record using a `GET /data/:workspace/:id/:key?/:subkey?` request. The [GET /data](https://iexcloud.io/docs/apperate-apis/query-data) API reference provides the REST endpoint details. 
+You can fetch the record using a `GET /data/:workspace/:id/:key?/:subkey?` request. The [GET /data](https://iexcloud.io/docs/apperate-apis/get-data) API reference provides the REST endpoint details. 
 
 The endpoint queries the dataset using a Primary index (key), an optional Secondary index (subkey), and a Date index (via the **on** request parameter).
 
