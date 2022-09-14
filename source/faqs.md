@@ -112,7 +112,7 @@ Please see [Restricting Data Access to Specific Domains](./administration/access
 
 <details><summary>How do I get Nasdaq-listed stock data (UTP/OTC Data) on IEX Cloud?</summary>
 
-Please see [Getting Nasdaq-listed UTP/OTP Stock Data](./using-core-data/getting-nasdaq-listed-utp-otc-stock-data.md).
+Please see [Getting Nasdaq-listed UTP/OTC Stock Data](./using-core-data/getting-nasdaq-listed-utp-otc-stock-data.md).
 </details>
 
 <details><summary>How do I stream in data?</summary>
