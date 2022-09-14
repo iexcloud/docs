@@ -154,7 +154,7 @@ Questions? Reach out to <support@iexcloud.io> for assistance.
 
 In general, displaying IEX Cloud data is permitted with attribution. The following are some restrictions on the use of IEX Cloud data:
 
-- Users on the Start plan are only permitted to use data from IEX Cloud for personal, non-commercial use. You can still display data to other individuals/users, but you may not include our data in any commercial application. Paid plan users can use IEX Cloud data for commercial use, including displaying publicly to users.
+- Users on the Start or Free plan are only permitted to use data from IEX Cloud for personal, non-commercial use. You can still display data to other individuals/users, but you may not include our data in any commercial application. Paid plan users can use IEX Cloud data for commercial use, including displaying publicly to users.
 - No user may provide IEX Cloud data via their own API to users, or provide a mechanism for mass downloads, for example as a CSV. For more information please see our terms of service.
 - Attribution is required for all users. If a customer distributes IEX Cloud Data, they must state that the data was provided by IEX Cloud and provide a hyperlink to <https://iexcloud.io>.
 
