@@ -3,7 +3,7 @@
 ```{toctree}
 :maxdepth: 1
 
-developer-tools/iexjs-javascript-library.md
+developer-tools/iexjs-library.md
 developer-tools/pyex-python-library.md
 ```
 

@@ -3,9 +3,8 @@
 ```{toctree}
 :maxdepth: 1
 
-iexjs-javascript-library/iexjs-core-data-methods.md
-iexjs-javascript-library/get-dataset-data-with-iexjs.md
-iexjs-javascript-library/iexjs-apperate-crud-methods.md
+iexjs-library/iexjs-core-data-methods.md
+iexjs-library/iexjs-apperate-crud-methods.md
 ```
 
 iex.js (or simply *iexjs*) is a client library for getting IEX Cloud Core Data and getting data from private permissioned datasets. The library also provides methods for performing CRUD operations on Apperate resources, such as dataset data, datasets, data sources, and more. iexjs provides easy-to-use JavaScript wrapper methods that call IEX Cloud endpoints.
@@ -34,7 +33,7 @@ client.quote({symbol: "AAPL"}).then((res) => {
 });
 ```
 
-``` {seealso} [iex.js Core Data Methods](./iexjs-javascript-library/iexjs-core-data-methods.md) has information on all the methods.
+``` {seealso} [iex.js Core Data Methods](./iexjs-library/iexjs-core-data-methods.md) has information on all the methods.
 ```
 
 Get Apple's latest cash flow details:
@@ -52,7 +51,7 @@ The `queryData` method retrieves data from the dataset your specify via the `id`
 ``` {tip} The iexjs client automatically picks up tokens from the environment variable *IEX_TOKEN*.
 ```
 
-``` {seealso} [Get Dataset Data with iex.js](./iexjs-javascript-library/get-dataset-data-with-iexjs.md) provides details on getting dataset data.
+``` {seealso} [Querying Datasets with iex.js](../interacting-with-your-data/querying-data/querying-datasets-with-iexjs.md) provides details on searching datasets.
 ```
 
 ## Open Source Project
@@ -61,8 +60,8 @@ The iex.js package is an open source project available at <https://www.npmjs.com
 
 ## What's Next
 
-[Get Dataset Data with iex.js](./iexjs-javascript-library/get-dataset-data-with-iexjs.md) demonstrates reading data from private permissioned datasets (e.g., your datasets).
+[Querying Datasets with iex.js](../interacting-with-your-data/querying-data/querying-datasets-with-iexjs.md) demonstrates reading data from private permissioned datasets (e.g., your datasets).
 
-[iex.js Core Data Methods](./iexjs-javascript-library/iexjs-core-data-methods.md) provides a reference to Core Data available for current plans and legacy plans.
+[iex.js Core Data Methods](./iexjs-library/iexjs-core-data-methods.md) provides a reference to Core Data available for current plans and legacy plans.
 
-[iex.js Apperate CRUD Methods](./iexjs-javascript-library/iexjs-apperate-crud-methods) lists methods for invoking Apperate CRUD operations on data, datasets, and more.
+[iex.js Apperate CRUD Methods](./iexjs-library/iexjs-apperate-crud-methods) lists methods for invoking Apperate CRUD operations on data, datasets, and more.
