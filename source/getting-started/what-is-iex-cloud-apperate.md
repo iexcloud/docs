@@ -14,7 +14,7 @@ Apperate enables you to build back-end infrastructures quickly, while giving you
 
 ## Fine-Tuned for Fintech
 
-Apperate is grounded in the IEX Cloud team's deep understanding of fintech data neads. It includes a semantic data layer for [normalizing financial data views](../managing-your-data/defining-schemas/normalization.md) and has production-ready financial data built-in.
+Apperate is grounded in the IEX Cloud team's deep understanding of fintech data needs. It includes a semantic data layer for [normalizing financial data views](../managing-your-data/defining-schemas/normalization.md) and has production-ready financial data built-in.
 
 The semantic data layer allows you to refer to an equity using any supported [financial identifier type](../reference/financial-identifiers.md). Apperate relates equivalent symbols across the different types. You can, for example, use a CUSIP symbol to query datasets that refer to equities using ISIN, FIGI, or another supported type. Apperate, in effect, *normalizes* the financial identifiers.
 
