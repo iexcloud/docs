@@ -69,7 +69,7 @@ Start ingesting your file, following these steps:
 
     The **Sample Data Preview** table at the bottom shows your ingested data.
 
-    Lastly, the **Opt in to IEX Cloud's Metadata Graph** section provides the opportunity to map a [financial identifier](../reference/financial-identifiers.md) property to IEX Cloud's metadata data graph. This allows you to enrich your dataset by joining it to IEX Cloud core equities data or any other dataset that is also opted in. Furthermore, you can ingest data into and query for data in this dataset using IEX Cloud's supported [financial identifiers](../reference/financial-identifiers.md).
+    Lastly, the **Opt in to IEX Cloud's Metadata Graph** section provides the opportunity to map an indexed [financial identifier](../reference/financial-identifiers.md) property to IEX Cloud's metadata data graph. This allows you to enrich your dataset by joining it to IEX Cloud core equities data or any other dataset that is also opted in. Furthermore, you can ingest data into and query for data in this dataset using IEX Cloud's supported [financial identifiers](../reference/financial-identifiers.md). The opted in property uses Apperate [SmartLinks](../reference/glossary.md#smartlink).
 
     ![](./loading-data-from-a-file/cars-metadata-graph-opt-in.png)
 

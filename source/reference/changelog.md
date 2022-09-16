@@ -171,7 +171,7 @@ Here are the notable changes.
 ## 2022-05-17
 
 - Support `DISTINCT` in SQL queries
-- Support changing a dataset's metadata graph (symbology) property
+- Support changing the dataset property associated with IEX Cloud's metadata graph.
 
 ## 2022-05-16
 

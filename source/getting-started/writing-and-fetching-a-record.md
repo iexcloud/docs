@@ -81,7 +81,7 @@ Here's how to create a dataset based on the models:
     - Set `country` as the **Secondary** index
     - Set `date` as the **Date** index
 
-    ```{note} For Primary and Secondary index properties, the empty star icon in a property box's top-right corner allows you to opt in either property to Apperate's symbolic metadata graph. For example, if you opt in an index property that holds financial symbols, Apperate's metadata graph associates 10+ [financial identifier](../reference/financial-identifiers.md) types with them.
+    ```{note} For Primary and Secondary index properties, the empty star icon in a property box's top-right corner allows you to opt in either property to Apperate's financial metadata graph. For example, if you opt in an index property that holds financial symbols, Apperate's metadata graph associates the symbols with equivalent symbols from 10+ [financial identifier](../reference/financial-identifiers.md) types. The opted in property uses Apperate [SmartLinks](../reference/glossary.md#smartlink).
     ```
     
     ![](./writing-and-fetching-a-record/write-fetch-record-schema.png)
