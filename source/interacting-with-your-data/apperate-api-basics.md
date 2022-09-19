@@ -39,7 +39,7 @@ API instructions for managing datasets, sources, schedules, credentials, logs, a
 
 ## Getting an API OAS Document
 
-The [`/platform/swagger-json` endpoint](https://iexcloud.io/docs/apperate-apis/get-openapi-json) returns a JSON file that specifies the [Apperate APIs](https://iexcloud.io/docs/apperate-apis) per the OpenAPI Specification (OAS). You can generate a client SDK for your favorite language using the JSON file. 
+The [`GET /openapi-doc` endpoint](https://iexcloud.io/docs/apperate-apis/get-openapi-json) returns a JSON file that specifies the [Apperate APIs](https://iexcloud.io/docs/apperate-apis) per the OpenAPI Specification (OAS). You can generate a client SDK for your favorite language using the JSON file. 
 
 ## What's Next
 
