@@ -11,7 +11,7 @@ Here we'll add a record and get it back using the REST API. We'll create a datas
 
 Let's start with creating a dataset from a simple schema.
 
-## Creating a Dataset for Your Schema
+## Creata a Dataset for Your Schema
 
 Here are models for the example dataset schema and data record.
 
@@ -108,7 +108,7 @@ Here's how to create a dataset based on the models:
 
 Your dataset is ready for data.
 
-## Writing a Record
+## Write a Record
 
 You'll add the example news record into the dataset using the Data API's [`POST /data`](https://iexcloud.io/docs/apperate-apis/ingest-data) method.
 
