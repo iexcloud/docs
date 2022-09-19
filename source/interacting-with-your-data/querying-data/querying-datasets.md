@@ -40,7 +40,7 @@ For example, this URL returns a dataset record for the key value `AAPL`:
 https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/SAMPLE_AAPL_DATASET_M3RCT0SSX/AAPL?token=TOKEN
 ```
 
-``` {note} The `GET /data` endpoint returns at most one record unless you specify a date subkey, range, or a higher limit value.
+``` {note} The *GET /data* endpoint returns at most one record unless you specify a date subkey, range, or a higher limit value.
 ```
 
 Let's explore filtering on a time range next.
@@ -58,7 +58,53 @@ https://my.iex.cloud/v1/data/MY/SAMPLE_AAPL_DATASET_M3RCT0SSX?token=TOKEN&from=2
 Result:
 
 ```javascript
-[{"close":43.0075,"date":"2019-02-20","high":43.33,"low":42.7475,"open":42.7975,"symbol":"AAPL","volume":104457448},{"close":42.7325,"date":"2019-02-19","high":42.86,"low":42.3725,"open":42.4275,"symbol":"AAPL","volume":75891304},{"close":42.605,"date":"2019-02-15","high":42.925,"low":42.4375,"open":42.8125,"symbol":"AAPL","volume":98507256},{"close":42.7,"date":"2019-02-14","high":42.8154,"low":42.345,"open":42.4275,"symbol":"AAPL","volume":87342988},{"close":42.545,"date":"2019-02-13","high":43.12,"low":42.48,"open":42.8475,"symbol":"AAPL","volume":89960932}]
+[
+    {
+        "close": 43.0075,
+        "date": "2019-02-20",
+        "high": 43.33,
+        "low": 42.7475,
+        "open": 42.7975,
+        "symbol": "AAPL",
+        "volume": 104457448
+    },
+    {
+        "close": 42.7325,
+        "date": "2019-02-19",
+        "high": 42.86,
+        "low": 42.3725,
+        "open": 42.4275,
+        "symbol": "AAPL",
+        "volume": 75891304
+    },
+    {
+        "close": 42.605,
+        "date": "2019-02-15",
+        "high": 42.925,
+        "low": 42.4375,
+        "open": 42.8125,
+        "symbol": "AAPL",
+        "volume": 98507256
+    },
+    {
+        "close": 42.7,
+        "date": "2019-02-14",
+        "high": 42.8154,
+        "low": 42.345,
+        "open": 42.4275,
+        "symbol": "AAPL",
+        "volume": 87342988
+    },
+    {
+        "close": 42.545,
+        "date": "2019-02-13",
+        "high": 43.12,
+        "low": 42.48,
+        "open": 42.8475,
+        "symbol": "AAPL",
+        "volume": 89960932
+    }
+]
 ```
 
 There are parameters that facilitate filtering on specific quarters and semesters, and the previous/current/future days, weeks, months, and years. For more details and examples, please see the [time series endpoint reference documentation](https://iexcloud.io/docs/guides/time-series).
