@@ -7,7 +7,7 @@ Here we'll add a record and get it back using the REST API. We'll create a datas
 **Prerequisites:**
 
 - **IEX Cloud Apperate account** - Create one [here](https://iexcloud.io/cloud-login#/register).
-- **Apperate workspace** - See [Creating a Workspace](./creating-a-workspace.md). 
+- **Apperate workspace** - See [Creating a Workspace](./getting-started-with-apperate.md#create-a-workspace). 
 
 Let's start with creating a dataset from a simple schema.
 

@@ -1,3 +1,4 @@
 # comments start with "#"
+getting-started/creating-a-workspace.md getting-started/getting-started-with-apperate.md
 getting-started/getting-started-with-an-example-dataset.md getting-started/getting-started-with-apperate.md
 getting-started/writing-and-fetching-a-record.md getting-started/write-and-read-a-record.md

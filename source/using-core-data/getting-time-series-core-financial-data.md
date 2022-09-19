@@ -8,7 +8,7 @@ Apperate's Core Datasets provide historical time series financial data. Let's ca
 **Prerequisites:**
 
 - **IEX Cloud Apperate account** - Create one [here](https://iexcloud.io/cloud-login#/register).
-- **Apperate workspace** - See [Creating a Workspace](../getting-started/creating-a-workspace.md). 
+- **Apperate workspace** - See [Creating a Workspace](../getting-started/getting-started-with-apperate.md#create-a-workspace). 
 
 ## Steps
 
