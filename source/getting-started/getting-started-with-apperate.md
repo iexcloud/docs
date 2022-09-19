@@ -1,69 +1,139 @@
 # Getting Started with IEX Cloud Apperate
 
-A great way to get familiar with Apperate is to create a dataset and write data to it. A [dataset](../reference/glossary.md#dataset) is like any common database table: it is defined by a schema and can hold data records. Datasets have several additional benefits in that although they can store any data model, they are optimized for time series data. Additionally, Apperate automatically generates an API for accessing the dataset (via a permissioned token, of course).
+A great way to get familiar with Apperate is to write data to it and access that data. Apperate stores data in [datasets](../reference/glossary.md#dataset); they're schema-based database tables that come with additional benefits. Datasets can store any data model, and are optimized for time series data. For each dataset, Apperate automatically generates a permissioned API and API docs.
 
-Here we'll create a dataset with example data in seconds and read the data back from the dataset's auto-generated REST endpoint.
+Here's how we'll get started with Apperate:
 
-**Prerequisites:**
+1. Create a workspace
+1. Write data to a dataset
+1. Read data from the dataset
 
-- **IEX Cloud Apperate account** - Create one [here](https://iexcloud.io/cloud-login#/register).
-- **Apperate workspace** - See [Creating a Workspace](../getting-started/creating-a-workspace.md). 
+``` {attention} If you don't already have an **IEX Cloud Apperate account**, create one [here](https://iexcloud.io/cloud-login#/register).
+```
 
-## Creating and Using an Example Dataset
+## Create a Workspace
 
-Here you will load IEX Cloud's sample data file and then access the loaded data from an auto-generated REST endpoint.
+A [*workspace*](../reference/glossary.md#workspace) is your unique domain for writing data to Apperate and querying data (your data and Apperate's built-in core financial data) from Apperate. Your workspace name appears in your [API Base URL](../interacting-with-your-data/apperate-api-basics.md).
 
-1. If you're not already in the **Create a dataset** page, click **Create a dataset** at the top right of the console. The **Create a dataset** page appears. The image below highlights the sample file link that you will click in the next step.
+**Base URL:**
 
-    ![](./getting-started-with-apperate/try-our-sample-file.png)
+```
+https://WORKSPACE.iex.cloud/v1
+```
 
-    Optionally, enter a more meaninfgul the dataset ID.
+**Example Workspace URL:**
 
-1.  In the **Create a dataset** page, keep the source type set to **Local file** and load the sample data file by clicking **Try using our sample file**. Apperate loads the data into a new dataset, generates a REST endpoint for the dataset, and shows the dataset overview in the console.
+```
+https://mycompany.iex.cloud/v1
+```
 
-    ![](./getting-started-with-apperate/sample-dataset-overview.png)
+In the URL above, the workspace name `mycompany` is the subdomain of `iex.cloud`.
 
-    Notice these fields:
+1. Click on the link in your invitation email. The welcome page appears and prompts you to create your workspace.
 
-    - **Example request** is a REST endpoint URL for getting the dataset's last row.
-    - **Rows** shows the dataset's row count is 1,257.
-    - **Detected symbol** is the data property designated as the primary index. Apperate makes a best effort to determine a primary index. 
-    
-    ``` {note} you can change the primary index and other parts of the dataset schema using the schema editor available by clicking **Edit schema**.
+    ![](./getting-started-with-apperate/create-a-workspace.png)
+
+1. Name your workspace.
+
+    ``` {important} The workspace name is permanent, so make sure to name it exactly how you want it.
     ```
 
-    The **HTTP request** panel shows the dataset's last row as a JSON object.
+    Workspace names have the following requirements.
 
-    ```json
-    [
-        {
-            "close": 148.64,
-            "date": "2021-10-25",
-            "high": 149.37,
-            "low": 147.6211,
-            "open": 148.68,
-            "symbol": "AAPL",
-            "volume": 50720556
-        }
-    ]
-    ```
+    **Name requirements:**
 
-1. Get your dataset's last row by clicking the **Example request** URL.
+    - Starts with a letter
+    - Ends with a letter or number
+    - Uses only lowercase alphanumeric characters and dashes
+    - Is between 2-63 characters long
+    - DOES NOT consist of ALL numeric values
 
-    ![](./getting-started-with-apperate/sample-dataset-example-request.png)
+1. After agreeing to the terms, click **Submit**. The **Create a dataset** page appears.
 
-    The URL opens in a new browser tab and the response appears as a JSON object.
+    ![](./getting-started-with-apperate/create-a-dataset.png)
 
-    ```json
-    [{"close":148.64,"date":"2021-10-25","high":149.37,"low":147.6211,"open":148.68,"symbol":"AAPL","volume":50720556}]
-    ```
+Your workspace is ready for accessing built-in Core Data and storing new data! It's time to write data to Apperate.
 
-You just loaded data into IEX Cloud Apperate and retrieved it using an auto-generated REST API! It's just that easy to make data available to your apps!!
+## Write Data to a Dataset
+
+Here you will create a dataset from a data file.
+
+``` {note} If you're not already in the **Create a dataset** page, click **Create a dataset** at the top right of the console. The **Create a dataset** page appears. 
+```
+
+The image below highlights the sample file link for you to click in an upcoming step.
+
+![](./getting-started-with-apperate/try-our-sample-file.png)
+
+1. In the **Create a dataset** page, optionally, enter a more meaninfgul the dataset ID.
+
+1. Keep the source type set to **Local file** and load the sample data file by clicking **Try using our sample file**. Apperate loads the data into a new dataset and generates an API for the dataset. The dataset overview  appears.
+
+![](./getting-started-with-apperate/sample-dataset-overview.png)
+
+Notice these fields:
+
+- **Example request** is a REST endpoint URL for getting the dataset's last row.
+- **Rows** shows the dataset's row count is 1,257.
+- **Detected symbol** is the data property designated as the primary index. Apperate makes a best effort to determine a primary index. 
+
+``` {note} you can change the primary index and other parts of the dataset schema using the schema editor available by clicking **Edit schema**.
+```
+
+The **HTTP request** panel shows the dataset's last row as a JSON object.
+
+```json
+[
+    {
+        "close": 148.64,
+        "date": "2021-10-25",
+        "high": 149.37,
+        "low": 147.6211,
+        "open": 148.68,
+        "symbol": "AAPL",
+        "volume": 50720556
+    }
+]
+```
+
+## Read Data from the Dataset
+
+From the Overview page, read data from your new dataset by clicking the **Example request** URL.
+
+![](./getting-started-with-apperate/sample-dataset-example-request.png)
+
+The URL opens in a new browser tab and the response appears as a JSON object.
+
+```json
+[
+    {
+        "close": 148.64,
+        "date": "2021-10-25",
+        "high": 149.37,
+        "low": 147.6211,
+        "open": 148.68,
+        "symbol": "AAPL",
+        "volume": 50720556
+    }
+]
+```
+
+You just loaded data into Apperate and retrieved it using the auto-generated API! It's just that easy to store data in Apperate and make that data available to your apps!!
 
 ## What's Next
 
 After creating a dataset, you can edit its schema to meet your needs. For more information on working with dataset schemas, please see [Understanding Datasets](../managing-your-data/understanding-datasets.md).
 
-Here you loaded data from a file but you can load data from other sources, including URLs and AWS S3 buckets. To learn more about using other sources and scheduling automated data ingestion, check out [Migrating and Importing Data](../migrating-and-importing-data.md).
+Here are key features to dive into next:
 
-Otherwise, learn how to write a record to a dataset as you would write from an application, and then fetch that record. [Write and Read a Record](./write-and-read-a-record.md) shows you how.
+- [Write and Read a Record](./write-and-read-a-record.md) demonstrates creating a dataset manually and using Apperate's Data API to write data to the dataset and read the data back. This simulates what you'd do in storing/retrieving your application's custom data (e.g., user data).
+
+- [Production-Ready Core Data](./production-ready-core-data.md) introduces Apperate's built-in core financial datasets and [Using Core Data](../using-core-data.md) guides you in using them.
+
+- [Migrating and Importing Data](../migrating-and-importing-data.md) provides tutorials for loading data from various data sources including these:
+
+    - [AWS S3 buckets](../migrating-and-importing-data/loading-data-from-aws-s3.md)
+    - [URLs](../migrating-and-importing-data/loading-data-from-a-url.md)
+    - [Files](../migrating-and-importing-data/loading-data-from-a-file.md)
+
+We're excited for your application development journey with Apperate!
