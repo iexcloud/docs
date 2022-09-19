@@ -47,5 +47,5 @@ With our new annual billing, you don't pay for usage until you pass your minimum
 Now that you understand Apperate pricing, you can get started with using Apperate. Here are some topics to get you started:
 
 - [Getting Started with IEX Cloud Apperate](../getting-started/getting-started-with-apperate.md)
-- [Writing and Fetching a Record](../getting-started/writing-and-fetching-a-record.md)
+- [Write and Read a Record](../getting-started/write-and-read-a-record.md)
 - [Using Core Data](../using-core-data.md)

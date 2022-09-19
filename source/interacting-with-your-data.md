@@ -21,7 +21,7 @@ If there's a particular task you want to do, jump ahead to the article that matc
 
 [Using Apperate's APIs](./interacting-with-your-data/apperate-api-basics.md) - Learn the basics of Apperate's APIS and start using them.
 
-[Writing and Fetching a Data Record](../getting-started/writing-and-fetching-a-record.md) - Use the API to write your app data to Apperate and retrieve it.
+[Write and Read a Record](../getting-started/write-and-read-a-record.md) - Use the API to write your app data to Apperate and retrieve it.
 
 Querying Data
 

@@ -112,4 +112,4 @@ Now that you know how to get real-time IEX Cloud data, explore the [Legacy API R
 
 If you're interested in historical time series data, check out [Getting Time Series Core Financial Data](getting-time-series-core-financial-data.md).
 
-If you need to store application data, learn how at [Writing and Fetching a Data Record](../getting-started/writing-and-fetching-a-record.md).
+If you need to store application data, learn how at [Write and Read a Record](../getting-started/write-and-read-a-record.md).

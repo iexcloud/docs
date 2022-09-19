@@ -1,8 +1,8 @@
-# Writing and Fetching a Record
+# Write and Read a Record
 
-As with any database, you can add individual records to Apperate and fetch them. You can do this manually in the UI or do it programmatically using the REST API.
+As with any database, you can write individual records to Apperate and read them back. You can do this manually in the UI or do it programmatically using the REST API.
 
-Here we'll add and fetch a record using the REST API. We'll create a dataset for news events (e.g., news related to financial data), add a news event record, and fetch that record.
+Here we'll add a record and get it back using the REST API. We'll create a dataset for news events (e.g., news related to financial data), add a news event record, and fetch that record.
 
 **Prerequisites:**
 
@@ -45,20 +45,20 @@ Here's how to create a dataset based on the models:
 
 1. In the console, click **Create a dataset**. The dataset creation page appears.
 
-    ![](./writing-and-fetching-a-record/create-a-dataset.png)
+    ![](./write-and-read-a-record/create-a-dataset.png)
 
 1. Enter an arbitrary dataset ID, like `FLASH_NEWS_DATASET`.
 
 1. For **Source type** select **Create without data**.
 
-    ![](./writing-and-fetching-a-record/create-dataset-without-data.png)
+    ![](./write-and-read-a-record/create-dataset-without-data.png)
 
     ```{tip} Another easy way to create a dataset is to upload a sample data file (CSV or JSON) with the column names and an example record. Apperate automatically makes a best effort to detect column data types and indexes. See [Loading Data From a File](../migrating-and-importing-data/loading-data-from-a-file.md) to learn how.
     ```
 
     The schema editor appears.
 
-    ![](./writing-and-fetching-a-record/schema-editor-no-data.png)
+    ![](./write-and-read-a-record/schema-editor-no-data.png)
 
 1. In the **Properties** section's **+ Add Property** field, enter your properties.
 
@@ -67,7 +67,7 @@ Here's how to create a dataset based on the models:
 
     The properties appear in the **Properties** table.
 
-    ![](./writing-and-fetching-a-record/property-names-in-schema.png)
+    ![](./write-and-read-a-record/property-names-in-schema.png)
 
     In the **Property** column:
     
@@ -84,11 +84,11 @@ Here's how to create a dataset based on the models:
     ```{note} For Primary and Secondary index properties, the empty star icon in a property box's top-right corner allows you to opt in either property to Apperate's financial metadata graph. For example, if you opt in an index property that holds financial symbols, Apperate's metadata graph associates the symbols with equivalent symbols from 10+ [financial identifier](../reference/financial-identifiers.md) types. The opted in property uses Apperate [SmartLinks](../reference/glossary.md#smartlink).
     ```
     
-    ![](./writing-and-fetching-a-record/write-fetch-record-schema.png)
+    ![](./write-and-read-a-record/write-fetch-record-schema.png)
     
 1. When you're done specifying the dataset, click **Create dataset**. The dataset overview appears.
 
-    ![](./writing-and-fetching-a-record/my-flash-dataset-empty.png)
+    ![](./write-and-read-a-record/my-flash-dataset-empty.png)
 
     The dataset has no rows, but the **Example request** field and **HTTP Request** panel refer to the auto-generated REST API endpoint.
 
@@ -141,7 +141,7 @@ Now that you've written to Apperate, why not read that data back? Learn how at [
 If you're interested in loading data other ways or migrating data to Apperate, please visit [Migrating and Importing Data](../migrating-and-importing-data.md).
 -->
 
-## Fetching the Record
+## Read the Record
 
 You can fetch the record using a `GET /data/:workspace/:id/:key?/:subkey?` request. The [GET /data](https://iexcloud.io/docs/apperate-apis/get-data) API reference provides the REST endpoint details. 
 

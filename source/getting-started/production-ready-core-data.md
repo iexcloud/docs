@@ -37,7 +37,7 @@ Now you're familiar with Core Data.
 
 If you want to use IEX Cloud Core Data in your apps, please see [Using IEX Cloud Core Financial Data](../using-core-data.md).
 
-If you need to store application data, learn how at [Writing and Fetching a Data Record](../getting-started/writing-and-fetching-a-record.md).
+If you need to store application data, learn how at [Write and Read a Record](../getting-started/write-and-read-a-record.md).
 
 If you have data that you'd like to use with your apps, pull it into Apperate as demonstrated in [Migrating and Importing Data](../migrating-and-importing-data.md).
 

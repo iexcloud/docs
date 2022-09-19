@@ -60,7 +60,7 @@ Got a CSV or JSON data file? Simply drop it onto any console page, and Apperate 
 
 Or you can [create a dataset from our example data file](./getting-started-with-apperate.md) to experience creating a new database schema, adding those records to a dataset, and accessing the records via auto-generated APIs.
 
-You can also create a dataset schema without data, write a record to it using the data API, and fetch that record using dataset's auto-generated API. [Writing and Fetching a Data Record](../getting-started/writing-and-fetching-a-record.md) shows you how.
+You can also create a dataset schema without data, write a record to it using the data API, and fetch that record using dataset's auto-generated API. [Write and Read a Record](../getting-started/write-and-read-a-record.md) shows you how.
 
 Lastly regarding new datasets, you can explore various ways of [Migrating and Importing Data](../migrating-and-importing-data.md), including [loading data from an AWS S3 bucket](../migrating-and-importing-data/loading-data-from-aws-s3.md) and [loading data from a URL](../migrating-and-importing-data/loading-data-from-a-url.md). You can even [schedule data ingestion](../migrating-and-importing-data/scheduling-data-ingestion.md) from any of the data sources.
 
