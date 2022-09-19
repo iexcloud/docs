@@ -20,7 +20,7 @@ Here's the standard `GET /data` endpoint format:
 GET /data/:workspace/:id/:key?/:subkey?
 ```
 
-It has these parameters:
+It has these path parameters:
 
 | Path Parameter | Description |
 | -------------- | ----------- |
@@ -107,7 +107,8 @@ Result:
 ]
 ```
 
-There are parameters that facilitate filtering on specific quarters and semesters, and the previous/current/future days, weeks, months, and years. For more details and examples, please see the [time series endpoint reference documentation](https://iexcloud.io/docs/guides/time-series).
+There are parameters that facilitate filtering on specific quarters and semesters, and the previous/current/future days, weeks, months, and years. For more details and examples, please see the [Get Data endpoint reference doc](https://iexcloud.io/docs/apperate-apis/get-data).
+
 
 ## What's Next
 
