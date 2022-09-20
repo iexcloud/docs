@@ -91,7 +91,7 @@ Attribution is required for all users. It is as simple as putting “Data provid
 
 <details><summary>Why does Apperate report "cannot select by 'columnXYZ' (00ED50F1BF0332)" even though the column is valid?</summary> 
 
-You can only select on indexed properties (columns). A property must be a primary, secondary, or date index (See [Unique Index components](./managing-your-data/understanding-datasets.md#unique-index-and-examples)) to query on it via SQL `WHERE` clauses, SQL `JOIN` `ON` clauses, or via the data query endpoint key/subkey path parameters.
+You can only select on indexed properties (columns). A property must be a primary, secondary, or date index (See [Unique Index components](./managing-your-data/understanding-datasets.md#indexing-with-unique-index)) to query on it via SQL `WHERE` clauses, SQL `JOIN` `ON` clauses, or via the data query endpoint key/subkey path parameters.
 </details>
 
 <details><summary>How do I get data on the S&P 500, Dow Jones Industrial Average, or other major stock indices?</summary>

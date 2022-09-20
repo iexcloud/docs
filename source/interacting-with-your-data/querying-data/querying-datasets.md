@@ -31,7 +31,7 @@ It has these path parameters:
 
 The endpoint is easy to understand and use. After `/data/`, you specify your workspace ID and dataset ID path parameters, enter your primary index (key) value, and add any query parameters you want.
 
-``` {important} key and subkey path parameters are restricted to primary and secondary indexes, respectively. For more information on the Unique Index components, see [Understanding Datasets](../../managing-your-data/understanding-datasets.md#unique-index-and-examples).
+``` {important} key and subkey path parameters are restricted to primary and secondary indexes, respectively. For more information on the Unique Index components, see [Understanding Datasets](../../managing-your-data/understanding-datasets.md#indexing-with-unique-index).
 ```
 
 For example, this URL returns a dataset record for the key value `AAPL`:

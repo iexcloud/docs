@@ -1,121 +1,103 @@
 # Understanding Datasets
 
-A schema is the "master plan" for your data and API. It defines your dataset by specifying data properties and indexes. On creating your dataset, the product immediately generates your API endpoint which your app can access to get data.
+[Datasets](../reference/glossary.md#dataset) are schema-based, time series-optimized database tables that have auto-generated, permissioned APIs and API docs. You can query and operate on datasets in a codeless fasion in the console or programatically using [REST endpoints](../interacting-with-your-data/apperate-api-basics.md) or our open-source [client libraries](../developer-tools.md).
 
-Here you will learn about the schema components and examine example schemas that fit different scenarios. Start with schema properties.
+Apperate validates incoming data against the dataset's schema, giving you further confidence in your data. Each property (think database column) has a type, is required (or not), and allows null (or not).
 
-## Properties
+![](./understanding-datasets/dataset-properties.png)
 
-Properties define the dataset's content. Each property has a type, is required or optional, and may or may not allow null. Here's an example dataset schema:
-
-![sample-aapl-dataset-edit-schema.png](./understanding-datasets/sample-aapl-dataset-edit-schema.png)
-
-``` {important} The  \_system prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix dataset IDs or dataset property names with  \_system (case-insensitive).
+``` {seealso} See the [Dataset Properties](../reference/dataset-properties.md) reference for details on property types, constraints, and mappings.
 ```
 
-Let's visit each of the property characteristics, starting with type.
+Here we'll introduce these dataset topics:
 
-### Types
+- Indexing with Unique Index
+- Normalizing with SmartLinks
+- Permisioning with Tokens
 
-Here are the various property types:
+## Indexing with Unique Index
 
-| Type | Description |
-| ---- | ----------- |
-| **date** | A date, which can be specified using one of several different formats. (The schema editor lists the formats and includes examples.) |
-| **number** | Floating point number. |
-| **integer** | Any whole number, positive or negative, including zero. |
-| **string** | A series of characters. |
-| **object** | A JSON Object representation. |
-| **array** | An indexed sequence of values. |
-| **boolean** | `TRUE` or `FALSE`; `1` or `0`. |
-| **any** | This JSON schema option supports using mixed types. It is useful in prototype situations when you are not sure what type you need or in situations where the downstream consumer does not care about type, and you want to move data quickly. Another case for using is when the upstream data is out of your control and is presented as a mixed type or a type that can change, and you want to avoid data ingestion failure. |
-
-### Required
-
-A property can be marked as **Required** or left as optional. Data ingestion fails for data that is missing any required properties.
-
-### Allow null
-
-Allows null values for the property when checked, *unselect* the **Allows null** option for properties that must never be null.
-
-``` {note} For CSV files, an empty field is interpreted as an empty string; it is never interpreted as null.
-```
-
-Indexing is next.
-
-## Unique Index and Examples
-
-Each dataset has a *Unique Index* composed of a primary index, secondary index (optional), and date index. The Unique Index determines how the dataset data is identified, deduplicated, partitioned, and stored.
+Each dataset has a **Unique Index** composed of a *primary index*, *secondary index* (optional), and *date index*. This index determines how the dataset records are identified, deduplicated, partitioned, and stored.
 
 **Unique Index** = *primary + secondary + date*
 
 **primary and secondary (optional) indexes:** Set these to any property. Indexes should ideally be assigned to properties that signify an important identifier and/or category for the dataset.
 
-**date index:** Set this to any date property or leave it unset to use the current date. The property mapped to the date index will be the primary mechanism by which your data is time-sorted. 
+**date index:** Set this to any date property or leave it unset to use record creation timestamps. The property mapped to the date index is the primary mechanism by which data is time-sorted. 
 
-``` {note} A property can be set to one index at most.
-```
+### Querying on Key, Subkey, and Date
 
-The following examples illustrate ways to use primary index, and date indexes with your data.
+The [Data API](https://iexcloud.io/docs/apperate-apis/data) leverages the Unique Index components. It nicknames them as follows ...
 
-### Example 1: Using a primary, secondary, and date index
+- **Key** (primary index)
+- **Subkey** (secondary index)
+- **Date** (date index)
 
-If your data has multiple properties that you can use to identify and aggregate data, consider specifying a primary and secondary index on the two most significant properties.
+Here's an example of mapping for a company news dataset.
 
-This example dataset stores data on favorite movies. The movie *title* is the main identifier, the movie *director* is the next most significant identifier, and the *date viewed* provides chronological context.
+| Nickname | Property | Example |
+| --- | --- | --- |
+| key | `symbol` | A stock symbol `AAPL` |
+| subkey | `source` | Information source `CNN` |
+| date | `timestamp` | The record's date/time `2019-02-20` |
 
-Here is the example data:
-
-```
-title,director,cinematography,date viewed 
-CODA,Sian Heder,Paula Huidobro,2021-08-13 
-Dune,Greig Fraser,Greig Fraser,2021-11-06 
-Drive My Car,Ryusuke Hamaguchi,Hidetoshi Shinomiya,2022-04-01 
-Wheel of Fortune and Fantasy,Ryusuke Hamaguchi,Yukiko Iioka,2021-05-23
-```
-
-After uploading the data and editing the schema, the Movie Favorites Unique Index follows this format.
-
-**Unique Index** = *title + director + date viewed*
-
-Here is a figurative sample Unique Index for the first data row.
-
-**Unique Index** = CODA-SianHeder-20210813
-
-The Movie Favorites dataset *explicitly* specifies the primary index, secondary index, and date components. Next, examine a dataset that *implicitly* uses the ingestion date.
-
-### Example 2: Using an implicit date index
-
-If you have no date data or want time-series data but your date properties are unsuitable, do not specify a date index. Instead, you can implicitly use the current date: the date the data is ingested.
-
-For example, a shopping list needs only a list of items and has no obvious need for a date. So go with the default date. The dates may be useful later. For example, you may want to analyze the frequency you added an item (e.g., toilet paper) and schedule a reminder for that item. The following content represents data for a Shopping List:
+Here's a URL format that queries on all three components:
 
 ```
-item 
-toothpaste 
-apples 
-lettuce 
-mineral water
+BASE_URL/data/WORKSPACE/DATASET/KEY/SUBKEY?token=TOKEN&on=DATE
 ```
 
-You can ingest the data into a dataset that explicitly specifies only a primary index. The dataset will use the current date as date index automatically. The Unique Index for the Shopping List is illustrated below.
+Since your base URL, dataset, and workspace are already known, you can concentrate on plugging **key** (`AAPL`), **subkey** (`CNN`), and **date** (`2019-02-20`) values into your [`GET /data`](https://iexcloud.io/docs/apperate-apis/data/get-data.html) requests.
 
-Format:
+Examples (generic to specific):
 
-**Unique Index** = *item + (nothing) + current date*
+```
+https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/MY_DATASET/AAPL?token=TOKEN
+```
+```
+https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/MY_DATASET/AAPL/CNN?token=TOKEN
+```
+```
+https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/MY_DATASET/AAPL?token=TOKEN&on=2019-02-20
+```
+```
+https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/MY_DATASET/AAPL/CNN?token=TOKEN&on=2019-02-20
+```
 
-Sample:
+## Normalizing with SmartLinks
 
-**Unique Index** = toothpaste-20220411
+You can opt-in (SmartLink) a primary or secondary index property with IEX Cloud's metadata graph. A SmartLink associates the property's values with equivalent values from any of Apperate's 10+ supported [financial identifier types](../reference/financial-identifiers.md).
 
-Now you know how to use a Unique Index to fit your data needs.
+The image below shows a dataset's `symbol` property opted in to SmartLinks.
+
+![](./understanding-datasets/smartlinked-property.png)
+
+For example, if you SmartLink a property that holds financial symbols that use FIGI, you can match the symbols using equivalent symbols that use other financial identiefier types, such as ISIN or CUSIP. 
+
+By SmartLinking a property you can:
+
+- Enrich your dataset by joining to any and all of IEX Cloud's core equities data
+- Join this dataset to any other dataset you have in IEX Cloud that is opted-in to IEX Cloud's metadata graph
+- Ingest and query for data in this dataset using any of IEX Cloud's 10+ supported financial identifiers
+
+``` {seealso} See SmartLinks in action in the [Normalization](./defining-schemas/normalization.md) article
+```
+
+## Permissioning with Tokens
+
+Your datasets are private by default. You can share a dataset's API with other parties by giving them a public API token that has access to the dataset.
+
+![](./understanding-datasets/api-token.png)
+
+``` {seealso} [Access and Security](../administration/access-and-security.md) shows you how to create API tokens with fine-grained permissions.
+```
+
+Now you know the fundamentals of Apperate dataset schemas and have been introduced to data normalization with SmartLinks and permissioning with tokens.
 
 ## What's Next
 
-After you create your dataset, there is more you can start doing from your dataset's overview page:
+[Data Model Examples](./defining-schemas/data-model-examples.md) demonstrates using dataset schemas and the Unique Index to represent various data models.
 
-- Add more data (click **Ingest data**)
-- Query your data (click the **Data Viewer** tab)
-- Get data via the API (click **Open API Docs**)
+[Updating Dataset Schemas](./defining-schemas/updating-dataset-schemas.md) shows you how to update dataset schemas and explains how updates work.
 
-Interested in creating datasets programmatically? Checkout [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
+[Interacting with Your Data](../interacting-with-your-data.md) guides you through querying and manipulating your data through the console and via Apperate APIs.

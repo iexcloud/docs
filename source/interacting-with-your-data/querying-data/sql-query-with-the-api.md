@@ -14,7 +14,7 @@ Here's an example of executing a SQL query using the API.
     ORDER BY date ASC
     ```
 
-    ``` {important} WHERE clauses must only operate on indexed properties (columns). See the Unique Index components [here](../../managing-your-data/understanding-datasets.md#unique-index-and-examples).
+    ``` {important} WHERE clauses must only operate on indexed properties (columns). See the Unique Index components [here](../../managing-your-data/understanding-datasets.md#indexing-with-unique-index).
     ```
 
 1. Call the `/sql-query` endpoint, using your base URL, workspace name, and API token, and entering your SQL command as the `sqlQuery` query parameter value.

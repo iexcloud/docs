@@ -24,7 +24,7 @@ Apperate's SQL editor is available on the **Datasets** page and in each dataset'
     ``` {important} Make sure the record you want is in the first row. Otherwise, narrow your search so that it's the only record returned. 
     ```
 
-    ``` {important} WHERE clauses must only operate on indexed properties (columns). See the Unique Index components [here](../managing-your-data/understanding-datasets.md#unique-index-and-examples).
+    ``` {important} WHERE clauses must only operate on indexed properties (columns). See the Unique Index components [here](../managing-your-data/understanding-datasets.md#indexing-with-unique-index).
     ```
 
 1. Double click on the record in the first row. The row editor appears.
