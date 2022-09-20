@@ -107,7 +107,7 @@ Result:
 ]
 ```
 
-There are parameters that facilitate filtering on specific quarters and semesters, and the previous/current/future days, weeks, months, and years. For more details and examples, please see the [Get Data endpoint reference doc](https://iexcloud.io/docs/apperate-apis/get-data).
+There are parameters that facilitate filtering on specific quarters and semesters, and the previous/current/future days, weeks, months, and years. For more details and examples, please see the [Get Data endpoint reference doc](https://iexcloud.io/docs/apperate-apis/data/get-data).
 
 
 ## What's Next

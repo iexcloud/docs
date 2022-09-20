@@ -37,14 +37,14 @@ You've updated the data record. Editing records using the API is easy too.
 
 ## Overwriting a Data Record with the API
 
-The Data API's [`POST /data/:workspace/:id`](https://iexcloud.io/docs/apperate-apis/ingest-data) endpoint enables you to write new data records and overwrite existing ones. We'll do the latter by specifying the `overwrite=true` query parameter.
+The Data API's [`POST /data/:workspace/:id`](https://iexcloud.io/docs/apperate-apis/data/ingest-data) endpoint enables you to write new data records and overwrite existing ones. We'll do the latter by specifying the `overwrite=true` query parameter.
 
 ``` {note} If you're just getting started with the API, check out the API's [Getting Started](https://iexcloud.io/docs/getting-started) guide.
 ```
 
 The `wait` query parameter is another one to consider. By default, the endpoint responds immediately after uploading the data and creating the ingestion job. If you prefer to wait for a response after ingestion job completion, set query parameter `wait=true`.
 
-``` {note} You can also check ingestion job status in the console's [Logs pages](../administration/monitoring-deployments.md) or via the [Logs API endpoint](https://iexcloud.io/docs/apperate-apis/get-logs). 
+``` {note} You can also check ingestion job status in the console's [Logs pages](../administration/monitoring-deployments.md) or via the [Logs API endpoint](https://iexcloud.io/docs/apperate-apis/logs/get-logs). 
 ```
 
 Let's update a record with the API.
@@ -57,7 +57,7 @@ Let's update a record with the API.
     {"current_date":"2020-03-27","estimated_value":38650,"make":"Ford","mileage":8900,"model":"F-150","owner_count":1,"purchase_date":"2022-01-11","reg_state":23,"vin":"SD089VN7678997566","year":2022}
     ```
 
-1. Change the record's values by using the [`POST /data/:workspace/:id`](https://iexcloud.io/docs/apperate-apis/ingest-data) endpoint and `overwrite=true` to write a new record in its place. For example, to change the previous example record's `model` value to `F-250`, you could run a cURL command like this one, replacing `WORKSPACE`, `CARS`, and `SECRET_TOKEN` with your values:
+1. Change the record's values by using the [`POST /data/:workspace/:id`](https://iexcloud.io/docs/apperate-apis/data/ingest-data) endpoint and `overwrite=true` to write a new record in its place. For example, to change the previous example record's `model` value to `F-250`, you could run a cURL command like this one, replacing `WORKSPACE`, `CARS`, and `SECRET_TOKEN` with your values:
 
     ```bash
     curl -H "Content-Type: application/json" -X POST "https://cloud.iexapis.com/v1/data/WORKSPACE/CARS?overwrite=true&wait=true&token=SECRET_TOKEN" -d '[{"current_date":"2020-03-27","estimated_value":38650,"make":"Ford","mileage":8900,"model":"F-250","owner_count":1,"purchase_date":"2022-01-11","vin":"SD089VN7678997566","year":2022}]'
@@ -83,7 +83,7 @@ You're editing (and overwriting) data like a champ!
 
 ## What's Next
 
-If you need to delete a record, use the `DELETE /data/:workspace/:id/:key/:subkey?/:date?` endpoint described in the [Delete Data](https://iexcloud.io/docs/apperate-apis/delete-data) reference page.
+If you need to delete a record, use the `DELETE /data/:workspace/:id/:key/:subkey?/:date?` endpoint described in the [Delete Data](https://iexcloud.io/docs/apperate-apis/data/delete-data) reference page.
 
 If you haven't yet checked out the various ways to query (get) data, see [Querying Data](./querying-data.md).
 

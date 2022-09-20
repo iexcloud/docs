@@ -16,7 +16,7 @@ Here are some of the task areas and links to related tutorials and API Reference
 
 ## Querying Data
 
-The Data API's [`GET /data`](https://iexcloud.io/docs/apperate-apis/get-data) endpoint returns data from the dataset you specify. The endpoint supports using windowing functions for Querying Datasets. The [Datasets](https://iexcloud.io/docs/datasets) pages and [Core Data](https://iexcloud.io/docs/core) pages describe each dataset's `GET /data` endpoint parameters and response attributes.
+The Data API's [`GET /data`](https://iexcloud.io/docs/apperate-apis/data/get-data) endpoint returns data from the dataset you specify. The endpoint supports using windowing functions for Querying Datasets. The [Datasets](https://iexcloud.io/docs/datasets) pages and [Core Data](https://iexcloud.io/docs/core) pages describe each dataset's `GET /data` endpoint parameters and response attributes.
 
 ``` {important} Apperate includes only historical time series Core Data at this time. We are in the process of migrating real-time legacy data, including stock quotes, into Apperate. In the meantime, please see the [Legacy API Reference](https://iexcloud.io/docs/api/) for the real-time legacy data.
 ```
@@ -39,7 +39,7 @@ API instructions for managing datasets, sources, schedules, credentials, logs, a
 
 ## Getting an API OAS Document
 
-The [`GET /openapi-doc` endpoint](https://iexcloud.io/docs/apperate-apis/get-openapi-json) returns a JSON file that specifies the [Apperate APIs](https://iexcloud.io/docs/apperate-apis) per the OpenAPI Specification (OAS). You can generate a client SDK for your favorite language using the JSON file. 
+The [`GET /openapi-doc` endpoint](https://iexcloud.io/docs/apperate-apis/advanced/get-openapi-json) returns a JSON file that specifies the [Apperate APIs](https://iexcloud.io/docs/apperate-apis) per the OpenAPI Specification (OAS). You can generate a client SDK for your favorite language using the JSON file. 
 
 ## What's Next
 

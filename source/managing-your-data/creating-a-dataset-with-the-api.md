@@ -61,7 +61,7 @@ Here you will create a dataset as specified in a JSON file.
     }
     ```
 
-1. Create a dataset from the `.json` file by running a `POST /datasets/:workspace` request as described in [Create a dataset](https://iexcloud.io/docs/apperate-apis/create-a-dataset). For example, run this command, replacing the `WORKSPACE`, `SECRET_TOKEN`, and `FILE` values with your own.
+1. Create a dataset from the `.json` file by running a `POST /datasets/:workspace` request as described in [Create a dataset](https://iexcloud.io/docs/apperate-apis/dataset/create-a-dataset). For example, run this command, replacing the `WORKSPACE`, `SECRET_TOKEN`, and `FILE` values with your own.
 
     ```bash
     curl -H "Content-Type: application/json" 
@@ -75,7 +75,7 @@ Here you will create a dataset as specified in a JSON file.
     {"success":true,"message":"Dataset has been created","datasetId":"YOUR_DATASET"}
     ```
 
-1. Verify the dataset by running a `GET /datasets/:workspace` request as described in [List datasets](https://iexcloud.io/docs/apperate-apis/list-datasets). For example,
+1. Verify the dataset by running a `GET /datasets/:workspace` request as described in [List datasets](https://iexcloud.io/docs/apperate-apis/dataset/list-datasets). For example,
 
     ```bash
     curl -X GET https://cloud.iexapis.com/v1/datasets/WORKSPACE?token=SECRET_TOKEN
@@ -126,7 +126,7 @@ Here are the data file ingestion steps:
         )>aapl
     ```
 
-1. Ingest the data to your dataset using a `POST /data/:workspace/:id` requestas described in [Ingest data](https://iexcloud.io/docs/apperate-apis/ingest-data). For example, use this command, replacing the `WORKSPACE`, `YOUR_DATASET`, and `SECRET_TOKEN` values with your own: 
+1. Ingest the data to your dataset using a `POST /data/:workspace/:id` requestas described in [Ingest data](https://iexcloud.io/docs/apperate-apis/dataset/ingest-data). For example, use this command, replacing the `WORKSPACE`, `YOUR_DATASET`, and `SECRET_TOKEN` values with your own: 
 
     ```bash
     curl -H "Content-Type: application/json" \
@@ -140,7 +140,7 @@ Here are the data file ingestion steps:
     {"success":true,"message":"Data upload of 579B for YOUR_DATASET completed, jobId: 887b948762ff4b5c889112afb21ea463 has been created","jobId":"887b948762ff4b5c889112afb21ea463","jobUrl":"/v1/jobs/WORKSPACE/ingest/887b948762ff4b5c889112afb21ea463"}
     ```
 
-1. Validate your dataset's record count using a `GET /datasets/:workspace/:id` request as described in [Get a dataset](https://iexcloud.io/docs/apperate-apis/get-a-dataset). For example, use this command with your values:  
+1. Validate your dataset's record count using a `GET /datasets/:workspace/:id` request as described in [Get a dataset](https://iexcloud.io/docs/apperate-apis/dataset/get-a-dataset). For example, use this command with your values:  
 
     ```bash
     curl -X GET https:/cloud.iexapis.com/v1/datasets/WORKSPACE/YOUR_DATASET?token=TOKEN

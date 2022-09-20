@@ -18,7 +18,7 @@ For example, the messages for the data ingestion job in the image above include 
 
 The Log Stream shows log messages from the past hour. It's a great resource for tracking process milestones and concurrent process timing.
 
-``` {note} To access older log messages, use the API. See the [Get logs](https://iexcloud.io/docs/apperate-apis/get-logs) API reference.
+``` {note} To access older log messages, use the API. See the [Get logs](https://iexcloud.io/docs/apperate-apis/logs/get-logs) API reference.
 ```
 
 To see a log stream message's details, double-click the message. The message details appear.

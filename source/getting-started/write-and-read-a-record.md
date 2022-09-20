@@ -110,7 +110,7 @@ Your dataset is ready for data.
 
 ## Write a Record
 
-You'll add the example news record into the dataset using the Data API's [`POST /data`](https://iexcloud.io/docs/apperate-apis/ingest-data) method.
+You'll add the example news record into the dataset using the Data API's [`POST /data`](https://iexcloud.io/docs/apperate-apis/data/ingest-data) method.
 
 Add a news record by entering the following command, replacing WORKSPACE with your workspace name and SK_TOKEN with your secret token value.
 
@@ -143,7 +143,7 @@ If you're interested in loading data other ways or migrating data to Apperate, p
 
 ## Read the Record
 
-You can fetch the record using a `GET /data/:workspace/:id/:key?/:subkey?` request. The [GET /data](https://iexcloud.io/docs/apperate-apis/get-data) API reference provides the REST endpoint details. 
+You can fetch the record using a `GET /data/:workspace/:id/:key?/:subkey?` request. The [GET /data](https://iexcloud.io/docs/apperate-apis/data/get-data) API reference provides the REST endpoint details. 
 
 The endpoint queries the dataset using a Primary index (key), an optional Secondary index (subkey), and a Date index (via the **on** request parameter).
 
