@@ -74,4 +74,4 @@ As seen below, you can access logs to see saved data in the "edit" view of a giv
 : Rules Engine currently supports U.S. stocks and ETFs. We are working on adding non-U.S. symbols in the future.  
 
 **Can I use Rules Engine to download historical data?**
-: Rules Engine cannot currently be used to download historical prices and values. As an alerting feature, Rules Engine is intended to alert you as future conditions are met. Learn more about how to download historical data in [Using IEX Cloud Core Financial Data](../../using-core-data.md). 
+: Rules Engine cannot currently be used to download historical prices and values. As an alerting feature, Rules Engine is intended to alert you as future conditions are met. Learn more about how to download historical data in [Use Core Data](../../using-core-data.md). 

@@ -35,11 +35,11 @@ Now you're familiar with Core Data.
 
 ## What's Next
 
-If you want to use IEX Cloud Core Data in your apps, please see [Using IEX Cloud Core Financial Data](../using-core-data.md).
+If you want to use IEX Cloud Core Data in your apps, please see [Use Core Data](../using-core-data.md).
 
 If you need to store application data, learn how at [Write and Read a Record](../getting-started/write-and-read-a-record.md).
 
-If you have data that you'd like to use with your apps, pull it into Apperate as demonstrated in [Migrating and Importing Data](../migrating-and-importing-data.md).
+If you have data that you'd like to use with your apps, pull it into Apperate as demonstrated in [Migrate and Import Data](../migrating-and-importing-data.md).
 
 ```{note} IEX Cloud documentation for the legacy plan subscribers is at <https://iexcloud.io/docs/api/>.
 ```

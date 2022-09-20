@@ -1,4 +1,4 @@
-# Managing Your Data
+# Manage Your Data
 
 
 ```{toctree}

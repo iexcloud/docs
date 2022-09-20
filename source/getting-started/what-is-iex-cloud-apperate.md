@@ -1,4 +1,4 @@
-# What is IEX Cloud Apperate?
+# What is Apperate?
 
 IEX Cloud Apperate is an application database that delivers data and back-end infrastructure to applications. Apperate combines the capabilities of data ingestion, normalization, transformation, observability, and delivery, all in one end-to-end solution for application development. It supports multiple data model concepts and specializes in time series data.
 
@@ -35,4 +35,4 @@ Apperate tracks activities and makes usage statistics and logs available. Each d
 
 ## What's Next
 
-Now that you understand what Apperate is, it's time to start using it. [Getting Started with Apperate](./getting-started-with-apperate.md) is next.
+Now that you understand what Apperate is, it's time to start using it. [Get Started with Apperate](./getting-started-with-apperate.md) is next.

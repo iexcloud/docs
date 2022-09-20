@@ -1,4 +1,4 @@
-# Getting Started with IEX Cloud Apperate
+# Get Started with Apperate
 
 A great way to get familiar with Apperate is to write data to it and access that data. Apperate stores data in [datasets](../reference/glossary.md#dataset); they're schema-based database tables that come with additional benefits. Datasets can store any data model, and are optimized for time series data. For each dataset, Apperate automatically generates a permissioned API and API docs.
 
@@ -130,7 +130,7 @@ Here are key features to dive into next:
 
 - [Production-Ready Core Data](./production-ready-core-data.md) introduces Apperate's built-in core financial datasets and [Using Core Data](../using-core-data.md) guides you in using them.
 
-- [Migrating and Importing Data](../migrating-and-importing-data.md) provides tutorials for loading data from various data sources including these:
+- [Migrate and Import Data](../migrating-and-importing-data.md) provides tutorials for loading data from various data sources including these:
 
     - [AWS S3 buckets](../migrating-and-importing-data/loading-data-from-aws-s3.md)
     - [URLs](../migrating-and-importing-data/loading-data-from-a-url.md)

@@ -1,4 +1,4 @@
-# Interacting with Your Data
+# Interact with Your Data
 
 ```{toctree}
 :maxdepth: 1

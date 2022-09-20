@@ -1,4 +1,4 @@
-# Using Data in Your Apps
+# Use Data in Your Apps
 
 ```{toctree}
 :maxdepth: 1

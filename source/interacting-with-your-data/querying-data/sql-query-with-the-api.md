@@ -106,4 +106,4 @@ Now you know how to use the API to execute SQL commands on your Apperate dataset
 
 [Using Apperate's APIs](../apperate-api-basics.md)
 
-[Interacting with Your Data](../../interacting-with-your-data.md)
+[Interact With Your Data](../../interacting-with-your-data.md)

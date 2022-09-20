@@ -1,4 +1,4 @@
-# Migrating and Importing Data
+# Migrate and Import Data
 
 ```{toctree}
 :maxdepth: 1

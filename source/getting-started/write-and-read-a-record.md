@@ -138,7 +138,7 @@ News of Doug Dig's gold discovery is now in the dataset and available to read fr
 
 Now that you've written to Apperate, why not read that data back? Learn how at [Reading Data From Apperate](./reading-data-from-apperate.md).
 
-If you're interested in loading data other ways or migrating data to Apperate, please visit [Migrating and Importing Data](../migrating-and-importing-data.md).
+If you're interested in loading data other ways or migrating data to Apperate, please visit [Migrate and Import Data](../migrating-and-importing-data.md).
 -->
 
 ## Read the Record
@@ -176,6 +176,6 @@ You "struck gold"! Well, not really ... you just verified the new event record t
 
 Did you know that Apperate comes with 5+ terabytes of built-in financial data? See [Production-Ready Core Data](./production-ready-core-data.md) to learn more.
 
-If you're ready to start importing your own existing data, go to [Migrating and Importing Data](../migrating-and-importing-data.md).
+If you're ready to start importing your own existing data, go to [Migrate and Import Data](../migrating-and-importing-data.md).
 
-And if you want to perform more operations on your data, see [Interacting with Your Data](../interacting-with-your-data.md).
+And if you want to perform more operations on your data, see [Interact With Your Data](../interacting-with-your-data.md).
