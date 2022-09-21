@@ -170,12 +170,16 @@ https://WORKSPACE.iex.cloud/v1/data/WORKSPACE/FLASH_NEWS_DATASET/12345?token=SK_
 ]
 ```
 
-You "struck gold"! Well, not really ... you just verified the new event record that Doug Dig struck gold.
+You "struck gold"! Well, not really ... you just verified that Doug Dig struck gold.
 
 ## What's Next
 
-Did you know that Apperate comes with 5+ terabytes of built-in financial data? See [Production-Ready Core Data](./production-ready-core-data.md) to learn more.
+Now that you know how to write records to Apperate, here are some topics to consider next.
 
-If you're ready to start importing your own existing data, go to [Migrate and Import Data](../migrating-and-importing-data.md).
+[Managing Your Data](../managing-your-data.md): These guides explain dataset schema fundamentals and demonstrate data normalization, creating views, and creating datasets via the  Datasets API.
 
-And if you want to perform more operations on your data, see [Interact With Your Data](../interacting-with-your-data.md).
+[Interacting With Your Data](../interacting-with-your-data.md): These articles introduce Apperate API basics, show how to query datasets, and demonstrate updating data.
+
+[Production-Ready Core Data](./production-ready-core-data.md): Introduces Apperate's 5+ terabytes of built-in financial data available for enriching your fintech applications.
+
+And lastly, you can load more data into Apperate per the [Migrate and Import Data](../migrating-and-importing-data.md) tutorials.

@@ -31,15 +31,19 @@ The [Apperate API Reference](https://iexcloud.io/docs/) describes all the Core D
 
 ![](./production-ready-core-data/core-data-api-endpoints.png)
 
-Now you're familiar with Core Data.
-
 ## What's Next
 
-If you want to use IEX Cloud Core Data in your apps, please see [Use Core Data](../using-core-data.md).
+Now that you've been introduced to Core Data, here are some topics to consider next.
 
-If you need to store application data, learn how at [Write and Read a Record](../getting-started/write-and-read-a-record.md).
+[Using Core Data](../using-core-data.md): These articles demonstrate querying real-time and time series data. 
 
-If you have data that you'd like to use with your apps, pull it into Apperate as demonstrated in [Migrate and Import Data](../migrating-and-importing-data.md).
+[Migrating and Import Data](../migrating-and-importing-data.md): These articles demonstrate loading data from various data sources, including AWS S3 buckets, URLs, and files.
+
+[Writing and Reading a Record](../getting-started/write-and-read-a-record.md): Shows you how to write individual data records to Apperate and read them back.
+
+[Managing Your Data](../managing-your-data.md): This section provides guides that explain dataset schemas and that demonstrate data normalization, creating views, and creating datasets via the  Datasets API.
+
+[Interacting With Your Data](../interacting-with-your-data.md): These articles introduce Apperate API basics, show how to query datasets, and demonstrate updating data.
 
 ```{note} IEX Cloud documentation for the legacy plan subscribers is at <https://iexcloud.io/docs/api/>.
 ```
