@@ -59,7 +59,7 @@ Your new dataset's **Overview** page appears.
 
 ![](./getting-started-with-apperate/sample-dataset-overview.png)
 
-``` {seealso} For **Overview** page details, see [Dataset Overview](../reference/dataset-overview.md).
+``` {seealso} For **Overview** page details, see [Dataset Overview Page](../reference/dataset-overview-page.md) reference.
 ```
 
 Let's test drive the dataset by reading data from it.
