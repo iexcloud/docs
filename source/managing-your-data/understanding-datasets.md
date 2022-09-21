@@ -111,6 +111,6 @@ Now you know the fundamentals of Apperate dataset schemas and have been introduc
 
 [Data Model Examples](./defining-schemas/data-model-examples.md) demonstrates using dataset schemas and the Unique Index to represent various data models.
 
-[Updating Dataset Schemas](./defining-schemas/updating-dataset-schemas.md) shows you how to update dataset schemas and explains how updates work.
+[Updating Dataset Schemas](./updating-dataset-schemas.md) shows you how to update dataset schemas and explains how updates work.
 
 [Interacting with Your Data](../interacting-with-your-data.md) guides you through querying and manipulating your data through the console and via Apperate APIs.
