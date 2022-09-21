@@ -33,6 +33,8 @@ The [Data API](https://iexcloud.io/docs/apperate-apis/data) leverages the Unique
 - **Subkey** (secondary index)
 - **Date** (date index)
 
+### Query Examples
+
 Here's an example of mapping for a company news dataset.
 
 | Nickname | Property | Example |
@@ -49,19 +51,30 @@ BASE_URL/data/WORKSPACE/DATASET/KEY/SUBKEY?token=TOKEN&on=DATE
 
 Since your base URL, dataset, and workspace are already known, you can concentrate on plugging **key** (`AAPL`), **subkey** (`CNN`), and **date** (`2019-02-20`) values into your [`GET /data`](https://iexcloud.io/docs/apperate-apis/data/get-data.html) requests.
 
-Examples (generic to specific):
+Here are some example queries.
+
+Get the AAPL news record from CNN on 2019-02-20:
 
 ```
-https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/MY_DATASET/AAPL?token=TOKEN
+https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/MY_DATASET/AAPL/CNN?token=TOKEN&on=2019-02-20
 ```
-```
-https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/MY_DATASET/AAPL/CNN?token=TOKEN
-```
+
+Get all AAPL news records from any source on 2019-02-20:
+
 ```
 https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/MY_DATASET/AAPL?token=TOKEN&on=2019-02-20
 ```
+
+Get all AAPL news records from CNN:
+
 ```
-https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/MY_DATASET/AAPL/CNN?token=TOKEN&on=2019-02-20
+https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/MY_DATASET/AAPL/CNN?token=TOKEN
+```
+
+Get all AAPL news records from any source:
+
+```
+https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/MY_DATASET/AAPL?token=TOKEN
 ```
 
 ## Normalizing with SmartLinks
