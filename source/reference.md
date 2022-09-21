@@ -4,6 +4,7 @@
 :maxdepth: 1
 
 reference/changelog.md
+reference/dataset-overview.md
 reference/dataset-properties.md
 reference/financial-identifiers.md
 reference/glossary.md
