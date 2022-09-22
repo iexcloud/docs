@@ -1,3 +1,5 @@
 # Using Endpoints in JavaScript
 
-Coming soon!
+For now, please see the [iex.js Library](https://www.npmjs.com/package/@apperate/iexjs).
+
+More is coming soon!
