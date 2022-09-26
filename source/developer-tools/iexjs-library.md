@@ -7,7 +7,7 @@ iexjs-library/iexjs-core-data-methods.md
 iexjs-library/iexjs-apperate-crud-methods.md
 ```
 
-iex.js (or simply *iexjs*) is a client library for getting IEX Cloud Core Data and getting data from private permissioned datasets. The library also provides methods for performing CRUD operations on Apperate resources, such as dataset data, datasets, data sources, and more. iexjs provides easy-to-use JavaScript wrapper methods that call IEX Cloud endpoints.
+iex.js (or simply *iexjs*) is a client library for getting data from Apperate and operating on Apperate resources, such as data, datasets, data sources, and more. The easy-to-use JavaScript methods wrap calls to IEX Cloud endpoints, so you can tap into Core Data, permissioned datasets, and Apperate resource CRUD operations.
 
 ## Installation
 
@@ -17,17 +17,23 @@ Use [npm](https://www.npmjs.com) to install iexjs.
 npm install --save iexjs
 ```
 
-iexjs can run in the browser via native `fetch` and `eventsource`, or from node via [cross-fetch](https://www.npmjs.com/package/cross-fetch) and [eventsource](https://github.com/EventSource/eventsource).
+``` {note} iexjs can also run in the browser via native *fetch* and *eventsource*, or from node via [cross-fetch](https://www.npmjs.com/package/cross-fetch) and [eventsource](https://github.com/EventSource/eventsource).
+```
 
 ## Examples
 
-The iexjs `Client` object stores your [token](../administration/access-and-security.md) (API key) and IEX Cloud API version (e.g., `v1`) for convenience. From the client's`platform` object, you can execute iexjs methods. Here are some examples.
+The iexjs `Client` object stores your [API token](../administration/access-and-security.md) (API key) and IEX Cloud API version (e.g., `v1`) for convenience.
 
-Get a real-time stock quote:
+``` {tip} The iexjs client automatically picks up tokens from the environment variable *IEX_TOKEN*.
+```
+
+Here are some examples.
+
+**Get a real-time stock quote:**
 
 ```javascript
 const {Client} = require("@apperate/iexjs")
-const client = new Client({api_token: TOKEN, version: VERSION});
+const client = new Client({api_token: "TOKEN", version: "VERSION"});
 client.quote({symbol: "AAPL"}).then((res) => {
     console.log(res);
 });
@@ -36,20 +42,17 @@ client.quote({symbol: "AAPL"}).then((res) => {
 ``` {seealso} [iex.js Core Data Methods](./iexjs-library/iexjs-core-data-methods.md) has information on all the methods.
 ```
 
-Get Apple's latest cash flow details:
+**Get Apple's latest cash flow details:**
 
 ```javascript
 const {Client} = require("@apperate/iexjs")
-const client = new Client({api_token: TOKEN, version: VERSION});
-client.platform.queryData({key: "AAPL", workspace: "CORE", id: "CASH_FLOW"}).then((res) => {
+const client = new Client({api_token: "TOKEN", version: "VERSION"});
+client.apperate.queryData({key: "AAPL", workspace: "CORE", id: "CASH_FLOW"}).then((res) => {
     console.log(res);
 });
 ```
 
-The `queryData` method retrieves data from the dataset your specify via the `id`. You can use it to retrieve data from the `CORE` workspace or any other workspace you have access to.
-
-``` {tip} The iexjs client automatically picks up tokens from the environment variable *IEX_TOKEN*.
-```
+The client's `apperate` object (shown above) has wrapper methods to [Apperate APIs](https://iexcloud.io/docs/apperate-apis/), including the [Data API](https://iexcloud.io/docs/apperate-apis/data/). The `queryData` method retrieves data from a dataset via the dataset `id`. You can retrieve data from a `CORE` dataset or any workspace dataset you have access to.
 
 ``` {seealso} [Querying Datasets with iex.js](../interacting-with-your-data/querying-data/querying-datasets-with-iexjs.md) provides details on searching datasets.
 ```
@@ -60,7 +63,7 @@ The iex.js package is an open source project available at <https://www.npmjs.com
 
 ## What's Next
 
-[Querying Datasets with iex.js](../interacting-with-your-data/querying-data/querying-datasets-with-iexjs.md) demonstrates reading data from private permissioned datasets (e.g., your datasets).
+[Querying Datasets with iex.js](../interacting-with-your-data/querying-data/querying-datasets-with-iexjs.md) demonstrates getting data from private permissioned datasets (e.g., your datasets).
 
 [iex.js Core Data Methods](./iexjs-library/iexjs-core-data-methods.md) provides a reference to Core Data available for current plans and legacy plans.
 
