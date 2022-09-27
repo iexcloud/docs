@@ -2,7 +2,7 @@
 
 There are various reasons you may have for modifying a dataset schema. Here are some possible reasons:
 
-- Enrich your dataset a new property
+- Enrich your dataset with a new property
 - Remove a deprecated property
 - Change a property type
 - Require values for a property
@@ -13,7 +13,7 @@ There are various reasons you may have for modifying a dataset schema. Here are 
 ``` {note} You can also rename a dataset.
 ```
 
-Whether you hand-crafted your schema or Apperate infered your schema from a data sampling, it's good to check your schema after creating it and testing it.
+Whether you hand-crafted your schema or Apperate inferred your schema from a data sampling, it's good to check your schema after creating it and testing it.
 
 ``` {warning} Changing the schema of a parent dataset can break or alter its associated views.
 ```
