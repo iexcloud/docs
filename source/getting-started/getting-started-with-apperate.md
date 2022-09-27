@@ -64,7 +64,7 @@ Your new dataset's **Overview** page appears.
 
 Let's test drive the dataset by reading data from it.
 
-## Read Data from the Dataset
+## Read the Data
 
 From the Overview page, read data from your new dataset by clicking the **Example request** URL.
 
@@ -88,6 +88,14 @@ The URL opens in a new browser tab and the request returns a JSON object contain
 
 ``` {tip} The **Example request** URL uses the [Data API](https://iexcloud.io/docs/apperate-apis/data/). You can use the URL as a base on which to query the dataset using other parameters and values. See [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md) for examples.
 ```
+
+## Visit Your API Docs
+
+From the Overview page, you can visit your dataset API docs by clicking **Open Docs**. Your API docs page, like the one shown below, opens in a new tab.
+
+![](./getting-started-with-apperate/endpoint-api-page.png)
+
+Your auto-documented dataset is ready for consumption.
 
 You just loaded data into Apperate and retrieved a record from the dataset using the dataset's API! It's just that easy to store data in Apperate and make that data available to your apps!!
 
