@@ -1,146 +1,95 @@
 # Loading Data from a File
 
-We're excited to show you how to make data from a file accessible via a RESTful API endpoint in minutes. Here you will create a dataset from a CSV file of example data. You will define the dataset schema, store the dataset, and read the data immediately from an auto-generated API.
+You can load data into Apperate from a CSV, JSON, or JSONL file. Apperate infers a schema from a sampling of the file, validates the data using that schema, ingests the data, and generates a REST endpoint and endpoint documentation. What's more is that Apperate does this in **one step**. Just drop your file onto the console and Apperte does the rest.
 
-``` {note} You can of course, follow along using your own data, but for creating a dataset your first time we suggest using this small example data.
+## Load Data in One Step
+
+Simply drag your CSV, JSON, or JSONL file onto the Apperate console and drop it in, as shown in the following animation.
+
+``` {tip} If you need a sample file to load, see [Appendix: Create a Data File](#appendix-create-a-data-file).
 ```
 
-## File Ingestion Example
+![](./loading-data-from-a-file/drop-file-onto-console.gif)
 
-Start ingesting your file, following these steps:
+Your new dataset's **Overview** page appears.
 
-1.  Click **Create a Dataset** at the top of the console or from the **Datasets** page. The **Create a Dataset** page appears.
+![](./loading-data-from-a-file/cars-dataset-overview.png)
 
-    ![](./loading-data-from-a-file/create-a-dataset.png)
+Here's the heavy lifting Apperate did for you:
 
-    ``` {important} 20,000,000 record limit per ingestion.
-    ```
+- Inferred a data schema, including data types, constraints, indexes, and SmartLinks to Apperate's financial metadata graph.
+- Validated the records against the schema
+- Loaded the data into a table
+- Generated an API endpoint and a corresponding API docs page
 
-1.  Before continuing in the Create a Dataset page, create a data file on your local machine by adding the following example car data (it's in CSV format) into a plain text file.
+``` {tip} If data ingestion fails or you suspect issues, check the ingestion details in the **Data Jobs**  tab or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Deployments](../administration/monitoring-deployments.md).
+```
 
-    ``` {note} Apperate supports CSV files that use the following common data delimiters: comma (,), tab, or pipe (\|) characters. JSON and JSONL files are also supported.
-    ```
+``` {important} 20,000,000 record limit per ingestion.
+```
 
-    **Data**
+``` {note} Apperate supports CSV files that use the following common data delimiters: comma (,), tab, or pipe (\|) characters. JSON and JSONL files are also supported.
+```
 
-    ```
-    vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
-    XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-27,2020-03-13,45955.00,32000,2
-    SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
-    59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1
-    ```
+## Retrieve the Data
 
-    **Example Command**
-    
-    These commands create the data file on Linux, MacOS, and Windows.
+In the **Overview** page, get the data by clicking the **Example Request** URL.
 
-    ```{tab} Linux/MacOS
-        echo "vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
-        XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-27,2020-03-13,45955.00,32000,2
-        SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
-        59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1" \
-        >>cars
-    ```
+![](./loading-data-from-a-file/cars-example-request.png) 
 
-    ``` {tab} Windows
-        (
-        echo vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
-        echo XV859643N98D98E7C,Chevrolet,Camaro,2020-03-27,2020,2020-03-13,45955.00,32000,2
-        echo SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
-        echo 59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1
-        )>cars
-    ```
+The URL opens in a new browser tab and the last data record appears in a JSON object like this.
 
-1.  In the Create a Dataset page's **Choose Source Type** menu, **File** is selected by default. Keep that setting for uploading your file.
+```javascript
+[
+    {
+        "current_date": "2020-03-27",
+        "estimated_value": 38650,
+        "make": "Ford",
+        "mileage": 8900,
+        "model": "F-150",
+        "owner_count": 1,
+        "purchase_date": "2022-01-11",
+        "vin": "SD089VN7678997566",
+        "year": 2022
+    }
+]
+```
 
-    Upload your CSV file you by either dragging it into the file upload area or by clicking **Choose file** to browse to it and select it. The file uploads and the **Edit schema** interface appears.
+It's that easy for your apps to use data!
 
-    ![](./loading-data-from-a-file/cars-schema.png)
-
-    Apperate ingested your file and made a best effort to name your dataset (see *Dataset ID*) and specify your properties (see the *Properties* table) and your data's Unique Index, composed of primary, secondary, and date indexes.
-
-    Below the *Properties* table there's more.
-
-    ![cars-more-on-schema-page.png](./loading-data-from-a-file/cars-more-on-schema-page.png)
-
-    Apperate created a **Sample API Call** for getting the data by the value of the date property that is currently assigned the *Date* index (see in the properties table under *Unique Index*).
-
-    Your current *Unique Index* shows in the **Unique Index Example**. The Unique Index is composed of the Primary index, Secondary index (optional), and Date index. You have not yet assigned the Primary index or a Secondary index. The Date index, in this example, is currently assigned to the *purchase_date* property. In the next step, you will set your Unique Index by setting these three indexes.
-
-    The **Sample Data Preview** table at the bottom shows your ingested data.
-
-    Lastly, the **Opt in to IEX Cloud's Metadata Graph** section provides the opportunity to map an indexed [financial identifier](../reference/financial-identifiers.md) property to IEX Cloud's metadata data graph. This allows you to enrich your dataset by joining it to IEX Cloud core equities data or any other dataset that is also opted in. Furthermore, you can ingest data into and query for data in this dataset using IEX Cloud's supported [financial identifiers](../reference/financial-identifiers.md). The opted in property uses Apperate [SmartLinks](../reference/glossary.md#smartlink).
-
-    ![](./loading-data-from-a-file/cars-metadata-graph-opt-in.png)
-
-    Let's edit the schema.
-
-1.  In the **Edit schema** interface, modify the schema to specify the dataset ID, property characteristics, and Unique Index using the following values.
-
-    **Dataset ID:** `CARS`
-
-    **Unique ID related Properties**
-
-    | Required | Allow null | Property | Index |
-    | -------- | ---------- | -------- | ----- |
-    | x |   | vin (string)| Primary |
-    | x |   | make (string) | Secondary |
-    | x |   | current_date (date) | Date |
-
-    **Remaining Properties**
-
-    | Required       | Allow null       | Property |
-    | -------------- | ---------------- | -------- |
-    | x |  | model (string) |
-    | x |  | year (integer) |
-    |   |  | estimated_value (number) |
-    | x |  | mileage (integer) |
-    |   |  | owner_count (integer) |
-    | x |  | purchase_date (date) | Date |
-
-    ``` {important} The *_system* prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix your dataset ID or dataset property names with *_system*.
-    ```
-
-    **Opt in to IEX Cloud's Metadata Graph:** unselect
-
-    Make sure to unselect the **Opt in** check box, since the example cars data has no relevant financial identifier properties.
-    
-    Notice the Sample API Call value and Unique Index Example values in sync with your property settings.
-
-    ![](./loading-data-from-a-file/cars-unique-index.png)
-
-    When you're done specifying the schema values, click **Create Dataset Now**. Your dataset builds and your dataset overview appears.
-
-    ![](./loading-data-from-a-file/cars-dataset-overview.png)
-
-    ``` {tip} If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Deployments](../administration/monitoring-deployments.md).
-    ```
-
-    From here you can manage and monitor your dataset, open/share the API docs, execute an example request on your dataset, and create different views to your data.
-
-6.  In your dataset overview page, get your data by clicking the **Example Request** URL. The URL opens in a new browser tab and the dataset data response (in JSON) appears.
-
-    ![](./loading-data-from-a-file/cars-response-last-1.png)
-
-    It's that easy for apps to use your data!
-
-7.  **Bonus step - visit your API docs** by clicking **API Docs**
-    in your dataset's overview page. Your API docs open in a new tab.
-
-    ![](./loading-data-from-a-file/cars-api-docs.png)
-
-    Your auto-documented dataset is ready for consumption.
-
-Congratulations on making data available using a dataset!
+Congratulations on making data available in Apperate!
 
 ## What's Next
 
-Now that you are familiar with creating a dataset from a CSV file, you can create datasets using your own CSV, JSON, or JSONL file. You can also add more data to your datasets (click **Ingest data**) in the dataset overview or modify data via the dataset's **Database** page.
+Now that you've created a dataset, you can examine it and or modify it in the schema editor (click **Edit Schema**). You can also add more data to it (click **Ingest data**) or [modify its data](../interacting-with-your-data/updating-a-data-record.md) via the dataset's **Database** page.
 
-Got a URL you want to tap into for data? See [Loading Data from a URL](../migrating-and-importing-data/loading-data-from-a-url.md).
+Here are some more topics you can learn:
 
-Interested in creating datasets programmatically? Checkout [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
+[Loading Data from a URL](../migrating-and-importing-data/loading-data-from-a-url.md) demonstrates getting data from a URL.
 
-Want to learn more about creating and managing datasets? Read [Understanding Datasets](../managing-your-data/understanding-datasets.md).
+[Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md) shows how to query datasets and operate on resources programmatically.
 
-Want to get more teammates involved? [Add them to your team](../administration/managing-users.md).
+[Understanding Datasets](../managing-your-data/understanding-datasets.md) explains dataset properties, constraints, indexes, and mappings.
+
+## Appendix: Create a Data File
+
+If you don't already have a file to load into Apperate, you can create a simple CSV file (has three records) using a command below for your operating system.
+
+```{tab} Linux/MacOS
+    echo "vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
+    XV859643N98D98E7C,Chevrolet,Camaro,2020,2020-03-27,2020-03-13,45955.00,32000,2
+    SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
+    59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1" \
+    >>cars
+```
+
+``` {tab} Windows
+    (
+    echo vin,make,model,year,current_date,purchase_date,estimated_value,mileage,owner_count
+    echo XV859643N98D98E7C,Chevrolet,Camaro,2020-03-27,2020,2020-03-13,45955.00,32000,2
+    echo SD089VN7678997566,Ford,F-150,2022,2020-03-27,2022-01-11,38650.00,8900,1
+    echo 59ADFG60929087DAH,Toyota,Prius,2018,2020-03-27,2019-09-23,22876.00,76000,1
+    )>cars
+```
+
+Load your file into Apperate following the instructions at [Load Data in One Step](#load-data-in-one-step).
