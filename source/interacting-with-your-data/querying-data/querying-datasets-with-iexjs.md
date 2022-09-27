@@ -16,14 +16,15 @@ client.platform.queryData({key: "AAPL", workspace: "CORE", id: "CASH_FLOW"}).the
 });
 ```
 
-The `CASH_FLOW` dataset's `key` property is `symbol`. Like all Core datasets, the `CASH_FLOW` dataset is in the `CORE` workspace.
+Like all Core datasets, the `CASH_FLOW` dataset is in the `CORE` workspace. The `CASH_FLOW` dataset's `key` property is `symbol`.
 
-``` {tip} You can reveal a dataset's **key**, **subkey**, and **date** properties by expanding the dataset in the console's **Datasets** sidebar.
-```
+A dataset's API doc shows the `key`, `subkey` (if any), and `date` properties. For example, the image below highlights the `CASH_FLOW` dataset's `key` and `date` indexes in the <https://iexcloud.io/docs/core/CASH_FLOW> page's **Response Attributes** section.
+
+![](./querying-datasets-with-iexjs/key-and-date-indexes.png)
 
 You can fine-tune your search by specifying additional [`GET /data`](https://iexcloud.io/docs/apperate-apis/get-data) query parameters.
 
-For example, you can limit results to a particular time range using the `from` and `to` [`GET /data`](https://iexcloud.io/docs/apperate-apis/get-data) query parameters.
+For example, you can limit results to a particular time range using the `from` and `to` query parameters.
 
 ```javascript
 client.platform.queryData({
@@ -39,4 +40,4 @@ It's that easy to query datasets from your JavaScript apps!
 
 [iex.js Core Data Methods](../../developer-tools/iexjs-library/iexjs-core-data-methods.md) provides a Core Data reference for current plans and legacy plans.
 
-[iex.js Apperate CRUD Methods](../../developer-tools/iexjs-library/iexjs-apperate-crud-methods) lists methods for invoking Apperate CRUD operations on data, datasets, and more.
+[iex.js Apperate CRUD Methods](../../developer-tools/iexjs-library/iexjs-apperate-crud-methods) references methods for invoking Apperate CRUD operations on data, datasets, and more.
