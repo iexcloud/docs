@@ -22,6 +22,8 @@ Here's the heavy lifting Apperate did for you:
 - Loaded the data into a table
 - Generated an API endpoint and a corresponding API docs page
 
+To view the schema and optionally modify it, see [Modify a Data Schema](../managing-your-data/updating-a-dataset-schema.md).
+
 ``` {tip} If data ingestion fails or you suspect issues, check the ingestion details in the **Data Jobs**  tab or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitor Deployments](../administration/monitoring-deployments.md).
 ```
 

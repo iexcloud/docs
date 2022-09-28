@@ -93,6 +93,9 @@ If there's a URL that you would like to load data from, you can connect to it an
 
 Congratulations! You loaded data from a URL into a dataset and it is ready to deliver that data to apps.
 
+``` {note} To view the schema and optionally modify it, see [Modify a Data Schema](../managing-your-data/updating-a-dataset-schema.md).
+```
+
 ## What's Next
 
 Here are some things to explore doing with your new data and data source.

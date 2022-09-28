@@ -103,6 +103,9 @@ In few steps, you can import data from a CSV, JSON, or JSONL data file in your S
 
 Congratulations! You loaded data from your AWS S3 bucket into a dataset and it is ready to deliver that data to apps.
 
+``` {note} To view the schema and optionally modify it, see [Modify a Data Schema](../managing-your-data/updating-a-dataset-schema.md).
+```
+
 ## What's Next
 
 Here are some things to explore doing with your new data and data source.

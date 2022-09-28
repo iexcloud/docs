@@ -1,15 +1,23 @@
 # Dataset Properties
 
-Properties define a dataset's content. Each property has a type, is required or optional, and may or may not allow null. Here's an example dataset schema:
+Properties define a dataset's content. Each property has a type, is required or optional, and may allow or forbid null. A property can be designated as an index and can be mapped to Apperate's 10+ supported [financial identifier types](../reference/financial-identifiers.md).
+
+Here is an example schema's properties:
 
 ![sample-aapl-dataset-edit-schema.png](./dataset-properties/sample-aapl-dataset-edit-schema.png)
 
-``` {important} The  \_system prefix (case-insensitive) is reserved for Apperate system tables and columns. You are forbidden to prefix dataset IDs or dataset property names with  \_system (case-insensitive).
+The sections below describe property options.
+
+## Name
+
+Every property must be named.
+
+``` {important} The  \_system prefix (case-insensitive) is reserved for Apperate system tables and columns. You must not prefix property names and dataset IDs with  \_system.
 ```
 
 ## Types
 
-Here are the various property types:
+Here are the property types:
 
 | Type | Description |
 | ---- | ----------- |
@@ -34,3 +42,17 @@ Allows null values for the property when checked, *unselect* the **Allows null**
 
 ``` {note} For CSV files, an empty field is interpreted as an empty string; it is never interpreted as null.
 ```
+
+## Opt-in to IEX Cloud's metadata graph
+
+A primary index property or secondary index property can be SmartLinked to IEX Cloud's metadata graph. A SmartLink associates the property's values with equivalent values from any of Apperate's 10+ supported [financial identifier types](../reference/financial-identifiers.md).
+
+The image below shows a property called `symbol` opted in to SmartLinks.
+
+![](../managing-your-data/understanding-datasets/smartlinked-property.png)
+
+## Related Topics
+
+[Understanding Datasets](../managing-your-data/understanding-datasets.md)
+
+[Modify a Data Schema](../managing-your-data/updating-a-dataset-schema.md)
