@@ -18,9 +18,16 @@ If there's a URL that you would like to load data from, you can connect to it an
 
     ![](./loading-data-from-a-url/data-source-selector.png)
 
-    The URL fields appear.
+    The **URL**, **Headers**, and **Save this data source** options appear.
 
     ![](./loading-data-from-a-url/create-a-url-source-for-dataset.png)
+
+1. If you want to save the data source for loading more data later, select the **Save this data source?** option.
+
+    ![](./loading-data-from-a-url/save-source.png)
+
+    ``` {note} After creating the dataset, the data source will be saved with an auto-generated name. To find the data source, navigate to **Sources** and sort the list by **Last Updated**. The data source should be one most recently updated.
+    ```
 
 1. Specify the URL that provides the data you want. The response data appears in the **Response** panel.
 
@@ -41,11 +48,6 @@ If there's a URL that you would like to load data from, you can connect to it an
     The URL below, for example, is good because it returns a JSON object array with all data in the top level objects.
 
     ![](./loading-data-from-a-url/aapl-chart-data-max-url-data-source.png)
-
-1. If you want to save the data source for future data ingestion, select the **Save this data source?** option.
-
-    ``` {note} After creating the dataset, the data source will be saved with an auto-generated name. To find the data source, navigate to **Sources** and sort the list by **Last Updated**. The data source should be one most recently updated.
-    ```
 
 1. When you're done specifying the data, click **Create Dataset**. Apperate creates the dataset, loads the data into it, and shows the dataset's **Overview** page.
 

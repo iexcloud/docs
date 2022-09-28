@@ -22,9 +22,16 @@ In few steps, you can import data from a CSV, JSON, or JSONL data file in your S
 
     ![](./loading-data-from-aws-s3/create-a-source-aws.png)
 
-    The bucket-related fields appear.
+    The bucket-related fields and **Save this data source** option appear.
 
     ![](./loading-data-from-aws-s3/bucket-related-fields.png)
+
+1. If you want to save the data source for loading more data later, select the **Save this data source?** option.
+
+    ![](./loading-data-from-aws-s3/save-source.png)
+
+    ``` {note} After creating the dataset, the data source will be saved with an auto-generated name. To find the data source, navigate to **Sources** and sort the list by **Last Updated**. The data source should be one most recently updated.
+    ```
 
 1. There are various credential options.
 
@@ -71,11 +78,6 @@ In few steps, you can import data from a CSV, JSON, or JSONL data file in your S
     If you specified a JSON file(s) and the Response panel shows the object array you want, leave the JSONNPath field empty. Otherwise, use the JSONPath field to specify the path to a desired object array in the JSON file. A **JSON Response** panel on the bottom right shows the data found at the JSONPath.
 
     ``` {seealso} [Accessing Nested JSON Data](./accessing-nested-json-data.md) for guidance on specifying JSONPath for JSON file data.
-    ```
-
-1. If you want to save the data source for future data ingestion, select the **Save this data source?** option.
-
-    ``` {note} After creating the dataset, the data source will be saved with an auto-generated name. To find the data source, navigate to **Sources** and sort the list by **Last Updated**. The data source should be one most recently updated.
     ```
 
 1. When you're done specifying the data, click **Create Dataset**. Apperate creates the dataset, loads the file data into the dataset, and shows the dataset's **Overview** page.
