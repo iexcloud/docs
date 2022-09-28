@@ -51,7 +51,7 @@ Here's an overview:
 
 Each endpoint reference includes the HTTP request structure, data weighting (for legacy plans), data timing and schedule, data sources, examples, path/query parameters, and response attributes.
 
-To start calling these endpoints, see [Getting Real-Time Core Financial Data](./using-core-data/getting-real-time-core-financial-data.md).
+To start calling these endpoints, see [Get Real-Time Financial Data](./using-core-data/getting-real-time-core-financial-data.md).
 
 ## Time Series Financial Data
 
@@ -73,8 +73,8 @@ Now you're familiar with the API references for the [core real-time financial da
 
 ## What's Next
 
-To get real-time IEX Cloud financial data, see [Getting Real-Time Core Financial Data](./using-core-data/getting-real-time-core-financial-data.md).
+To get real-time IEX Cloud financial data, see [Get Real-Time Financial Data](./using-core-data/getting-real-time-core-financial-data.md).
 
-To get IEX Cloud historical time series IEX Cloud financial data, check out [Getting Time Series Core Financial Data](./using-core-data/getting-time-series-core-financial-data.md).
+To get IEX Cloud historical time series IEX Cloud financial data, check out [Get Time Series Financial Data](./using-core-data/getting-time-series-core-financial-data.md).
 
 Interested in storing your application data in Apperate? Learn how at [Write and Read a Record](../getting-started/write-and-read-a-record.md).

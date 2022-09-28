@@ -112,12 +112,12 @@ Please see [Restricting Data Access to Specific Domains](./administration/access
 
 <details><summary>How do I get Nasdaq-listed stock data (UTP/OTC Data) on IEX Cloud?</summary>
 
-Please see [Getting Nasdaq-listed UTP/OTC Stock Data](./using-core-data/getting-nasdaq-listed-utp-otc-stock-data.md).
+Please see [Get Nasdaq-listed UTP/OTC Stock Data](./using-core-data/getting-nasdaq-listed-utp-otc-stock-data.md).
 </details>
 
 <details><summary>How do I stream in data?</summary>
 
-Please see [Streaming Data Using SSE](using-core-data/streaming-data-using-sse.md).
+Please see [Stream Data Using SSE](using-core-data/streaming-data-using-sse.md).
 </details>
 
 <details><summary>(Legacy) How do I enable access to earnings and estimates Data?</summary>

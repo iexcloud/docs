@@ -1,4 +1,4 @@
-# Monitoring Deployments
+# Monitor Deployments
 
 Apperate logs your workspace activities. The logs capture basic things such as when items are created, updated, and deleted and process milestones associated with dataset validation, data ingestion, and more. Click on **Logs** in the navigation to show the log pages.
 

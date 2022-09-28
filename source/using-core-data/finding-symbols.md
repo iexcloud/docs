@@ -1,4 +1,4 @@
-# Finding Symbols
+# Find Symbols
 
 It's important to know what symbols are supported when making API calls to IEX Cloud. To see the full list of U.S. symbols that IEX Cloud currently supports for "stocks" API calls, you can make an API call to get the full symbols list from our reference data. 
 

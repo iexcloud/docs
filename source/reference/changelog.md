@@ -164,7 +164,7 @@ Here are the notable changes.
 
 ## 2022-05-19
 
-- Support SQL views. See it in action at [Creating and Managing Views](../managing-your-data/creating-and-managing-views.md).
+- Support SQL views. See it in action at [Create and Manage Views](../managing-your-data/creating-and-managing-views.md).
 - Limit dataset query results to 1000
 - Display AWS user ARN for [AWS integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md)
 
@@ -183,7 +183,7 @@ Here are the notable changes.
 
 ## 2022-05-11
 
-- Support sampling JSON data with JSONPath and displaying in the UI. For details, go to [Accessing Nested JSON Data](../migrating-and-importing-data/accessing-nested-json-data.md).
+- Support sampling JSON data with JSONPath and displaying in the UI. For details, go to [Access Nested JSON Data](../migrating-and-importing-data/accessing-nested-json-data.md).
 
 ## 2022-05-10
 
@@ -216,8 +216,8 @@ Here are the notable changes.
 
 ## 2022-04-18
 
-- Opt-in to map a property to our financial identifier metadata graph. See [Getting Started with an Example Dataset](../getting-started/getting-started-with-apperate.md).
+- Opt-in to map a property to our financial identifier metadata graph. See [Get Started with an Example Dataset](../getting-started/getting-started-with-apperate.md).
 
 ## 2022-04-13
 
-- Support scheduled ingestion. In the Console, see [Scheduling Data Ingestion](../migrating-and-importing-data/scheduling-data-ingestion.md).
+- Support scheduled ingestion. In the Console, see [Schedule Data Ingestion](../migrating-and-importing-data/scheduling-data-ingestion.md).

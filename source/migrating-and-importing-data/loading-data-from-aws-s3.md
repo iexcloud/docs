@@ -1,4 +1,4 @@
-# Loading Data from AWS S3
+# Load Data from an AWS S3 Bucket
 
 In few steps, you can import data from a CSV, JSON, or JSONL data file in your S3 bucket.
 
@@ -43,14 +43,14 @@ In few steps, you can import data from a CSV, JSON, or JSONL data file in your S
 
     ![](./loading-data-from-aws-s3/enter-aws-iam-role-arn.png)
 
-    ``` {important} Make sure to grant Apperate's S3 user access to your role by configuring the returned S3 User and External ID in your role. See [Accessing S3 via AWS Integration](./accessing-s3-via-storage-integration.md) for details.
+    ``` {important} Make sure to grant Apperate's S3 user access to your role by configuring the returned S3 User and External ID in your role. See [Access S3 via AWS Integration](./accessing-s3-via-storage-integration.md) for details.
     ```
 
     If you want to use an access key credential, you can select an existing one from the **Credential** selector or select the bottom-most option **Create a credential**.
 
     ![](./loading-data-from-aws-s3/create-a-credential.png)
 
-    ``` {seealso} For more information on configuring access to S3 buckets via access keys, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
+    ``` {seealso} For more information on configuring access to S3 buckets via access keys, see [Access S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
     ```
 
 1. Enter your AWS bucket name. All of your bucket files (file keys) appear in the Bucket Contents panel on the right.
@@ -77,20 +77,28 @@ In few steps, you can import data from a CSV, JSON, or JSONL data file in your S
 
     If you specified a JSON file(s) and the Response panel shows the object array you want, leave the JSONNPath field empty. Otherwise, use the JSONPath field to specify the path to a desired object array in the JSON file. A **JSON Response** panel on the bottom right shows the data found at the JSONPath.
 
-    ``` {seealso} [Accessing Nested JSON Data](./accessing-nested-json-data.md) for guidance on specifying JSONPath for JSON file data.
+    ``` {seealso} [Access Nested JSON Data](./accessing-nested-json-data.md) for guidance on specifying JSONPath for JSON file data.
     ```
 
 1. When you're done specifying the data, click **Create Dataset**. Apperate creates the dataset, loads the file data into the dataset, and shows the dataset's **Overview** page.
 
     ![](./loading-data-from-aws-s3/car-accidents-dataset-overview.png)
 
-    ``` {note} If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Deployments](../administration/monitoring-deployments.md).
+    ``` {note} If data ingestion fails or you suspect issues, check the ingestion details in the overview's **Data Jobs**  page or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitor Deployments](../administration/monitoring-deployments.md).
     ```
 
 1. In the **Overview** page, fetch the last record by clicking on the **Example Request** URL. A browser tab opens to the URL and Apperate returns the record in a JSON object array. Here's an example array:
 
     ```json
-    [{"city":"Harrisburg","date":"2022-02-03","est_damage":1500,"state":"PA","vin":"SD089VN7678997566"}]
+    [
+        {
+            "city": "Harrisburg",
+            "date": "2022-02-03",
+            "est_damage": 1500,
+            "state": "PA",
+            "vin": "SD089VN7678997566"
+        }
+    ]
     ```
 
 Congratulations! You loaded data from your AWS S3 bucket into a dataset and it is ready to deliver that data to apps.
@@ -99,8 +107,8 @@ Congratulations! You loaded data from your AWS S3 bucket into a dataset and it i
 
 Here are some things to explore doing with your new data and data source.
 
-- Schedule data ingestion on your new data source. Learn how at [Scheduling Data Ingestion](./scheduling-data-ingestion.md).
+- [Schedule Data Ingestion](./scheduling-data-ingestion.md) shows you how to load data regularly per a schedule.
 
-- Provide custom views to the data by joining your dataset with a Core Dataset or one of your other datasets. See [Creating and Managing Views](../managing-your-data/creating-and-managing-views.md) for details.
+- [Create and Manage Views](../managing-your-data/creating-and-managing-views.md) demonstrates joining datasets to create views.
 
-- Use the data in your apps via your dataset API endpoints. Query for the exact data you want as demonstrated in [Apperate Query Basics](../interacting-with-your-data/apperate-api-basics.md).
+- [Apperate API Basics](../interacting-with-your-data/apperate-api-basics.md) introduces Apperate REST endpoints to query for the exact data you want and CRUD endpoints to use Apperate programatically.

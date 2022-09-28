@@ -1,4 +1,4 @@
-# Creating a Dataset with the API
+# Create a Dataset with the API
 
 Here you will learn some datasets API basics by using the API to create a dataset, add data to it, and get that data using the dataset's the auto-generated REST API.
 

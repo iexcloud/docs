@@ -1,3 +1,3 @@
-# Creating and Managing Indexes
+# Create and Manage Indexes
 
 Coming soon!

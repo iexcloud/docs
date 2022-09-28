@@ -27,7 +27,7 @@ Here you can learn how to load data from the following sources:
 
 ## Scheduling Data Ingestion
 
-When you're ready to import data regularly per a schedule, see [Scheduling Data Ingestion](./migrating-and-importing-data/scheduling-data-ingestion.md). 
+When you're ready to import data regularly per a schedule, see [Schedule Data Ingestion](./migrating-and-importing-data/scheduling-data-ingestion.md). 
 
 ![](./migrating-and-importing-data/ingestion-schedules.png)
 
@@ -37,6 +37,6 @@ You'll have data flowing like clockwork!
 
 If you're parsing JSON response objects for the data you need or configuring access to AWS S3 buckets, check out these articles:
 
-- [Accessing Nested JSON Data](./migrating-and-importing-data/accessing-nested-json-data.md)
-- [Accessing S3 via AWS Integration](./migrating-and-importing-data/accessing-s3-via-storage-integration.md)
-- [Accessing S3 via Your Access Key](./migrating-and-importing-data/accessing-s3-via-your-access-key.md)
+- [Access Nested JSON Data](./migrating-and-importing-data/accessing-nested-json-data.md)
+- [Access S3 via AWS Integration](./migrating-and-importing-data/accessing-s3-via-storage-integration.md)
+- [Access S3 via Your Access Key](./migrating-and-importing-data/accessing-s3-via-your-access-key.md)

@@ -1,4 +1,4 @@
-# Accessing AWS S3 via AWS Integration
+# Access AWS S3 via AWS Integration
 
 Apperate's AWS Integration provides a flexible way to connect with your AWS S3 buckets from your workspace. The integration involves granting an AWS user from Apperate access to your bucket via an AWS IAM role and policy.
 
@@ -105,4 +105,4 @@ Your AWS S3 bucket is now integrated with your IEX Cloud workspace. When you par
 
 Now that you've configured AWS Integration for your bucket, you can [load your bucket data into Apperate](./loading-data-from-aws-s3.md) for delivering to your apps.
 
-If you're interested in adding your AWS credentials to your IEX Cloud workspace instead of using Apperate's AWS Integration, see [Accessing S3 via Your Access Key](./accessing-s3-via-your-access-key.md).
+If you're interested in adding your AWS credentials to your IEX Cloud workspace instead of using Apperate's AWS Integration, see [Access S3 via Your Access Key](./accessing-s3-via-your-access-key.md).

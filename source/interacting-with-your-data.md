@@ -28,4 +28,4 @@ Querying Data
 - [Querying Datasets](./interacting-with-your-data/querying-data/querying-datasets.md) - Query time series data and more.
 - [SQL Query API](./interacting-with-your-data/querying-data/sql-query-with-the-api.md) - Leverage SQL in working with your data.
 
-[Updating a Data Record](./interacting-with-your-data/updating-a-data-record.md) - Modify data records in the console or with the API.
+[Update Data](./interacting-with-your-data/updating-a-data-record.md) - Modify data records in the console or with the API.

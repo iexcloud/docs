@@ -1,4 +1,4 @@
-# Updating a Data Record
+# Update Data
 
 Updating data records is done by overwriting them. That is, you post a record data that matches the Unique ID (i.e., primary, secondary, and date indexes) and specify all the other values, change any of them you want.
 
@@ -87,4 +87,4 @@ If you need to delete a record, use the `DELETE /data/:workspace/:id/:key/:subke
 
 If you haven't yet checked out the various ways to query (get) data, see [Querying Data](./querying-data.md).
 
-Do you want to combine and transform data using views? Check out [Creating and Managing Views](../managing-your-data/creating-and-managing-views.md)
+Do you want to combine and transform data using views? Check out [Create and Manage Views](../managing-your-data/creating-and-managing-views.md)

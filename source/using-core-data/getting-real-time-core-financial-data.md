@@ -1,4 +1,4 @@
-# Getting Real-Time Core Financial Data
+# Get Real-Time Financial Data
 
 The IEX Cloud API is based on REST, has resource-oriented URLs, returns JSON-encoded responses, and returns standard HTTP [response codes](https://iexcloud.io/docs/api/#error-codes). We support [JSONP](https://en.wikipedia.org/wiki/JSONP) for all endpoints.
 
@@ -110,6 +110,6 @@ Congratulations! You know how to get IEX Cloud production-ready financial data f
 
 Now that you know how to get real-time IEX Cloud data, explore the [Legacy API Reference](https://iexcloud.io/docs/api/) for more data to use in your apps.
 
-If you're interested in historical time series data, check out [Getting Time Series Core Financial Data](getting-time-series-core-financial-data.md).
+If you're interested in historical time series data, check out [Get Time Series Financial Data](getting-time-series-core-financial-data.md).
 
 If you need to store application data, learn how at [Write and Read a Record](../getting-started/write-and-read-a-record.md).

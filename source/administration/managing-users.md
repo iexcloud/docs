@@ -1,4 +1,4 @@
-# Managing Users
+# Manage Users
 
 Here's how to add team members to your IEX Cloud Account:
 

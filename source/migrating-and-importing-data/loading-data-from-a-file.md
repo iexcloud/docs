@@ -1,4 +1,4 @@
-# Loading Data from a File
+# Load Data from a File
 
 You can load data into Apperate from a CSV, JSON, or JSONL file. Apperate infers a schema from a sampling of the file, validates the data using that schema, ingests the data, and generates a REST endpoint and endpoint documentation. What's more is that Apperate does this in **one step**. Just drop your file onto the console and Apperte does the rest.
 
@@ -22,7 +22,7 @@ Here's the heavy lifting Apperate did for you:
 - Loaded the data into a table
 - Generated an API endpoint and a corresponding API docs page
 
-``` {tip} If data ingestion fails or you suspect issues, check the ingestion details in the **Data Jobs**  tab or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitoring Deployments](../administration/monitoring-deployments.md).
+``` {tip} If data ingestion fails or you suspect issues, check the ingestion details in the **Data Jobs**  tab or navigate to **Logs**, and check  the **Log Stream** or **Ingestion Logs**. For guidance, see [Monitor Deployments](../administration/monitoring-deployments.md).
 ```
 
 ``` {important} 20,000,000 record limit per ingestion.

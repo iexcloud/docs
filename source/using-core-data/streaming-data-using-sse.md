@@ -1,4 +1,4 @@
-# Streaming Data Using SSE
+# Stream Data Using SSE
 
 We support Server-sent Events ([SSE Streaming](https://en.wikipedia.org/wiki/Server-sent_events)) for streaming data as an alternative to WebSockets. You will need to decide whether SSE streaming is more efficient for your workflow than REST calls. In many cases, streaming is more efficient since you will only receive the latest available data. If you need to control how often you receive updates, then you may use REST to set a timed interval.
 

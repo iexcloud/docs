@@ -1,4 +1,4 @@
-# Accessing S3 via Your Access Key
+# Access S3 via Your Access Key
 
 An easy way to connect with your AWS S3 bucket is using your [AWS access key](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html). An access key and secret can be stored (encrypted) and accessed in your Apperate workspace as credentials instance. Each credentials instance has an access key and secret access key value.
 
@@ -25,4 +25,4 @@ Now your credentials are available to use with your AWS S3 buckets.
 
 Now that you've configured credentials for your bucket, you can [load your bucket data into Apperate](./loading-data-from-aws-s3.md) for delivering to your apps.
 
-If you're interested in granting Apperate's S3 user read access to the bucket instead of using AWS credentials, see [Accessing S3 via Storage Integration](./accessing-s3-via-storage-integration.md).
+If you're interested in granting Apperate's S3 user read access to the bucket instead of using AWS credentials, see [Access S3 via Storage Integration](./accessing-s3-via-storage-integration.md).

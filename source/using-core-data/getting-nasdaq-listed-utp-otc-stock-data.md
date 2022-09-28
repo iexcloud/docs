@@ -1,4 +1,4 @@
-# Getting Nasdaq-listed Stock Data (UTP/OTC Data)
+# Get Nasdaq-listed Stock Data (UTP/OTC Data)
 
 Here is an overview of how to get 15-minute delayed market-wide intraday prices for Nasdaq-listed stocks
 

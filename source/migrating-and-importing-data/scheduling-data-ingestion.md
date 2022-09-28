@@ -1,4 +1,4 @@
-# Scheduling Data Ingestion
+# Schedule Data Ingestion
 
 Apperate facilitates loading (ingesting) data into a dataset at regular intervals. Schedules are easy to set up, manage, and monitor. You can enable a schedule and disable/pause it as you like.
 
@@ -10,7 +10,7 @@ Apperate facilitates loading (ingesting) data into a dataset at regular interval
 ``` {tip} You can create a data source automatically as your create a dataset. After you create the dataset, you can verify the data source on the Data Sources page by sorting the data sources on the **Last updated** column.
 ```
 
-## Configure Your Schedule
+## Configuring Your Schedule
 
 1. Go to **Schedules &rarr; Ingestions Schedules**.
 
@@ -78,6 +78,6 @@ To re-enable your ingestion schedule, select on your schedule in the list and cl
 
 ## What's Next
 
-To create views, see [Creating and Managing Views](../managing-your-data/creating-and-managing-views.md).
+To create views, see [Create and Manage Views](../managing-your-data/creating-and-managing-views.md).
 
 If you want to understand schema indexing better, visit [Understanding Dataset Schemas](../managing-your-data/understanding-datasets.md).

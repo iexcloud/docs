@@ -1,4 +1,4 @@
-# Getting Time Series Core Financial Data
+# Get Time Series Financial Data
 
 ```{important} Apperate includes only historical time series Core Data at this time. We are in the process of migrating real-time legacy data, including stock quotes, into Apperate. In the meantime, please see the [Legacy API Reference](https://iexcloud.io/docs/api/) for the real-time legacy data.
 ```
@@ -127,7 +127,7 @@ Congratulations on getting core financial time series data.
 
 ## What's Next
 
-If you want to get real-time IEX Cloud financial data, see [Getting Real-Time Core Financial Data](./getting-real-time-core-financial-data.md).
+If you want to get real-time IEX Cloud financial data, see [Get Real-Time Financial Data](./getting-real-time-core-financial-data.md).
 
 To dive into more Core Dataset queries using the Data API, see these articles:
 
@@ -136,6 +136,6 @@ To dive into more Core Dataset queries using the Data API, see these articles:
 
 To learn more about Apperate's APIs, visit [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
 
-If want to combine Core Dataset data with data from other datasets, check out [Creating and Managing Views](../managing-your-data/creating-and-managing-views.md).
+If want to combine Core Dataset data with data from other datasets, check out [Create and Manage Views](../managing-your-data/creating-and-managing-views.md).
 
 If you need to store application data, learn how at [Write and Read a Record](../getting-started/write-and-read-a-record.md).

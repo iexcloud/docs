@@ -1,4 +1,4 @@
-# Accessing Nested JSON Data
+# Access Nested JSON Data
 
 If the data you want is nested in JSON response objects, you can specify data location using JSONPath.
 
