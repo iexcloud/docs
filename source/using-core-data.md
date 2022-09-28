@@ -77,4 +77,4 @@ To get real-time IEX Cloud financial data, see [Get Real-Time Financial Data](./
 
 To get IEX Cloud historical time series IEX Cloud financial data, check out [Get Time Series Financial Data](./using-core-data/getting-time-series-core-financial-data.md).
 
-Interested in storing your application data in Apperate? Learn how at [Write and Read a Record](../getting-started/write-and-read-a-record.md).
+Interested in storing your application data in Apperate? Learn how at [Read and Write Data](../getting-started/write-and-read-a-record.md).

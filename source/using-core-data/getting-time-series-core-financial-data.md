@@ -138,4 +138,4 @@ To learn more about Apperate's APIs, visit [Using Apperate's APIs](../interactin
 
 If want to combine Core Dataset data with data from other datasets, check out [Create and Manage Views](../managing-your-data/creating-and-managing-views.md).
 
-If you need to store application data, learn how at [Write and Read a Record](../getting-started/write-and-read-a-record.md).
+If you need to store application data, learn how at [Read and Write Data](../getting-started/write-and-read-a-record.md).

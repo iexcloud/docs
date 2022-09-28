@@ -1,4 +1,4 @@
-# Write and Read a Record
+# Read and Write Data
 
 As with any database, you can write individual records to Apperate and read them back. You can do this manually in the UI or do it programmatically using the REST API.
 
