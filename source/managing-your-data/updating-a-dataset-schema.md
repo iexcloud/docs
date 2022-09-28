@@ -9,11 +9,16 @@ There are various reasons you may have for modifying a schema. Here are some pos
 - Forbid null values for a property
 - Index a property
 - SmartLink a property
-
-``` {note} You can also rename the dataset.
-```
+- Rename your dataset
 
 Whether you hand-crafted your schema or Apperate inferred your schema from a data sampling, it's good to check your schema after creating it and testing it.
+
+Here's what's involved with updating your schema:
+
+- Edit your schema
+- Specify how to handle existing data
+- Save your changes
+- Troubleshoot any update issues
 
 ``` {warning} Changing the schema of a parent dataset can break or alter its associated views.
 ```
@@ -21,26 +26,30 @@ Whether you hand-crafted your schema or Apperate inferred your schema from a dat
 ``` {important} If you update your schema, it's best to update it early.
 ```
 
-Here we'll view a dataset schema in the schema editor and examine schema update options.
+## Edit Your Schema
 
-## Viewing Your Schema
-
-From your dataset's **Overview** page, click **Edit schema** to view your dataset schema. The schema editor appears.
+From your dataset's **Overview** page, click **Edit schema** to view your schema. The schema editor appears.
 
 ![](./updating-a-dataset-schema/modify-schema-page.png)
 
-The **Properties** table shows your dataset properties and their types, constraints, indexes, and whether they're mapped to the financial metadata graph, using SmartLinks.
+Here are the editor sections:
 
-The **Select action for existing data:** drop-down menu above the Properties table provides options for updating existing data with regards to any schema modification(s) you want to apply.
+**Select action for existing data:** This drop-down menu provides options for updating the dataset's existing data with regards to any schema modifications you apply. The next section [Specify how to handle existing data](#specify-how-to-handle-existing-data) explains the options and how they relate to various schema changes.
 
-## Options for Existing Data
+**Properties:** This table shows your dataset columns, their types and constraints, and indexes.
 
-When you update your schema, you must select one of the following options for handling your existing data.
+**Opt-in to IEX Cloud's metadata graph:** This section enables you to SmartLink a primary (or secondary) index property to the financial metadata graph. See [Understanding Datasets](./understanding-datasets.md) to learn more about SmartLinks.
 
-- **Leave existing data as is:** Ignores the existing data.
-- **Delete all existing data:** Removes ALL the data. Before doing this, MAKE SURE you don't need any of the data. 
-- **Update existing data:** Immediately modifies the data.
-- **Reingest data using a new schema:** Ingests the existing data, validating it with the new schema and replacing the existing data, indexes, and metadata graph mappings (SmartLinks).
+Update your metadata-graph mapping and modify your schema properties the way you want. Before executing the update, consider how you want to handle existing data in light of the schema changes.
+
+## Specify How to Handle Existing Data
+
+You must select one of the following options for handling your existing data.
+
+- **Leave existing data as is:** Preserves the existing data.
+- **Delete all existing data:** Removes ALL the existing data. Before doing this, MAKE SURE you don't need any of the data. 
+- **Update existing data:** Immediately modifies the data to adhere to the schema.
+- **Reingest data using a new schema:** Reloads the existing data, validating it with the new schema and replacing the existing data, indexes, and metadata graph mappings (SmartLinks).
 
 Here are some best practices to consider for existing data with regards to specific schema modifications.
 
@@ -54,13 +63,15 @@ Here are some best practices to consider for existing data with regards to speci
 | Add/modify an index | Select **Reingest data using a new schema**. |
 | Add/modify a SmartLink | Select **Reingest data using a new schema**. |
 
+Select the existing data action that best fits your scenario.
+
 ## Save Your Changes
 
-When you're done modifying the schema, click **Update Dataset**. Apperate applies your modifications and your dataset **Overview** appears.
+When you're done modifying the schema and selecting your existing data action, click **Update Dataset**. Apperate applies the schema modifications to your data and your dataset **Overview** appears.
 
 If you have schema update issues, see how you can handle them next.
 
-## Troubleshooting Update Issues
+## Troubleshooting Any Update Issues
 
 **If data reingestion fails** in a schema update, the invalid records are excluded from ingestion. Go to the Ingestion Logs page and check the ingestion job's **Invalid Records** column. The document icon in the Invalid Records column links to the ingestion job's invalid record list.
 
@@ -69,6 +80,12 @@ If you have schema update issues, see how you can handle them next.
 Click the Invalid Records icon to view or download the invalid records CSV file.
 
 ![](./updating-a-dataset-schema/invalid-records-csv.png)
+
+Copy the record data and make if valid. Then add it back to the dataset using one of these ways:
+
+- [Database Page](../interacting-with-your-data/updating-a-data-record.md)
+- [Data API](./creating-a-dataset-with-the-api.md)
+- [File](../migrating-and-importing-data/loading-data-from-a-file.md).
 
 Now you know how to update a dataset schema.
 
