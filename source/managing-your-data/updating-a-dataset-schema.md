@@ -1,6 +1,6 @@
-# Updating a Dataset Schema
+# Modify a Data Schema
 
-There are various reasons you may have for modifying a dataset schema. Here are some possible reasons:
+There are various reasons you may have for modifying a schema. Here are some possible reasons:
 
 - Enrich your dataset with a new property
 - Remove a deprecated property
@@ -10,7 +10,7 @@ There are various reasons you may have for modifying a dataset schema. Here are 
 - Index a property
 - SmartLink a property
 
-``` {note} You can also rename a dataset.
+``` {note} You can also rename the dataset.
 ```
 
 Whether you hand-crafted your schema or Apperate inferred your schema from a data sampling, it's good to check your schema after creating it and testing it.
@@ -53,6 +53,10 @@ Here are some best practices to consider for existing data with regards to speci
 | Require values for a property | If you want to update existing data, select **Update existing data**. Existing records missing the property are dropped. See Troubleshooting Schema Update Issues below for guidance on handling these records. |
 | Add/modify an index | Select **Reingest data using a new schema**. |
 | Add/modify a SmartLink | Select **Reingest data using a new schema**. |
+
+## Save Your Changes
+
+When you're done modifying the schema, click **Update Dataset**. Apperate applies your modifications and your dataset **Overview** appears.
 
 If you have schema update issues, see how you can handle them next.
 
