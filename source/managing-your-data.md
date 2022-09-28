@@ -5,6 +5,7 @@
 :maxdepth: 1
 
 managing-your-data/understanding-datasets.md
+managing-your-data/updating-a-dataset-schema.md
 managing-your-data/defining-schemas.md
 managing-your-data/creating-a-dataset-with-the-api.md
 managing-your-data/creating-and-managing-indexes.md
@@ -12,6 +13,8 @@ managing-your-data/creating-and-managing-views.md
 ```
 
 [Understanding Datasets](./managing-your-data/understanding-datasets.md) - Learn about dataset schema components.
+
+[Update Dataset Schemas](./managing-your-data/updating-a-dataset-schema.md) explains how it works and shows how to do it.
 
 Defining Schemas
 
