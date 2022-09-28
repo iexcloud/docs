@@ -64,8 +64,8 @@ Here you will create a dataset as specified in a JSON file.
 1. Create a dataset from the `.json` file by running a `POST /datasets/:workspace` request as described in [Create a dataset](https://iexcloud.io/docs/apperate-apis/datasets/create-a-dataset). For example, run this command, replacing the `WORKSPACE`, `SECRET_TOKEN`, and `FILE` values with your own.
 
     ```bash
-    curl -H "Content-Type: application/json" 
-     -X POST "https://cloud.iexapis.com/v1/datasets/WORKSPACE?token=SECRET_TOKEN" 
+    curl -H "Content-Type: application/json" \
+     -X POST "https://cloud.iexapis.com/v1/datasets/WORKSPACE?token=SECRET_TOKEN" \
      --data-binary @FILE.json
     ```
 
@@ -137,7 +137,12 @@ Here are the data file ingestion steps:
     **Sample response:** 
 
     ```javascript
-    {"success":true,"message":"Data upload of 579B for YOUR_DATASET completed, jobId: 887b948762ff4b5c889112afb21ea463 has been created","jobId":"887b948762ff4b5c889112afb21ea463","jobUrl":"/v1/jobs/WORKSPACE/ingest/887b948762ff4b5c889112afb21ea463"}
+    {
+        "success": true,
+        "message": "Data upload of 579B for YOUR_DATASET completed, jobId: 887b948762ff4b5c889112afb21ea463 has been created",
+        "jobId": "887b948762ff4b5c889112afb21ea463",
+        "jobUrl": "/v1/jobs/WORKSPACE/ingest/887b948762ff4b5c889112afb21ea463"
+    }
     ```
 
 1. Validate your dataset's record count using a `GET /datasets/:workspace/:id` request as described in [Get a dataset](https://iexcloud.io/docs/apperate-apis/datasets/get-a-dataset). For example, use this command with your values:  
@@ -149,7 +154,54 @@ Here are the data file ingestion steps:
     **Sample response:** 
 
     ```javascript
-    {" columnMapping":{" date":"date","key":"symbol"}," symbologyColumn":{" name":"symbol","type":"E"},"date":1650569968000,"updated":1650569968000,"datasetId":" YOUR_DATASET ","schema":{"properties":{"close":{" type":"number"},"date":{" format":"date","type":"string"},"high":{" type":"number"},"low":{" type":"number"},"open":{" type":"number"},"symbol":{" type":"string"},"volume":{" type":"integer"}},"required":[" symbol","date"]," type":"object"},"description":"","parentDatasetId":null,"keys":0,"records":3}
+    {
+        " columnMapping": {
+            " date": "date",
+            "key": "symbol"
+        },
+        " symbologyColumn": {
+            " name": "symbol",
+            "type": "E"
+        },
+        "date": 1650569968000,
+        "updated": 1650569968000,
+        "datasetId": " YOUR_DATASET ",
+        "schema": {
+            "properties": {
+                "close": {
+                    " type": "number"
+                },
+                "date": {
+                    " format": "date",
+                    "type": "string"
+                },
+                "high": {
+                    " type": "number"
+                },
+                "low": {
+                    " type": "number"
+                },
+                "open": {
+                    " type": "number"
+                },
+                "symbol": {
+                    " type": "string"
+                },
+                "volume": {
+                    " type": "integer"
+                }
+            },
+            "required": [
+                " symbol",
+                "date"
+            ],
+            " type": "object"
+        },
+        "description": "",
+        "parentDatasetId": null,
+        "keys": 0,
+        "records": 3
+    }
     ```
 
     The records value `"records":3` matches the number of records in your data file. Your data is ready for apps to access!

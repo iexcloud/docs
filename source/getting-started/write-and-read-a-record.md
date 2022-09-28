@@ -114,10 +114,12 @@ You'll add the example news record into the dataset using the Data API's [`POST 
 
 Add a news record by entering the following command, replacing WORKSPACE with your workspace name and SK_TOKEN with your secret token value.
 
+**Request:**
+
 ```bash
-curl -H "Content-Type: application/json" 
- -X POST "https://WORKSPACE.iex.cloud/v1/data/WORKSPACE/FLASH_NEWS_DATASET?token=SK_TOKEN" 
- -d '[{"id": 12345, "summary": "Gold mother-load discovered.", "source": "Doug Dig", "country": "Canada", "state_province": "Yukon", "city": "Dawson City", "zip_code": "Y0B 0A3", "date": "2022-06-13"}]'
+curl -H "Content-Type: application/json" \
+-X POST "https://WORKSPACE.iex.cloud/v1/data/WORKSPACE/FLASH_NEWS_DATASET?token=SK_TOKEN" \
+-d '[{"id": 12345, "summary": "Gold mother-load discovered.", "source": "Doug Dig", "country": "Canada", "state_province": "Yukon", "city": "Dawson City", "zip_code": "Y0B 0A3", "date": "2022-06-13"}]'
 ```
 
 **Response:**
@@ -133,14 +135,6 @@ curl -H "Content-Type: application/json"
 
 News of Doug Dig's gold discovery is now in the dataset and available to read from the dataset's auto-generated API.
 
-<!-- TODO end the writing article here. Link to reading/fetching article. Jim
-## What's Next
-
-Now that you've written to Apperate, why not read that data back? Learn how at [Reading Data From Apperate](./reading-data-from-apperate.md).
-
-If you're interested in loading data other ways or migrating data to Apperate, please visit [Migrate and Import Data](../migrating-and-importing-data.md).
--->
-
 ## Read the Record
 
 You can fetch the record using a `GET /data/:workspace/:id/:key?/:subkey?` request. The [GET /data](https://iexcloud.io/docs/apperate-apis/data/get-data) API reference provides the REST endpoint details. 
@@ -149,9 +143,9 @@ The endpoint queries the dataset using a Primary index (key), an optional Second
 
 Open the following URL in your browser, replacing the `WORKSPACE` and `SK_TOKEN` with your values. 
 
-```
-https://WORKSPACE.iex.cloud/v1/data/WORKSPACE/FLASH_NEWS_DATASET/12345?token=SK_TOKEN
-```
+**Request:**
+
+<https://WORKSPACE.iex.cloud/v1/data/WORKSPACE/FLASH_NEWS_DATASET/12345?token=SK_TOKEN>
 
 **Response:**
 

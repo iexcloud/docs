@@ -60,7 +60,9 @@ Let's update a record with the API.
 1. Change the record's values by using the [`POST /data/:workspace/:id`](https://iexcloud.io/docs/apperate-apis/data/ingest-data) endpoint and `overwrite=true` to write a new record in its place. For example, to change the previous example record's `model` value to `F-250`, you could run a cURL command like this one, replacing `WORKSPACE`, `CARS`, and `SECRET_TOKEN` with your values:
 
     ```bash
-    curl -H "Content-Type: application/json" -X POST "https://cloud.iexapis.com/v1/data/WORKSPACE/CARS?overwrite=true&wait=true&token=SECRET_TOKEN" -d '[{"current_date":"2020-03-27","estimated_value":38650,"make":"Ford","mileage":8900,"model":"F-250","owner_count":1,"purchase_date":"2022-01-11","vin":"SD089VN7678997566","year":2022}]'
+    curl -H "Content-Type: application/json" \
+    -X POST "https://cloud.iexapis.com/v1/data/WORKSPACE/CARS?overwrite=true&wait=true&token=SECRET_TOKEN" \
+    -d '[{"current_date":"2020-03-27","estimated_value":38650,"make":"Ford","mileage":8900,"model":"F-250","owner_count":1,"purchase_date":"2022-01-11","vin":"SD089VN7678997566","year":2022}]'
     ```
 
     Since the command specifies `overwrite=true`, the record is overwritten with the new values.
@@ -70,13 +72,28 @@ Let's update a record with the API.
     Since the command specifies `wait=true`, the response describes the final ingestion status. The response looks like this:
 
     ```javascript
-    {"success":true,"message":"Ingestion job successful, 1 records ingested","jobId":"76dc437512094822806af11748987e27","jobUrl":"/v1/jobs/MY/ingest/76dc437512094822806af11748987e27"}
+    [
+        {
+            "close": 47.8925,
+            "date": "2017-11-28",
+            "high": 28.1163,
+            "low": 27.8475,
+            "open": 27.8575,
+            "symbol": "AAPL",
+            "volume": 108775932
+        }
+    ]
     ```
 
 If you specify `wait=false` (the default), a response like the one below returns immediately, signaling data upload completion and ingestion commencement.
 
 ```javascript
-{"success":true,"message":"Data upload of 198B for CARS completed, jobId: d5d126b0f8c94a7b8737cb64abed11ae has been created","jobId":"d5d126b0f8c94a7b8737cb64abed11ae","jobUrl":"/v1/jobs/MY/ingest/d5d126b0f8c94a7b8737cb64abed11ae"}
+{
+    "success": true,
+    "message": "Data upload of 198B for CARS completed, jobId: d5d126b0f8c94a7b8737cb64abed11ae has been created",
+    "jobId": "d5d126b0f8c94a7b8737cb64abed11ae",
+    "jobUrl": "/v1/jobs/MY/ingest/d5d126b0f8c94a7b8737cb64abed11ae"
+}
 ```
 
 You're editing (and overwriting) data like a champ!
