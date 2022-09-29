@@ -43,6 +43,12 @@ You may want to use separate tokens to track, control, and throttle usage by dif
 ```
 </details>
 
+<details><summary>What are allowed domains?</summary>
+
+You may restrict individual tokens to certain domains. Leaving the domain blank will allow requests with the token to come from any domain. If you do specity a domain(s), this value must match the HTTP header referer in your requests.
+
+</details>
+
 <details><summary>When do plan downgrades take affect?</summary>
 
 We don't provide prorated refunds for downgrades or cancellations. When you downgrade or cancel, you will remain on your higher-tier subscription through the end of your current term. You can see your current term's next renewal date in the console's [Billing](https://iexcloud.io/console/billing) section. Once your next renewal date comes around, you will automatically be placed on your downgraded subscription. 
