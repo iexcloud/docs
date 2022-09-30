@@ -43,10 +43,9 @@ You may want to use separate tokens to track, control, and throttle usage by dif
 ```
 </details>
 
-<details><summary>What are allowed domains?</summary>
+<details><summary>What are "allowed domains" for a token?</summary>
 
-You may restrict individual tokens to certain domains. Leaving the domain blank will allow requests with the token to come from any domain. If you do specity a domain(s), this value must match the HTTP header referer in your requests.
-
+You may restrict a [token](./administration/access-and-security.md) to certain domains and IP addresses. Leaving a token's **Allowed Domains** field blank allows requests to use the token from anywhere. If you specify domains and/or IP addresses in the token's **Allowed Domains** field, requests that use the token must have an [HTTP header referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) value that matches one of the **Allowed Domains** values.
 </details>
 
 <details><summary>When do plan downgrades take affect?</summary>
