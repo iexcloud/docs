@@ -31,7 +31,7 @@ Here's how to create and use a public API token.
     
     **Nickname:** Enter a meaningful name.
 
-    **Signed Requests:** Enables requiring a signature per request.
+    **Signed Requests:** Enables requiring a signature per request. For legacy plans, Business plan users and legacy Grow and Scale users can enable [signed requests](https://iexcloud.io/docs/account/signed-request).
 
     **Core Data Access:** Grants access to Core Data.
 

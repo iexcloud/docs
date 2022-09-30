@@ -1,12 +1,26 @@
 # Restricting Data Access to Specific Domains
 
-You can give specific domains access to your dataset APIs by specifying those domains in a given publishable API Token.
+You can give specific domains and IP addresses access to your dataset APIs by specifying those domains in a given publishable API Token.
 
-All IEX Cloud users can restrict calls made to IEX Cloud with a publishable API token to only those calls that have an [HTTP referer header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) that matches the criteria set by the user (NB: the http referer header is a result of a misspelling of the word "referrer" that has now become part of the HTTP standard). 
+All IEX Cloud users can restrict calls made to IEX Cloud with a publishable API token to only those calls that have an [HTTP referer header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) that matches one of the token's **Allowed Domains** values.
 
-To set this domain restriction for any publishable key, navigate to the [API Tokens](https://iexcloud.io/console/tokens) section of the IEX Cloud Console. Click the Manage button next to the API Key you want to set the domain restriction for. When you click the button a section appears where you can restrict the domains for that key in the “Manage domains” form. For Business plan users and legacy Grow and Scale users, this section also allows you to enable [signed requests](https://iexcloud.io/docs/account/signed-request).
+``` {note} The HTTP referer header is a result of a misspelling of the word "referrer" that has now become part of the HTTP standard
+``` 
 
-Once you specify your restricted domain(s) for the associated key in the input field, simply click the “Update domain” button, and the restriction will go into effect within 30 seconds or so.
+Here's how to specify a restriction on a publishable key.
+
+1. Navigate to [API Tokens](https://iexcloud.io/console/tokens) in the Console.
+
+1. Click the Manage button next to the API key (token) you want to set restrictions for. The **Token settings** page appears for that token.
+
+1. In the **Allowed Domains** field, enter the domain and/or IP address values where you want to allow requests from.
+
+1. When you're done entering allowed domain values, click **Done**. The restriction goes into effect in about 30 seconds.
+
+Now requests that use the token must have an [HTTP header referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) value that matches one of the **Allowed Domains** values.
+
+``` {note} On the **Token settings** page, Business plan users and legacy Grow and Scale users can enable [signed requests](https://iexcloud.io/docs/account/signed-request).
+```
 
 ## Single Domain Restrictions
 
