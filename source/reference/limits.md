@@ -10,6 +10,9 @@ Here are Apperate's limits per service tier.
 | Backup History and Data Retention | 1 day | 90 days | 180 days |
 | Audit Logs | 1 day | 3 days | 30 days |
 | Records per second | 5,000 | 200,000 | 1,500,000 |
-| Records per ingestion job | 20,000,000 | 20,000,000 | 20,000,000 |
+| Records per ingestion job {sup}`*` | 20,000,000 | 20,000,000 | 20,000,000 |
+| Records per reingestion job {sup}`*` | 1,000,000 | 1,000,000 | 1,000,000 |
 | Record size | 64 KB | 64 KB | 64 KB |
 | Indexed field value size | 1,500 bytes | 1,500 bytes | 1,500 bytes |
+
+{sup}`*` If the number of records exceeds the limit, validation fails and no data is ingested.

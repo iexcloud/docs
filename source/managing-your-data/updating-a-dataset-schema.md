@@ -51,6 +51,9 @@ You must select one of the following options for handling your existing data.
 - **Update existing data:** Immediately modifies the data to adhere to the schema.
 - **Reingest data using a new schema:** Reloads the existing data, validating it with the new schema and replacing the existing data, indexes, and metadata graph mappings (SmartLinks).
 
+``` {important} **Reingestion is only for datasets with 1,000,000 records or less.** Reingestion is only intended at the beginning of a dataset's lifetime.
+```
+
 Here are some best practices to consider for existing data with regards to specific schema modifications.
 
 | Modification | Considerations |
