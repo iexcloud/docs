@@ -7,7 +7,7 @@ iexjs-library/iexjs-core-data-methods.md
 iexjs-library/iexjs-apperate-crud-methods.md
 ```
 
-*iex.js* (iexjs) is a client library for getting data from Apperate and operating on Apperate resources, such as data, datasets, data sources, and more. The easy-to-use JavaScript methods wrap calls to IEX Cloud endpoints, so you can tap into Core Data, permissioned datasets, and Apperate resource CRUD operations.
+*iex.js* (iexjs) is a client library for querying IEX Cloud data and operating on Apperate resources, such as data, datasets, data sources, and more. The easy-to-use JavaScript methods wrap requests to [Apperate endpoints](https://iexcloud.io/docs/) and [IEX Cloud legacy endpoints](https://iexcloud.io/docs/api/), so you can tap into Core Data and permissioned datasets, and operate on Apperate resources.
 
 ## Installation
 
