@@ -39,13 +39,11 @@ Note the following information:
 
 - **Workspace**
 - **Dataset ID**
-- **Response Attributes** 
+- **Response Attributes** - this section summarizes the data schema. It lists the attributes (properties) and their types, and indicates if the attributes are indexed, required, and or allow null values. 
 
-The **Response Attributes** section summarizes the data schema. It lists the attributes (properties) and their types, and indicates if the attributes are indexed, required, and or allow null values. 
-
-- `key`, `subkey`, or `date` indicate Primary, Secondary, and Date indexes.
-- `*` indicates the attribute is required.
-- type`,null` indicates nulls are allowed.
+    - `key`, `subkey`, or `date` indicate Primary, Secondary, and Date indexes.
+    - `*` indicates the attribute is required.
+    - type`,null` indicates nulls are allowed.
 
 ``` {seealso} See [Understanding Datasets](../managing-your-data/understanding-datasets.md) to learn about dataset indexes.
 ```
@@ -95,7 +93,7 @@ Here's how to write data using the [iexjs](https://www.npmjs.com/package/@appera
 
     The first two lines of code import the iexjs `Client` definition and instantiate a `Client` respectively. The last line loads data into the target dataset by calling the `apperate.loadData` method, passing in the dataset workspace, dataset ID, and the data object array.
 
-    **Replace these values:**
+    **Replace:**
 
     - `TOKEN` (your [API Token](../administration/access-and-security.md))
     - `VERSION` (i.e., current version is `v1`)
@@ -131,6 +129,12 @@ You can query the data using similar code. Here we'll retrieve the data record u
         });
     ```
 
+    The `apperate.queryData` call passes a `data` object array that specifies index values for these query parameters:
+    
+    - `key`: Primary index
+    - `subkey`: Secondary index
+    - `on`:  Query parameter to search on the Date index.
+
     **Replace:**
 
     - `TOKEN` (your [API Token](../administration/access-and-security.md))
@@ -138,12 +142,6 @@ You can query the data using similar code. Here we'll retrieve the data record u
     - `WORKSPACE`
     - `DATASET`
     - values for any applicable data indexes (e.g., key, subkey, date), as referenced in the API page. 
-    
-    Here are the index-related parameters used in the example code: 
-    
-    - `key`: Primary index
-    - `subkey`: Secondary index
-    - `on`:  Query parameter to search on the Date index.
 
     ``` {seealso} The [Get data](https://iexcloud.io/docs/apperate-apis/data/get-data) endpoint page describes all the available parameters for time-windowing and more.
     ```
