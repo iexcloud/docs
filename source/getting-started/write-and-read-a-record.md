@@ -2,9 +2,9 @@
 
 As with any database, you can write individual records to Apperate and read them back. You can do this manually in the console or do it programmatically using Apperate's RESTful [Data API](https://iexcloud.io/docs/apperate-apis/data/). Apperate's [iex.js JavaScript library](../developer-tools/iexjs-library.md) (iexjs) makes API calls even easier by wrapping them in JavaScript methods.
 
-Here we'll add a record and query for it using the iexjs library. Along the way, we'll show you how to use the data schemas too.
+Here we'll refer to a data schema to construct input data. The we'll use the iexjs library to write the data and to query for it.
 
-``` {note} For these exercises, you can use an dataset or create a dataset called *NEWS* per the instructions in [Define a Schema](../managing-your-data/defining-schemas/define-a-schema.md). 
+``` {note} For this tutorial, you can use an existing dataset or create a dataset called *NEWS* per the instructions in [Define a Schema](../managing-your-data/defining-schemas/define-a-schema.md). 
 ```
 
 ## Determine the Data Write
