@@ -1,174 +1,164 @@
 # Read and Write Data
 
-As with any database, you can write individual records to Apperate and read them back. You can do this manually in the UI or do it programmatically using the REST API.
+As with any database, you can write individual records to Apperate and read them back. You can do this manually in the console or do it programmatically using Apperate's RESTful [Data API](https://iexcloud.io/docs/apperate-apis/data/). Apperate's [iex.js JavaScript library](../developer-tools/iexjs-library.md) (iexjs) makes API calls even easier by wrapping them in JavaScript methods.
 
-Here we'll add a record and get it back using the REST API. We'll create a dataset for news events (e.g., news related to financial data), add a news event record, and fetch that record.
+Here we'll add a record and query for it using the iexjs library. Along the way, we'll show you how to use the data schemas too.
 
-**Prerequisites:**
-
-- **IEX Cloud Apperate account** - Create one [here](https://iexcloud.io/cloud-login#/register).
-- **Apperate workspace** - See [Creating a Workspace](./getting-started-with-apperate.md#create-a-workspace). 
-
-Let's start with creating a dataset from a simple schema.
-
-## Creata a Dataset for Your Schema
-
-Here are models for the example dataset schema and data record.
-
-**Dataset schema**
-
-| Property | Index | Required | Allow null |
-| -------- | ----- | -------- | ---------- |
-| id (integer)            | Primary | x |   |
-| date (date &rarr; date)      | Date | x |   |
-| summary (string)        |   | x |   |
-| source (string)         |   | x |   |
-| country (string)        | Secondary | x |   |
-| state_province (string) |   | x |   |
-| city (string)           |   |   | x |
-| zip_code (string)       |   |   | x |
-
-**Data record**
-
-| **Property**   | **Value** |
-| -------------- | --------------------------- |
-| id             | 12345 |
-| date           | 2022-06-13 |
-| summary        | Gold mother-load discovered |
-| source         | Doug Dig |
-| country        | USA |
-| state_province | Yukon |
-| city           | Dawson City |
-| zip_code       | Y0B 0A3 |
-
-Here's how to create a dataset based on the models:
-
-1. In the console, click **Create a dataset**. The dataset creation page appears.
-
-    ![](./write-and-read-a-record/create-a-dataset.png)
-
-1. Enter an arbitrary dataset ID, like `FLASH_NEWS_DATASET`.
-
-1. For **Source type** select **Create without data**.
-
-    ![](./write-and-read-a-record/create-dataset-without-data.png)
-
-    ```{tip} Another easy way to create a dataset is to upload a sample data file (CSV or JSON) with the column names and an example record. Apperate automatically makes a best effort to detect column data types and indexes. See [Loading Data From a File](../migrating-and-importing-data/loading-data-from-a-file.md) to learn how.
-    ```
-
-    The schema editor appears.
-
-    ![](./write-and-read-a-record/schema-editor-no-data.png)
-
-1. In the **Properties** section's **+ Add Property** field, enter your properties.
-
-    ```{tip} A fast way to add properties is enter their names only and hit **Enter** after each one. After adding them by name, update each property's type and attributes in the table.
-    ```
-
-    The properties appear in the **Properties** table.
-
-    ![](./write-and-read-a-record/property-names-in-schema.png)
-
-    In the **Property** column:
-    
-    - Select *number* for the `id` property's type.
-    - Select *date &rarr; date* (format) for the `date` property.
-    - Select *string* for all other properties.
-
-    In the **Unique Index** column area:
-
-    - Set `id` as the **Primary** index
-    - Set `country` as the **Secondary** index
-    - Set `date` as the **Date** index
-
-    ```{note} For Primary and Secondary index properties, the empty star icon in a property box's top-right corner allows you to opt in either property to Apperate's financial metadata graph. For example, if you opt in an index property that holds financial symbols, Apperate's metadata graph associates the symbols with equivalent symbols from 10+ [financial identifier](../reference/financial-identifiers.md) types. The opted in property uses Apperate [SmartLinks](../reference/glossary.md#smartlink).
-    ```
-    
-    ![](./write-and-read-a-record/write-fetch-record-schema.png)
-    
-1. When you're done specifying the dataset, click **Create dataset**. The dataset overview appears.
-
-    ![](./write-and-read-a-record/my-flash-dataset-empty.png)
-
-    The dataset has no rows, but the **Example request** field and **HTTP Request** panel refer to the auto-generated REST API endpoint.
-
-    **Example request**
-
-    ```
-    https://WORKSPACE.iex.cloud/v1/data/MY/FLASH_NEWS_DATASET?last=1&token=TOKEN
-    ```
-    
-    **HTTP Request**
-    
-    ```
-    GET /data/MY/FLASH_NEWS_DATASET
-    ```
-
-1. Click **Open Docs**. The dataset's `GET /data` endpoint reference page appears.
-
-Your dataset is ready for data.
-
-## Write a Record
-
-You'll add the example news record into the dataset using the Data API's [`POST /data`](https://iexcloud.io/docs/apperate-apis/data/ingest-data) method.
-
-Add a news record by entering the following command, replacing WORKSPACE with your workspace name and SK_TOKEN with your secret token value.
-
-**Request:**
-
-```bash
-curl -H "Content-Type: application/json" \
--X POST "https://WORKSPACE.iex.cloud/v1/data/WORKSPACE/FLASH_NEWS_DATASET?token=SK_TOKEN" \
--d '[{"id": 12345, "summary": "Gold mother-load discovered.", "source": "Doug Dig", "country": "Canada", "state_province": "Yukon", "city": "Dawson City", "zip_code": "Y0B 0A3", "date": "2022-06-13"}]'
+``` {note} For these exercises, you can use an dataset or create a dataset called *NEWS* per the instructions in [Define a Schema](../managing-your-data/defining-schemas/define-a-schema.md). 
 ```
 
-**Response:**
+## Determine the Data Write
 
-```
-{
-    "success": true,
-    "message": "Data upload of 196B for FLASH_NEWS_DATASET completed, jobId: cd0b432203474ac7b67e9a97d54a420d has been created",
-    "jobId": "cd0b432203474ac7b67e9a97d54a420d",
-    "jobUrl": "/v1/jobs/MY/ingest/cd0b432203474ac7b67e9a97d54a420d"
-}
-```
+The Data API expects incoming data as an array of objects. Apperate creates data records from the objects.
 
-News of Doug Dig's gold discovery is now in the dataset and available to read from the dataset's auto-generated API.
-
-## Read the Record
-
-You can fetch the record using a `GET /data/:workspace/:id/:key?/:subkey?` request. The [GET /data](https://iexcloud.io/docs/apperate-apis/data/get-data) API reference provides the REST endpoint details. 
-
-The endpoint queries the dataset using a Primary index (key), an optional Secondary index (subkey), and a Date index (via the **on** request parameter).
-
-Open the following URL in your browser, replacing the `WORKSPACE` and `SK_TOKEN` with your values. 
-
-**Request:**
-
-<https://WORKSPACE.iex.cloud/v1/data/WORKSPACE/FLASH_NEWS_DATASET/12345?token=SK_TOKEN>
-
-**Response:**
+For example, you could prepare a *NEWS* dataset record using an object array like this one:
 
 ```javascript
 [
     {
-        "city": "Dawson City",
-        "country": "Canada",
-        "id": 12345,
-        "source": "Doug Dig",
-        "state_province": "Yukon",
-        "summary": "Gold mother-load discovered.",
-        "zip_code": "Y0B 0A3",
+        "headline": "New mobile device makes big splash!",
+        "source": "IEX Underground",
+        "content": "blah blah blah",
         "date": "2022-06-13"
     }
 ]
 ```
 
-You "struck gold"! Well, not really ... you just verified that Doug Dig struck gold.
+The [API Reference](https://iexcloud.io/docs) *Core Data* or *Datasets* sections list dataset *API pages*. The API pages describe the data schemas.
+
+``` {important} When visiting the API Reference, make sure to add your API token to the URL. For example, replace *YOUR_TOKEN* in the following URL.
+
+<https://iexcloud.io/docs?token=YOUR_TOKEN>
+```
+
+Here is the API page for the *NEWS* dataset created in the [Define a Schema](../managing-your-data/defining-schemas/define-a-schema.md) tutorial.
+
+![](./write-and-read-a-record/news-dataset-api.png)
+
+Note the following information:
+
+- **Workspace**
+- **Dataset ID**
+- **Response Attributes** 
+
+The **Response Attributes** section summarizes the data schema. It lists the attributes (properties) and their types, and indicates if the attributes are indexed, required, and or allow null values. 
+
+- `key`, `subkey`, or `date` indicate Primary, Secondary, and Date indexes.
+- `*` indicates the attribute is required.
+- type`,null` indicates nulls are allowed.
+
+``` {seealso} See [Understanding Datasets](../managing-your-data/understanding-datasets.md) to learn about dataset indexes.
+```
+
+*NEWS* schema summary:
+
+- `key` &rarr; `headline`
+- `subkey` &rarr; `source`
+- `date` &rarr; `date`
+- All the attributes, including `content`, are required
+
+Refer to your target dataset's **Response Attributes** as you prepare an object array that specifies the data you are writing.
+
+Let's write your data to your target dataset.
+
+## Write the Data
+
+Here's how to write data using the [iexjs](https://www.npmjs.com/package/@apperate/iexjs) JavaScript library.
+
+1. Prepare your environment with iexjs using one of these options: 
+
+    **Option 1:** Install iexjs using [npm](https://www.npmjs.com):
+    
+    ```bash
+    npm install --save iexjs
+    ```
+    
+    **Option 2:** Open an npmjs environment, such as [RunKit](https://npm.runkit.com/%40apperate%2Fiexjs).
+
+    ![](./write-and-read-a-record/runkit.png)
+
+1. Copy the following code into your editor and replace the values mentioned below. 
+
+    **Code:**
+
+    ```javascript
+    const {Client} = require("@apperate/iexjs")
+    const client = new Client({api_token: "TOKEN", version: "VERSION"});
+    client.apperate.loadData({
+        workspace: "WORKSPACE", 
+        id: "DATASET", 
+        data: `[{"headline": "New mobile device makes big splash!", "source": "IEX Underground", "content": "blah blah blah", "date": "2022-06-13"}]`})
+            .then((res) => {
+                console.log(res);
+        });
+    ```
+
+    The first two lines of code import the iexjs `Client` definition and instantiate a `Client` respectively. The last line loads data into the target dataset by calling the `apperate.loadData` method, passing in the dataset workspace, dataset ID, and the data object array.
+
+    **Replace these values:**
+
+    - `TOKEN` (your [API Token](../administration/access-and-security.md))
+    - `VERSION` (i.e., current version is `v1`)
+    - `WORKSPACE`
+    - `DATASET`
+    - `data:` value (your object array)
+
+1. Run the code. Apperate writes the data to the dataset and prints the response.
+
+Here's what the response looks like in RunKit.
+
+![](./write-and-read-a-record/loadData-response.png)
+
+Let's query the data.
+
+## Query the Data
+
+You can query the data using similar code. Here we'll retrieve the data record using the iexjs library's `apperate.queryData` method. 
+
+1. In your app or RunKit, enter the following code for querying a dataset and replace the values mentioned below.
+
+    **Code:**
+
+    ```javascript
+    const {Client} = require("@apperate/iexjs")
+    const client = new Client({api_token: "TOKEN", version: "VERSION"});
+    client.apperate.queryData({
+        workspace: "WORKSPACE", 
+        id: "DATASET", 
+        data: `[{"key": "New mobile device makes big splash!", "subkey": "IEX Underground", "on": "2022-06-14"}]`})
+            .then((res) => {
+                console.log(res);
+        });
+    ```
+
+    **Replace:**
+
+    - `TOKEN` (your [API Token](../administration/access-and-security.md))
+    - `VERSION` (i.e., current version is `v1`)
+    - `WORKSPACE`
+    - `DATASET`
+    - values for any applicable data indexes (e.g., key, subkey, date), as referenced in the API page. 
+    
+    Here are the index-related parameters used in the example code: 
+    
+    - `key`: Primary index
+    - `subkey`: Secondary index
+    - `on`:  Query parameter to search on the Date index.
+
+    ``` {seealso} The [Get data](https://iexcloud.io/docs/apperate-apis/data/get-data) endpoint page describes all the available parameters for time-windowing and more.
+    ```
+
+1. Run the code. Apperate returns the query response and prints it. 
+
+Here's what the query response looks like in RunKit.
+
+![](./write-and-read-a-record/queryData-response.png)
+
+Congratulations! You wrote data to Apperate and queried that data.
 
 ## What's Next
 
-Now that you know how to write records to Apperate, here are some topics to consider next.
+Now that you know how to write and query data, here are some topics to consider next:
 
 [Managing Your Data](../managing-your-data.md): These guides explain dataset schema fundamentals and demonstrate data normalization, creating views, and creating datasets via the  Datasets API.
 
