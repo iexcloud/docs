@@ -6,7 +6,7 @@ The [Apperate API Reference](https://iexcloud.io/docs/) (<https://iexcloud.io/do
 
 Here's a screenshot of the [API Basics](https://iexcloud.io/docs/api-basics) guide and the API Reference navigation:
 
-![](./apperate-api-basics/api-reference-getting-started.png)
+![](./apperate-api-basics/api-reference-api-basics.png)
 
 The [API Basics](https://iexcloud.io/docs/api-basics) guide is the best place to start learning the API fundamentals.
 
