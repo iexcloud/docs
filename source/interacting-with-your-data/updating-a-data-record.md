@@ -39,7 +39,7 @@ You've updated the data record. Editing records using the API is easy too.
 
 The Data API's [`POST /data/:workspace/:id`](https://iexcloud.io/docs/apperate-apis/data/ingest-data) endpoint enables you to write new data records and overwrite existing ones. We'll do the latter by specifying the `overwrite=true` query parameter.
 
-``` {note} If you're just getting started with the API, check out the API's [Getting Started](https://iexcloud.io/docs/api-basics) guide.
+``` {note} If you're just getting started with the API, check out the [API Basics](https://iexcloud.io/docs/api-basics) guide.
 ```
 
 The `wait` query parameter is another one to consider. By default, the endpoint responds immediately after uploading the data and creating the ingestion job. If you prefer to wait for a response after ingestion job completion, set query parameter `wait=true`.
