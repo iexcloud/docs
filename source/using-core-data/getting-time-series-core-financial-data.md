@@ -18,6 +18,9 @@ Here are steps for getting this core financial data.
 
     ![](./getting-time-series-core-financial-data/core-datasets.png)
 
+    ``` {hint} If there are grayed-out datasets you want to use, upgrade your plan. To upgrade, click one of the grayed-out datasets and click the **Upgrade** button that appears. Otherwise, upgrade your plan at **Account** &rarr; [**Manage Plan**](https://iexcloud.io/console/manage-plan).
+    ```
+
 1. Click on the dataset you want data from. For example, if you want to get cash flow records, click the CASH_FLOW dataset. The dataset overview appears.
 
     ![](./getting-time-series-core-financial-data/cash-flow-overview.png)

@@ -71,10 +71,22 @@ The Overview page's **Open Docs** button opens the dataset's `GET /data` endpoin
 
 Now you're familiar with the API references for the [core real-time financial data](https://iexcloud.io/docs/api/) and the [core historical time-series financial data](https://iexcloud.io/docs).
 
+## Upgrade to Access All Core Data
+
+If you're using Apperate via the free trial plan, some Core datasets are inaccessible (see the grayed-out datasets in the image below).
+
+![](./using-core-data/disabled-datasets.png)
+
+You can access these datasets by upgrading to a paid plan. To upgrade, click one of the grayed-out datasets and click the **Upgrade** button that appears in the window (see image below). 
+
+![](./using-core-data/enable-dataset-via-upgrade.png)
+
+Alternatively, you can upgrade your plan at **Account** &rarr; [**Manage Plan**](https://iexcloud.io/console/manage-plan).
+
 ## What's Next
 
-To get real-time IEX Cloud financial data, see [Get Real-Time Financial Data](./using-core-data/getting-real-time-core-financial-data.md).
+[Get Real-Time Financial Data](./using-core-data/getting-real-time-core-financial-data.md) demonstrates querying real-time financial data.
 
-To get IEX Cloud historical time series IEX Cloud financial data, check out [Get Time Series Financial Data](./using-core-data/getting-time-series-core-financial-data.md).
+[Get Time Series Financial Data](./using-core-data/getting-time-series-core-financial-data.md) shows how to get historical financial data.
 
 Interested in storing your application data in Apperate? Learn how at [Read and Write Data](../getting-started/write-and-read-a-record.md).
