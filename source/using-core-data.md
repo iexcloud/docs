@@ -5,6 +5,7 @@
 
 using-core-data/getting-real-time-core-financial-data.md
 using-core-data/getting-time-series-core-financial-data.md
+using-core-data/using-normalized-financial-data.md
 using-core-data/real-time-delayed-and-intraday-stock-prices.md
 using-core-data/rules-engine-event-driven-alerts-and-data-delivery.md
 using-core-data/streaming-data-using-sse.md
