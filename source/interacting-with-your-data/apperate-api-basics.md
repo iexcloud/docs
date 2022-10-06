@@ -4,11 +4,11 @@ Apperate's APIs are based on [REST](https://en.wikipedia.org/wiki/Representation
 
 The [Apperate API Reference](https://iexcloud.io/docs/) (<https://iexcloud.io/docs/>) site provides the reference documentation and a Getting Started guide. 
 
-Here's a screenshot of the [Getting Started](https://iexcloud.io/docs/getting-started) guide and the API Reference navigation:
+Here's a screenshot of the [Getting Started](https://iexcloud.io/docs/api-basics) guide and the API Reference navigation:
 
 ![](./apperate-api-basics/api-reference-getting-started.png)
 
-The [Getting Started](https://iexcloud.io/docs/getting-started) guide is the best place to start learning the API fundamentals.
+The [Getting Started](https://iexcloud.io/docs/api-basics) guide is the best place to start learning the API fundamentals.
 
 The tutorials here in this site compliment the Getting Started guide and API Reference by demonstrating how to complete different tasks using the APIs.
 
@@ -43,4 +43,4 @@ The [`GET /openapi-doc` endpoint](https://iexcloud.io/docs/apperate-apis/advance
 
 ## What's Next
 
-As mentioned above, a great way to learn the APIs is by following the API Reference's [Getting Started](https://iexcloud.io/docs/getting-started) guide and digesting the short articles that follow it. Then work with the data and data-related entities as demonstrated in the articles mentioned above.
+As mentioned above, a great way to learn the APIs is by following the API Reference's [Getting Started](https://iexcloud.io/docs/api-basics) guide and digesting the short articles that follow it. Then work with the data and data-related entities as demonstrated in the articles mentioned above.
