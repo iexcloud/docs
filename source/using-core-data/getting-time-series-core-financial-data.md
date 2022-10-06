@@ -132,10 +132,9 @@ Congratulations on getting core financial time series data.
 
 If you want to get real-time IEX Cloud financial data, see [Get Real-Time Financial Data](./getting-real-time-core-financial-data.md).
 
-To dive into more Core Dataset queries using the Data API, see these articles:
+To dive into more Core Dataset queries using the Data API, see [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md).
 
-- [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md)
-- [SQL Query with the API](../interacting-with-your-data/querying-data/sql-query-with-the-api.md)
+<!-- - [SQL Query with the API](../interacting-with-your-data/querying-data/sql-query-with-the-api.md)-->
 
 To learn more about Apperate's APIs, visit [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
 
