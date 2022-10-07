@@ -69,9 +69,9 @@ Here are the steps:
 
     ![](./accessing-s3-via-storage-integration/aws-integration-section.png)
 
-1. In the AWS console, edit your IAM role. Copy the **External ID** and **User ARN** values from the IEX console Credentials page (see previous step) and use them to replace the IAM role's principal AWS user account and the external ID in the AWS console.
+1. In the AWS console, edit your IAM role's trust relationships. Replace the principal AWS user value and the external ID with the **User ARN** and **External ID** value from your IEX console Credentials page (see previous step).
 
-    The JSON for your role may look like the following code, except `USER` and `EXTERNAL_ID` should be replaced with the values from your AWS integration.
+    The JSON for your role's trusted relationships may look like the following code, except `USER` and `EXTERNAL_ID` should be replaced with your **User ARN** and **External ID** values.
 
     ```javascript
     {
