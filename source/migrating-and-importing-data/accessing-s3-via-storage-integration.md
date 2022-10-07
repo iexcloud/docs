@@ -6,10 +6,10 @@ Apperate's AWS Integration provides a flexible way to connect with your AWS S3 b
 
 Here are the steps:
 
-1. In the IAM AWS service, create a policy for accessing your S3 bucket. The policy can be specified using JSON that looks like the following code (replace `BUCKET` and `PREFIX` with your values).
+1. In the IAM AWS service, create a policy for accessing your S3 bucket. The policy can be specified using JSON that looks like the following code. Replace `BUCKET` with your bucket name and optionally modify the `Condition` (e.g., change the `s3:prefix` glob value).
 
     ```javascript
-    s3 policy {
+    {
         "Version": "2012-10-17",
         "Statement": [
             {
