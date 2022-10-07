@@ -18,6 +18,9 @@ Here are steps for getting this core financial data.
 
     ![](./getting-time-series-core-financial-data/core-datasets.png)
 
+    ``` {hint} If there are grayed-out datasets you want to use, upgrade your plan. To upgrade, click one of the grayed-out datasets and click the **Upgrade** button that appears. Otherwise, upgrade your plan at **Account** &rarr; [**Manage Plan**](https://iexcloud.io/console/manage-plan).
+    ```
+
 1. Click on the dataset you want data from. For example, if you want to get cash flow records, click the CASH_FLOW dataset. The dataset overview appears.
 
     ![](./getting-time-series-core-financial-data/cash-flow-overview.png)
@@ -129,10 +132,9 @@ Congratulations on getting core financial time series data.
 
 If you want to get real-time IEX Cloud financial data, see [Get Real-Time Financial Data](./getting-real-time-core-financial-data.md).
 
-To dive into more Core Dataset queries using the Data API, see these articles:
+To dive into more Core Dataset queries using the Data API, see [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md).
 
-- [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md)
-- [SQL Query with the API](../interacting-with-your-data/querying-data/sql-query-with-the-api.md)
+<!-- - [SQL Query with the API](../interacting-with-your-data/querying-data/sql-query-with-the-api.md)-->
 
 To learn more about Apperate's APIs, visit [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
 

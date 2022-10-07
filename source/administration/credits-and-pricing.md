@@ -31,6 +31,9 @@ There are three plans: [Launch, Grow, and Scale](https://iexcloud.io/pricing/). 
 
 \* *Unlike other cloud databases that charge based on table scans and/or data blocks, a read on Apperate equates to getting a **whole** record/row.*
 
+``` {hint} If there are grayed-out datasets you want to use, upgrade your plan. To upgrade, click one of the grayed-out datasets and click the **Upgrade** button that appears. Otherwise, upgrade your plan at **Account** &rarr; [**Manage Plan**](https://iexcloud.io/console/manage-plan).
+```
+
 ## Go Month-to-Month or Annual (And Get a 37% Discount)
 
 You can get the flexibility of month-to-month billing, or get a 37% discount for an annual minimum use commitment.

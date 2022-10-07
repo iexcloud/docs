@@ -106,6 +106,9 @@ Here we'll get the latest quote for Apple.
 
 Congratulations! You know how to get IEX Cloud production-ready financial data for your apps.
 
+``` {hint} If there are grayed-out datasets you want to use, upgrade your plan. To upgrade, click one of the grayed-out datasets and click the **Upgrade** button that appears. Otherwise, upgrade your plan at **Account** &rarr; [**Manage Plan**](https://iexcloud.io/console/manage-plan).
+```
+
 ## What's Next
 
 Now that you know how to get real-time IEX Cloud data, explore the [Legacy API Reference](https://iexcloud.io/docs/api/) for more data to use in your apps.
