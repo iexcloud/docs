@@ -35,7 +35,7 @@ Here is the API page for the *NEWS* dataset created in the [Define a Schema](../
 
 ![](./write-and-read-a-record/news-dataset-api.png)
 
-Note the following information:
+Note the following information included in API pages:
 
 - **Workspace**
 - **Dataset ID**
@@ -48,14 +48,14 @@ Note the following information:
 ``` {seealso} See [Understanding Datasets](../managing-your-data/understanding-datasets.md) to learn about dataset indexes.
 ```
 
-*NEWS* schema summary:
+Refer to your target dataset's **Response Attributes** as you prepare an object array of data to write.
+
+For example, here are attributes you'd want to include in data for the *NEWS* dataset whose **Response Attributes** are shown in the previous image:
 
 - `key` &rarr; `headline`
 - `subkey` &rarr; `source`
 - `date` &rarr; `date`
 - All the attributes, including `content`, are required
-
-Refer to your target dataset's **Response Attributes** as you prepare an object array that specifies the data you are writing.
 
 Let's write your data to your target dataset.
 
