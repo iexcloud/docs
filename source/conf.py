@@ -133,6 +133,7 @@ html_theme_options = {
     # },
     # "dark_css_variables": {
     # }
+    "source_edit_link": "https://github.com/iexcloud/docs/edit/main/source/{filename}",
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -263,7 +264,6 @@ man_pages = [
 
 # If true, show URL addresses after external links.
 #man_show_urls = False
-
 
 # -- Options for Texinfo output ------------------------------------------------
 
