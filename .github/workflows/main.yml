@@ -23,7 +23,6 @@ jobs:
           sudo pip install sphinx-design==0.1.0
           sudo pip install sphinx-inline-tabs==2022.1.2b11
           sudo pip install sphinxext-rediraffe==v0.2.7
-          sudo pip install sphinxcontrib-gtagjs==v0.2.1
       - name: Build docs
         run: |
           ls
