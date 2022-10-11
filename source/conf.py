@@ -40,7 +40,6 @@ extensions = [
     "sphinx_design",
     "sphinx_inline_tabs",
     "sphinxext.rediraffe",
-    "sphinxcontrib.gtagjs",
 ]
 
 # -- Options for Markdown files ----------------------------------------------
@@ -289,9 +288,3 @@ texinfo_documents = [
 # -- Options for Rediraffe redirects with Rederaffe ----------------------------
 
 rediraffe_redirects = "redirects.txt"
-
-# -- Googleanalytics --------------------
-
-gtagjs_ids = [
-  'G-M0MJ9E8ZP5',
-]
