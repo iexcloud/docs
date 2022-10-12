@@ -54,6 +54,6 @@ The **Delete Dataset** button enables you to remove the dataset.
 
 ## Related Topics
 
-[Managing Your Data](../managing-your-data.md): These guides explain dataset schema fundamentals and demonstrate data normalization, creating views, and creating datasets via the  Datasets API.
+[Managing Your Data](../managing-your-data.md): These guides explain dataset schema fundamentals, creating views, and creating datasets via the  Datasets API.
 
 [Interacting With Your Data](../interacting-with-your-data.md): These articles introduce Apperate API basics, show how to query datasets, and demonstrate updating data.

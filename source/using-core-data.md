@@ -90,4 +90,6 @@ Alternatively, you can upgrade your plan at **Account** &rarr; [**Manage Plan**]
 
 [Get Time Series Financial Data](./using-core-data/getting-time-series-core-financial-data.md) shows how to get historical financial data.
 
+[Normalized Financial Symbols](./using-core-data/using-normalized-financial-data.md) shows how to query on and join datasets on financial symbols using any supported [financial identifier type](./reference/financial-identifiers.md).
+
 Interested in storing your application data in Apperate? Learn how at [Read and Write Data](../getting-started/write-and-read-a-record.md).

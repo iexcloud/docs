@@ -1,6 +1,6 @@
 # What is Apperate?
 
-IEX Cloud Apperate is an application database that delivers data and back-end infrastructure to applications. Apperate combines the capabilities of data ingestion, normalization, transformation, observability, and delivery, all in one end-to-end solution for application development. It supports multiple data model concepts and specializes in time series data.
+IEX Cloud Apperate is an application database that delivers data and back-end infrastructure to applications. Apperate combines the capabilities of data ingestion, symbol normalization, transformation, observability, and delivery, all in one end-to-end solution for application development. It supports multiple data model concepts and specializes in time series data.
 
 Here are some of Apperate's key characteristics.
 
@@ -14,7 +14,7 @@ Apperate enables you to build back-end infrastructures quickly, while giving you
 
 ## Fine-Tuned for Fintech
 
-Apperate is grounded in the IEX Cloud team's deep understanding of fintech data needs. It includes a semantic data layer for [normalizing financial data views](../managing-your-data/defining-schemas/normalization.md) and has production-ready financial data built-in.
+Apperate is grounded in the IEX Cloud team's deep understanding of fintech data needs. It includes a semantic data layer for [creating views from normalized financial data](../using-core-data/using-normalized-financial-data.md) and has production-ready financial data built-in.
 
 The semantic data layer allows you to refer to an equity using any supported [financial identifier type](../reference/financial-identifiers.md). Apperate relates equivalent symbols across the different types. You can, for example, use a CUSIP symbol to query datasets that refer to equities using ISIN, FIGI, or another supported type. Apperate, in effect, *normalizes* the financial identifiers.
 

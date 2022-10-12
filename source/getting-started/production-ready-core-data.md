@@ -35,13 +35,13 @@ The [Apperate API Reference](https://iexcloud.io/docs/) describes all the Core D
 
 Now that you've been introduced to Core Data, here are some topics to consider next.
 
-[Using Core Data](../using-core-data.md): These articles demonstrate querying real-time and time series data. 
+[Using Core Data](../using-core-data.md): These articles demonstrate querying real-time and time series data, and leveraging normalized financial symbols. 
 
 [Migrating and Import Data](../migrating-and-importing-data.md): These articles demonstrate loading data from various data sources, including AWS S3 buckets, URLs, and files.
 
 [Writing and Reading a Record](../getting-started/write-and-read-a-record.md): Shows you how to write individual data records to Apperate and read them back.
 
-[Managing Your Data](../managing-your-data.md): This section provides guides that explain dataset schemas and that demonstrate data normalization, creating views, and creating datasets via the  Datasets API.
+[Managing Your Data](../managing-your-data.md): This section provides guides that explain dataset schemas, creating views, and creating datasets via the Datasets API.
 
 [Interacting With Your Data](../interacting-with-your-data.md): These articles introduce Apperate API basics, show how to query datasets, and demonstrate updating data.
 

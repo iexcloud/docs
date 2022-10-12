@@ -93,7 +93,7 @@ By SmartLinking a property you can:
 - Join this dataset to any other dataset you have in IEX Cloud that is opted-in to IEX Cloud's metadata graph
 - Ingest and query for data in this dataset using any of IEX Cloud's 10+ supported financial identifiers
 
-``` {seealso} See SmartLinks in action in the [Normalization](./defining-schemas/normalization.md) article
+``` {seealso} See SmartLinks in action in [Normalized Financial Symbols](../using-core-data/using-normalized-financial-data.md).
 ```
 
 ## Permissioning with Tokens
@@ -105,7 +105,7 @@ Your datasets are private by default. You can share a dataset's API with other p
 ``` {seealso} [Access and Security](../administration/access-and-security.md) shows you how to create API tokens with fine-grained permissions.
 ```
 
-Now you know the fundamentals of Apperate dataset schemas and have been introduced to data normalization with SmartLinks and permissioning with tokens.
+Now you know the fundamentals of Apperate dataset schemas, you know how to permission with tokens, and are familiar with normalizing financial symbols with SmartLinks.
 
 ## What's Next
 

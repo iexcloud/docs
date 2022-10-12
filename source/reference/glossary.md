@@ -61,7 +61,7 @@ A mapping of a dataset property to Apperate's financial metadata graph. This map
 A dataset's SmartLinks enable you to query on or join other datasets on the associated property using any equivalent financial identifier type values. 
 
 ``` {seealso}
-See [Normalization](../managing-your-data/defining-schemas/normalization.md) for examples of querying on and joining datasets on SmartLinked properties.
+See [Normalized Financial Symbols](../using-core-data/using-normalized-financial-data.md) for examples of querying on and joining datasets on SmartLinked properties.
 ```
 
 <!-- ## Token (API Token) - TODO -->
