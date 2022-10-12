@@ -2,22 +2,22 @@
 
 In Apperate, you can refer to an equity symbol using any supported [financial identifier type](../../reference/financial-identifiers.md). Apperate relates equivalent symbols across different identifier types. You can, for example, use a CUSIP symbol to query datasets that store symbols in ISIN, FIGI, or another supported identifier type. Apperate, in effect, *normalizes* the financial identifiers.
 
-Subscribing to the financial identifier data would cost you tens of thousands of dollars annually. Implementing a mapping between the identifiers is complicated and time-consuming. We've normalized all this for you so you can concentrate on business logic for serving your customers.
+Subscribing to the financial identifier data would cost you tens of **thousands of dollars annually**. Implementing a mapping between the identifiers is complicated and time-consuming. **We have the financial identifiers and normalized all the symbols for you, so you can concentrate on your business logic.**
 
 Here we'll demonstrate two things:
 
-- Querying normalized datasets
-- Joining normalized datasets
+- Querying normalized symbols
+- Joining datasets on normalized symbols
 
-## Querying Normalized Datasets
+## Querying Normalized Symbols
 
-The following dataset's `symbol` column refers to Apple using the `US0378331005` ISIN symbol.
+You can query normalized financial datasets using symbols of *any* supported [financial identifier type](../../reference/financial-identifiers.md). For example, the following dataset uses the ISIN [financial identifier type](../../reference/financial-identifiers.md) for its `symbol` column values. It refers to Apple using the `US0378331005` ISIN symbol.
 
 ![](./using-normalized-financial-data/apple-isin.png)
 
-You can, however, query on the dataset's Apple data by refering to Apple using *any* supported [financial identifier type](../../reference/financial-identifiers.md). For example, you can query the dataset using the ISIN symbol `AAPL`.
+You can, however, query the dataset refering to Apple via its `AAPL` INET symbol because INET is a supported [financial identifier type](../../reference/financial-identifiers.md). 
 
-In Apperate, you can query the dataset using any supported financial identifier type. Here is a SQL query and HTTP request that use the INET symbol `AAPL` to query for Apple data.
+Here is a SQL query and HTTP request that use the INET symbol `AAPL` to query for Apple data in a dataset that uses ISIN symbols.
 
 **SQL Query:**
 
@@ -35,9 +35,9 @@ https://my.iex.cloud/v1/data/WORKSPACE/AAPL_ISIN/AAPL?token=TOKEN
 
 ![](./using-normalized-financial-data/apple-isin-query-url-response.png)
 
-You can similarly join datasets on equivalent symbols.
+You can similarly join datasets on normalized symbol data.
 
-## Joining Normalized Datasets
+## Joining Datasets on Normalized Symbols
 
 You can, for example, create a view of Apple high, open, low, close data and corporate details by joinging this AAPL_ISIN dataset with the Core COMPANY dataset. Here's the SQL.
 
@@ -64,4 +64,4 @@ You can then create a view from the results by clicking **Create view**. Voila! 
 
 When you're ready to share the dataset publicly, you can create an access token for it. See [Access and Security](../../administration/access-and-security.md).
 
-Want to connect with the Core datasets? Browse them at **Data &rarr; Datasets &rarr; Core**.
+Want to connect with the Core datasets? Browse them at **Data &rarr; Datasets &rarr; [Core](https://iexcloud.io/console/datasets/CORE)**.
