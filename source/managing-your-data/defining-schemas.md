@@ -5,7 +5,6 @@
 
 defining-schemas/define-a-schema.md
 defining-schemas/data-model-examples.md
-defining-schemas/normalization.md
 ```
 
 Data schemas describe your tables, specifying what's valid and safe for your applications. Here you'll leverage what you learned in [Understanding Datasets](./understanding-datasets.md) to create datasets (tables) for your application data.
