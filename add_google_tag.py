@@ -4,12 +4,12 @@ from pathlib import Path
 google_tag = """
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0MJ9E8ZP5"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSJF8VRNMC"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-M0MJ9E8ZP5');
+        gtag('config', 'G-NSJF8VRNMC');
     </script>
 
   """
