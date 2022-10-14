@@ -1,4 +1,4 @@
-# Create and Manage Views
+# Create Views
 
 Views enable you to aggregate data from various datasets, transform the data, and share the resulting data with applications. A *view* is a virtual dataset created by joining multiple datasets. The data aggregation and transformation enable you to enrich data for applications.
 
@@ -58,23 +58,19 @@ Here we'll create a view of cars and related car accidents by joining a datasets
     
     These commands create the data file on Linux, MacOS, and Windows.
 
-    Linux/MacOS
-
-    ```bash
-    echo "city,date,est_damage,state,vin
-    Hoboken,2021-01-01,18000,NJ,W9SD8B762APZKE003
-    Harrisburg,2022-02-03,1500,PA,SD089VN7678997566" \
-    >>car_accidents
+    ```{tab} Linux/MacOS
+        echo "city,date,est_damage,state,vin
+        Hoboken,2021-01-01,18000,NJ,W9SD8B762APZKE003
+        Harrisburg,2022-02-03,1500,PA,SD089VN7678997566" \
+        >>car_accidents
     ```
 
-    Windows
-
-    ```
-    (
-    echo city,date,est_damage,state,vin
-    echo Hoboken,2021-01-01,18000,NJ,W9SD8B762APZKE003
-    echo Harrisburg,2022-02-03,1500,PA,SD089VN7678997566
-    )>car_accidents
+    ```{tab} Windows
+        (
+        echo city,date,est_damage,state,vin
+        echo Hoboken,2021-01-01,18000,NJ,W9SD8B762APZKE003
+        echo Harrisburg,2022-02-03,1500,PA,SD089VN7678997566
+        )>car_accidents
     ```
 
 ## Create datasets from the files
@@ -183,7 +179,18 @@ Follow these steps to create the example car accidents view:
 1. Execute the view's example request in your browser clicking the **Example Request** URL. A browser tab opens and results like this appear:
     
     ```json
-    [{"city":"Harrisburg","date":"2022-02-03","est_damage":1500,"make":"Ford","mileage":8900,"model":"F-150","state":"PA","vin":"SD089VN7678997566"}]
+    [
+        {
+            "city": "Harrisburg",
+            "date": "2022-02-03",
+            "est_damage": 1500,
+            "make": "Ford",
+            "mileage": 8900,
+            "model": "F-150",
+            "state": "PA",
+            "vin": "SD089VN7678997566"
+        }
+    ]
     ```
 
 Congratulations on combining data from two datasets into a view for your app to use.

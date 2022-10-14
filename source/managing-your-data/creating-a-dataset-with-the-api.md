@@ -61,7 +61,9 @@ Here you will create a dataset as specified in a JSON file.
     }
     ```
 
-1. Create a dataset from the `.json` file by running a `POST /datasets/:workspace` request as described in [Create a dataset](https://iexcloud.io/docs/apperate-apis/datasets/create-a-dataset). For example, run this command, replacing the `WORKSPACE`, `SECRET_TOKEN`, and `FILE` values with your own.
+1. Create a dataset from the `.json` file by running a `POST /datasets/:workspace` request as described in [Create a dataset](https://iexcloud.io/docs/apperate-apis/datasets/create-a-dataset). For example, run the following command, replacing the `WORKSPACE`, `SECRET_TOKEN`, and `FILE` values with your own.
+
+    **Sample Request**
 
     ```bash
     curl -H "Content-Type: application/json" \
@@ -69,7 +71,7 @@ Here you will create a dataset as specified in a JSON file.
      --data-binary @FILE.json
     ```
 
-    **Sample response:**
+    **Sample Response**
     
     ```javascript
     {"success":true,"message":"Dataset has been created","datasetId":"YOUR_DATASET"}
@@ -93,8 +95,8 @@ Here you will specify data in a CSV file and submit the file in your request to 
 Here are the data file ingestion steps:
 
 1. Specify the data in a CSV. Here's a CSV data file. 
-     
-    **Data:** 
+
+    **Data** 
 
     ```
     close,date,high,low,open,symbol,volume
@@ -126,7 +128,9 @@ Here are the data file ingestion steps:
         )>aapl
     ```
 
-1. Ingest the data to your dataset using a `POST /data/:workspace/:id` request as described in [Ingest data](https://iexcloud.io/docs/apperate-apis/datasets/ingest-data). For example, use this command, replacing the `WORKSPACE`, `YOUR_DATASET`, and `SECRET_TOKEN` values with your own: 
+1. Ingest the data to your dataset using a `POST /data/:workspace/:id` request as described in [Ingest data](https://iexcloud.io/docs/apperate-apis/datasets/ingest-data). For example, use the following command, replacing the `WORKSPACE`, `YOUR_DATASET`, and `SECRET_TOKEN` values with your own.
+
+    **Sample Request**
 
     ```bash
     curl -H "Content-Type: application/json" \
@@ -134,7 +138,7 @@ Here are the data file ingestion steps:
      --data-binary @aapl
     ```
 
-    **Sample response:** 
+    **Sample Response** 
 
     ```javascript
     {
@@ -145,13 +149,15 @@ Here are the data file ingestion steps:
     }
     ```
 
-1. Validate your dataset's record count using a `GET /datasets/:workspace/:id` request as described in [Get a dataset](https://iexcloud.io/docs/apperate-apis/datasets/get-a-dataset). For example, use this command with your values:  
+1. Validate your dataset's record count using a `GET /datasets/:workspace/:id` request as described in [Get a dataset](https://iexcloud.io/docs/apperate-apis/datasets/get-a-dataset). For example, use the following command with your values.
+
+    **Sample Request**
 
     ```bash
     curl -X GET https:/cloud.iexapis.com/v1/datasets/WORKSPACE/YOUR_DATASET?token=TOKEN
     ```
 
-    **Sample response:** 
+    **Sample Response** 
 
     ```javascript
     {
@@ -218,14 +224,24 @@ A RESTful API endpoint was automatically created for your dataset.
 
     ![](./creating-a-dataset-with-the-api/custom-dataset-api-docs.png)
 
-1. As a test, get your last record by copying this URL in your browser, replacing `WORKSPACE`, `YOUR_DATASET`, and `TOKEN`. 
+1. As a test, get your last record by pasting the following URL into your browser, replacing `WORKSPACE`, `YOUR_DATASET`, and `TOKEN`. 
 
     **URL:** `https://cloud.iexapis.com/v1/data/WORKSPACE/YOUR_DATASET?last=1&token=TOKEN`
 
-    **Sample response:** 
+    **Sample Response** 
 
     ```json
-    [{"close":47.8925,"date":"2017-11-28","high":28.1163,"low":27.8475,"open":27.8575,"symbol":"AAPL","volume":108775932}]
+    [
+        {
+            "close": 47.8925,
+            "date": "2017-11-28",
+            "high": 28.1163,
+            "low": 27.8475,
+            "open": 27.8575,
+            "symbol": "AAPL",
+            "volume": 108775932
+        }
+    ]
     ```
 
 Congratulations on making your data available using the datasets API!

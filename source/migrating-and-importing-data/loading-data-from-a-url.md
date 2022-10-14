@@ -102,6 +102,6 @@ Here are some things to explore doing with your new data and data source.
 
 - [Schedule Data Ingestion](./scheduling-data-ingestion.md) shows you how to load data regularly per a schedule.
 
-- [Create and Manage Views](../managing-your-data/creating-and-managing-views.md) demonstrates joining datasets to create views.
+- [Create Views](../managing-your-data/creating-and-managing-views.md) demonstrates joining datasets to create views.
 
 - [Apperate API Basics](../interacting-with-your-data/apperate-api-basics.md) introduces Apperate REST endpoints to query for the exact data you want and CRUD endpoints to use Apperate programatically.

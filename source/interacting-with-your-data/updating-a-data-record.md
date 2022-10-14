@@ -97,4 +97,4 @@ You're updating data like a champ!
 
 [Querying Data](./querying-data.md): Describes the various ways to query (get) data.
 
-[Create and Manage Views](../managing-your-data/creating-and-managing-views.md): Demonstrates joining datasets to create views.
+[Create Views](../managing-your-data/creating-and-managing-views.md): Demonstrates joining datasets to create views.

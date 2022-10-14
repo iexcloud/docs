@@ -78,6 +78,6 @@ To re-enable your ingestion schedule, select on your schedule in the list and cl
 
 ## What's Next
 
-To create views, see [Create and Manage Views](../managing-your-data/creating-and-managing-views.md).
+To create views, see [Create Views](../managing-your-data/creating-and-managing-views.md).
 
 If you want to understand schema indexing better, visit [Understanding Dataset Schemas](../managing-your-data/understanding-datasets.md).

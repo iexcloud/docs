@@ -8,8 +8,8 @@ managing-your-data/understanding-datasets.md
 managing-your-data/updating-a-dataset-schema.md
 managing-your-data/defining-schemas.md
 managing-your-data/creating-a-dataset-with-the-api.md
-managing-your-data/creating-and-managing-indexes.md
 managing-your-data/creating-and-managing-views.md
+managing-your-data/creating-and-managing-indexes.md
 ```
 
 [Understanding Datasets](./managing-your-data/understanding-datasets.md) - Learn about data schema components.
@@ -24,6 +24,6 @@ Defining Schemas:
 
 [Create a Dataset with the API](./managing-your-data/creating-a-dataset-with-the-api.md)
 
-[Create and Manage Views](./managing-your-data/creating-and-managing-views.md) - Aggregate data from various datasets, transform the data, and share the results with applications.
+[Create Views](./managing-your-data/creating-and-managing-views.md) - Aggregate data from various datasets, transform the data, and share the results with applications.
 
 Create and Manage Indexes (Coming soon!)
