@@ -58,7 +58,7 @@ SELECT ceo, companyName, city, a.date, open, close, high, low, volume, ceo, comp
 ``` {important} WHERE clauses and ON clauses must only operate on indexed properties (columns). See the Unique Index components [here](../managing-your-data/understanding-datasets.md#indexing-with-unique-index).
 ```
 
-You can then create a view from the results by clicking **Create view**. Voila! You're view dataset is available to use like any other dataset.
+You can then create a view from the results by clicking **Create view**. Voila! Your view dataset is available to use like any other dataset.
 
 ## What's Next
 

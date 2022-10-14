@@ -164,4 +164,4 @@ Now that you know how to write and query data, here are some topics to consider 
 
 [Production-Ready Core Data](./production-ready-core-data.md): Introduces Apperate's 5+ terabytes of built-in financial data available for enriching your fintech applications.
 
-And lastly, you can load more data into Apperate per the [Migrate and Import Data](../migrating-and-importing-data.md) tutorials.
+[Migrate and Import Data](../migrating-and-importing-data.md): These tutorials show you how to load data from a URL, an AWS S3 bucket, and more.

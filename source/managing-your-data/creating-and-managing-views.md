@@ -144,7 +144,7 @@ Here we'll create a view of cars and related car accidents by joining a datasets
 
     When you're done editing, click **Create dataset**. The `CAR_ACCIDENTS` dataset overview appears.
 
-    We're ready to create a view by joining data form the `CARS` and `CAR_ACCIDENTS` datasets.
+    We're ready to create a view by joining data from the `CARS` and `CAR_ACCIDENTS` datasets.
 
 ## Example: Creating a view
 

@@ -75,7 +75,7 @@ In few steps, you can import data from a CSV, JSON, or JSONL data file in your S
     ``` {important} To load JSON data, the data must be an array of objects.
     ```
 
-    If you specified a JSON file(s) and the Response panel shows the object array you want, leave the JSONNPath field empty. Otherwise, use the JSONPath field to specify the path to a desired object array in the JSON file. A **JSON Response** panel on the bottom right shows the data found at the JSONPath.
+    If you specified a JSON file(s) and the Response panel shows the object array you want, leave the JSONPath field empty. Otherwise, use the JSONPath field to specify the path to a desired object array in the JSON file. A **JSON Response** panel on the bottom right shows the data found at the JSONPath.
 
     ``` {seealso} [Access Nested JSON Data](./accessing-nested-json-data.md) for guidance on specifying JSONPath for JSON file data.
     ```

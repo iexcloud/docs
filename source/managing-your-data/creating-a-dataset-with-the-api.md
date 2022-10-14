@@ -94,7 +94,7 @@ Here are the data file ingestion steps:
 
 1. Specify the data in a CSV. Here's a CSV data file. 
      
-    **[Data:** 
+    **Data:** 
 
     ```
     close,date,high,low,open,symbol,volume
@@ -126,7 +126,7 @@ Here are the data file ingestion steps:
         )>aapl
     ```
 
-1. Ingest the data to your dataset using a `POST /data/:workspace/:id` requestas described in [Ingest data](https://iexcloud.io/docs/apperate-apis/datasets/ingest-data). For example, use this command, replacing the `WORKSPACE`, `YOUR_DATASET`, and `SECRET_TOKEN` values with your own: 
+1. Ingest the data to your dataset using a `POST /data/:workspace/:id` request as described in [Ingest data](https://iexcloud.io/docs/apperate-apis/datasets/ingest-data). For example, use this command, replacing the `WORKSPACE`, `YOUR_DATASET`, and `SECRET_TOKEN` values with your own: 
 
     ```bash
     curl -H "Content-Type: application/json" \
