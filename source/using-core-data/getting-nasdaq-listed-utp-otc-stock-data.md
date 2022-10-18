@@ -20,13 +20,13 @@ Authorization is required for several fields on the **"Quote” endpoint**, **"I
 
 For Nasdaq-listed symbols ONLY, if you do NOT have UTP authorization, you will encounter the following:
 
-**"Quote”:** `open`, `openTime`, `close`, `closeTime`, `delayedPrice`, `delayedPriceTime`,`extendedPrice`, `extendedPriceTime`, `extendedChange`, `extendedChangePercent`, `week52High`, `week52Low`, `high`, `low` return null.
+**"Quote”:** `open`, `openTime`, `close`, `closeTime`, `delayedPrice`, `delayedPriceTime`,`extendedPrice`, `extendedPriceTime`, `extendedChange`, `extendedChangePercent`, `week52High`, `week52Low`, `high`, `low` will not be returned.
 
  **"Quote”:** `latestPrice`, `latestUpdate`, `latestTime`, `latestSource`, `change`, `changePercent`, `marketCap`, `ytdChange` do not incorporate Nasdaq UTP data but use Investors Exchange data. 
 
-**“OHLC”:** all fields are null. 
+**“OHLC”:** all fields will not be returned. 
 
-**“Intraday Prices”:** all fields prefixed with **"market”** are null. 
+**“Intraday Prices”:** all fields prefixed with **"market”** will not be returned. 
 
 **SSE Streaming:** If you do not have UTP authorization, SSE streaming for US stocks is still available - you will need to modify your syntax, as shown in our [API Reference](https://iexcloud.io/docs/guides/streaming).
 
