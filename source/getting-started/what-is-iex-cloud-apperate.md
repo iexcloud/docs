@@ -1,27 +1,46 @@
 # What is Apperate?
 
-IEX Cloud Apperate is an application database that delivers data and back-end infrastructure to applications. Apperate combines the capabilities of data ingestion, symbol normalization, transformation, observability, and delivery, all in one end-to-end solution for application development. It supports multiple data model concepts and specializes in time series data.
+IEX Cloud Apperate is an application database that delivers data and back-end infrastructure to applications. It combines the capabilities of data ingestion, normalization, transformation, observability, and delivery, all in one end-to-end solution for application development. 
 
-Here are some of Apperate's key characteristics.
+Here we describe key features that set Apperate apart from other databases.
 
 ## Purpose-Built for Data-Driven Apps
 
-Apperate enables you to configure data delivery from sources to your applications in seconds. You can load data from AWS S3 buckets, URLs, or CSV/JSON files on-demand or per a schedule. In <!-- one-step --> [dataset](../reference/glossary.md#dataset) creation, Apperate infers data types, constructs a schema, validates the data, and generates REST API endpoints automatically, so you can confidently focus on delivering reliable data to your apps.
+Apperate enables you to connect [data sources](../reference/glossary.md#data-source) to your applications in seconds. You can load data from AWS S3 buckets, URLs, or CSV/JSON files on-demand or per a schedule. In one-step [dataset](../reference/glossary.md#dataset) (table) creation, Apperate infers your data types, constructs a schema, validates the data, and generates REST API endpoints automatically.
 
-![](./what-is-iex-cloud-apperate/powering-app-with-apperate.png)
+The following diagram shows some key Apperate features and data flow to and from applications and services. 
+
+![](./what-is-iex-cloud-apperate/apperate-diagram.png)
 
 Apperate enables you to build back-end infrastructures quickly, while giving you flexibility to modify infrastructure and data whenever you want. Manage your data using Apperate's no-code tooling including the schema editor, SQL editor, and database UI, or use [Apperate's API](../interacting-with-your-data/apperate-api-basics.md). 
 
-## Fine-Tuned for Fintech
+## Safer, Cleaner Data Through Validation
 
-Apperate is grounded in the IEX Cloud team's deep understanding of fintech data needs. It includes a semantic data layer for [creating views from normalized financial data](../using-core-data/using-normalized-financial-data.md) and has production-ready financial data built-in.
+When you load data into Apperate, it automatically generates a data schema and indexes. You can keep them or adjust them the way you want. Apperate validates all incoming data against the schema, storing the valid records and rejecting the invalid records. It reports each validation failure to a downloadable log file.
 
-The semantic data layer allows you to refer to an equity using any supported [financial identifier type](../reference/financial-identifiers.md). Apperate relates equivalent symbols across the different types. You can, for example, use a CUSIP symbol to query datasets that refer to equities using ISIN, FIGI, or another supported type. Apperate, in effect, *normalizes* the financial identifiers.
+The following video demonstrates Apperate detecting invalid data during data ingestion.
 
-Apperate includes curated, institutional-grade time series financial data ([Core Data](./production-ready-core-data.md)). It is available as datasets for accessing via REST API endpoints and using with views.
+<video width="320" height="240" controls>
+  <source src="../_static/data-validation-demonstration.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
-``` {important} Apperate's Core Data is a subset of IEX Cloud Core Data that includes only time series data. To access all IEX Cloud data, including real-time stock data, please see the [Legacy API Reference](https://iexcloud.io/docs/api/).
-```
+By stiff-arming the invalid data and providing an error log right away, you can keep your data safe and clean, and can address rejected data.
+
+## Data Matching via Identifier Translation
+
+A common requirement is to be able to reference the same data record using different identifiers (indexes). In the financial data, for example, a particular security can be represented using various types of identifiers, including CUSIP, FIGI, INET, ISIN, and more. Apperate's [SmartLinks](../reference/glossary.md#smartlink) feature translates security identifiers automatically, enabling you and your customers to query the data using ticker symbols you prefer. 
+
+The following video shows how Apperate enables you to query across equivalent security identifiers and join data on the identifiers.
+
+<video width="320" height="240" controls>
+  <source src="../_static/joining-on-normalized-aapl-data.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+Identifiers can change, of course. Company spinoffs and mergers, for example, result in new and modified security identifiers. Apperate tracks these changes and implements SmartLinks for them, so you can reference the securities without missing a beat.
+
+Apperate SmartLinks takes care of all this, giving you powerful data functionality and freeing you to concentrate on building your business, instead of spending time and money mapping security identifiers and tracking their changes.
 
 ## Platform Reliability, Automatic Scaling, and Backups
 
@@ -29,9 +48,15 @@ Apperate's high-performance architecture is built for rapid growth and enterpris
 
 ## Governance and Monitoring
 
-Dataset access and permissions are authorized via [API tokens](../administration/access-and-security.md) (keys), which you create and share as you like. You can limit tokens to specific domains and can set each token's dataset read/write/update/delete privileges. We also provide cryptographically signed request options. 
+Dataset access and permissions are authorized via [API tokens](../administration/access-and-security.md) (keys), which you create and share as you like. You can limit tokens to specific domains and can set each token's data read/write/update/delete privileges. We also provide cryptographically signed request options. 
 
 Apperate tracks activities and makes usage statistics and logs available. Each dataset's overview page shows usage counts per API token and for the dataset overall. [Logs](../administration/monitoring-deployments.md) are persisted for workspace CRUD operations and process milestones, associated with dataset validation, data ingestion, and more.
+
+## Built-in Fintech Data
+
+Apperate includes 5+ terabytes of curated, institutional-grade financial data ([Core Data](./production-ready-core-data.md)). The data is accessible in the console, SQL editor, and via REST API endpoints.
+
+> **Important:** Apperate's Core Data is a subset of IEX Cloud Core Data. It includes time series data and will eventually include real-time data. To access all IEX Cloud data, including real-time stock data, please see the [Legacy API Reference](https://iexcloud.io/docs/api/).
 
 ## What's Next
 
