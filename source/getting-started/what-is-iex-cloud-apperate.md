@@ -26,6 +26,8 @@ The following video demonstrates Apperate detecting invalid data during data ing
 
 [Video download link (this will render in nice a video image on our site)](../_static/data-validation-demonstration.mp4)
 
+![](./what-is-iex-cloud-apperate/temp-video-image.png)
+
 <video width="320" height="240" controls>
   <source src="../_static/data-validation-demonstration.mp4" type="video/mp4">
 Your browser does not support the video tag.
@@ -40,6 +42,8 @@ A common requirement is to be able to reference the same data record using diffe
 The following video shows how Apperate enables you to query across equivalent security identifiers and join data on the identifiers.
 
 [Video download link (this will render in a nice video image on our site)](../_static/joining-on-normalized-aapl-data.mp4)
+
+![](./what-is-iex-cloud-apperate/temp-video-image.png)
 
 <video width="320" height="240" controls>
   <source src="../_static/joining-on-normalized-aapl-data.mp4" type="video/mp4">
