@@ -40,6 +40,7 @@ extensions = [
     "sphinx_design",
     "sphinx_inline_tabs",
     "sphinxext.rediraffe",
+    "sphinxcontrib.video",
 ]
 
 # -- Options for Markdown files ----------------------------------------------
