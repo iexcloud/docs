@@ -2,15 +2,19 @@
 
 IEX Cloud Apperate is an application database that delivers data and back-end infrastructure to applications. It combines the capabilities of data ingestion, normalization, transformation, observability, and delivery, all in one end-to-end solution for application development. 
 
+This diagram shows the general data flow with Apperate.
+
+![](./what-is-iex-cloud-apperate/data-flow.png)
+
 Here we describe key features that set Apperate apart from other databases.
 
 ## Purpose-Built for Data-Driven Apps
 
 Apperate enables you to connect [data sources](../reference/glossary.md#data-source) to your applications in seconds. You can load data from AWS S3 buckets, URLs, or CSV/JSON files on-demand or per a schedule. In one-step [dataset](../reference/glossary.md#dataset) (table) creation, Apperate infers your data types, constructs a schema, validates the data, and generates REST API endpoints automatically.
 
-The following diagram shows some key Apperate features and data flow to and from applications and services. 
+The following diagram shows the back-end infrastructure you get on loading new data.
 
-![](./what-is-iex-cloud-apperate/apperate-diagram.png)
+![](./what-is-iex-cloud-apperate/instant-back-end-infrastructure.png)
 
 Apperate enables you to build back-end infrastructures quickly, while giving you flexibility to modify infrastructure and data whenever you want. Manage your data using Apperate's no-code tooling including the schema editor, SQL editor, and database UI, or use [Apperate's API](../interacting-with-your-data/apperate-api-basics.md). 
 
@@ -19,6 +23,8 @@ Apperate enables you to build back-end infrastructures quickly, while giving you
 When you load data into Apperate, it automatically generates a data schema and indexes. You can keep them or adjust them the way you want. Apperate validates all incoming data against the schema, storing the valid records and rejecting the invalid records. It reports each validation failure to a downloadable log file.
 
 The following video demonstrates Apperate detecting invalid data during data ingestion.
+
+[Video download link (this will render in nice a video image on our site)](../_static/data-validation-demonstration.mp4)
 
 <video width="320" height="240" controls>
   <source src="../_static/data-validation-demonstration.mp4" type="video/mp4">
@@ -32,6 +38,8 @@ By stiff-arming the invalid data and providing an error log right away, you can 
 A common requirement is to be able to reference the same data record using different identifiers (indexes). In the financial data, for example, a particular security can be represented using various types of identifiers, including CUSIP, FIGI, INET, ISIN, and more. Apperate's [SmartLinks](../reference/glossary.md#smartlink) feature translates security identifiers automatically, enabling you and your customers to query the data using ticker symbols you prefer. 
 
 The following video shows how Apperate enables you to query across equivalent security identifiers and join data on the identifiers.
+
+[Video download link (this will render in a nice video image on our site)](../_static/joining-on-normalized-aapl-data.mp4)
 
 <video width="320" height="240" controls>
   <source src="../_static/joining-on-normalized-aapl-data.mp4" type="video/mp4">
