@@ -17,7 +17,7 @@ IEX Cloud comes with 5+ terabytes of built-in financial data to power fintech ap
 
 ##  Real-Time Financial Data
 
-```{important} IEX Cloud's financial data API reference is currently split between the current [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). Until we finish refactoring legacy real-time endpoints, including stock quotes, into Apperate, please see the [Legacy API Reference](https://iexcloud.io/docs/api/) for the IEX Cloud core real-time data.
+```{important} IEX Cloud's financial data API reference is currently split between the current [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If there is no [Core Data](https://iexcloud.io/docs/core) endpoint page for the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
 ```
 
 The [Legacy API Reference](https://iexcloud.io/docs/api/) describes everything you need to get IEX Cloud real-time financial data.
@@ -54,23 +54,26 @@ Each endpoint reference includes the HTTP request structure, data weighting (for
 
 To start calling these endpoints, see [Get Real-Time Financial Data](./using-core-data/getting-real-time-core-financial-data.md).
 
-## Time Series Financial Data
+<!-- TODO - above, reference a legacy financial data article once we create it. - Jim -->
 
-Apperate's built-in historical time series data is available as [datasets](./reference/glossary.md#dataset) (a.k.a. Core Datasets) that you can query and join with other datasets to create views.
-The datasets are available in the console at [**Data &rarr; Datasets &rarr; Core**](https://iexcloud.io/console/datasets/core).
+## Historical Financial Data
+
+Apperate's built-in historical time series data is available as [datasets](./reference/glossary.md#dataset) (a.k.a. Core Datasets) that you can [query](./interacting-with-your-data/querying-data/querying-datasets.md) and join with other datasets to [create views](./managing-your-data/creating-and-managing-views.md). The datasets are available in the console at [**Data &rarr; Datasets &rarr; Core**](https://iexcloud.io/console/datasets/core) and in the API Reference at [Core Data](https://iexcloud.io/docs/core).
 
 ![](./using-core-data/core-datasets.png)
 
-Each dataset **Overview** page provides an example request URL that you can click to get the dataset's last record.
+In the console, each dataset **Overview** page provides an example request URL that you can click to get data from the dataset.
 
-```{note} A dataset's **Database** page (the tab is next to **Overview**) provides an interface for modifying data records and a SQL editor for querying the dataset or combine it with other datasets to create views.
+```{note} A dataset's **Database** page (the tab is next to **Overview**) provides a SQL editor for querying the dataset and joining with data from other datasets to create views.
 ```
 
 The Overview page's **Open Docs** button opens the dataset's `GET /data` endpoint reference page. 
 
 ![](./using-core-data/cash_flow_dataset_api_docs.png)
 
-Now you're familiar with the API references for the [core real-time financial data](https://iexcloud.io/docs/api/) and the [core historical time-series financial data](https://iexcloud.io/docs).
+You can query the dataset using the [`GET /data`](https://iexcloud.io/docs/apperate-apis/data/get-data) parameters.
+
+Now you're familiar with Apperate's core financial data.
 
 ## Upgrade to Access All Core Data
 
@@ -88,7 +91,7 @@ Alternatively, you can upgrade your plan at **Account** &rarr; [**Manage Plan**]
 
 [Get Real-Time Financial Data](./using-core-data/getting-real-time-core-financial-data.md) demonstrates querying real-time financial data.
 
-[Get Time Series Financial Data](./using-core-data/getting-time-series-core-financial-data.md) shows how to get historical financial data.
+[Get Historical Financial Data](./using-core-data/getting-time-series-core-financial-data.md) shows how to get historical time series financial data.
 
 [Normalized Financial Symbols](./using-core-data/using-normalized-financial-data.md) shows how to query on and join datasets on financial symbols using any supported [financial identifier type](./reference/financial-identifiers.md).
 

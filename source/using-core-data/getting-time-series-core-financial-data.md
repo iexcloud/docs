@@ -1,4 +1,4 @@
-# Get Time Series Financial Data
+# Get Historical Financial Data
 
 ```{important} Apperate includes only historical time series Core Data at this time. We are in the process of migrating real-time legacy data, including stock quotes, into Apperate. In the meantime, please see the [Legacy API Reference](https://iexcloud.io/docs/api/) for the real-time legacy data.
 ```

@@ -1,6 +1,17 @@
 # Get Real-Time Financial Data
 
+TODO focus on RT data generally (mention legacy) and then demonstrate quote dataset
+
+IEX Cloud provides real-time data via [Core Data](https://iexcloud.io/docs/core) endpoints and [Legacy API](https://iexcloud.io/docs/api/) endpoints. 
+
+```{important} IEX Cloud's financial data API reference is currently split between the current [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If there is no [Core Data](https://iexcloud.io/docs/core) endpoint for the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
+```
+
+https://**yourworkspace**.iex.cloud/v1/data/CORE/**dataset**/**key**?token=**yourtoken**
+
+<!--
 The IEX Cloud API is based on REST, has resource-oriented URLs, returns JSON-encoded responses, and returns standard HTTP [response codes](https://iexcloud.io/docs/api/#error-codes). We support [JSONP](https://en.wikipedia.org/wiki/JSONP) for all endpoints.
+-->
 
 The API's base URL comprises the API's domain and latest version.
 
@@ -113,6 +124,6 @@ Congratulations! You know how to get IEX Cloud production-ready financial data f
 
 Now that you know how to get real-time IEX Cloud data, explore the [Legacy API Reference](https://iexcloud.io/docs/api/) for more data to use in your apps.
 
-If you're interested in historical time series data, check out [Get Time Series Financial Data](getting-time-series-core-financial-data.md).
+If you're interested in historical time series data, check out [Get Historical Financial Data](getting-time-series-core-financial-data.md).
 
 If you need to store application data, learn how at [Read and Write Data](../getting-started/write-and-read-a-record.md).
