@@ -125,34 +125,6 @@ Please see [Get Nasdaq-listed UTP/OTC Stock Data](./using-core-data/getting-nasd
 Please see [Stream Data Using SSE](using-core-data/streaming-data-using-sse.md).
 </details>
 
-<details><summary>(Legacy) How do I enable access to earnings and estimates Data?</summary>
-
-There is global coverage of earnings and estimates data. Due to this third-party provider terms of use, however, the data requires additional entitlements and in certain scenarios must be accessed from the data partner directly. Affected endpoints include:
-
-- [Estimates](https://iexcloud.io/docs/api/#estimates)
-- [Earnings](https://iexcloud.io/docs/api/#earnings)
-- [Earnings Today](https://iexcloud.io/docs/api/#earnings-today)
-- [Price Target](https://iexcloud.io/docs/api/#price-target)
-- [Analyst Recommendations](https://iexcloud.io/docs/api/#analyst-recommendations)
-
-**If you are planning on using this data for personal or internal use only** – with no redistribution or redisplay – simply follow the instructions below to access this data.
-
-These endpoints will be included in the Marketplace section for entitlement purposes. All usage will use pay-as-you-go credits (legacy) or Premium Data credits, but the data weights and endpoint URLs will remain unchanged.
-
-**If you would like to redistribute this data**, such as redisplaying data on a public-facing website or application, you will need to negotiate an agreement directly with our data partner. Please reach out to our partnerships team at <partners@iexcloud.io> if you would like us to make that introduction.
-
-**Here’s how the entitlement process works:**
-
-Head to the [Marketplace tab in the IEX Cloud Console](https://iexcloud.io/console/marketplace) and request access to “Earnings, Estimates, Price Targets, and Analyst Recommendations.”
-
-You will be asked to provide basic information about who you are and how you will be using the data. Once approved, you will be able to use these endpoints. Access requests will typically be reviewed in 1-2 business days. Our team will reach out if we need additional information.
-
-The number of credits per API call is not changing. However, API calls for these endpoints will use pay-as-you-go credits (legacy) or Premium Data credits, rather than the core credits included with your plan. This means that usage of these endpoints will be billed each month in addition to your base subscription charges.
-
-Questions? Reach out to <support@iexcloud.io> for assistance.
-</details>
-
-
 ## General
 
 <details><summary>Can I redisplay/ redistribute the data I receive from IEX Cloud?</summary>
