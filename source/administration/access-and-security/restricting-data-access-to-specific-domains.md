@@ -19,7 +19,7 @@ Here's how to specify a restriction on a publishable key.
 
 Now requests that use the token must have an [HTTP header referer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) value that matches one of the **Allowed Domains** values.
 
-``` {note} On the **Token settings** page, Business plan users and legacy Grow and Scale users can enable [signed requests](https://iexcloud.io/docs/account/signed-request).
+``` {note} On the **Token settings** page, Business plan users and legacy Grow and Scale users can enable [signed requests](https://iexcloud.io/docs/api/#signed-requests).
 ```
 
 ## Single Domain Restrictions
@@ -80,4 +80,4 @@ As the example demonstrates, when multiple restrictions are set, any referer tha
 
 Please note that while restricting the HTTP referer does provide a layer of security, someone could make a request with your token and spoof the referer header.  
 
-Users who want a more robust security feature may want to utilize [signed requests](https://iexcloud.io/docs/account/signed-request).
+Users who want a more robust security feature may want to utilize [signed requests](https://iexcloud.io/docs/api/#signed-requests).

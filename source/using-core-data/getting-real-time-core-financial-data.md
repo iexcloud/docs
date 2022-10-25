@@ -2,15 +2,15 @@
 
 TODO focus on RT data generally (mention legacy) and then demonstrate quote dataset
 
-IEX Cloud provides real-time data via [Core Data](https://iexcloud.io/docs/core) endpoints and [Legacy API](https://iexcloud.io/docs/api/) endpoints. 
+IEX Cloud provides real-time data via [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) endpoints and [Legacy API](https://iexcloud.io/docs/api/) endpoints. 
 
-```{important} IEX Cloud's financial data API reference is currently split between the current [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If there is no [Core Data](https://iexcloud.io/docs/core) endpoint for the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
+```{important} IEX Cloud's financial data API reference is currently split between the current [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If there is no [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) endpoint for the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
 ```
 
 https://**yourworkspace**.iex.cloud/v1/data/CORE/**dataset**/**key**?token=**yourtoken**
 
 <!--
-The IEX Cloud API is based on REST, has resource-oriented URLs, returns JSON-encoded responses, and returns standard HTTP [response codes](https://iexcloud.io/docs/api/#error-codes). We support [JSONP](https://en.wikipedia.org/wiki/JSONP) for all endpoints.
+The IEX Cloud API is based on REST, has resource-oriented URLs, returns JSON-encoded responses, and returns standard HTTP [response codes](TODOerror-codes). We support [JSONP](https://en.wikipedia.org/wiki/JSONP) for all endpoints.
 -->
 
 The API's base URL comprises the API's domain and latest version.
