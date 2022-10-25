@@ -28,7 +28,7 @@ For Nasdaq-listed symbols ONLY, if you do NOT have UTP authorization, you will e
 
 **“Intraday Prices”:** all fields prefixed with **"market”** will not be returned. 
 
-**SSE Streaming:** If you do not have UTP authorization, SSE streaming for US stocks is still available - you will need to modify your syntax, as shown in our [API Reference](https://iexcloud.io/docs/guides/streaming).
+**SSE Streaming:** If you do not have UTP authorization, SSE streaming for US stocks is still available - you will need to modify your syntax, as shown in our [API Reference](https://iexcloud.io/docs/api/#streaming-data).
 
 ## What kind of price-related data can I get through IEX Cloud without requiring UTP authorization? 
 
