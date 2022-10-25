@@ -2,9 +2,9 @@
 
 IEX Cloud Apperate is an application database that delivers data and back-end infrastructure to applications. It combines the capabilities of data ingestion, normalization, transformation, observability, and delivery, all in one end-to-end solution for application development. 
 
-Apperate includes 5+ terabytes of curated, institutional-grade financial data ([Core Data](./production-ready-core-data.md)) which includes historical data and real-time data, on stocks, markets, forex, economics, and more. The data is accessible via the [Core Data](https://iexcloud.io/docs/core) REST API endpoints and via the Apperate console's SQL editor and database pages.
+Apperate includes 5+ terabytes of curated, institutional-grade financial data ([IEX Cloud Core Data](./production-ready-core-data.md)) which includes historical data and real-time data, on stocks, markets, forex, economics, and more. The data is accessible via the [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) REST API endpoints and via the Apperate console's SQL editor and database pages.
 
-```{important} Apperate's Core Data is currently a subset of IEX Cloud Legacy Core Data. We're in the process of migrating the legacy data to Apperate. Apperate Core Data currently includes historical data and the real-time [Quote](https://iexcloud.io/docs/core/QUOTE) dataset. The Apperate API Reference [Core Data](https://iexcloud.io/docs/core) section describes Apperate's Core Data endpoints; the [Legacy API Reference](https://iexcloud.io/docs/api/) describes the remaining legacy endpoints.
+```{important} Apperate's Core Data is currently a subset of IEX Cloud Legacy Core Data. We're in the process of migrating the legacy data to Apperate. Apperate Core Data currently includes historical data and the real-time [Quote](https://iexcloud.io/docs/core/QUOTE) dataset. The Apperate API Reference [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) section describes Apperate's Core Data endpoints; the [Legacy API Reference](https://iexcloud.io/docs/api/) describes the remaining legacy endpoints.
 ```
 
 This diagram shows the general data flow with Apperate.

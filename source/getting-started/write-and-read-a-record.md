@@ -24,7 +24,7 @@ For example, you could prepare a *NEWS* dataset record using an object array lik
 ]
 ```
 
-The [API Reference](https://iexcloud.io/docs) *Core Data* or *Datasets* sections list dataset *API pages*. The API pages describe the data schemas.
+The [API Reference](https://iexcloud.io/docs) *IEX Cloud Core Datasets* or *Your Datasets* sections list dataset *API pages*. The API pages describe the data schemas.
 
 ``` {important} When visiting the API Reference, make sure to add your API token to the URL. For example, replace *YOUR_TOKEN* in the following URL.
 
