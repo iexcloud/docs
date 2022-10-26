@@ -12,28 +12,69 @@ IEX Cloud Apperate comes with 5+ terabytes of built-in data to power fintech app
 - News
 - Symbols / Mappings
 
+All the data is available via REST endpoints and much of the data is available as [datasets](../reference/glossary.md#dataset) (requires an Apperate plan) that you can join together to make [views](../managing-your-data/creating-and-managing-views.md).
+
 ```{important} We are in the process of migrating legacy IEX Cloud Core Data to IEX Cloud Core Datasets in Apperate. IEX Cloud's API reference is currently split between Apperate's [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If the [API Reference](https://iexcloud.io/docs/) doesn't list the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
 ```
 
-Let's explore the Core Data.
+```{note} IEX Cloud documentation for the legacy plans is at <https://iexcloud.io/docs/api/>.
+```
 
-## Exploring Core Data
+Here we'll show you a Core Data endpoint page and tour a Core Dataset in the console.
 
-All the data is available at REST API endpoints, and much of the data is available as [datasets](../reference/glossary.md#dataset) (requires Apperate plan) that you can also use in [views](../managing-your-data/creating-and-managing-views.md). Apperate lists these datasets (Core Data) at [**Data &rarr; Datasets &rarr; Core**](https://iexcloud.io/console/datasets/core).
+## Explore Core Data Endpoints
+
+In the [API Reference](https://iexcloud.io/docs/), the [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) section lists the IEX Cloud Core Dataset endpoint reference pages. 
+
+For example, the image below shows the Balance Sheet page.
+
+![](./production-ready-core-data/iex-cloud-core-datasets-balance-sheet-api-page.png)
+
+Each endpoint reference page specifies the workspace, dataset ID, and response attributes, and includes an example HTTP request and response.
+
+The [Legacy API Reference](https://iexcloud.io/docs/api/) describes core data endpoints that have not yet been migrated to Apperate datasets.
+
+You can get core data by calling the REST endpoints. The following articles demonstrate querying core data.
+
+- [Get Real-Time IEX Cloud Core Financial Data](../using-core-data/getting-real-time-core-financial-data.md)
+- [Get Historical IEX Cloud Core Financial Data](../using-core-data/getting-time-series-core-financial-data.md)
+- [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md)
+
+## Query Core Data in the Console
+
+The console (requires an Apperate plan) provides Core Dataset information and a SQL interface. The Core Datasets are available in the console at [**Data &rarr; Datasets &rarr; Core**](https://iexcloud.io/console/datasets/core).
 
 ![](./production-ready-core-data/core-datasets.png)
 
-Like all Apperate datasets, you can access their records via REST endpoints and via the dataset SQL editor.
+Click the name of a Core Dataset to see its overview. Here's the News dataset overview.
 
-![](./production-ready-core-data/query-in-sql-editor.png)
+![](./production-ready-core-data/core-news-dataset-overview.png)
 
-The [Apperate API Reference](https://iexcloud.io/docs/) describes all the Core Data REST endpoints.
+The **Overview** provides these things:
 
-![](./production-ready-core-data/core-data-api-endpoints.png)
+- Example request you can execute (click it) and use as basis for your requests
+- **Open Docs** reference page link
+- Dataset statistics
+    - Row count
+    - Last update time
+    - Oldest row date
+    - Newest row date
+    - CRUD operation count by console users
+    - CRUD operation count per [API token](../administration/access-and-security.md)
+
+Click the **Database** tab to open the **Database** page.
+
+![](./production-ready-core-data/core-news-database-page.png)
+
+The **Database** page has an editor for running queries. You can [create database views](../using-core-data/using-normalized-financial-data.md) and export query results to CSV files.
+
+![](./production-ready-core-data/join-core-news-with-my-aapl-data.png)
+
+The IEX Cloud Core Datasets offer a lot of data and it's [normalized by Apperate SmartLinks](../reference/glossary.md#smartlink) too!
 
 ## What's Next
 
-Now that you've been introduced to Core Data, here are some topics to consider next.
+Now that you've been introduced to IEX Cloud Core Data, here are some topics to consider next.
 
 [Using Core Data](../using-core-data.md): These articles demonstrate querying real-time and time series data, and leveraging normalized financial symbols. 
 
@@ -45,5 +86,5 @@ Now that you've been introduced to Core Data, here are some topics to consider n
 
 [Interacting With Your Data](../interacting-with-your-data.md): These articles introduce Apperate API basics, show how to query datasets, and demonstrate updating data.
 
-```{note} IEX Cloud documentation for the legacy plan subscribers is at <https://iexcloud.io/docs/api/>.
+```{note} IEX Cloud documentation for the legacy plans is at <https://iexcloud.io/docs/api/>.
 ```
