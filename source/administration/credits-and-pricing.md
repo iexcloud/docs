@@ -25,7 +25,7 @@ One credit equates to any of the following:
 - **1 million writes or updates**
 - **10 GB of data transfer out** – that's for any data transferred out of Apperate. It doesn't matter which dataset you're transferring from – it can be 10 GB of fundamentals data, 10 GB of stock data, or 10 GB of your own data that you're storing in Apperate.
 
-**You also get 5+ TB of Core Data,** curated in Apperate by IEX Cloud. See [Production-Ready Core Data](../getting-started/production-ready-core-data.md).
+**You also get 5+ TB of Core Data,** curated in Apperate by IEX Cloud. See [Production-Ready IEX Cloud Core Data](../getting-started/production-ready-core-data.md).
 
 There are three plans: [Launch, Grow, and Scale](https://iexcloud.io/pricing/). Each offers a usage-based payment structure and comes with a starting monthly rate. At the end of each month, you receive a bill for the credits you used; at a minimum you are charged your plan's monthly rate. 
 

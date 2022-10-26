@@ -1,4 +1,4 @@
-# Production-Ready Core Data
+# Production-Ready IEX Cloud Core Data
 
 IEX Cloud Apperate comes with 5+ terabytes of built-in data to power fintech applications and more. Here are some of the data types:
 

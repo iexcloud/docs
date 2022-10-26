@@ -107,7 +107,7 @@ Here are key features to dive into next:
 
 - [Read and Write Data](./write-and-read-a-record.md) demonstrates creating a dataset manually and using Apperate's Data API to write data to the dataset and read the data back. This simulates what you'd do in storing/retrieving your application's custom data (e.g., user data).
 
-- [Production-Ready Core Data](./production-ready-core-data.md) introduces Apperate's built-in core financial datasets and [Using Core Data](../using-core-data.md) guides you in using them.
+- [Production-Ready IEX Cloud Core Data](./production-ready-core-data.md) introduces Apperate's built-in core financial datasets and [Using Core Data](../using-core-data.md) guides you in using them.
 
 - [Migrate and Import Data](../migrating-and-importing-data.md) provides tutorials for loading data from various data sources including these:
 
