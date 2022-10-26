@@ -15,10 +15,10 @@ using-core-data/finding-symbols.md
 
 IEX Cloud comes with 5+ terabytes of built-in financial data to power fintech applications. It includes real-time financial data and historical time series financial data. Both data types are described here.
 
-##  Real-Time Financial Data
-
-```{important} IEX Cloud's financial data API reference is currently split between the current [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If there is no [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) endpoint page for the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
+```{important} We are in the process of migrating legacy IEX Cloud Core Data to IEX Cloud Core Datasets in Apperate. IEX Cloud's API reference is currently split between Apperate's [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If the [API Reference](https://iexcloud.io/docs/) doesn't list the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
 ```
+
+##  Real-Time Financial Data
 
 The [Legacy API Reference](https://iexcloud.io/docs/api/) describes everything you need to get IEX Cloud real-time financial data.
 

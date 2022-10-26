@@ -11,7 +11,7 @@ Here we'll demonstrate getting real-time data from both sources:
 
 - **IEX Cloud Apperate account** - Create one [here](https://iexcloud.io/cloud-login#/register).
 
-```{important} IEX Cloud's API reference is currently split between the current [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If there is no [IEX Cloud Core Dataset](https://iexcloud.io/docs/core) endpoint for the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
+```{important} We are in the process of migrating legacy IEX Cloud Core Data to IEX Cloud Core Datasets in Apperate. IEX Cloud's API reference is currently split between Apperate's [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If the [API Reference](https://iexcloud.io/docs/) doesn't list the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
 ```
 
 Let's start with IEX Cloud Core Datasets

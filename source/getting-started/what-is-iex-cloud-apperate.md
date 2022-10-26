@@ -4,7 +4,7 @@ IEX Cloud Apperate is an application database that delivers data and back-end in
 
 Apperate includes 5+ terabytes of curated, institutional-grade financial data ([IEX Cloud Core Data](./production-ready-core-data.md)) which includes historical data and real-time data, on stocks, markets, forex, economics, and more. The data is accessible via the [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) REST API endpoints and via the Apperate console's SQL editor and database pages.
 
-```{important} Apperate's Core Data is currently a subset of IEX Cloud Legacy Core Data. We're in the process of migrating the legacy data to Apperate. Apperate Core Data currently includes historical data and the real-time [Quote](https://iexcloud.io/docs/core/QUOTE) dataset. The Apperate API Reference [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) section describes Apperate's Core Data endpoints; the [Legacy API Reference](https://iexcloud.io/docs/api/) describes the remaining legacy endpoints.
+```{important} We are in the process of migrating legacy IEX Cloud Core Data to IEX Cloud Core Datasets in Apperate. IEX Cloud's API reference is currently split between Apperate's [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If the [API Reference](https://iexcloud.io/docs/) doesn't list the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
 ```
 
 This diagram shows the general data flow with Apperate.
