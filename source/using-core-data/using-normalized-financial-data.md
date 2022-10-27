@@ -44,7 +44,7 @@ You can, for example, create a view of Apple high, open, low, close data and cor
 **SQL Query:**
 
 ```sql
-SELECT ceo, companyName, city, a.date, open, close, high, low, volume, ceo, companyName, city
+SELECT ceo, companyName, city, a.date, open, close, high, low, volume
   FROM MY.`AAPL_ISIN` a
   JOIN core.`COMPANY` c
     ON c.symbol = a.symbol 
