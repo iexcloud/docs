@@ -5,8 +5,8 @@ A great way to get familiar with Apperate is to write data to it and access that
 Here's how we'll get started with Apperate:
 
 1. Create a workspace
-1. Write data to a dataset
-1. Read data from the dataset
+1. Load data and generate a dataset for it in one step 
+1. Read data from the dataset endpoint
 
 ``` {attention} If you don't already have an **IEX Cloud Apperate account**, create one [here](https://iexcloud.io/cloud-login#/register).
 ```
