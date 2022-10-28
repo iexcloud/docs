@@ -13,7 +13,7 @@ using-core-data/getting-nasdaq-listed-utp-otc-stock-data.md
 using-core-data/finding-symbols.md
 ```
 
-IEX Cloud comes with 5+ terabytes of built-in financial data to power fintech applications. It includes real-time financial data and historical time series financial data. Both data types are described here.
+IEX Cloud comes with 5+ terabytes of [production-ready financial data](./getting-started/production-ready-core-data.md) to power fintech applications. It includes real-time financial data and historical time series financial data. Both data types are described here.
 
 ```{important} We are in the process of migrating legacy IEX Cloud Core Data to IEX Cloud Core Datasets in Apperate. IEX Cloud's API reference is currently split between Apperate's [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If the [API Reference](https://iexcloud.io/docs/) doesn't list the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
 ```
