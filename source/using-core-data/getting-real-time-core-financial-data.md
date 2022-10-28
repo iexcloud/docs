@@ -56,8 +56,8 @@ Let's get the latest trade price for Apple using the **Quote** dataset.
 
 1. You can get Quote data for Apple in your browser using a URL that follows the format below.
 
-``` {note} **Base URL:** https://YOUR_WORKSPACE.iex.cloud/v1/
-```
+    ``` {note} **Base URL:** https://YOUR_WORKSPACE.iex.cloud/v1/
+    ```
 
     **Format:**
 
