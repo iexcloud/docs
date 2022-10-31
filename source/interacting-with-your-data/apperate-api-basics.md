@@ -2,21 +2,20 @@
 
 Apperate's APIs are based on [REST](https://en.wikipedia.org/wiki/Representational_state_transfer), have resource-oriented URLs, and return JSON-encoded responses and standard HTTP response codes. 
 
-The [Apperate API Reference](https://iexcloud.io/docs/) (<https://iexcloud.io/docs/>) site provides the reference documentation and a Getting Started guide. 
+The [Apperate API Reference](https://iexcloud.io/docs/) (<https://iexcloud.io/docs/>) site describes Apperate's data endpoints and APIs.
 
-Here's a screenshot of the [API Basics](https://iexcloud.io/docs/api-basics) guide and the API Reference navigation:
+![](./apperate-api-basics/apperate-api-reference.png)
 
-![](./apperate-api-basics/api-reference-api-basics.png)
+```{important} We are in the process of migrating legacy IEX Cloud Core Data to IEX Cloud Core Datasets in Apperate. IEX Cloud's API reference is currently split between Apperate's [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If the [API Reference](https://iexcloud.io/docs/) doesn't list the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
+```
 
-The [API Basics](https://iexcloud.io/docs/api-basics) guide is the best place to start learning the API fundamentals.
+The tutorials in this section compliment the API Reference by demonstrating how to complete different tasks using the APIs.
 
-The tutorials here in this site compliment the Getting Started guide and API Reference by demonstrating how to complete different tasks using the APIs.
-
-Here are some of the task areas and links to related tutorials and API Reference pages.
+Here are some of the API-related topics.
 
 ## Querying Data
 
-The Data API's [`GET /data`](https://iexcloud.io/docs/apperate-apis/data/get-data) endpoint returns data from the dataset you specify. The endpoint supports using windowing functions for Querying Datasets. [Your Datasets](https://iexcloud.io/docs/datasets) pages and [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) pages describe each dataset's `GET /data` endpoint parameters and response attributes.
+The Data API's [`GET /data`](https://iexcloud.io/docs/apperate-apis/data/get-data) endpoint returns data from the dataset you specify. The endpoint supports using windowing functions for [Querying Datasets](./querying-data/querying-datasets.md). [Your Datasets](https://iexcloud.io/docs/datasets) pages and [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) pages describe each dataset's `GET /data` endpoint parameters and response attributes.
 
 ```{important} We are in the process of migrating legacy IEX Cloud Core Data to IEX Cloud Core Datasets in Apperate. IEX Cloud's API reference is currently split between Apperate's [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If the [API Reference](https://iexcloud.io/docs/) doesn't list the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
 ```
@@ -29,11 +28,11 @@ The **Example Request** on each dataset's **Overview** page demonstrates using t
 
 ## Other Data Operations
 
-Data API instructions for the create, update, and delete operations accompany this article's CRUD-related sibling articles.
+Instructions for creating, reading, updating, and deleting (CRUD) data records are in this section's articles. The [Data API reference pages](https://iexloud.io//docs/apperate-apis/data) describe the endpoints.
 
 ## Operations for Data-Related Entities
 
-API instructions for managing datasets, sources, schedules, credentials, logs, and more are being applied to articles that demonstrate managing them in the console. It's a work in progress.
+API instructions for managing datasets, sources, schedules, credentials, logs, and more are being applied to articles here. 
 
 ## Getting an API OAS Document
 
@@ -41,4 +40,6 @@ The [`GET /openapi-doc` endpoint](https://iexcloud.io/docs/apperate-apis/advance
 
 ## What's Next
 
-As mentioned above, a great way to learn the APIs is by following the [API Basics](https://iexcloud.io/docs/api-basics) guide and digesting the short articles that follow it. Then work with the data and data-related entities as demonstrated in the articles mentioned above.
+- [Apperate API Reference](https://iexcloud.io/docs/): Visit the API Reference to get familiar with Apperate's APIs. 
+
+- [Query Data](./querying-data.md): Query data using Apperate's Data API or using the iex.js library. 
