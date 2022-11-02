@@ -30,7 +30,7 @@ Storage credit usage is based on your plan's [Storage Amount](./reference/glossa
 **Hourly Storage Credit Cost:**
 
 ```
-Hourly Storage Credit Cost = Storage Amount * (1 / Hours in the Month) * Credit Rate
+Hourly Storage Credit Cost = Storage Amount * (1 / # hours in the month) * Credit Rate
 ```
 </details>
 
