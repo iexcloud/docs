@@ -22,6 +22,12 @@ Add those two together, and that's your total credit usage for accessing data. I
 ```
 </details>
 
+<details><summary>Why are there credits used for the STORAGE_ON_DISK endpoint?
+</summary>
+
+The storage amount for each Apperate pricing plan is calculated and charged hourly. The STORAGE_ON_DISK endpoint's credits used value is the current storage amount charge. The [Credits &rarr; Credit Use &rarr; Core Use](https://iexcloud.io/console/usage) page's **Credit Use by Endpoint** section shows the `STORAGE_ON_DISK` endpoint **Credits Used** value.
+</details>
+
 <details><summary>How can I make changes to my plan?</summary>
 
 You can request upgrading, downgrading, or cancelling your subscription at any time via the console's [Manage Plan](https://iexcloud.io/console/manage-plan) page.

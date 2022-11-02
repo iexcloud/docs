@@ -15,12 +15,6 @@ Our pricing now operates a lot like other cloud database tools. It’s also desi
 One credit equates to any of the following: 
 
 - **1 GB of storage** - storage of your data and your indexes, including your [Unique Index](../reference/glossary.md#unique-index) components: primary, secondary, and date indexes.
-
-    ``` {admonition} Free Storage through October 2022
-    :class: important
-
-    Storage is free through October 2022.
-    ```
 - **1 million reads**\* 
 - **1 million writes or updates**
 - **10 GB of data transfer out** – that's for any data transferred out of Apperate. It doesn't matter which dataset you're transferring from – it can be 10 GB of fundamentals data, 10 GB of stock data, or 10 GB of your own data that you're storing in Apperate.
@@ -28,6 +22,11 @@ One credit equates to any of the following:
 **You also get 5+ TB of Core Data,** curated in Apperate by IEX Cloud. See [Production-Ready IEX Cloud Core Data](../getting-started/production-ready-core-data.md).
 
 There are three plans: [Launch, Grow, and Scale](https://iexcloud.io/pricing/). Each offers a usage-based payment structure and comes with a starting monthly rate. At the end of each month, you receive a bill for the credits you used; at a minimum you are charged your plan's monthly rate. 
+
+The storage amount is calculated and charged hourly. The `STORAGE_ON_DISK` endpoint's **Credits Used** value (see the **Credit Use by Endpoint** section at [Credits &rarr; Credit Use &rarr; Core Use](https://iexcloud.io/console/usage)) is the current storage amount charge.
+
+``` {important} You cannot exceed your plan's [storage amount](../reference/glossary.md#storage-amount-plan-storage-amount). Apperate blocks any attempt to exceed the storage amount. You must upgrade your account to store more data. You can upgrade your plan at **Account** &rarr; [**Manage Plan**](https://iexcloud.io/console/manage-plan)
+```
 
 \* *Unlike other cloud databases that charge based on table scans and/or data blocks, a read on Apperate equates to getting a **whole** record/row.*
 

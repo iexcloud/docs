@@ -68,7 +68,7 @@ See [Normalized Financial Symbols](../using-core-data/using-normalized-financial
 
 The amount of data a [pricing plan](https://iexcloud.io/pricing/) includes. 
 
-The storage amount is calculated and charged hourly. The `STORAGE_ON_DISK` endpoint's credits used value (in the **Core Use** page's **Credit Use by Endpoint** table) includes the current storage amount charge.
+The storage amount is calculated and charged hourly. The `STORAGE_ON_DISK` endpoint's credits used value (in the **Core Use** page's **Credit Use by Endpoint** table) is the current storage amount charge.
 
 ``` {seealso} 
 See [Credits and Pricing](../administration/credits-and-pricing.md) for pricing details.
