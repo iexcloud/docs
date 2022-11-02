@@ -25,7 +25,13 @@ Add those two together, and that's your total credit usage for accessing data. I
 <details><summary>Why are there credits used for the STORAGE_ON_DISK endpoint?
 </summary>
 
-The storage amount for each Apperate pricing plan is calculated and charged hourly. The STORAGE_ON_DISK endpoint's credits used value is the current storage amount charge. The [Credits &rarr; Credit Use &rarr; Core Use](https://iexcloud.io/console/usage) page's **Credit Use by Endpoint** section shows the `STORAGE_ON_DISK` endpoint **Credits Used** value.
+Storage credit usage is based on your plan's [Storage Amount](./reference/glossary.md#storage-amount-plan-storage-amount) and is calculated and reported hourly as the `STORAGE_ON_DISK` endpoint's **Credits Used** (see the **Credit Use by Endpoint** section at [Credits &rarr; Credit Use &rarr; Core Use](https://iexcloud.io/console/usage)).
+
+**Hourly Storage Credit Cost:**
+
+```
+Hourly Storage Credit Cost = Storage Amount * (1 / 720) * Credit Rate
+```
 </details>
 
 <details><summary>How can I make changes to my plan?</summary>

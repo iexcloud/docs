@@ -68,10 +68,9 @@ See [Normalized Financial Symbols](../using-core-data/using-normalized-financial
 
 The amount of data a [pricing plan](https://iexcloud.io/pricing/) includes. 
 
-The storage amount is calculated and charged hourly. The `STORAGE_ON_DISK` endpoint's credits used value (in the **Core Use** page's **Credit Use by Endpoint** table) is the current storage amount charge.
+Storage credit usage is based on your plan's Storage Amount and is calculated and reported hourly as the `STORAGE_ON_DISK` endpoint's **Credits Used** (see the **Credit Use by Endpoint** section at [Credits &rarr; Credit Use &rarr; Core Use](https://iexcloud.io/console/usage)).
 
-``` {seealso} 
-See [Credits and Pricing](../administration/credits-and-pricing.md) for pricing details.
+``` {important} You cannot exceed your plan's Storage Amount. Apperate blocks any attempt to exceed the Storage Amount. You must upgrade your plan (see **Account** &rarr; [**Manage Plan**](https://iexcloud.io/console/manage-plan)) to store more data.
 ```
 
 <!-- ## Token (API Token) - TODO -->

@@ -23,9 +23,7 @@ One credit equates to any of the following:
 
 There are three plans: [Launch, Grow, and Scale](https://iexcloud.io/pricing/). Each offers a usage-based payment structure and comes with a starting monthly rate. At the end of each month, you receive a bill for the credits you used; at a minimum you are charged your plan's monthly rate. 
 
-The storage amount is calculated and charged hourly. The `STORAGE_ON_DISK` endpoint's **Credits Used** value (see the **Credit Use by Endpoint** section at [Credits &rarr; Credit Use &rarr; Core Use](https://iexcloud.io/console/usage)) is the current storage amount charge.
-
-``` {important} You cannot exceed your plan's [storage amount](../reference/glossary.md#storage-amount-plan-storage-amount). Apperate blocks any attempt to exceed the storage amount. You must upgrade your account to store more data. You can upgrade your plan at **Account** &rarr; [**Manage Plan**](https://iexcloud.io/console/manage-plan)
+``` {important} You cannot exceed your plan's [Storage Amount](../reference/glossary.md#storage-amount-plan-storage-amount). Apperate blocks any attempt to exceed the Storage Amount. You must upgrade your plan (see **Account** &rarr; [**Manage Plan**](https://iexcloud.io/console/manage-plan)) to store more data.
 ```
 
 \* *Unlike other cloud databases that charge based on table scans and/or data blocks, a read on Apperate equates to getting a **whole** record/row.*
