@@ -3,6 +3,7 @@
 ``` {toctree}
 :maxdepth: 1
 
+legacy-plan-credits-and-pricing/legacy-plan-credits-and-sse-streaming.md
 legacy-plan-credits-and-pricing/cloud-cache-for-legacy-plans.md
 ```
 
