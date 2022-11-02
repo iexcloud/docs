@@ -64,13 +64,23 @@ A dataset's SmartLinks enable you to query on or join other datasets on the asso
 See [Normalized Financial Symbols](../using-core-data/using-normalized-financial-data.md) for examples of querying on and joining datasets on SmartLinked properties.
 ```
 
+## Storage Amount (Plan Storage Amount)
+
+The amount of data a [pricing plan](https://iexcloud.io/pricing/) includes. 
+
+The storage amount is calculated and charged hourly. The `STORAGE_ON_DISK` endpoint's credits used value (in the **Core Use** page's **Credit Use by Endpoint** table) includes the current storage amount charge.
+
+``` {seealso} 
+See [Credits and Pricing](../administration/credits-and-pricing.md) for pricing details.
+```
+
 <!-- ## Token (API Token) - TODO -->
 
 <!-- ## Transform - TODO -->
 
 ## Unique Index
 
-A dataset's main key composed of  the Primary index, Secondary index (optional), and Date index. 
+A dataset's main key composed of the Primary index, Secondary index (optional), and Date index. 
 
 ## Workspace
 
