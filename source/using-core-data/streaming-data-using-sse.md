@@ -13,16 +13,6 @@ We stream data using Server-Sent Events ([SSE](https://en.wikipedia.org/wiki/Ser
 
 The endpoints are available via the IEX Cloud Legacy API and described in the [Legacy API Reference](https://iexcloud.io/docs/api/#sse-streaming).
 
-There are three types of endpoints for US stocks and securities. Two of them require a paid plan and a UTP agreement. Here's an overview of these endpoints:
-
-| Endpoint | Response Data | Requirements |
-| --- | --- | --- |
-| `stocksUS` | - IEX real-time data<br>- 15 min delayed Nasdaq listed data (UTP)<br>- 15 min delayed NYSE listed data (CTA) | - Paid plan<br> - UTP agreement |
-| `stocksUSNoUTP` | - IEX real-time data<br>- 15 min delayed NYSE listed data (CTA) | None |
-| `stocksOTC` | - 15 min delayed OTC data | - Paid plan<br>- UTP agreement with OTC eligibility |
-
-[Get Nasdaq-listed Stock Data \(UTP/OTC Data\)](./getting-nasdaq-listed-utp-otc-stock-data.md#how-do-i-get-utp-authorization) explains the UTP agreement process.
-
 ## How Credits Work with Streaming
 
 For Apperate plans, **each message received over the stream counts as a read**.
@@ -34,6 +24,20 @@ For Apperate plans, **each message received over the stream counts as a read**.
 
 ``` {seealso} [Credits and Pricing](../administration/credits-and-pricing.md)
 ```
+
+## US Stocks and Securities
+
+There are three types of endpoints for US stocks and securities. Two of them require a paid plan and a UTP agreement. Here's an overview of these endpoints:
+
+**US Stocks Endpoints:**
+
+| Endpoint | Response Data | Requirements |
+| --- | --- | --- |
+| `stocksUS` | - IEX real-time data<br>- 15 min delayed Nasdaq listed data (UTP)<br>- 15 min delayed NYSE listed data (CTA) | - Paid plan<br> - UTP agreement |
+| `stocksUSNoUTP` | - IEX real-time data<br>- 15 min delayed NYSE listed data (CTA) | None |
+| `stocksOTC` | - 15 min delayed OTC data | - Paid plan<br>- UTP agreement with OTC eligibility |
+
+[Get Nasdaq-listed Stock Data \(UTP/OTC Data\)](./getting-nasdaq-listed-utp-otc-stock-data.md#how-do-i-get-utp-authorization) explains the UTP agreement process.
 
 ## Firehose Versus Streaming on Symbols
 
