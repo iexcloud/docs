@@ -1,13 +1,27 @@
 # Stream Data Using SSE
 
-We stream data using Server-Sent Events ([SSE](https://en.wikipedia.org/wiki/Server-sent_events)). When you connect to an SSE Streaming endpoint, it returns a snapshot of the latest message at first and then returns updates as they become available (or at set intervals).
+We stream data using Server-Sent Events ([SSE](https://en.wikipedia.org/wiki/Server-sent_events)). We provide endpoints for streaming the following types of data:
 
-Here you'll learn about the SSE Streaming endpoints and how credits work with streaming.
+- US stocks and securities
+- Cryptocurrency
+- Forex / currencies
+- News
+- Social sentiment
+- [IEX Tops](https://iexcloud.io/docs/api/#tops)
+- [IEX Last](https://iexcloud.io/docs/api/#last)
+- [IEX Deep](https://iexcloud.io/docs/api/#deep)
 
-SSE Streaming is currently available via [IEX Cloud's legacy SSE Streaming endpoints](https://iexcloud.io/docs/api/#sse-streaming) only.
+The endpoints are available via the IEX Cloud Legacy API and described in the [Legacy API Reference](https://iexcloud.io/docs/api/#sse-streaming).
 
-``` {note} In many cases, SSE Streaming is more efficient than REST calls because the streaming returns only the latest available data. SSE Streaming has 1 second, 5 second, and 1 minute interval-based endpoints. If you need more timing control, you may want to use REST calls at timed intervals.
-```
+There are three types of endpoints for US stocks and securities. Two of them require a paid plan and a UTP agreement. Here's an overview of these endpoints:
+
+| Endpoint | Response Data | Requirements |
+| --- | --- | --- |
+| `stocksUS` | - IEX real-time data<br>- 15 min delayed Nasdaq listed data (UTP)<br>- 15 min delayed NYSE listed data (CTA) | - Paid plan<br> - UTP agreement |
+| `stocksUSNoUTP` | - IEX real-time data<br>- 15 min delayed NYSE listed data (CTA) | None |
+| `stocksOTC` | - 15 min delayed OTC data | - Paid plan<br>- UTP agreement with OTC eligibility |
+
+[Get Nasdaq-listed Stock Data \(UTP/OTC Data\)](./getting-nasdaq-listed-utp-otc-stock-data.md#how-do-i-get-utp-authorization) explains the UTP agreement process.
 
 ## How Credits Work with Streaming
 
@@ -21,33 +35,38 @@ For Apperate plans, **each message received over the stream counts as a read**.
 ``` {seealso} [Credits and Pricing](../administration/credits-and-pricing.md)
 ```
 
-## US Stocks
+## Firehose Versus Streaming on Symbols
 
-The `stockUS` endpoint returns real-time prices, volume, and quotes for **all** [National Market System \(NMS\) US securities](https://www.finra.org/filing-reporting/oats/oats-reportable-securities-list) sourced from the Investors Exchange. Real-time quotes for Nasdaq-listed symbols from trades on the Investors Exchange
+You can stream on specific symbols or stream everything -- like *drinking from a firehose*.
 
-Users on paid plans can also receive **DELAYED** Nasdaq-listed securities data, including open, close, extended hours prices, and other derived values by getting authorization from UTP Plan, as described in [Get Nasdaq-listed Stock Data \(UTP/OTC Data\)](./getting-nasdaq-listed-utp-otc-stock-data.md#how-do-i-get-utp-authorization).
+The `symbols` query parameter enables you to stream on a specific symbol or comma-separated list of symbols. The examples below respectively demonstrate calling the `stocksUS` endpoint on specific symbols and all symbols.
 
-If you want to stream data on a specific symbol(s), add the `symbols` query parameter and set it to a symbol or a comma-separated list of symbols.
-
-Example:
+**Stream on symbols:**
 
 ```bash
 curl --header 'Accept: text/event-stream' 'https://cloud-sse.iexapis.com/v1/stocksUS?symbols=spy,msft&token=YOUR_TOKEN'
 ```
 
-## Firehose
-
-If you have the Scale plan and you want to stream data on all available symbols (except symbols from DEEP endpoints), leave off the `symbols` query parameter. This is called **Firehose**.
-
-Firehose example:
+**Firehose:**
 
 ```bash
 curl --header 'Accept: text/event-stream' 'https://cloud-sse.iexapis.com/v1/stocksUS?token=YOUR_TOKEN'
 ```
 
-## Interval Streaming
+You can use the `symbols` parameter with all the streaming endpoints.
 
-Some SSE endpoints return data at (or shortly after) the endpoint's set interval: 1 second, 5 seconds, or 1 minute. This helps make data delivery and credit usage more predictable.
+``` {note} Firehose functionality does not apply to IEX DEEP streaming endpoints.
+```
+
+## Snapshots
+
+When you connect to an SSE endpoint, you receive a snapshot of the latest message and then receive updates as they are available. You can disable snapshots by using the query parameter setting `nosnapshot=true`.
+
+You can also specify a starting point for a snapshot by using a query parameter setting `snapshotAsOf=EPOCH_TIMESTAMP`, where the value is in [milliseconds since Epoch](https://currentmillis.com/).
+
+## Interval Streaming 
+
+Some data is available to stream at set intervals: 1 second, 5 seconds, or 1 minute. This helps make data delivery and credit usage more predictable. The endpoints below, for example, compliment the `stocksUS` endpoint.
 
 1 second interval:
 
@@ -67,16 +86,6 @@ curl --header 'Accept: text/event-stream' 'https://cloud-sse.iexapis.com/v1/stoc
 curl --header 'Accept: text/event-stream' 'https://cloud-sse.iexapis.com/v1/stocksUS1Minute?token=YOUR_TOKEN&symbols=spy'
 ```
 
-## NoUTP Endpoints
-
-SSE endpoints ending in the `NoUTP` suffix return real-time prices, volume, and quotes for **all** [National Market System \(NMS\) US securities](https://www.finra.org/filing-reporting/oats/oats-reportable-securities-list) sourced from the Investors Exchange. **DELAYED** Nasdaq-listed securities data is excluded. 
-
-`NoUTP` example:
-
-```bash
-curl --header 'Accept: text/event-stream' 'https://cloud-sse.iexapis.com/v1/stocksUSNoUTP?token=YOUR_TOKEN&symbols=spy'
-```
-
 ## What's Next
 
-Now you're familiar with some of the SSE Streaming endpoints. Try out more SSE Streaming endpoints as described in the [Legacy API](https://iexcloud.io/docs/api/#sse-streaming).
+Now you're familiar with some of the SSE Streaming endpoints. You can try more SSE Streaming endpoints as described in the [Legacy API Reference](https://iexcloud.io/docs/api/#sse-streaming).
