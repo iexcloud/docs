@@ -51,10 +51,12 @@ Here you will create a dataset as specified in a JSON file.
                 "key": "symbol", 
                 "date": "date" 
             }, 
-            "symbologyColumn": { 
-                "name": "symbol", 
-                "type": "E" 
-            }, 
+            "smartLinkAttributes": [
+                { 
+                    "attributeName": "symbol", 
+                    "type": "equity" 
+                }
+            ], 
             "title": "SAMPLE AAPL DATASET YOU", 
             "datasetId": "SAMPLE_AAPL_DATASET_YOU" 
         } 
@@ -161,14 +163,16 @@ Here are the data file ingestion steps:
 
     ```javascript
     {
-        " columnMapping": {
+        "columnMapping": {
             " date": "date",
             "key": "symbol"
         },
-        " symbologyColumn": {
-            " name": "symbol",
-            "type": "E"
-        },
+        "smartLinkAttributes": [
+            { 
+                "attributeName": "symbol", 
+                "type": "equity" 
+            }
+        ], 
         "date": 1650569968000,
         "updated": 1650569968000,
         "datasetId": " YOUR_DATASET ",
