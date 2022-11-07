@@ -44,7 +44,12 @@ A property that serves as a record’s main identifier.
 
 <!-- ## Property (Schema Property) - TODO -->
 
-<!-- ## Publishable Key - TODO -->
+## Publishable Token (Publishable Key)
+
+All [tokens](#token-api-token), including publishable tokens, allow you to execute requests and access specific console pages and specific Apperate API reference pages. Publishable tokens have read, write, and / or delete permissions for one or more API endpoints. Subscribers can create and share *publishable tokens* to grant access to specific data endpoints.
+
+``` {seealso} [Token](#token-api-token)
+```
 
 <!-- ## Schema (Dataset Schema) - TODO -->
 
@@ -52,7 +57,12 @@ A property that serves as a record’s main identifier.
 
 A property that serves as an identifier that's used in addition to the Primary index.
 
-<!-- ## Secret Key - TODO -->
+## Secret Token (Secret Key)
+
+Apperate plan subscribers have a *secret token* (aka secret key). A secret token (aka secret key) allows you perform any action on your data or account. **NEVER share your secret token publicly**. Subscribers can create and share *publishable tokens* to grant access to specific data endpoints.
+
+``` {seealso} [Token](#token-api-token)
+```
 
 ## SmartLink
 
@@ -73,7 +83,14 @@ Storage credit usage is based on your plan's Storage Amount and is calculated an
 ``` {important} You cannot exceed your plan's Storage Amount. Apperate blocks any attempt to exceed the Storage Amount. You must upgrade your plan (see **Account** &rarr; [**Manage Plan**](https://iexcloud.io/console/manage-plan)) to store more data.
 ```
 
-<!-- ## Token (API Token) - TODO -->
+## Token (API Token)
+
+An token (aka API token) allows you to execute requests and access specific console pages and Apperate API reference pages. Tokens have read, write, and/or delete permissions for one or more API endpoints.
+
+Apperate plan subscribers have a *secret token* (aka secret key). This secret token allows you perform any action on your data or account. **NEVER share your secret token publicly**. Subscribers can create and share *publishable tokens* to grant access to specific data endpoints.
+
+``` {seealso} [Access and Security](../administration/access-and-security.md)
+```
 
 <!-- ## Transform - TODO -->
 
