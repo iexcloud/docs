@@ -46,7 +46,7 @@ A property that serves as a record’s main identifier.
 
 ## Publishable Token (Publishable Key)
 
-All [tokens](#token-api-token), including publishable tokens, allow you to execute requests and access specific console pages and specific Apperate API reference pages. Publishable tokens have read, write, and / or delete permissions for one or more API endpoints. Subscribers can create and share *publishable tokens* to grant access to specific data endpoints.
+All [tokens](#token-api-token), including *publishable tokens*, allow you to execute requests and access specific console pages and specific Apperate API reference pages. Publishable tokens can have Core dataset read access and have read, write, and / or delete permissions for any private datasets. Subscribers can create and share *publishable tokens* to grant access to specific datasets; tokens have Core dataset read access by default.
 
 ``` {seealso} [Token](#token-api-token)
 ```

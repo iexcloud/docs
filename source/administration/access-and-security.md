@@ -20,6 +20,9 @@ Here's how to create and use a public API token.
 1. Click **Create new token**. A dialog window appears and asks if you are sure you want to add a publishable token.
     
     ![add-token-dialog.png](./access-and-security/add-token-dialog.png)
+
+    ``` {note} Publishable tokens have Core dataset read access by default.
+    ```
     
 1. Click **Add publishable token**. A new publishable token is added to the bottom of the token list.
     
@@ -33,7 +36,7 @@ Here's how to create and use a public API token.
 
     **Signed Requests:** Enables requiring a signature per request. For legacy plans, Business plan users and legacy Grow and Scale users can enable [signed requests](https://iexcloud.io/docs/api/#signed-requests).
 
-    **Core Data Access:** Grants access to Core Data.
+    **Core Data Access:** Core dataset read access is granted by default. You can alternatively revoke this access.
 
     **Premium Data Access:** Grants access to Premium Data (requires Premium Data subscription)
 
