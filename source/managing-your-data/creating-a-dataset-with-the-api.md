@@ -169,9 +169,9 @@ Here are the data file ingestion steps:
         },
         "smartLinkAttributes": [
             { 
-                "attributeName": "symbol", 
-                "type": "equity" 
-            }
+                "attributeName": "symbol", 
+                "type": "equity" 
+            }
         ], 
         "date": 1650569968000,
         "updated": 1650569968000,
