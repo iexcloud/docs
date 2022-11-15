@@ -10,7 +10,7 @@ The following table explains how to fill in the request.
 
 | Placeholder | Replace with...
 | --- | --- |
-| `WORKSPACE` | Workspace is `CORE` for [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) or your workspace name for [your datasets]((https://iexcloud.io/docs/datasets)). |
+| `WORKSPACE` | Workspace is `CORE` for [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) or your workspace name for [your datasets](https://iexcloud.io/docs/datasets). A batch data query can work in only one workspace at a time. You can optionally [create a view](../../managing-your-data/creating-and-managing-views.md) from Core data and your workspace data, and batch query that view. |
 | `DATASET_IDS` | Example: `QUOTE,NEWS`. The list of datasets to query. Note, each **Dataset ID** is specified in the dataset's reference page. For example, see the [CASH_FLOW](https://iexcloud.io/docs/core/CASH_FLOW) reference page. |
 | `KEYS` | Example: `AAPL,TSLA`. The list of symbols to query for in the datasets. A dataset's primary index is labeled `key` in the dataset reference page's **Response Attributes** section. |
 | `batchSeparator=,` | **(Optional)** The character for separating the request's dataset IDs and keys; comma (<code>,</code>) is the default separator. |
@@ -81,7 +81,7 @@ The response is an array of dataset records. Records are returned from each data
 
 If a query's [API token](../../reference/glossary.md#token-api-token) is unauthorized for a dataset, the endpoint returns a standard authorization error.
 
-> Important: A batch data query must operate on either core datasets or your datasets--the two dataset types can't be mixed. Batch queries are unsupported across workspaces and across core/your datasets.
+> Important: A batch data query must operate on either Core datasets or your datasets--the two dataset types can't be mixed. Batch queries are unsupported across workspaces and across Core/your datasets.
 
 > Note: Record data returned from each dataset counts as a read. See [Credits and Pricing](../../administration/credits-and-pricing.md) for details.
 
@@ -117,7 +117,7 @@ Apperate returns an array of records for each key in each dataset, starting with
 
 ## What's Next
 
-[Create Views](../../managing-your-data/creating-and-managing-views.md) demonstrates aggregating data from various datasets.
+[Create Views](../../managing-your-data/creating-and-managing-views.md) demonstrates combining Core data and workspace data into views.
 
 [Querying Datasets](./querying-datasets.md) shows how to search data from any dataset (Core or your) using the Get Data endpoint.
 
