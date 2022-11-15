@@ -81,11 +81,14 @@ The response is an array of dataset records. Records are returned from each data
 
 If a query's [API token](../../reference/glossary.md#token-api-token) is unauthorized for a dataset, the endpoint returns a standard authorization error.
 
-> Important: A batch data query must operate on either Core datasets or your datasets--the two dataset types can't be mixed. Batch queries are unsupported across workspaces and across Core/your datasets.
+``` {important} A batch data query must operate on either Core datasets or your datasets--the two dataset types can't be mixed. Batch queries are unsupported across workspaces and across Core/your datasets.
+```
 
-> Note: Record data returned from each dataset counts as a read. See [Credits and Pricing](../../administration/credits-and-pricing.md) for details.
+``` {note} Record data returned from each dataset counts as a read. See [Credits and Pricing](../../administration/credits-and-pricing.md) for details.
+```
 
-> Note: Each record returned counts towards your plan's maximum records per second. See [Pricing](https://iexcloud.io/pricing/) for record rate details.
+``` {note} Each record returned counts towards your plan's maximum records per second. See [Pricing](https://iexcloud.io/pricing/) for record rate details.
+```
 
 ## Make a Batch Data Request
 
