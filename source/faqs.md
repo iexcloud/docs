@@ -111,6 +111,11 @@ Attribution is required for all users. It is as simple as putting “Data provid
 Real-time datasets, such as CORE.QUOTE, do not support SQL queries. SQL JOINs with real-time datasets are not supported.
 </details>
 
+<details><summary>Why can't I SELECT * on a view?</summary>
+
+Apperate does not support `SELECT *` queries on views.
+</details>
+
 <details><summary>Why does Apperate report "cannot select by 'columnXYZ' (00ED50F1BF0332)" even though the column is valid?</summary> 
 
 You can only select on indexed properties (columns). A property must be a primary, secondary, or date index (See [Unique Index components](./managing-your-data/understanding-datasets.md#indexing-with-unique-index)) to query on it via SQL `WHERE` clauses, SQL `JOIN` `ON` clauses, or via the data query endpoint key/subkey path parameters.

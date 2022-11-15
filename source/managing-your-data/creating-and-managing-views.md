@@ -201,6 +201,9 @@ Congratulations on combining data from two datasets into a view for your app to 
 ``` {note} The Example Request returns just one record by using the LIMIT 1 condition. In your app, make sure to lift that limit by removing that condition from your URL's SQL query.
 ```
 
+``` {important} Apperate does not support SELECT \* queries on views.
+```
+
 ## Related Topics
 
 [Access and Security](../administration/access-and-security.md)
