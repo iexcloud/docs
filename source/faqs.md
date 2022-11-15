@@ -106,6 +106,11 @@ No user may provide IEX Cloud data via their own API to users, or provide a mech
 Attribution is required for all users. It is as simple as putting “Data provided by IEX Cloud” somewhere on your site or app and linking that text to <https://iexcloud.io>.
 </details>
 
+<details><summary>Why are no rows returned when I SQL JOIN with QUOTE and other real-time datasets?</summary>
+
+Real-time datasets, such as CORE.QUOTE, do not support SQL queries. SQL JOINs with real-time datasets are not supported.
+</details>
+
 <details><summary>Why does Apperate report "cannot select by 'columnXYZ' (00ED50F1BF0332)" even though the column is valid?</summary> 
 
 You can only select on indexed properties (columns). A property must be a primary, secondary, or date index (See [Unique Index components](./managing-your-data/understanding-datasets.md#indexing-with-unique-index)) to query on it via SQL `WHERE` clauses, SQL `JOIN` `ON` clauses, or via the data query endpoint key/subkey path parameters.

@@ -7,6 +7,9 @@ Here we'll create a view of cars and related car accidents by joining a datasets
 ``` {note} You can apply these principles to combine data from any datasets that can be joined on equivalent indexed properties.
 ```
 
+``` {important} SQL JOIN with real-time datasets, such as CORE.QUOTE, is not supported.
+```
+
 ## Create example data files
 
 1. Create a plain text data file called `cars` on your local machine from the following example car data (it's in CSV format).

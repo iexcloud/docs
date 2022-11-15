@@ -81,7 +81,7 @@ The response is an array of dataset records. Records are returned from each data
 
 If a query's [API token](../../reference/glossary.md#token-api-token) is unauthorized for a dataset, the endpoint returns a standard authorization error.
 
-``` {important} A batch data query must operate on either Core datasets or your datasets--the two dataset types can't be mixed. Batch queries are unsupported across workspaces and across Core/your datasets.
+``` {important} A batch data query must operate on either Core datasets or your datasets--the two dataset types can't be mixed. Batch queries are not supported across workspaces.
 ```
 
 ``` {note} Record data returned from each dataset counts as a read. See [Credits and Pricing](../../administration/credits-and-pricing.md) for details.

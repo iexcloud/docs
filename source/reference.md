@@ -10,5 +10,6 @@ reference/financial-identifiers.md
 reference/glossary.md
 reference/limits.md
 reference/reserved-keywords-and-prefixes.md
+reference/sql-limitations.md
 reference/supported-exchanges.md
 ```
