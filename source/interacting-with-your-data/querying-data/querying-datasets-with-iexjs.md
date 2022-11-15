@@ -38,6 +38,6 @@ It's that easy to query datasets from your JavaScript apps!
 
 ## What's Next?
 
-[iex.js Core Data Methods](../../developer-tools/iexjs-library/iexjs-core-data-methods.md) provides a Core Data reference for current plans and legacy plans.
+[iex.js Core Data Methods](../../developer-tools/iexjs-library/iexjs-core-data-methods.md) provides a Core Financial Data reference for current plans and legacy plans.
 
 [iex.js Apperate CRUD Methods](../../developer-tools/iexjs-library/iexjs-apperate-crud-methods) references methods for invoking Apperate CRUD operations on data, datasets, and more.

@@ -7,7 +7,7 @@ iexjs-library/iexjs-core-data-methods.md
 iexjs-library/iexjs-apperate-crud-methods.md
 ```
 
-*iex.js* (iexjs) is a client library for querying IEX Cloud data and operating on Apperate resources, such as data, datasets, data sources, and more. The easy-to-use JavaScript methods wrap requests to [Apperate endpoints](https://iexcloud.io/docs/) and [IEX Cloud legacy endpoints](https://iexcloud.io/docs/api/), so you can tap into Core Data and permissioned datasets, and operate on Apperate resources.
+*iex.js* (iexjs) is a client library for querying IEX Cloud data and operating on Apperate resources, such as data, datasets, data sources, and more. The easy-to-use JavaScript methods wrap requests to [Apperate endpoints](https://iexcloud.io/docs/) and [IEX Cloud legacy endpoints](https://iexcloud.io/docs/api/), so you can tap into Core Financial Data and permissioned datasets, and operate on Apperate resources.
 
 ## Installation
 
@@ -39,7 +39,7 @@ client.quote({symbol: "AAPL"}).then((res) => {
 });
 ```
 
-``` {seealso} [iex.js Core Data Methods](./iexjs-library/iexjs-core-data-methods.md) has information on all the methods.
+``` {seealso} [iex.js Core Financial Data Methods](./iexjs-library/iexjs-core-data-methods.md) has information on all the methods.
 ```
 
 **Get Apple's latest cash flow details:**
@@ -65,6 +65,6 @@ The iex.js package is an open source project available at <https://www.npmjs.com
 
 [Querying Datasets with iex.js](../interacting-with-your-data/querying-data/querying-datasets-with-iexjs.md) demonstrates getting data from a dataset.
 
-[iex.js Core Data Methods](./iexjs-library/iexjs-core-data-methods.md) provides a reference to Core Data available for current plans and legacy plans.
+[iex.js Core Financial Data Methods](./iexjs-library/iexjs-core-data-methods.md) provides a reference to Core Financial Data available for current plans and legacy plans.
 
 [iex.js Apperate CRUD Methods](./iexjs-library/iexjs-apperate-crud-methods) lists methods for invoking Apperate CRUD operations on data, datasets, and more.

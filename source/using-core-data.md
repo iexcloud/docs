@@ -1,4 +1,4 @@
-# Use IEX Cloud Core Data
+# Use IEX Cloud Core Financial Data
 
 ```{toctree}
 :maxdepth: 1

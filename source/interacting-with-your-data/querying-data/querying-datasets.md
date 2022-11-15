@@ -112,4 +112,4 @@ There are parameters that facilitate filtering on specific quarters and semester
 
 ## What's Next
 
-If you want to get data from Apperate's other endpoints, please see [Using Core Data](../../using-core-data.md).
+If you want to get data from Apperate's other endpoints, please see [Using Core Financial Data](../../using-core-data.md).

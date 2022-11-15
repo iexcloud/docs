@@ -1,24 +1,24 @@
 # Get Real-Time IEX Cloud Core Financial Data
 
-IEX Cloud provides real-time data via [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) and the [Legacy API](https://iexcloud.io/docs/api/). 
+IEX Cloud provides real-time data via [IEX Cloud Core Financial Datasets](https://iexcloud.io/docs/core) and the [Legacy API](https://iexcloud.io/docs/api/). 
 
 Here we'll demonstrate getting real-time data from both sources:
 
-- Core Datasets
+- Core Financial Datasets
 - Legacy API
 
 **Prerequisites:**
 
 - **IEX Cloud Apperate account** - Create one [here](https://iexcloud.io/cloud-login#/register).
 
-```{important} We are in the process of migrating legacy IEX Cloud Core Data to IEX Cloud Core Datasets in Apperate. IEX Cloud's API reference is currently split between Apperate's [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If the [API Reference](https://iexcloud.io/docs/) doesn't list the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
+```{important} We are in the process of migrating legacy IEX Cloud Core Financial Data to IEX Cloud Core Financial Datasets in Apperate. IEX Cloud's API reference is currently split between Apperate's [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If the [API Reference](https://iexcloud.io/docs/) doesn't list the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
 ```
 
-Let's start with Core Datasets
+Let's start with Core Financial Datasets
 
-## Core Dataset Example: Get a Quote
+## Core Financial Dataset Example: Get a Quote
 
-IEX Cloud's real-time Core Datasets are accessed via the [Get data](https://iexcloud.io/docs/apperate-apis/data/get-data) endpoint the same way all IEX Cloud Core Datasets are accessed. 
+IEX Cloud's real-time Core Financial Datasets are accessed via the [Get data](https://iexcloud.io/docs/apperate-apis/data/get-data) endpoint the same way all IEX Cloud Core Financial Datasets are accessed. 
 
 ``` {note} **Base URL:** https://YOUR_WORKSPACE.iex.cloud/v1/
 ```
@@ -33,7 +33,7 @@ IEX Cloud's real-time Core Datasets are accessed via the [Get data](https://iexc
 
 - `/data` specifies the [GET /data](https://iexcloud.io/docs/apperate-apis/data/get-data) method.
 - `/core` is the IEX Cloud Core Dataset namespace.
-- `/DATASET_ID` identifies the Core Dataset you're accessing.
+- `/DATASET_ID` identifies the Core Financial Dataset you're accessing.
 - `/{key}` is the item you want data for.
 - `token=YOUR_TOKEN` is a query parameter for authorizing your request. See [API Tokens](../administration/access-and-security.md).
 
@@ -143,13 +143,13 @@ Let's get the latest trade price for Apple using the **Quote** dataset.
 
 That's all there is to getting a stock quote! Other real-time endpoints are similar. Just visit their API docs in the [API Reference](https://iexcloud.io/docs/).
 
-Congratulations! You know how to get real-time IEX Cloud Core Data for your apps. 
+Congratulations! You know how to get real-time IEX Cloud Core Financial Data for your apps. 
 
 ``` {hint} In the console, if there are grayed-out datasets you want to use, upgrade your plan. To upgrade, click one of the grayed-out datasets and click the **Upgrade** button that appears. Otherwise, upgrade your plan at **Account** &rarr; [**Manage Plan**](https://iexcloud.io/console/manage-plan).
 ```
 
 ``` {note}
-If you've upgraded to Apperate from legacy and there isn't an IEX Cloud Core Dataset for the data you're used to using, the data hasn't been migrated to Apperate yet. Continue using it via the [Legacy API](https://iexcloud.io/docs/api/).
+If you've upgraded to Apperate from legacy and there isn't an IEX Cloud Core Financial Dataset for the data you're used to using, the data hasn't been migrated to Apperate yet. Continue using it via the [Legacy API](https://iexcloud.io/docs/api/).
 
 If you're new to Apperate and aren't finding data you want, also check the [Legacy API Reference](https://iexcloud.io/docs/api/).
 ```

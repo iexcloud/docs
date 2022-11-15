@@ -3,7 +3,7 @@
 ```{important} We are in the process of migrating legacy IEX Cloud Core Data to IEX Cloud Core Datasets in Apperate. IEX Cloud's API reference is currently split between Apperate's [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If the [API Reference](https://iexcloud.io/docs/) doesn't list the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
 ```
 
-Apperate's Core Datasets provide historical time series financial data. Let's call an endpoint to get this financial data.
+Apperate's Core Financial Datasets provide historical time series financial data. Let's call an endpoint to get this financial data.
 
 **Prerequisites:**
 
@@ -14,7 +14,7 @@ Apperate's Core Datasets provide historical time series financial data. Let's ca
 
 Here are steps for getting this core financial data.
 
-1. Browse the Core Datasets in the console at [**Data &rarr; Datasets &rarr; Core**](https://iexcloud.io/console/datasets/core). The Core Datasets list appears.
+1. Browse the Core Financial Datasets in the console at [**Data &rarr; Datasets &rarr; Core**](https://iexcloud.io/console/datasets/core). The Core Datasets list appears.
 
     ![](./getting-time-series-core-financial-data/core-datasets.png)
 
@@ -132,12 +132,12 @@ Congratulations on getting core financial time series data.
 
 If you want to get real-time IEX Cloud financial data, see [Get Real-Time IEX Cloud Core Financial Data](./getting-real-time-core-financial-data.md).
 
-To dive into more Core Dataset queries using the Data API, see [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md).
+To dive into more Core Financial Dataset queries using the Data API, see [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md).
 
 <!-- - [SQL Query with the API](../interacting-with-your-data/querying-data/sql-query-with-the-api.md)-->
 
 To learn more about Apperate's APIs, visit [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
 
-If want to combine Core Dataset data with data from other datasets, check out [Create Views](../managing-your-data/creating-and-managing-views.md).
+If want to combine Core Financial Dataset data with data from other datasets, check out [Create Views](../managing-your-data/creating-and-managing-views.md).
 
 If you need to store application data, learn how at [Read and Write Data](../getting-started/write-and-read-a-record.md).

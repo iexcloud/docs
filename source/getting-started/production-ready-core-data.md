@@ -1,4 +1,4 @@
-# Production-Ready IEX Cloud Core Data
+# Production-Ready IEX Cloud Core Financial Data
 
 IEX Cloud Apperate comes with 5+ terabytes of built-in data to power fintech applications and more. Here are some of the data types:
 
@@ -20,11 +20,11 @@ All the data is available via REST endpoints and much of the data is available a
 ```{note} IEX Cloud documentation for the legacy plans is at <https://iexcloud.io/docs/api/>.
 ```
 
-Here we'll show you a Core Data endpoint page and tour a Core Dataset in the console.
+Here we'll show you a Core Financial Data endpoint page and tour a Core Financial Dataset in the console.
 
-## Explore Core Data Endpoints
+## Explore Core Financial Data Endpoints
 
-In the [API Reference](https://iexcloud.io/docs/), the [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) section lists the IEX Cloud Core Dataset endpoint reference pages. 
+In the [API Reference](https://iexcloud.io/docs/), the [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) section lists the IEX Cloud Core Financial Dataset endpoint reference pages. 
 
 For example, the image below shows the Balance Sheet page.
 
@@ -40,13 +40,13 @@ You can get core data by calling the REST endpoints. The following articles demo
 - [Get Historical IEX Cloud Core Financial Data](../using-core-data/getting-time-series-core-financial-data.md)
 - [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md)
 
-## Query Core Data in the Console
+## Query Core Financial Data in the Console
 
-The console (requires an Apperate plan) provides Core Dataset information and a SQL interface. The Core Datasets are available in the console at [**Data &rarr; Datasets &rarr; Core**](https://iexcloud.io/console/datasets/core).
+The console (requires an Apperate plan) provides Core Financial Dataset information and a SQL interface. The Core Financial Datasets are available in the console at [**Data &rarr; Datasets &rarr; Core**](https://iexcloud.io/console/datasets/core).
 
 ![](./production-ready-core-data/core-datasets.png)
 
-Click the name of a Core Dataset to see its overview. Here's the News dataset overview.
+Click the name of a Core Financial Dataset to see its overview. Here's the News dataset overview.
 
 ![](./production-ready-core-data/core-news-dataset-overview.png)
 
@@ -70,13 +70,13 @@ The **Database** page has an editor for running queries. You can [create databas
 
 ![](./production-ready-core-data/join-core-news-with-my-aapl-data.png)
 
-The IEX Cloud Core Datasets offer a lot of data and it's [normalized by Apperate SmartLinks](../reference/glossary.md#smartlink) too!
+The IEX Cloud Core Financial Datasets offer a lot of data and it's [normalized by Apperate SmartLinks](../reference/glossary.md#smartlink) too!
 
 ## What's Next
 
-Now that you've been introduced to IEX Cloud Core Data, here are some topics to consider next.
+Now that you've been introduced to IEX Cloud Core Financial Data, here are some topics to consider next.
 
-[Using Core Data](../using-core-data.md): These articles demonstrate querying real-time and time series data, and leveraging normalized financial symbols. 
+[Using Core Financial Data](../using-core-data.md): These articles demonstrate querying real-time and time series data, and leveraging normalized financial symbols. 
 
 [Migrating and Import Data](../migrating-and-importing-data.md): These articles demonstrate loading data from various data sources, including AWS S3 buckets, URLs, and files.
 

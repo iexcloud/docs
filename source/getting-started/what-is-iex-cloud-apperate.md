@@ -2,16 +2,16 @@
 
 IEX Cloud Apperate is an application database that delivers data and back-end infrastructure to applications. It combines the capabilities of data ingestion, normalization, transformation, observability, and delivery, all in one end-to-end solution for application development. 
 
-Apperate includes 5+ terabytes of curated, institutional-grade financial data ([IEX Cloud Core Data](./production-ready-core-data.md)) which includes historical data and real-time data, on stocks, markets, forex, economics, and more. The data is accessible via the [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) REST API endpoints and via the Apperate console's SQL editor and database pages.
+Apperate includes 5+ terabytes of curated, institutional-grade financial data ([IEX Cloud Core Financial Data](./production-ready-core-data.md)) which includes historical data and real-time data, on stocks, markets, forex, economics, and more. The data is accessible via the [IEX Cloud Core Financial Datasets](https://iexcloud.io/docs/core) REST API endpoints and via the Apperate console's SQL editor and database pages.
 
-```{important} We are in the process of migrating legacy IEX Cloud Core Data to IEX Cloud Core Datasets in Apperate. IEX Cloud's API reference is currently split between Apperate's [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If the [API Reference](https://iexcloud.io/docs/) doesn't list the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
+```{important} We are in the process of migrating legacy IEX Cloud Core Financial Data to IEX Cloud Core Financial Datasets in Apperate. IEX Cloud's API reference is currently split between Apperate's [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If the [API Reference](https://iexcloud.io/docs/) doesn't list the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
 ```
 
 This diagram shows the general data flow with Apperate.
 
 ![](./what-is-iex-cloud-apperate/data-flow.png)
 
-The database in the diagram shows Apperate's built-in Core Data and *your* data, populated by your applications and the data you upload.
+The database in the diagram shows Apperate's built-in Core Financial Data and *your* data, populated by your applications and the data you upload.
 
 Here we describe key features that set Apperate apart from other databases.
 
