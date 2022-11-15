@@ -4,15 +4,15 @@ Batch data queries are an API feature for querying multiple keys in multiple dat
 
 **Format:**
 
-`GET /data/WORKSPACE/DATASET_IDS/KEYS?batchSeparator=,`
+`GET /data/WORKSPACE/DATASET_A,DATASET_B/KEY_1,KEY_2?batchSeparator=,`
 
 The following table explains how to fill in the request.
 
 | Placeholder | Replace with...
 | --- | --- |
-| `WORKSPACE` | Workspace is `CORE` for [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) or your workspace name for [your datasets](https://iexcloud.io/docs/datasets). A batch data query can work in only one workspace at a time. You can optionally [create a view](../../managing-your-data/creating-and-managing-views.md) from Core data and your workspace data, and batch query that view. |
-| `DATASET_IDS` | Example: `QUOTE,NEWS`. The list of datasets to query. Note, each **Dataset ID** is specified in the dataset's reference page. For example, see the [CASH_FLOW](https://iexcloud.io/docs/core/CASH_FLOW) reference page. |
-| `KEYS` | Example: `AAPL,TSLA`. The list of symbols to query for in the datasets. A dataset's primary index is labeled `key` in the dataset reference page's **Response Attributes** section. |
+| `WORKSPACE` | Workspace is `CORE` for [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) or the workspace name for [your datasets](https://iexcloud.io/docs/datasets). A batch data query can work in only one workspace at a time. You can optionally [create a view](../../managing-your-data/creating-and-managing-views.md) from Core data and your workspace data, and batch query that view. |
+| `DATASET_A,DATASET_B` | Example: `QUOTE,NEWS`. The list of datasets to query. Note, each **Dataset ID** is specified in the dataset's reference page. For example, see the [CASH_FLOW](https://iexcloud.io/docs/core/CASH_FLOW) reference page. |
+| `KEY_1,KEY_2` | Example: `AAPL,MSFT,TSLA`. The list of symbols to query for in the datasets. A dataset's primary index is labeled `key` in the dataset reference page's **Response Attributes** section. |
 | `batchSeparator=,` | **(Optional)** The character for separating the request's dataset IDs and keys; comma (<code>,</code>) is the default separator. |
 
 **Example:**
@@ -85,7 +85,9 @@ If a query's [API token](../../reference/glossary.md#token-api-token) is unautho
 
 > Note: Record data returned from each dataset counts as a read. See [Credits and Pricing](../../administration/credits-and-pricing.md) for details.
 
-## Steps
+> Note: Each record returned counts towards your plan's maximum records per second. See [Pricing](https://iexcloud.io/pricing/) for record rate details.
+
+## Make a Batch Data Request
 
 Here are steps for making a batch data request.
 
