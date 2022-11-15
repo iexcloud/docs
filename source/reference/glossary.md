@@ -22,6 +22,9 @@ A modifiable data collection (or table) that is defined by a schema, stored in 
 
 Designates the time series index portion of a dataset's Unique Index. 
 
+``` {seealso} [Understanding Datasets](../managing-your-data/understanding-datasets.md#indexing-with-unique-index)
+```
+
 ## Ingest (Ingest data)
 
 To load data into a dataset. 
@@ -42,6 +45,9 @@ Stands for JavaScript Object Notation. It is a text format for specifying object
 
 A property that serves as a record’s main identifier.
 
+``` {seealso} [Understanding Datasets](../managing-your-data/understanding-datasets.md#indexing-with-unique-index)
+```
+
 <!-- ## Property (Schema Property) - TODO -->
 
 ## Publishable Token (Publishable Key)
@@ -56,6 +62,9 @@ All [tokens](#token-api-token), including *publishable tokens*, allow you to exe
 ## Secondary index
 
 A property that serves as an identifier that's used in addition to the Primary index.
+
+``` {seealso} [Understanding Datasets](../managing-your-data/understanding-datasets.md#indexing-with-unique-index)
+```
 
 ## Secret Token (Secret Key)
 
