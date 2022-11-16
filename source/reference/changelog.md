@@ -2,6 +2,62 @@
 
 Here are the notable changes.
 
+## 2022-11-14
+
+- Support batch data queries. See [Batch Data Queries](https://iexcloud.io/documentation/interacting-with-your-data/querying-data/batch-data-queries.html).
+
+## 2022-11-10
+
+- In dataset JSON schema, replace `symbologyColumn` with `smartLinkAttributes`. See [Create a Dataset with the API](https://iexcloud.io/documentation/managing-your-data/creating-a-dataset-with-the-api.html).
+
+## 2022-10-18
+
+- When UTP is not authorized, specific fields are not returned from Quote, Intraday Prices, and OHLC endpoints. See [Get Nasdaq-listed Stock Data](https://iexcloud.io/documentation/using-core-data/getting-nasdaq-listed-utp-otc-stock-data.html).
+
+## 2022-10-17
+
+- Perform symbology lookup for aliased columns.
+
+## 2022-10-12
+
+- Add edit-on-GitHub icon to all docs site pages
+
+## 2022-10-11
+
+- Fix Core dataset **Open Docs** link.
+
+## 2022-10-07
+
+- In credit use page, show user-visible IDs of deleted datasets.
+
+## 2022-10-05
+
+- Disable the sql-query Data API endpoint.
+
+## 2022-10-03
+
+- Premium Data is no longer available for purchase.
+
+## 2022-09-29
+
+- New article [Modify a Data Schema](https://iexcloud.io/documentation/managing-your-data/updating-a-dataset-schema.html)
+
+## 2022-09-27
+
+- New articles:
+
+    - [iex.js JavaScript Library](https://iexcloud.io/documentation/developer-tools/iexjs-library.html)
+    - [Querying Datasets with iex.js](https://iexcloud.io/documentation/interacting-with-your-data/querying-data/querying-datasets-with-iexjs.html)
+
+## 2022-09-22
+
+- Disable but show paid Core datasets to free users.
+- Forbid dashes in workspace names.
+
+## 2022-09-14
+
+- Reduce initial console load time.
+
 ## 2022-09-08
 
 - Handle Paygo credit if needed at upgrade
