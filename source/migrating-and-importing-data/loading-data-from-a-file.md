@@ -67,7 +67,9 @@ Now that you've created a dataset, you can examine it and or modify it in the sc
 
 Here are some more topics you can learn:
 
-[Loading Data from a URL](../migrating-and-importing-data/loading-data-from-a-url.md) demonstrates getting data from a URL.
+[Load More Data into a Dataset](./load-more-data-into-a-dataset.md)
+
+[Loading Data from a URL](./loading-data-from-a-url.md) demonstrates getting data from a URL.
 
 [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md) shows how to query datasets and operate on resources programmatically.
 

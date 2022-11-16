@@ -78,6 +78,8 @@ To re-enable your ingestion schedule, select on your schedule in the list and cl
 
 ## What's Next
 
-To create views, see [Create Views](../managing-your-data/creating-and-managing-views.md).
+- [Create Views](../managing-your-data/creating-and-managing-views.md) demonstrates joining datasets to create views.
 
-If you want to understand schema indexing better, visit [Understanding Dataset Schemas](../managing-your-data/understanding-datasets.md).
+- [Load More Data into a Dataset](./load-more-data-into-a-dataset.md) explains how to ingest more data from a new or existing data source.
+
+- [Understanding Datasets](../managing-your-data/understanding-datasets.md) explains dataset properties, constraints, indexes, and mappings.

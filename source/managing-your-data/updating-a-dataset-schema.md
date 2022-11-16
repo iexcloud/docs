@@ -97,3 +97,5 @@ Now you know how to update a dataset schema.
 [Understanding Datasets](./understanding-datasets.md) explains what datasets are and how they work.
 
 [Dataset Properties](../reference/dataset-properties.md) describes dataset property options.
+
+[Load More Data into a Dataset](../migrating-and-importing-data/load-more-data-into-a-dataset.md) explains how to ingest more data from a new or existing data source.
