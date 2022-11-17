@@ -8,7 +8,7 @@ querying-data/querying-datasets-with-iexjs.md
 querying-data/batch-data-queries.md
 ```
 
-[Querying Datasets](./querying-data/querying-datasets.md) shows you how to search data from any dataset (Core or private) using our Query Data endpoint. It's simple: enter a `key` value and then optionally specify any time range or constraints you like.
+[Querying Datasets](./querying-data/querying-datasets.md) shows you how to search data from any dataset ([Core datasets](https://iexcloud.io/docs/core) or [your datasets](https://iexcloud.io/docs/datasets)) using our Get Data endpoint. It's simple: enter a `key` value and then optionally specify any time range or constraints you like.
 
 [Querying Datasets with iex.js](./querying-data/querying-datasets-with-iexjs.md) makes querying even easier by leveraging a simple client library for JavaScript developers. It's open source too.
 

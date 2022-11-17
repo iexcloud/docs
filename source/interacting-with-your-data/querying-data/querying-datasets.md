@@ -1,8 +1,8 @@
 # Querying Datasets
 
-Datasets that have a primary index and date index (it's included by default) leverage time series. The time series excels at retrieving records within specific time ranges. The `GET /data/...` endpoint supports these features.
+You can query [Core financial datasets](https://iexcloud.io/docs/core) or [your datasets](https://iexcloud.io/docs/datasets) using Apperate's [Get Data](https://iexcloud.io/docs/apperate-apis/data/get-data) endpoint. 
 
-Here you'll get familiar with the `GET /data` endpoint and use time series parameters to get dataset records that match a time range.
+Here you'll get familiar with the Get Data endpoint and use time series parameters to get dataset records that match a time range.
 
 ## Understanding the GET /data/ Endpoint
 

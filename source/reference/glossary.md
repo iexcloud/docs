@@ -4,19 +4,39 @@ The new data infrastructure product uses the following terms, ordered alphabetic
 
 ## API
 
-Stands for Application Programming Interface. You can interact with software programmatically via its API.
+Stands for Application Programming Interface. You can interact with software programmatically via its API. IEX Cloud provides API reference documentation and API tutorials. The tutorials are here in the docs site.
+
+IEX Cloud API reference sites:
+
+- [Apperate API Reference](https://iexcloud.io/docs/)
+- [IEX Cloud<sup>LEGACY</sup> API Reference](https://iexcloud.io/docs/api/)
 
 ## CSV
 
 Stands for Comma Separated Value. It is a text format for specifying data using rows and columns. The first row’s values describe each column. Each subsequent row represents an instance of the data, including values (in some cases empty values) for each column.
 
+``` {seealso} [Load Data from a File](../migrating-and-importing-data/loading-data-from-a-file.md) demonstrates importing data from a CSV file.
+```
+
 ## Data Source
 
-A source from which data is ingested into IEX Cloud.
+A source from which data is ingested into Apperate.
+
+The following tutorials demonstrate using data sources:
+
+- [Load More Data into a Dataset](../migrating-and-importing-data/load-more-data-into-a-dataset.md)
+- [Schedule Data Ingestion](../migrating-and-importing-data/scheduling-data-ingestion.md)
 
 ## Dataset
 
-A modifiable data collection (or table) that is defined by a schema, stored in IEX Cloud Apperate, and delivered via permissioned, auto-generated APIs. 
+A modifiable data collection (or table) that is defined by a schema, stored in IEX Cloud Apperate, and delivered via permissioned, auto-generated APIs.
+
+See these articles to understand datasets and learn how to use them:
+
+- [Getting Started with Apperate](../getting-started/getting-started-with-apperate.md)
+- [Understanding Datasets](../managing-your-data/understanding-datasets.md)
+- [Querying Data](../interacting-with-your-data/querying-data.md)
+- [Managing Your Data](../managing-your-data.md)
 
 ## Date Index
 
@@ -29,13 +49,22 @@ Designates the time series index portion of a dataset's Unique Index. 
 
 To load data into a dataset. 
 
+``` {seealso} [Load More Data into a Dataset](../migrating-and-importing-data/load-more-data-into-a-dataset.md).
+```
+
 ## Ingestion Schedule
 
 A timetable, set by the user, to automatically ingest data from a given data source into IEX Cloud.
 
+``` {seealso} [Schedule Data Ingestion](../migrating-and-importing-data/scheduling-data-ingestion.md)
+```
+
 ## Job (Data Job)
 
 A data-processing instance.  There are jobs for ingesting, modifying, and deleting data.
+
+``` {seealso} [Monitoring Deployments](../administration/monitoring-deployments.md).
+```
 
 ## JSON
 
@@ -54,7 +83,7 @@ A property that serves as a record’s main identifier.
 
 All [tokens](#token-api-token), including *publishable tokens*, allow you to execute requests and access specific console pages and specific Apperate API reference pages. Publishable tokens can have Core dataset read access and have read, write, and / or delete permissions for any private datasets. Subscribers can create and share *publishable tokens* to grant access to specific datasets; tokens have Core dataset read access by default.
 
-``` {seealso} [Token](#token-api-token)
+``` {seealso} [Token](#token-api-token) and [Access and Security](../administration/access-and-security.md).
 ```
 
 <!-- ## Schema (Dataset Schema) - TODO -->
@@ -70,7 +99,7 @@ A property that serves as an identifier that's used in addition to the Primary i
 
 Apperate plan subscribers have a *secret token* (aka secret key). A secret token (aka secret key) allows you perform any action on your data or account. **NEVER share your secret token publicly**. Subscribers can create and share *publishable tokens* to grant access to specific data endpoints.
 
-``` {seealso} [Token](#token-api-token)
+``` {seealso} [Token](#token-api-token) and [Access and Security](../administration/access-and-security.md).
 ```
 
 ## SmartLink
@@ -105,7 +134,10 @@ Apperate plan subscribers have a *secret token* (aka secret key). This secret to
 
 ## Unique Index
 
-A dataset's main key composed of the Primary index, Secondary index (optional), and Date index. 
+A dataset's main key composed of the Primary index, Secondary index (optional), and Date index.
+
+``` {seealso} [Understanding Datasets](../managing-your-data/understanding-datasets.md#indexing-with-unique-index)
+```
 
 ## Workspace
 
@@ -114,3 +146,6 @@ Your unique domain for building and publishing datasets. The URL format and ex
 URL Format: `https://workspace.iex.cloud/v1/data/WORKSPACE/DATASET`
 
 Example: `https://my.iex.cloud/v1/data/MY/CARS`
+
+``` {seealso} [Create a Workspace](../getting-started/getting-started-with-apperate.md#create-a-workspace).
+```
