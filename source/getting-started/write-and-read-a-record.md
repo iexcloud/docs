@@ -7,7 +7,7 @@ Here we'll refer to a data schema to construct input data. The we'll use the iex
 ``` {note} For this tutorial, you can use an existing dataset or create a dataset called *NEWS* per the instructions in [Define a Schema](../managing-your-data/defining-schemas/define-a-schema.md). 
 ```
 
-## Determine the Data Write
+## Determine the Data to Write
 
 The Data API expects incoming data as an array of objects. Apperate creates data records from the objects.
 
