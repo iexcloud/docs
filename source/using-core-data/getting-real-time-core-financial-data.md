@@ -227,7 +227,7 @@ Here's how to get intra-day news for Apple using the Legacy API's **Intraday New
 
 Now you know how to get financial data from the Legacy API when you need to.
 
-```{note} Make sure to check [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) and the [Changelog](../reference/changelog.md) for newly migrated data.
+```{note} Make sure to check [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) and the [Changelog](../../changelog.md) for newly migrated data.
 ```
 
 ## Related Topics

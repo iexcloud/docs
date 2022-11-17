@@ -3,7 +3,6 @@
 ```{toctree}
 :maxdepth: 1
 
-reference/changelog.md
 reference/dataset-overview-page.md
 reference/dataset-properties.md
 reference/financial-identifiers.md

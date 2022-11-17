@@ -19,6 +19,7 @@ using-core-data.md
 faqs.md
 reference.md
 developer-tools.md
+changelog.md
 ```
 
 ```{toctree}
