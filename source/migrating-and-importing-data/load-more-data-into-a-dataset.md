@@ -8,12 +8,12 @@ You can load more data into an existing dataset using any of these ways:
 
 We'll cover each of the above options. No matter the option you choose, however, you must decide how to handle when an incoming record matches (i.e., has the same [Unique Index](../reference/glossary.md#unique-index)) an existing record.
 
-You can handle matching records (duplicates) in either of these ways:
+You can handle matching records in either of these ways:
 
-- **Ignore Duplicates:** Skip ingesting the new record. (Default)
-- **Replace Duplicates:** Overwrite the existing record with the new record.
+- **Ignore matches:** Skip ingesting the new record. (Default)
+- **Replace matches:** Overwrite the existing record with the new record.
 
-As we over each data ingestion method, we'll call out the duplicate handling options.
+As we over each data ingestion method, we'll call out the matched record handling options.
 
 ## Load Data from a New Data Source
 
@@ -33,7 +33,7 @@ You dataset's **Overview** page has an **Ingest data** button you can click to s
     - [URL](./loading-data-from-a-url.md)
     - [File](./loading-data-from-a-file.md)
 
-    ``` {important} **Incoming duplicates are ignored**. By default, Apperate skips ingesting new records that match (have same [Unique Index](../reference/glossary.md#unique-index) as) existing records. 
+    ``` {important} **Incoming matches are ignored**. By default, Apperate skips ingesting new records that match (have same [Unique Index](../reference/glossary.md#unique-index) as) existing records. 
     ```
 
 Data loads into your dataset.
@@ -60,7 +60,7 @@ If you have already have an existing [data source](../reference/glossary.md#data
 
     ![](./load-more-data-into-a-dataset/destination-dataset.png)
 
-1. Select your option for handling duplicate records: **Ignore Duplicates** or **Replace Duplicates**.
+1. Select your option for handling matched records: **Ignore matches** or **Replace matches**.
 
 1. When you're done specifying options, click **Ingest Data**.
 

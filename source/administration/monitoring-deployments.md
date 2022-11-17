@@ -30,7 +30,7 @@ To see a log stream message's details, double-click the message. The message det
 
 ## Ingestion Logs
 
-The **Ingestion Logs** page lists each data ingestion job and provides status, record ingestion/validation count, processing times, duplicate record handling type, and data source type. You can use the **Columns** and **Filters** drop downs to show the columns you want and filter on the jobs.
+The **Ingestion Logs** page lists each data ingestion job and provides status, record ingestion/validation count, processing times, matched record handling type, and data source type. You can use the **Columns** and **Filters** drop downs to show the columns you want and filter on the jobs.
 
 ![ingestion-jobs.png](./monitoring-deployments/ingestion-jobs.png)
 
