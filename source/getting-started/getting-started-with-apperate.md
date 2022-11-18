@@ -13,7 +13,7 @@ Here's how we'll get started with Apperate:
 
 ## Create a Workspace
 
-A [*workspace*](../reference/glossary.md#workspace) is your unique domain for writing data to Apperate and querying data (your data and Apperate's built-in core financial data) from Apperate. Your workspace name appears in your [API Base URL](../interacting-with-your-data/apperate-api-basics.md).
+A [*workspace*](../reference/glossary.md#workspace) is your unique domain for writing data to Apperate and querying data (your data and Apperate's built-in core financial data) from Apperate. Your workspace name appears in your [Base URL](https://iexcloud.io/docs/).
 
 **Base URL Format:**
 

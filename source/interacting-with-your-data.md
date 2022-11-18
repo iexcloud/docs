@@ -3,7 +3,6 @@
 ```{toctree}
 :maxdepth: 1
 
-interacting-with-your-data/apperate-api-basics.md
 interacting-with-your-data/querying-data.md
 interacting-with-your-data/updating-a-data-record.md
 ```
@@ -18,8 +17,6 @@ If there's a particular task you want to do, jump ahead to the article that matc
 - [Updating Data](./interacting-with-your-data/updating-data.md)
 - [Deleting Data](./interacting-with-your-data/deleting-data.md)
 -->
-
-[Using Apperate's APIs](./interacting-with-your-data/apperate-api-basics.md) - Learn the basics of Apperate's APIS and start using them.
 
 [Read and Write Data](../getting-started/write-and-read-a-record.md) - Use the API to write your app data to Apperate and retrieve it.
 

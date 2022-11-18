@@ -136,7 +136,7 @@ To dive into more Core Financial Dataset queries using the Data API, see [Queryi
 
 <!-- - [SQL Query with the API](../interacting-with-your-data/querying-data/sql-query-with-the-api.md)-->
 
-To learn more about Apperate's APIs, visit [Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md).
+To learn more about Apperate's APIs, visit the [API Reference](https://iexcloud.io/docs/).
 
 If want to combine Core Financial Dataset data with data from other datasets, check out [Create Views](../managing-your-data/creating-and-managing-views.md).
 

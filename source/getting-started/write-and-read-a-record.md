@@ -160,7 +160,7 @@ Now that you know how to write and query data, here are some topics to consider 
 
 [Managing Your Data](../managing-your-data.md): These guides explain dataset schema fundamentals, creating views, and creating datasets via the  Datasets API.
 
-[Interacting With Your Data](../interacting-with-your-data.md): These articles introduce Apperate API basics, show how to query datasets, and demonstrate updating data.
+[Interacting With Your Data](../interacting-with-your-data.md): These articles introduce Use Apperate's APIs, show how to query datasets, and demonstrate updating data.
 
 [Production-Ready IEX Cloud Core Financial Data](./production-ready-core-data.md): Introduces Apperate's 5+ terabytes of built-in financial data available for enriching your fintech applications.
 

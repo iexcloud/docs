@@ -84,7 +84,7 @@ Now that you've been introduced to IEX Cloud Core Financial Data, here are some 
 
 [Managing Your Data](../managing-your-data.md): This section provides guides that explain dataset schemas, creating views, and creating datasets via the Datasets API.
 
-[Interacting With Your Data](../interacting-with-your-data.md): These articles introduce Apperate API basics, show how to query datasets, and demonstrate updating data.
+[Interacting With Your Data](../interacting-with-your-data.md): These articles introduce Use Apperate's APIs, show how to query datasets, and demonstrate updating data.
 
 ```{note} IEX Cloud documentation for the legacy plans is at <https://iexcloud.io/docs/api/>.
 ```

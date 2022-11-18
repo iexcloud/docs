@@ -1,6 +1,6 @@
 # Understanding Datasets
 
-[Datasets](../reference/glossary.md#dataset) are schema-based, time series-optimized database tables that have auto-generated, permissioned APIs and API docs. You can query and operate on datasets in a codeless fasion in the console or programatically using [REST endpoints](../interacting-with-your-data/apperate-api-basics.md) or our open-source [client libraries](../developer-tools.md).
+[Datasets](../reference/glossary.md#dataset) are schema-based, time series-optimized database tables that have auto-generated, permissioned APIs and API docs. You can query and operate on datasets in a codeless fasion in the console or programatically using Apperate's [Get Data](https://iexcloud.io/docs/apperate-apis/data/get-data) method or our open-source [client libraries](../developer-tools.md).
 
 Apperate validates incoming data against the dataset's schema, giving you further confidence in your data. Each property (think database column) has a type, is required (or not), and allows null (or not).
 

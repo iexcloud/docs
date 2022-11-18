@@ -12,10 +12,10 @@ getting-started/production-ready-core-data.md
 :maxdepth: 1
 :caption: Development
 
+using-core-data.md
+interacting-with-your-data.md
 migrating-and-importing-data.md
 managing-your-data.md
-interacting-with-your-data.md
-using-core-data.md
 faqs.md
 reference.md
 developer-tools.md

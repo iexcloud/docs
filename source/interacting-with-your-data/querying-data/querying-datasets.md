@@ -6,7 +6,7 @@ Here you'll get familiar with the Get Data endpoint and use time series paramete
 
 ## Understanding the GET /data/ Endpoint
 
-Apperate API URLs include your workspace [base URL](../apperate-api-basics.md), the API version, an endpoint, and any query parameters (API token is required).
+Apperate API URLs include your workspace [base URL](https://iexcloud.io/docs/), the API version, an endpoint, and any query parameters (API token is required).
 
 **URL Structure:**
 

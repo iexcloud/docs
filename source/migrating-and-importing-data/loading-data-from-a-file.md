@@ -71,7 +71,7 @@ Here are some more topics you can learn:
 
 [Loading Data from a URL](./loading-data-from-a-url.md) demonstrates getting data from a URL.
 
-[Using Apperate's APIs](../interacting-with-your-data/apperate-api-basics.md) shows how to query datasets and operate on resources programmatically.
+[Use Apperate's APIs](../developer-tools/use-apperate-apis.md) shows how to query datasets and operate on resources programmatically.
 
 [Understanding Datasets](../managing-your-data/understanding-datasets.md) explains dataset properties, constraints, indexes, and mappings.
 

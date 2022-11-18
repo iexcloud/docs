@@ -1,4 +1,5 @@
 # comments start with "#"
+interacting-with-your-data/apperate-api-basics.md developer-tools/use-apperate-apis.md
 reference/changelog.md changelog.md
 managing-your-data/defining-schemas/normalization.md using-core-data/using-normalized-financial-data.md
 getting-started/creating-a-workspace.md getting-started/getting-started-with-apperate.md
