@@ -39,14 +39,14 @@ You can similarly join datasets on normalized symbol data.
 
 ## Joining Datasets on Normalized Symbols
 
-You can, for example, create a view of Apple high, open, low, close data and corporate details by joinging this AAPL_ISIN dataset with the Core COMPANY dataset. Here's the SQL.
+You can, for example, create a view of Apple high, open, low, close data and corporate details by joinging this AAPL_ISIN dataset with the Core COMPANY_HISTORICAL dataset. Here's the SQL.
 
 **SQL Query:**
 
 ```sql
 SELECT ceo, companyName, city, a.date, open, close, high, low, volume
   FROM MY.`AAPL_ISIN` a
-  JOIN core.`COMPANY` c
+  JOIN core.`COMPANY_HISTORICAL` c
     ON c.symbol = a.symbol 
   WHERE a.symbol = 'AAPL';
 ```
