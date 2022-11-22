@@ -1,29 +1,28 @@
-# Read and Write Data
+# Write and Read Data
 
 As with any database, you can write individual records to Apperate and read them back. You can do this manually in the console or do it programmatically using Apperate's RESTful [Data API](https://iexcloud.io/docs/apperate-apis/data/). Apperate's [iex.js JavaScript library](../developer-tools/iexjs-library.md) (iexjs) makes API calls even easier by wrapping them in JavaScript methods.
 
-Here we'll refer to a data schema to construct input data. The we'll use the iexjs library to write the data and to query for it.
-
-``` {note} For this tutorial, you can use an existing dataset or create a dataset called *NEWS* per the instructions in [Define a Schema](../managing-your-data/defining-schemas/define-a-schema.md). 
-```
+Here we'll use the iexjs library to write data to Apperate and to retrieve that data.
 
 ## Determine the Data to Write
 
 The Data API expects incoming data as an array of objects. Apperate creates data records from the objects.
 
-For example, you could prepare a *NEWS* dataset record using an object array like this one:
+For example, you could write news events using an array like this one:
 
 ```javascript
 [
     {
         "headline": "New mobile device makes big splash!",
+        "content": "blah blah blah ...",
+        "ticker": "AAPL",
         "source": "IEX Underground",
-        "content": "blah blah blah",
-        "date": "2022-06-13"
+        "date": "2022-07-13"
     }
 ]
 ```
 
+<!-->
 The [API Reference](https://iexcloud.io/docs) *IEX Cloud Core Datasets* or *Your Datasets* sections list dataset *API pages*. The API pages describe the data schemas.
 
 ``` {important} When visiting the API Reference, make sure to add your API token to the URL. For example, replace *YOUR_TOKEN* in the following URL.
@@ -56,62 +55,67 @@ For example, here are attributes you'd want to include in data for the *NEWS* da
 - `subkey` &rarr; `source`
 - `date` &rarr; `date`
 - All the attributes, including `content`, are required
+-->
 
-Let's write your data to your target dataset.
+Let's write the above data.
 
 ## Write the Data
 
 Here's how to write data using the [iexjs](https://www.npmjs.com/package/@apperate/iexjs) JavaScript library.
 
-1. Prepare your environment with iexjs using one of these options: 
+1. Open an npmjs environment, such as [RunKit](https://npm.runkit.com/%40apperate%2Fiexjs).
 
-    **Option 1:** Install iexjs using [npm](https://www.npmjs.com):
+    ![](./write-and-read-a-record/runkit.png)
+
+    Optionally, you can install iexjs using [npm](https://www.npmjs.com):
     
     ```bash
     npm install --save iexjs
     ```
-    
-    **Option 2:** Open an npmjs environment, such as [RunKit](https://npm.runkit.com/%40apperate%2Fiexjs).
 
-    ![](./write-and-read-a-record/runkit.png)
-
-1. Copy the following code into your editor and replace the values mentioned below. 
+1. Copy the following code into your editor and replace the CAPITALIZED values mentioned below. 
 
     **Code:**
 
     ```javascript
     const {Client} = require("@apperate/iexjs")
     const client = new Client({api_token: "TOKEN", version: "VERSION"});
-    client.apperate.loadData({
+    client.apperate.write({
         workspace: "WORKSPACE", 
         id: "DATASET", 
-        data: `[{"headline": "New mobile device makes big splash!", "source": "IEX Underground", "content": "blah blah blah", "date": "2022-06-13"}]`})
+        data: `[{"headline": "New mobile device makes big splash!", "content": "blah blah blah ...", "ticker": "AAPL", "source": "IEX Underground", "date": "2022-07-13"}]`})
             .then((res) => {
                 console.log(res);
         });
     ```
 
-    The first two lines of code import the iexjs `Client` definition and instantiate a `Client` respectively. The last line loads data into the target dataset by calling the `apperate.loadData` method, passing in the dataset workspace, dataset ID, and the data object array.
+    The first two lines of code import the iexjs `Client` definition and instantiate a `Client` respectively. The last line loads data into the target dataset by calling the `apperate.write` method, passing in an Apperate workspace, dataset ID, and the data object array.
 
     **Replace:**
 
     - `TOKEN` (your [API Token](../administration/access-and-security.md))
     - `VERSION` (i.e., current version is `v1`)
-    - `WORKSPACE`
-    - `DATASET`
+    - `WORKSPACE` (your [workspace](../reference/glossary.md#workspace) name)
+    - `DATASET` (TODO remove this line and the DATASET line from the code??)
     - `data:` value (your object array)
 
-1. Run the code. Apperate writes the data to the dataset and prints the response.
+1. Run the code. Apperate writes the data to a new dataset, inferred from your call and prints the response.
 
 Here's what the response looks like in RunKit.
 
 ![](./write-and-read-a-record/loadData-response.png)
 
-Let's query the data.
+You can examine your new dataset here TODO.
+
+That was fast and easy, right?! Let's examine the generated dataset.
+
+## Examine the Generated Dataset
+
+TODO
 
 ## Query the Data
 
-You can query the data using similar code. Here we'll retrieve the data record using the iexjs library's `apperate.queryData` method. 
+You can query the data just as easily. Here we'll retrieve the data record using the iexjs library's `apperate.read` <!-- or queryData? --> method. 
 
 1. In your app or RunKit, enter the following code for querying a dataset and replace the values mentioned below.
 
@@ -123,7 +127,7 @@ You can query the data using similar code. Here we'll retrieve the data record u
     client.apperate.queryData({
         workspace: "WORKSPACE", 
         id: "DATASET", 
-        data: `[{"key": "New mobile device makes big splash!", "subkey": "IEX Underground", "on": "2022-06-14"}]`})
+        data: `[{"key": "New mobile device makes big splash!", "subkey": "IEX Underground", "on": "2022-07-14"}]`})
             .then((res) => {
                 console.log(res);
         });

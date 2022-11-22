@@ -18,7 +18,7 @@ If there's a particular task you want to do, jump ahead to the article that matc
 - [Deleting Data](./interacting-with-your-data/deleting-data.md)
 -->
 
-[Read and Write Data](../getting-started/write-and-read-a-record.md) - Use the API to write your app data to Apperate and retrieve it.
+[Write and Read Data](../getting-started/write-and-read-a-record.md) - Use the API to write your app data to Apperate and retrieve it.
 
 [Querying Datas](./interacting-with-your-data/querying-data.md) - Query time series data and more.
 
