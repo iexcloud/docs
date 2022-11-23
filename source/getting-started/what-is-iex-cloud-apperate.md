@@ -23,7 +23,7 @@ The following diagram shows the back-end infrastructure you get on loading new d
 
 ![](./what-is-iex-cloud-apperate/instant-back-end-infrastructure.png)
 
-Apperate enables you to build back-end infrastructures quickly, while giving you flexibility to [modify infrastructure](../managing-your-data/updating-a-dataset-schema.md) and [data](../interacting-with-your-data/updating-a-data-record.md) whenever you want. Manage your data using Apperate's no-code tooling including the [schema editor](../managing-your-data/updating-a-dataset-schema.md), SQL editor, and [database UI](../interacting-with-your-data/updating-a-data-record.md), or use [Apperate's Data API](https://iexcloud.io/docs/apperate-apis/data/).
+Apperate enables you to build back-end infrastructures quickly, while giving you flexibility to [modify infrastructure](../managing-your-data/updating-a-dataset-schema.md) and [data](../managing-your-data/update-data.md) whenever you want. Manage your data using Apperate's no-code tooling including the [schema editor](../managing-your-data/updating-a-dataset-schema.md), SQL editor, and [database UI](../managing-your-data/update-data.md), or use [Apperate's Data API](https://iexcloud.io/docs/apperate-apis/data/).
 
 ## Safer, Cleaner Data Through Validation
 

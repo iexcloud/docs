@@ -88,7 +88,7 @@ You defined your schema in a dataset that is ready to receive data!
 
 ## What's Next?
 
-[Read and Write Data](../../getting-started/write-and-read-a-record.md) demonstrates populating and querying datasets, just like the one you created above.
+[Write and Read Data](../../getting-started/write-and-read-a-record.md) demonstrates populating and querying datasets, just like the one you created above.
 
 [Loading Data From a File](../../migrating-and-importing-data/loading-data-from-a-file.md) shows how to create a dataset based on data from a file (CSV, JSON, or JSONL). Apperate automatically makes a best effort to detect column data types and indexes.
 

@@ -105,13 +105,13 @@ After creating a dataset, you can edit its schema however you like. For more inf
 
 Here are key features to dive into next:
 
-- [Read and Write Data](./write-and-read-a-record.md) demonstrates creating a dataset manually and using Apperate's Data API to write data to the dataset and read the data back. This simulates what you'd do in storing/retrieving your application's custom data (e.g., user data).
+- [Write and Read Data](./write-and-read-a-record.md) demonstrates creating a dataset manually and using Apperate's Data API to write data to the dataset and read the data back. This simulates what you'd do in storing/retrieving your application's custom data (e.g., user data).
 
 - [Production-Ready IEX Cloud Core Financial Data](./production-ready-core-data.md) introduces Apperate's built-in core financial datasets and [Using Core Financial Data](../using-core-data.md) guides you in using them.
 
 - [Load More Data into a Dataset](../migrating-and-importing-data/load-more-data-into-a-dataset.md) explains how to ingest more data from a new or existing data source.
 
-- [Migrate and Import Data](../migrating-and-importing-data.md) provides tutorials for loading data from various data sources including these:
+- [Load Data](../migrating-and-importing-data.md) provides tutorials for loading data from various data sources including these:
 
     - [AWS S3 buckets](../migrating-and-importing-data/loading-data-from-aws-s3.md)
     - [URLs](../migrating-and-importing-data/loading-data-from-a-url.md)

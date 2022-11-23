@@ -13,6 +13,7 @@ getting-started/production-ready-core-data.md
 :caption: Development
 
 using-core-data.md
+write-data.md
 interacting-with-your-data.md
 migrating-and-importing-data.md
 managing-your-data.md

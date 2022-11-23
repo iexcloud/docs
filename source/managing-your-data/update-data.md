@@ -11,18 +11,18 @@ Here's how to update a record in the UI.
 
 1. Go to a SQL editor in either the **Datasets** page or in a dataset's **Database** tab. The SQL editor appears.
 
-    ![](./updating-a-data-record/database-page.png)
+    ![](./update-data/database-page.png)
 
-1. Enter a [query](./querying-data.md) to return the data record you want to update. Then click **Run**. Apperate executes the statement and returns the matching data record.
+1. Enter a [query](../interacting-with-your-data/querying-data.md) to return the data record you want to update. Then click **Run**. Apperate executes the statement and returns the matching data record.
 
-    ![](./updating-a-data-record/select-a-car.png)
+    ![](./update-data/select-a-car.png)
 
-    ``` {important} WHERE clauses must only operate on indexed properties (columns). See the Unique Index components [here](../managing-your-data/understanding-datasets.md#indexing-with-unique-index).
+    ``` {important} WHERE clauses must only operate on indexed properties (columns). See the Unique Index components [here](./understanding-datasets.md#indexing-with-unique-index).
     ```
 
 1. Double click on the row that represents the record. The row editor appears.
 
-    ![](./updating-a-data-record/edit-row-in-ui.png)
+    ![](./update-data/edit-row-in-ui.png)
 
 1. Make the field value modifications you want to any editable field. Then save your changes.
 
@@ -39,7 +39,7 @@ The `wait` query parameter is another one to consider. By default, the endpoint 
 
 Let's use the API to overwrite a record.
 
-1. To specify your record update, you'll need to know its current values, including its Unique Index values (i.e., primary, secondary, and date indexes). You can fetch the record using the console's SQL editor or using the Data API's `GET /data/:workspace/:id/:key?/:subkey?` method as demonstrated in [Querying Datasets](./querying-data/querying-datasets.md).
+1. To specify your record update, you'll need to know its current values, including its Unique Index values (i.e., primary, secondary, and date indexes). You can fetch the record using the console's SQL editor or using the Data API's `GET /data/:workspace/:id/:key?/:subkey?` method as demonstrated in [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md).
 
     This JSON object for example, is a CARS dataset record:
 
@@ -57,7 +57,7 @@ Let's use the API to overwrite a record.
 
     Since the command specifies `overwrite=true`, the record is overwritten with the new values.
 
-    ![](./updating-a-data-record/cars-record-udpated.png)
+    ![](./update-data/cars-record-udpated.png)
 
     Since the command specifies `wait=true`, the response describes the final ingestion status. The response looks like this:
 
@@ -92,6 +92,6 @@ You're updating data like a champ!
 
 [Delete Data](https://iexcloud.io/docs/apperate-apis/data/delete-data): This reference page describes the `DELETE /data/:workspace/:id/:key/:subkey?/:date?` endpoint for deleting data.
 
-[Querying Data](./querying-data.md): Describes the various ways to query (get) data.
+[Querying Data](../interacting-with-your-data/querying-data.md): Describes the various ways to query (get) data.
 
-[Create Views](../managing-your-data/creating-and-managing-views.md): Demonstrates joining datasets to create views.
+[Create Views](./creating-and-managing-views.md): Demonstrates joining datasets to create views.
