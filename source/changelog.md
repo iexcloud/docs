@@ -2,9 +2,28 @@
 
 Here are the notable changes.
 
+## 2022-11-22
+
+- (NEW feature) Real-time writes with the [apperate.write()](./getting-started/write-and-read-a-record.md) JS method and the [POST /write](./write-data/write-data-with-post-write.md) REST endpoint
+- Fix interface for managing the IEX Cloud Legacy pay-as-you-go credit limit
+
+## 2022-11-21
+
+- (NEW article) [Load More Data Into a Dataset](./migrating-and-importing-data/load-more-data-into-a-dataset.md)
+
+## 2022-11-16
+
+- Exclude system datasets from max dataset check. See [Pricing](https://iexcloud.io/pricing/) for your plan's maximum **Number of Datasets**.
+
+## 2022-11-15
+
+- Add validationTopic to data-job schema. See also [Create a Job](https://iexcloud.io/docs/apperate-apis/jobs/create-a-job).
+- Speed up metadata: HSCAN 10 -> HSCAN 500. See [SCAN](https://redis.io/commands/scan/).
+- Fix unhandled rejection in validation task
+
 ## 2022-11-14
 
-- Support batch data queries. See [Batch Data Queries](https://iexcloud.io/documentation/interacting-with-your-data/querying-data/batch-data-queries.html).
+- (NEW feature) [Batch Data Queries](https://iexcloud.io/documentation/interacting-with-your-data/querying-data/batch-data-queries.html)
 
 ## 2022-11-10
 
@@ -20,7 +39,7 @@ Here are the notable changes.
 
 ## 2022-10-12
 
-- Add edit-on-GitHub icon to all docs site pages
+- Add edit-on-GitHub icon for all docs site articles.
 
 ## 2022-10-11
 
@@ -40,11 +59,11 @@ Here are the notable changes.
 
 ## 2022-09-29
 
-- New article [Modify a Data Schema](https://iexcloud.io/documentation/managing-your-data/updating-a-dataset-schema.html)
+- (NEW article) [Modify a Data Schema](https://iexcloud.io/documentation/managing-your-data/updating-a-dataset-schema.html)
 
 ## 2022-09-27
 
-- New articles:
+- (NEW articles):
 
     - [iex.js JavaScript Library](https://iexcloud.io/documentation/developer-tools/iexjs-library.html)
     - [Querying Datasets with iex.js](https://iexcloud.io/documentation/interacting-with-your-data/querying-data/querying-datasets-with-iexjs.html)
