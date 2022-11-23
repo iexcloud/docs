@@ -1,10 +1,10 @@
 # Write and Read Data
 
-Apperate makes writing data a snap. You can do this manually in the console or do it programmatically using Apperate's RESTful [Data API](https://iexcloud.io/docs/apperate-apis/data/). Apperate's [iex.js JavaScript library](../developer-tools/iexjs-library.md) (iexjs) makes API calls even easier by wrapping them in JavaScript methods.
+Apperate makes writing data a snap. You can write data via the console or do it programmatically using Apperate's RESTful [Data API](https://iexcloud.io/docs/apperate-apis/data/). Apperate's [iex.js JavaScript library](../developer-tools/iexjs-library.md) (iexjs) makes API calls even easier by wrapping them in JavaScript methods.
 
 Here we'll use the iexjs library to write data to Apperate and to retrieve that data.
 
-Apperate's real-time write methods expect incoming data as an array of objects (specified using JSON). Apperate creates data records from the objects.
+The `apperate.write()` iexjs method expects incoming data as an array of objects (specified using JSON). Apperate creates data records from the objects.
 
 For example, you could write news events using an array like this one:
 
@@ -26,6 +26,8 @@ For example, you could write news events using an array like this one:
     }
 ]
 ```
+
+The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference page describes the `POST /write` method and its parameters.
 
 Let's write the above data to Apperate.
 
@@ -71,7 +73,7 @@ Here's how to write data using the `apperate.write()` [iexjs](https://www.npmjs.
 
 1. Run the code. Apperate writes the data records to the target dataset and returns a response like below.
 
-    ```
+    ```javascript
     {success: true, message: "wrote 2 messages"}
     ```
 

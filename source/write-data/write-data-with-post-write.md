@@ -1,8 +1,8 @@
 # Write Data with POST /write
 
-Apperate's `POST /write` endpoint and `apperate.write()` JS function are fast ways to write one or a few records. By default, they are asynchronous--they return immediately. You can write to the same dataset simultaneously. Whenever you're ready to write data, Apperate is ready to store it.
+Apperate's `POST /write` endpoint and `apperate.write()` JS function are fast ways to write one or a few records. By default, they return after storing the data and making it available for querying. Alternatively you can run them asynchronously. When run asynchronously, the call returns immediately to unblock you, Apperate saves the data and makes the data available for query as soon as possible. The async mode facilitates writing to the same dataset simultaneously. Whenever you're ready to write data, Apperate is ready to store it.
 
-The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference page describes the `POST /write` method. 
+The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference page describes the `POST /write` method and its parameters. 
 
 > Note: POST /write doesn't guarantee the ordering of records.
 
@@ -28,7 +28,7 @@ Here we'll write data using the `POST /write` endpoint.
 
 The method returns a response like the one below and writes the data to the dataset.
 
-```
+```javascript
 {"success":true,"message":"wrote 1 messages"}
 ```
 
