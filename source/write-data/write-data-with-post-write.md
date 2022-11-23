@@ -10,9 +10,7 @@ The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) referen
 
 Here we'll write data using the `POST /write` endpoint.
 
-``` {seealso}
-[Write and Read Data](../getting-started/write-and-read-a-record.md) demonstrates using the `apperate.write()` JS method.
-```
+> See also: [Write and Read Data](../getting-started/write-and-read-a-record.md) demonstrates using the `apperate.write()` JS method.
 
 ## Write Data
 

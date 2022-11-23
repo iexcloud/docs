@@ -95,8 +95,7 @@ That was fast and easy, right?! If you opted to generate a new dataset, let's ex
 
     Notice the index assignments and types. Apperate selected the `ticker` property as the Primary Index (aka *key*), and also selected Secondary (*subkey*) and Date (*date*) indexes. The indexes combine to uniquely identify the dataset records.
 
-    ``` {note} You can update the schema as you like. See [Modify a Data Schema](../managing-your-data/updating-a-dataset-schema.md) for details.
-    ```
+    > Note: You can update the schema as you like. See [Modify a Data Schema](../managing-your-data/updating-a-dataset-schema.md) for details.
 
 Let's search the target dataset for the data you wrote.
 
@@ -126,9 +125,7 @@ You can query the data just as easily as you wrote it. Here we'll retrieve a dat
     - `subkey`: Secondary index
     - `on`:  Query parameter to search on a Date index.
 
-    ``` {note}
-    A dataset's [API docs](https://iexcloud.io/docs/) indicate all applicable data indexes (e.g., key, subkey, date). 
-    ```
+    > Note: A dataset's [API docs](https://iexcloud.io/docs/) indicate all applicable data indexes (e.g., key, subkey, date). 
 
 1. Run the code. Apperate returns the matching records in a query response and prints it. 
 
