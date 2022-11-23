@@ -19,7 +19,7 @@ The following articles get you started with storing data to Apperate.
 
 ## Writing Data
 
-[Write Data with POST /write](./write-data/write-data-with-post-write.md) demonstrates writing data records in a fast, light-weight manner. Its asynchronous option supports making multiple write calls simultaneously, writing records in-parallel. By default it behaves synchronously, returning a response after the data is available to query.
+[Write Data with POST /write](./write-data/write-data-with-post-write.md) demonstrates writing data records in a fast, light-weight manner. Its asynchronous option supports making multiple write calls simultaneously, writing records in parallel. By default it behaves synchronously, returning a response after the data is available to query.
 
 ## Loading Data
 
