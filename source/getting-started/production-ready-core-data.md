@@ -78,13 +78,13 @@ Now that you've been introduced to IEX Cloud Core Financial Data, here are some 
 
 [Using Core Financial Data](../using-core-data.md): These articles demonstrate querying real-time and time series data, and leveraging normalized financial symbols. 
 
-[Migrating and Import Data](../migrating-and-importing-data.md): These articles demonstrate loading data from various data sources, including AWS S3 buckets, URLs, and files.
+[Search Data](../interacting-with-your-data.md): These articles show how to query data.
+
+[Load Data](../migrating-and-importing-data.md): These articles demonstrate loading data from various data sources, including AWS S3 buckets, URLs, and files.
 
 [Writing and Reading a Record](../getting-started/write-and-read-a-record.md): Shows you how to write individual data records to Apperate and read them back.
 
 [Managing Your Data](../managing-your-data.md): This section provides guides that explain dataset schemas, creating views, and creating datasets via the Datasets API.
-
-[Interacting With Your Data](../interacting-with-your-data.md): These articles introduce Use Apperate's APIs, show how to query datasets, and demonstrate updating data.
 
 ```{note} IEX Cloud documentation for the legacy plans is at <https://iexcloud.io/docs/api/>.
 ```

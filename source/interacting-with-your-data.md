@@ -1,4 +1,4 @@
-# Interact with Your Data
+# Search Data
 
 ```{toctree}
 :maxdepth: 1
