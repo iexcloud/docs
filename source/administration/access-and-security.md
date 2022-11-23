@@ -6,9 +6,9 @@
 access-and-security/restricting-data-access-to-specific-domains.md
 ```
 
-You connect your application or project to your IEX Cloud account via API tokens (also referred to simplay as tokens). Tokens allow you to track, control, and throttle platform usage. You can grant users access to datasets by giving them public API tokens. 
+You can control access to [your data endpoints](https://iexcloud.io/docs/datasets/) via tokens (aka *API tokens* or *API keys*). Tokens allow you to track, control, and throttle data usage. You can grant people access to datasets by giving them *public API tokens* (aka *public tokens* or *public keys*). 
 
-``` {warning} Your secret token allows you to perform any action on your data and account. **NEVER** share your secret token publicly.
+``` {warning} Your *secret token* (aka *secret key*) allows you to perform any action on your data and account. **NEVER** share your secret token publicly.
 ```
 
 ## Creating an API Token
@@ -59,12 +59,7 @@ Now the token can be used in calling the specified APIs.
 
 ## How many tokens do I need?
 
-Depending on your use case, you may want to use multiple tokens rather than just one. You’ll typically want to use multiple tokens when tracking, controlling, and throttling usage for different projects, apps, or end users separately.
-
-Reasons to use multiple tokens:
-
-- You have multiple applications or projects using IEX Cloud
-- Multiple teams at your business are sharing your IEX Cloud account
+The number of tokens you may need depends on the number of customers and team members that you want to grant access to, the datasets they need, and in the case of team members, the actions they need to perform on your Apperate resources and your datasets. You’ll typically want to use multiple tokens when tracking, controlling, and throttling usage for different projects, apps, or end users separately.
 
 ## What's Next?
 
