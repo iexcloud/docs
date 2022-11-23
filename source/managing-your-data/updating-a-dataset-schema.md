@@ -86,7 +86,7 @@ Click the Invalid Records icon to view or download the invalid records CSV file.
 
 Copy the record data and make if valid. Then add it back to the dataset using one of these ways:
 
-- [Database Page](../interacting-with-your-data/updating-a-data-record.md)
+- [Database Page](../managing-your-data/update-data.md)
 - [Data API](./creating-a-dataset-with-the-api.md)
 - [File](../migrating-and-importing-data/loading-data-from-a-file.md).
 

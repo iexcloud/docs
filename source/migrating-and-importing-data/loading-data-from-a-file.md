@@ -63,7 +63,7 @@ Congratulations on making data available in Apperate!
 
 ## What's Next
 
-Now that you've created a dataset, you can examine it and or modify it in the schema editor (click **Edit Schema**). You can also add more data to it (click **Ingest data**) or [modify its data](../interacting-with-your-data/updating-a-data-record.md) via the dataset's **Database** page.
+Now that you've created a dataset, you can examine it and or modify it in the schema editor (click **Edit Schema**). You can also add more data to it (click **Ingest data**) or [modify its data](../managing-your-data/update-data.md) via the dataset's **Database** page.
 
 Here are some more topics you can learn:
 
