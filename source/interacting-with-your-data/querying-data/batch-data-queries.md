@@ -84,6 +84,9 @@ If a query's [API token](../../reference/glossary.md#token-api-token) is unautho
 ``` {important} A batch data query must operate on either Core datasets or your datasets--the two dataset types can't be mixed. Batch queries are not supported across workspaces.
 ```
 
+``` {important} A batch query is limited to 2,000 individual queries (i.e., queries = keys queried &times; datasets queried). If a batch query exceeds this limit, Apperate reports the error and skips executing the batch query.
+```
+
 ``` {note} Record data returned from each dataset counts as a read. See [Credits and Pricing](../../administration/credits-and-pricing.md) for details.
 ```
 
