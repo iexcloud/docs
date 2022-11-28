@@ -1,6 +1,6 @@
 # Write and Read Data
 
-Apperate makes writing data a snap. You can write data via the console or do it programmatically using Apperate's RESTful [Data API](https://iexcloud.io/docs/apperate-apis/data/). For JavaScript, the [iex.js JavaScript library](../developer-tools/iexjs-library.md) (iexjs) makes writing data even easier by wrapping the Data API in JavaScript methods. Here we'll use the iexjs library to write the data above and to retrieve that data.
+Apperate makes writing data a snap. You can write data via the console or do it programmatically using Apperate's RESTful [Data API](https://iexcloud.io/docs/apperate-apis/data/). For JavaScript, the [iex.js JavaScript library](../developer-tools/iexjs-library.md) (iexjs) makes writing data even easier by wrapping the Data API in JavaScript methods. Here we'll use the iexjs library to write data and to retrieve that data.
 
 The `apperate.write()` iexjs method takes an object array (specified using JSON) as input and creates data records from the objects.
 
@@ -20,8 +20,10 @@ For example, you could write application user data from an array like this one:
 ``` {note} The object array can include as many objects as you like; though the write method is intended for writing one or a few records in real time. [Load Data](../migrating-and-importing-data.md) describes recommended ways for writing large numbers of records in a single call.
 ```
 
-``` {seealso} The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference page describes the POST /write method and its parameters.
+``` {seealso} The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference page describes the underlying *POST /write* method and its parameters.
 ```
+
+Let's write the above data to Apperate.
 
 ## Write Data with apperate.write()
 
@@ -77,11 +79,13 @@ Here's what the response looks like in RunKit.
 
 ![](./write-and-read-data/write-response.png)
 
-That was fast and easy, right?! If you opted to generate a new dataset, using the `createDatasetOnDemand: true` setting, let's examine the dataset.
+That was fast and easy, right?! Let's examine the generated dataset.
 
 ## Check the Generated Dataset
 
-1. In the Console, go to the [Datasets](https://iexcloud.io/console/datasets/) page, click on your Workspace, and refresh the page. The listing includes your dataset.
+1. In the Console, go to the [Datasets](https://iexcloud.io/console/datasets/) page, click on your Workspace name, and refresh the page. The listing includes your dataset.
+
+    ![](./write-and-read-data/my_datasets.png)
 
 1. Click on the name of the dataset. The dataset overview appears.
 
@@ -91,9 +95,9 @@ That was fast and easy, right?! If you opted to generate a new dataset, using th
 
     ![](./write-and-read-data/my_users_properties.png)
 
-    Apperate made a best effort to determine your data types and properties to index. Since email addresses are unique and lastnames are a good secondary identifier, let's use them as the dataset's Primary Index (aka *key*) and Secondary Index (*subkey*), respecfively.
+    Apperate made a best effort to determine your data types and properties to index. But let's adjust the schema to better fit the data and how we want to use it. Since email addresses are unique and lastnames are a good secondary identifier, let's use them as the dataset's Primary Index (aka *key*) and Secondary Index (*subkey*), respecfively.
 
-1. Select the `email` property as your Primary Index and the `lastname` property as the Secondary Index.
+1. Make `email` the **Primary** index and `lastname` the **Secondary** index.
 
     ![](./write-and-read-data/my_users_revised.png)
 
@@ -102,11 +106,11 @@ That was fast and easy, right?! If you opted to generate a new dataset, using th
     ``` {note} You can update the schema as you like. See [Modify a Data Schema](../managing-your-data/updating-a-dataset-schema.md) for details.
     ```
 
-1. View the dataset's docs by clicking **Open Docs** in the dataset overview page.
+1. In the dataset overview page, view the dataset's docs by clicking **Open Docs**.
 
     ![](./write-and-read-data/my_users_docs.png)
 
-    Notice that the Response Attributes `email` and `lastname` are labeled `*key` and `*subkey`. This is shorthand indicating they're your Primary and Secondary indexes.
+    Notice that the **Response Attributes** `email` and `lastname` are labeled `*key` and `*subkey`. This shorthand indicates they're your Primary and Secondary indexes.
 
     ``` {note}
     A dataset's [API docs](https://iexcloud.io/docs/) indicate all applicable data indexes (e.g., key, subkey, date). 
@@ -134,9 +138,9 @@ You can read the data just as easily as you wrote it. Let's retrieve a data reco
     });
     ```
 
-    The `apperate.queryData` method's `data` parameter takes an object array that includes a `key` index, and may also include a `subkey` and/or `date` index. The code above a `key` index and `subkey` index set to the email and lastname values of the record we're searching for.
+    The `apperate.queryData` method's `data` parameter takes an object array that includes a `key` index, and may also include a `subkey` and/or `date` index. To get the data record we wrote earlier, our `apperate.queryData` call above passes in an email address as a `key` index value and a lastname as the `subkey` index value.
 
-1. Run the code. Apperate returns the matching records in a query response and prints it. 
+1. Run the code. Apperate returns the matching record in a query response and prints it. 
 
 Here's what the query response looks like in RunKit.
 
