@@ -11,7 +11,7 @@ The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) referen
 Here we'll write data using the `POST /write` endpoint.
 
 ``` {seealso}
-[Write and Read Data](../getting-started/write-and-read-a-record.md) demonstrates using the `apperate.write()` JS method.
+[Write and Read Data](../getting-started/write-and-read-data.md) demonstrates using the `apperate.write()` JS method.
 ```
 
 ## Write Data
@@ -40,6 +40,6 @@ Congratulations! You wrote your data to a dataset using the `POST /write` endpoi
 
 ## What's Next
 
-[Write and Read Data](../getting-started/write-and-read-a-record.md) demonstrates using the `apperate.write()` JS method.
+[Write and Read Data](../getting-started/write-and-read-data.md) demonstrates using the `apperate.write()` JS method.
 
 [Update a Dataset Schema](../managing-your-data/updating-a-dataset-schema.md) shows how to examine and modify your dataset schema.

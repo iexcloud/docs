@@ -1,8 +1,8 @@
 # comments start with "#"
+getting-started/write-and-read-a-record.md getting-started/write-and-read-data.md
 interacting-with-your-data/updating-a-data-record.md managing-your-data/update-data.md
 interacting-with-your-data/apperate-api-basics.md developer-tools/use-apperate-apis.md
 reference/changelog.md changelog.md
 managing-your-data/defining-schemas/normalization.md using-core-data/using-normalized-financial-data.md
 getting-started/creating-a-workspace.md getting-started/getting-started-with-apperate.md
 getting-started/getting-started-with-an-example-dataset.md getting-started/getting-started-with-apperate.md
-getting-started/writing-and-fetching-a-record.md getting-started/write-and-read-a-record.md

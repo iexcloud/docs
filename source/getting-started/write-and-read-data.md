@@ -1,19 +1,18 @@
 # Write and Read Data
 
-Apperate makes writing data a snap. You can write data via the console or do it programmatically using Apperate's RESTful [Data API](https://iexcloud.io/docs/apperate-apis/data/), or using the [iex.js JavaScript library](../developer-tools/iexjs-library.md) (iexjs) which wraps the Data API in JavaScript methods.
+Apperate makes writing data a snap. You can write data via the console or do it programmatically using Apperate's RESTful [Data API](https://iexcloud.io/docs/apperate-apis/data/). For JavaScript, the [iex.js JavaScript library](../developer-tools/iexjs-library.md) (iexjs) makes writing data even easier by wrapping the Data API in JavaScript methods. Here we'll use the iexjs library to write the data above and to retrieve that data.
 
 The `apperate.write()` iexjs method takes an object array (specified using JSON) as input and creates data records from the objects.
 
-For example, you could write a news event using an array like this one:
+For example, you could write application user data from an array like this one:
 
 ```javascript
 [
     {
-        "headline": "Space traveler bids are stacking up",
-        "content": "You may know some of these celebrities and billionaires ...",
-        "ticker": "AMZN",
-        "source": "IEX Underground",
-        "date": "2022-07-14"
+        "firstname": "Jasmine",
+        "lastname": "Doe",
+        "email": "jasmine.doe@foo.org",
+        "org": "Foo LLC"
     }
 ]
 ```
@@ -24,15 +23,13 @@ For example, you could write a news event using an array like this one:
 ``` {seealso} The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference page describes the POST /write method and its parameters.
 ```
 
-Here we'll use the iexjs library to write the data above and to retrieve that data.
-
 ## Write Data with apperate.write()
 
 Here's how to write data using the `apperate.write()` [iexjs](https://www.npmjs.com/package/@apperate/iexjs) JavaScript library method.
 
 1. Open an npmjs environment, such as [RunKit](https://npm.runkit.com/%40apperate%2Fiexjs).
 
-    ![](./write-and-read-a-record/runkit.png)
+    ![](./write-and-read-data/runkit.png)
 
     Optionally, you can install iexjs with [npm](https://www.npmjs.com) and use iexjs locally:
     
@@ -51,13 +48,13 @@ Here's how to write data using the `apperate.write()` [iexjs](https://www.npmjs.
         workspace: "WORKSPACE", 
         id: "DATASET", 
         createDatasetOnDemand: true, 
-        data: [{"headline": "Space traveler bids are stacking up", "content": "You may know some of these celebrities and billionaires ...", "ticker": "AMZN", "source": "IEX Underground", "date": "2022-07-14"}]})
+        data: [{"firstname": "Jasmine", "lastname": "Doe", "email": "jasmine.doe@foo.org", "org": "Foo LLC"}]})
             .then((res) => {
                 console.log(res);
-        });
+            });
     ```
 
-    The first two lines of code import the iexjs `Client` definition and instantiate it. The `apperate.write` method call writes data from the `data` parameter into the target dataset specified by the `id` and `workspace` parameters. The `createDatasetOnDemand: true` setting instructs Apperate to create the dataset if it doesn't exist already.
+    The first two lines of code import the iexjs `Client` definition and instantiate it. The `apperate.write` method call writes data from the `data` parameter into the target dataset specified by the `id` and `workspace` parameters. The `createDatasetOnDemand: true` setting (optional) instructs Apperate to create the dataset if it doesn't exist already.
 
     **Replace in the Code**
 
@@ -78,32 +75,50 @@ Here's how to write data using the `apperate.write()` [iexjs](https://www.npmjs.
 
 Here's what the response looks like in RunKit.
 
-![](./write-and-read-a-record/loadData-response.png)
+![](./write-and-read-data/write-response.png)
 
 That was fast and easy, right?! If you opted to generate a new dataset, using the `createDatasetOnDemand: true` setting, let's examine the dataset.
 
-## Examine the Generated Dataset
+## Check the Generated Dataset
 
 1. In the Console, go to the [Datasets](https://iexcloud.io/console/datasets/) page, click on your Workspace, and refresh the page. The listing includes your dataset.
 
 1. Click on the name of the dataset. The dataset overview appears.
 
+    ![](./write-and-read-data/my_users_overview.png)
+
 1. Click **Edit Schema**. The schema editor appears. 
 
-    ![](./write-and-read-a-record/my-news-dataset-schema.png)
+    ![](./write-and-read-data/my_users_properties.png)
 
-    Notice the index assignments and types. Apperate selected the `ticker` property as the Primary Index (aka *key*), and also selected Secondary (*subkey*) and Date (*date*) indexes. The indexes combine to uniquely identify the dataset records.
+    Apperate made a best effort to determine your data types and properties to index. Since email addresses are unique and lastnames are a good secondary identifier, let's use them as the dataset's Primary Index (aka *key*) and Secondary Index (*subkey*), respecfively.
+
+1. Select the `email` property as your Primary Index and the `lastname` property as the Secondary Index.
+
+    ![](./write-and-read-data/my_users_revised.png)
+
+1. Save your changes by clicking **Update Dataset**.
 
     ``` {note} You can update the schema as you like. See [Modify a Data Schema](../managing-your-data/updating-a-dataset-schema.md) for details.
     ```
 
-Let's search the target dataset for the data you wrote.
+1. View the dataset's docs by clicking **Open Docs** in the dataset overview page.
+
+    ![](./write-and-read-data/my_users_docs.png)
+
+    Notice that the Response Attributes `email` and `lastname` are labeled `*key` and `*subkey`. This is shorthand indicating they're your Primary and Secondary indexes.
+
+    ``` {note}
+    A dataset's [API docs](https://iexcloud.io/docs/) indicate all applicable data indexes (e.g., key, subkey, date). 
+    ```
+
+Let's search the target dataset for the data you wrote using the `email` and `lastname` values as `key` and `subkey` values.
 
 ## Query the Data
 
-You can query the data just as easily as you wrote it. Let's retrieve a data record using the iexjs library's `apperate.queryData` method. 
+You can read the data just as easily as you wrote it. Let's retrieve a data record using the iexjs library's `apperate.queryData` method. 
 
-1. In your app or RunKit, enter the following code and make sure to replace the CAPITALIZED values.
+1. In your app or RunKit, enter the following code to query on the user's email address and last name. Make sure to replace the CAPITALIZED values too.
 
     **Code:**
 
@@ -113,29 +128,21 @@ You can query the data just as easily as you wrote it. Let's retrieve a data rec
     client.apperate.queryData({
         workspace: "WORKSPACE", 
         id: "DATASET", 
-        data: [{"key": "AMZN"}]})
+        data: [{"key": "jasmine.doe@foo.org", "subkey": "Doe"}]})
             .then((res) => {
                 console.log(res);
     });
     ```
 
-    The `apperate.queryData` method's `data` parameter takes an object array that includes a `key` index, and may also include a `subkey` and/or `date` index. The code above just uses a `key` index. Here are the the respective attributes for mapping them in your object array:
-    
-    - `key`: Primary index
-    - `subkey`: Secondary index
-    - `on`:  Query parameter to search on a Date index.
-
-    ``` {note}
-    A dataset's [API docs](https://iexcloud.io/docs/) indicate all applicable data indexes (e.g., key, subkey, date). 
-    ```
+    The `apperate.queryData` method's `data` parameter takes an object array that includes a `key` index, and may also include a `subkey` and/or `date` index. The code above a `key` index and `subkey` index set to the email and lastname values of the record we're searching for.
 
 1. Run the code. Apperate returns the matching records in a query response and prints it. 
 
 Here's what the query response looks like in RunKit.
 
-![](./write-and-read-a-record/queryData-response.png)
+![](./write-and-read-data/query_my_users_for_jasmine_doe.png)
 
-Congratulations! You wrote data to Apperate and queried that data.
+Writing and reading data in Apperate is just that easy! Congratulations on using Apperate in JavaScript via iexjs!
 
 ## What's Next
 
@@ -145,6 +152,6 @@ Now that you know how to write and query data, here are some topics to consider 
 
 [Managing Your Data](../managing-your-data.md): These guides explain dataset schema fundamentals, creating views, and creating datasets via the  Datasets API.
 
-[Production-Ready IEX Cloud Core Financial Data](./production-ready-core-data.md): Introduces Apperate's 5+ terabytes of built-in financial data available for enriching your fintech applications.
+[Production-Ready IEX Cloud Core Financial Data](../getting-started/production-ready-core-data.md): Introduces Apperate's 5+ terabytes of built-in financial data available for enriching your fintech applications.
 
 [Load Data](../migrating-and-importing-data.md): These tutorials show you how to load data from a URL, an AWS S3 bucket, and more.
