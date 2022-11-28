@@ -11,7 +11,7 @@ For example, if you want Apple cash flow records, pass in the Apple symbol `AAPL
 ```javascript
 const {Client} = require("@apperate/iexjs")
 const client = new Client({api_token: "TOKEN", version: "VERSION"});
-client.platform.queryData({key: "AAPL", workspace: "CORE", id: "CASH_FLOW"}).then((res) => {
+client.apperate.queryData({key: "AAPL", workspace: "CORE", id: "CASH_FLOW"}).then((res) => {
     console.log(res);
 });
 ```
@@ -27,7 +27,7 @@ You can fine-tune your search by specifying additional [`GET /data`](https://iex
 For example, you can limit results to a particular time range using the `from` and `to` query parameters.
 
 ```javascript
-client.platform.queryData({
+client.apperate.queryData({
     key: "AAPL", workspace: "CORE", id: "CASH_FLOW",
     from: "2019-01-01", to: "2019-07-01"}).then((res) => {
         console.log(res);
