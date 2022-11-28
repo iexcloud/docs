@@ -125,6 +125,37 @@ Here are steps for making a batch data request.
 
 Apperate returns an array of records for each key in each dataset, starting with the first dataset you specified.
 
+## Error Reporting
+
+If your request generates an error, Apperate returns the error as the last object in the response. For example, the following response has one returned record and an object containing a system error.
+
+```javascript
+[
+  {
+    "datetime": 1647644242000,
+    "hasPaywall": false,
+    "headline": "Apple says your next computer isn''t a computer in TV ad for the new iPad Air",
+    "image": "https://cloud.dev.iexapis.com/v1/news/image/ZN4faqJL71CjtjJiUe006uMZuHQLmn5snHo5kWZUUsN",
+    "imageUrl": "https://fdn.gsmarena.com/imgroot/news/22/03/ipad-air-ad/-952x498w6/gsmarena_000.jpg",
+    "lang": "en",
+    "provider": "CityFalcon",
+    "qmUrl": "https://www.gsmarena.com/apple_says_your_next_computer_isnt_a_computer_in_tv_ad_for_the_new_ipad_air-news-53630.php?utm_campaign=cityfalcon&utm_medium=cityfalcon&utm_source=cityfalcon",
+    "related": "AAPL",
+    "source": "GSMArena",
+    "summary": "The basic message seems to be: it can do everything.",
+    "url": "https://cloud.dev.iexapis.com/v1/news/article/ZN4faqJL71CjtjJiUe006uMZuHQLmn5snHo5kWZUUsN",
+    "id": "NEWS",
+    "key": "AAPL",
+    "subkey": "ZN4faqJL71CjtjJiUe006uMZuHQLmn5snHo5kWZUUsN",
+    "date": 1647644242000,
+    "updated": 1647648347000
+  },
+  {
+    "_system_error": "internal error occurred, code 00E866961501B5"
+  }
+]
+```
+
 ## What's Next
 
 [Create Views](../../managing-your-data/creating-and-managing-views.md) demonstrates combining Core data and workspace data into views.
