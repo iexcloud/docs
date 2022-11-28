@@ -47,5 +47,5 @@ With our new annual billing, you don't pay for usage until you pass your minimum
 Now that you understand Apperate pricing, you can get started with using Apperate. Here are some topics to get you started:
 
 - [Get Started with Apperate](../getting-started/getting-started-with-apperate.md)
-- [Write and Read Data](../getting-started/write-and-read-a-record.md)
+- [Write and Read Data](../getting-started/write-and-read-data.md)
 - [Using Core Financial Data](../using-core-data.md)

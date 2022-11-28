@@ -140,4 +140,4 @@ To learn more about Apperate's APIs, visit the [API Reference](https://iexcloud.
 
 If want to combine Core Financial Dataset data with data from other datasets, check out [Create Views](../managing-your-data/creating-and-managing-views.md).
 
-If you need to store application data, learn how at [Write and Read Data](../getting-started/write-and-read-a-record.md).
+If you need to store application data, learn how at [Write and Read Data](../getting-started/write-and-read-data.md).

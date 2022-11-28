@@ -4,7 +4,7 @@ Here are the notable changes.
 
 ## 2022-11-22
 
-- (NEW feature) Real-time writes with the [apperate.write()](./getting-started/write-and-read-a-record.md) JS method and the [POST /write](./write-data/write-data-with-post-write.md) REST endpoint
+- (NEW feature) Real-time writes with the [apperate.write()](./getting-started/write-and-read-data.md) JS method and the [POST /write](./write-data/write-data-with-post-write.md) REST endpoint
 - Fix interface for managing the IEX Cloud Legacy pay-as-you-go credit limit
 
 ## 2022-11-21

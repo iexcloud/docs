@@ -6,9 +6,7 @@
 interacting-with-your-data/querying-data.md
 ```
 
-With Apperate, you can interact with your data programatically via the API or manually in the console via the UI and SQL editor. The articles in this section explore tackling data tasks using all these approaches.
-
-[Write and Read Data](../getting-started/write-and-read-a-record.md) - Use the API to write your app data to Apperate and retrieve it.
+With Apperate, you can interact with your data programatically via the API or manually in the console via the UI and SQL editor. The articles in this section explore searching data using all these approaches.
 
 [Querying Data](./interacting-with-your-data/querying-data.md) - Query time series data and more.
 

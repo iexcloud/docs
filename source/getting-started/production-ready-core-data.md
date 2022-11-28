@@ -82,7 +82,7 @@ Now that you've been introduced to IEX Cloud Core Financial Data, here are some 
 
 [Load Data](../migrating-and-importing-data.md): These articles demonstrate loading data from various data sources, including AWS S3 buckets, URLs, and files.
 
-[Writing and Reading a Record](../getting-started/write-and-read-a-record.md): Shows you how to write individual data records to Apperate and read them back.
+[Writing and Reading a Record](../getting-started/write-and-read-data.md): Shows you how to write individual data records to Apperate and read them back.
 
 [Managing Your Data](../managing-your-data.md): This section provides guides that explain dataset schemas, creating views, and creating datasets via the Datasets API.
 
