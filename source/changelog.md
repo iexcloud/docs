@@ -2,14 +2,24 @@
 
 Here are the notable changes.
 
+## 2022-11-28
+
+- Fix weekend recognition for real-time quote endpoints
+- Indicate errors in batch query responses
+- Limit each Batch API call to 2,000 queries
+- **NEW articles**
+    - [Getting Started &rarr; Write and Read Data](https://iexcloud.io/documentation/getting-started/write-and-read-data.html) using `apperate.write()` and `apperate.queryData()`
+    - [Write Data with the apperate.write() JS Method](https://iexcloud.io/documentation/write-data/write-data-with-the-apperate-write-js-method.html)
+    - [Write Data with POST /write](https://iexcloud.io/documentation/write-data/write-data-with-post-write.html)
+
 ## 2022-11-22
 
-- (NEW feature) Real-time writes with the [apperate.write()](./getting-started/write-and-read-data.md) JS method and the [POST /write](./write-data/write-data-with-post-write.md) REST endpoint
+- **(NEW feature)** Real-time writes with the [apperate.write()](./getting-started/write-and-read-data.md) JS method and the [POST /write](./write-data/write-data-with-post-write.md) REST endpoint
 - Fix interface for managing the IEX Cloud Legacy pay-as-you-go credit limit
 
 ## 2022-11-21
 
-- (NEW article) [Load More Data Into a Dataset](./migrating-and-importing-data/load-more-data-into-a-dataset.md)
+- **(NEW article)** [Load More Data Into a Dataset](./migrating-and-importing-data/load-more-data-into-a-dataset.md)
 
 ## 2022-11-16
 
@@ -23,7 +33,7 @@ Here are the notable changes.
 
 ## 2022-11-14
 
-- (NEW feature) [Batch Data Queries](https://iexcloud.io/documentation/interacting-with-your-data/querying-data/batch-data-queries.html)
+- **(NEW feature)** [Batch Data Queries](https://iexcloud.io/documentation/interacting-with-your-data/querying-data/batch-data-queries.html)
 
 ## 2022-11-10
 
@@ -59,7 +69,7 @@ Here are the notable changes.
 
 ## 2022-09-29
 
-- (NEW article) [Modify a Data Schema](https://iexcloud.io/documentation/managing-your-data/updating-a-dataset-schema.html)
+- **(NEW article)** [Modify a Data Schema](https://iexcloud.io/documentation/managing-your-data/updating-a-dataset-schema.html)
 
 ## 2022-09-27
 
