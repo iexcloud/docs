@@ -2,11 +2,13 @@
 
 Apperate's `POST /write` endpoint and `apperate.write()` JS function are fast ways to write one or a few records. By default, they return after storing the data and making it available for querying. Alternatively you can run them asynchronously. When run asynchronously, the call returns immediately to unblock you, Apperate saves the data and makes the data available for query as soon as possible. The async mode facilitates writing to the same dataset simultaneously. Whenever you're ready to write data, Apperate is ready to store it.
 
-The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference page describes the `POST /write` method and its parameters. 
+The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference doc describes the `POST /write` method and its parameters. 
 
-> Note: POST /write doesn't guarantee the ordering of records.
+``` {note} *POST /write* doesn't guarantee the ordering of records.
+```
 
-> Note: POST /write doesn't write to any logs. If records fail validation, consider loading the records (instead of writing them) and viewing the validation logs--See the load options at [Loading Data](../migrating-and-importing-data.md).
+``` {note} *POST /write* doesn't write to any logs. If records fail validation, consider loading the records (instead of writing them) and viewing the validation logs--See the load options at [Loading Data](../migrating-and-importing-data.md).
+```
 
 Here we'll write data using the `POST /write` endpoint.
 
@@ -24,7 +26,8 @@ Here we'll write data using the `POST /write` endpoint.
         -d '[{"headline": "Are Hovercrafts the next big thing?", "content": "Here is what people are saying ...", "ticker": "GM", "source": "IEX Underground", "date": "2022-07-15"}]'
     ```
 
-    > Note: On auto-generating a dataset, Apperate infers a dataset schema from your data; you can [update the schema](../managing-your-data/updating-a-dataset-schema.md) later.
+    ``` {note} On auto-generating a dataset, Apperate infers a dataset schema from your data; you can [update the schema](../managing-your-data/updating-a-dataset-schema.md) later.
+    ```
 
 1. Execute the command.
 
