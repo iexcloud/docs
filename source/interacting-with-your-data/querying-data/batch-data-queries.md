@@ -127,7 +127,12 @@ Apperate returns an array of records for each key in each dataset, starting with
 
 ## Error Reporting
 
-If your request generates an error, Apperate returns the error as the last object in the response. For example, the following response has one returned record and an object containing a system error.
+If your request generates an error, Apperate returns the error as the last object in the response.
+
+``` {important} Make sure to handle the possibility of the response containing an error message object.
+``` 
+
+For example, the following response has one record object and an error message object.
 
 ```javascript
 [
@@ -155,6 +160,8 @@ If your request generates an error, Apperate returns the error as the last objec
   }
 ]
 ```
+
+Now you know how to conveniently query for multiple keys in multiple datasets.
 
 ## What's Next
 
