@@ -32,7 +32,10 @@ For example, you could write a news event using an array like this one:
 ``` {note} The object array can include as many objects as you like; though the write method is intended for writing one or a few records in real time. [Load Data](../migrating-and-importing-data.md) describes recommended ways for writing large numbers of records in a single call.
 ```
 
-``` {seealso} The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference page describes the POST /write method and its parameters.
+``` {note} The *apperate.write()* method doesn't guarantee the ordering of records.
+```
+
+``` {note} The *apperate.write()* method doesn't write to any logs. If records fail validation, consider [*loading* the records](../migrating-and-importing-data.md) instead. After attempting to load records, you can view invalid records in the validation logs--See the load options at [Loading Data](../migrating-and-importing-data.md).
 ```
 
 Let's write the data above.
@@ -80,6 +83,9 @@ Here's how to write data using the `apperate.write()` [iexjs](https://www.npmjs.
     | `VERSION` | Apperate API version (`v1` is the current version) |
     | `WORKSPACE` | Your [workspace](../reference/glossary.md#workspace) name |
     | `DATASET` | Target dataset ID (the ID of an existing dataset to populate or a new dataset to create) |
+
+    ``` {seealso} The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference page describes the underlying POST /write method and its parameters.
+    ```
 
 1. Run the code. Apperate writes the data record to the target dataset and returns a response like this:
 

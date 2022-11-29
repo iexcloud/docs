@@ -3,8 +3,8 @@
 ```{toctree}
 :maxdepth: 1
 
-write-data/write-data-with-post-write.md
 write-data/write-data-with-the-apperate-write-js-method.md
+write-data/write-data-with-post-write.md
 ```
 
 Apperate provides simple, fast ways to store varying amounts of data. We group them into two camps:
@@ -19,7 +19,7 @@ The following articles get you started with storing data to Apperate.
 
 ## Writing Data
 
-[Write Data with POST /write](./write-data/write-data-with-post-write.md) demonstrates writing data records in a fast, light-weight manner. Its asynchronous option supports making multiple write calls simultaneously, writing records in parallel. By default it behaves synchronously, returning a response after the data is available to query.
+[Write Data with the apperate.write() JS Method](./write-data/write-data-with-the-apperate-write-js-method.md) and [Write Data with POST /write](./write-data/write-data-with-post-write.md) demonstrate writing data records in a fast, light-weight manner. Their asynchronous option supports making multiple write calls simultaneously, writing records in parallel. By default these real-time writes are synchronous, returning a response *after* the data is available to query.
 
 ## Loading Data
 

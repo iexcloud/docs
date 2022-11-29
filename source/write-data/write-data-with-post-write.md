@@ -7,13 +7,13 @@ The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) referen
 ``` {note} *POST /write* doesn't guarantee the ordering of records.
 ```
 
-``` {note} *POST /write* doesn't write to any logs. If records fail validation, consider loading the records (instead of writing them) and viewing the validation logs--See the load options at [Loading Data](../migrating-and-importing-data.md).
+``` {note} *POST /write* doesn't write to any logs. If records fail validation, consider [*loading* the records](../migrating-and-importing-data.md) instead. After attempting to load records, you can view invalid records in the validation logs--See the load options at [Loading Data](../migrating-and-importing-data.md).
 ```
 
 Here we'll write data using the `POST /write` endpoint.
 
 ``` {seealso}
-[Write and Read Data](../getting-started/write-and-read-data.md) demonstrates using the `apperate.write()` JS method.
+[Write Data with the apperate.write() JS Method](write-data-with-the-apperate-write-js-method.md)
 ```
 
 ## Write Data
