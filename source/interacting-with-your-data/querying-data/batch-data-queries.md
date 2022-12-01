@@ -13,7 +13,7 @@ The following table explains how to fill in the request.
 | `WORKSPACE` | Workspace is `CORE` for [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) or the workspace name for [your datasets](https://iexcloud.io/docs/datasets). A batch data query can work in only one workspace at a time. You can optionally [create a view](../../managing-your-data/creating-and-managing-views.md) from Core data and your workspace data, and batch query that view. |
 | `DATASET_A,DATASET_B` | Example: `QUOTE,NEWS`. The list of datasets to query. Note, each **Dataset ID** is specified in the dataset's reference page. For example, see the [CASH_FLOW](https://iexcloud.io/docs/core/CASH_FLOW) reference page. |
 | `KEY_1,KEY_2` | Example: `AAPL,MSFT,TSLA`. The list of symbols to query for in the datasets. A dataset's primary index is labeled `key` in the dataset reference page's **Response Attributes** section. |
-| `batchSeparator=,` | **(Optional)** A character for separating the request's dataset IDs and keys; comma (<code>,</code>) is the default separator.<br><br>**Imporant:** Alpha-numeric characters are not supported as separators. |
+| `batchSeparator=,` | **(Optional)** A character for separating the request's dataset IDs and keys; comma (<code>,</code>) is the default separator.<br><br>**Important:** Alpha-numeric characters are not supported as separators. |
 
 **Example:**
 
