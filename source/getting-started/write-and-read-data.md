@@ -17,7 +17,7 @@ For example, you could write application user data from an array like this one:
 ]
 ```
 
-``` {note} The object array can include as many objects as you like; though the write method is intended for writing one or a few records in real time. [Load Data](../migrating-and-importing-data.md) describes recommended ways for writing large numbers of records in a single call.
+``` {note} The object array can include as many objects as you like; though the write method is intended for writing one or a few records in real time. [Load Data](../load-data.md) describes recommended ways for writing large numbers of records in a single call.
 ```
 
 ``` {seealso} The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference page describes the underlying *POST /write* method and its parameters.
@@ -158,4 +158,4 @@ Now that you know how to write and query data, here are some topics to consider 
 
 [Production-Ready IEX Cloud Core Financial Data](../getting-started/production-ready-core-data.md): Introduces Apperate's 5+ terabytes of built-in financial data available for enriching your fintech applications.
 
-[Load Data](../migrating-and-importing-data.md): These tutorials show you how to load data from a URL, an AWS S3 bucket, and more.
+[Load Data](../load-data.md): These tutorials show you how to load data from a URL, an AWS S3 bucket, and more.

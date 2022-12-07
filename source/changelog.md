@@ -19,7 +19,7 @@ Here are the notable changes.
 
 ## 2022-11-21
 
-- **(NEW article)** [Load More Data Into a Dataset](./migrating-and-importing-data/load-more-data-into-a-dataset.md)
+- **(NEW article)** [Load More Data Into a Dataset](./load-data/load-more-data-into-a-dataset.md)
 
 ## 2022-11-16
 
@@ -209,8 +209,8 @@ Here are the notable changes.
 
 ## 2022-06-13
 
-- Support using a regex in the [AWS ARN role](../migrating-and-importing-data/accessing-s3-via-storage-integration.md)
-- Support deleting an [AWS integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md)
+- Support using a regex in the [AWS ARN role](../load-data/accessing-s3-via-storage-integration.md)
+- Support deleting an [AWS integration](../load-data/accessing-s3-via-storage-integration.md)
 
 ## 2022-06-09
 
@@ -219,7 +219,7 @@ Here are the notable changes.
 
 ## 2022-06-08
 
-- Supprt selecting [data files](../migrating-and-importing-data/loading-data-from-a-file.md) that have any name suffix or no name suffix
+- Supprt selecting [data files](../load-data/loading-data-from-a-file.md) that have any name suffix or no name suffix
 
 ## 2022-06-03
 
@@ -251,7 +251,7 @@ Here are the notable changes.
 
 - Support SQL views. See it in action at [Create Views](../managing-your-data/creating-and-managing-views.md).
 - Limit dataset query results to 1000
-- Display AWS user ARN for [AWS integration](../migrating-and-importing-data/accessing-s3-via-storage-integration.md)
+- Display AWS user ARN for [AWS integration](../load-data/accessing-s3-via-storage-integration.md)
 
 ## 2022-05-17
 
@@ -268,7 +268,7 @@ Here are the notable changes.
 
 ## 2022-05-11
 
-- Support sampling JSON data with JSONPath and displaying in the UI. For details, go to [Access Nested JSON Data](../migrating-and-importing-data/accessing-nested-json-data.md).
+- Support sampling JSON data with JSONPath and displaying in the UI. For details, go to [Access Nested JSON Data](../load-data/accessing-nested-json-data.md).
 
 ## 2022-05-10
 
@@ -305,4 +305,4 @@ Here are the notable changes.
 
 ## 2022-04-13
 
-- Support scheduled ingestion. In the Console, see [Schedule Data Ingestion](../migrating-and-importing-data/scheduling-data-ingestion.md).
+- Support scheduled ingestion. In the Console, see [Schedule Data Ingestion](../load-data/scheduling-data-ingestion.md).

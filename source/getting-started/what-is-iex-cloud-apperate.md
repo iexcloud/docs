@@ -17,7 +17,7 @@ Here we describe key features that set Apperate apart from other databases.
 
 ## Purpose-Built for Data-Driven Apps
 
-Apperate enables you to connect [data sources](../reference/glossary.md#data-source) to your applications in seconds. You can [load data](../migrating-and-importing-data.md) from [AWS S3 buckets](../migrating-and-importing-data/loading-data-from-aws-s3.md), [URLs](../migrating-and-importing-data/loading-data-from-a-url.md), or [CSV/JSON files](../migrating-and-importing-data/loading-data-from-a-url.md) on-demand or [per a schedule](../migrating-and-importing-data/scheduling-data-ingestion.md). In one-step [dataset](../managing-your-data/understanding-datasets.md) (table) creation, Apperate infers your data types, constructs a schema, validates the data, and generates [REST API endpoints](https://iexcloud.io/docs/datasets) automatically.
+Apperate enables you to connect [data sources](../reference/glossary.md#data-source) to your applications in seconds. You can [load data](../load-data.md) from [AWS S3 buckets](../load-data/loading-data-from-aws-s3.md), [URLs](../load-data/loading-data-from-a-url.md), or [CSV/JSON files](../load-data/loading-data-from-a-url.md) on-demand or [per a schedule](../load-data/scheduling-data-ingestion.md). In one-step [dataset](../managing-your-data/understanding-datasets.md) (table) creation, Apperate infers your data types, constructs a schema, validates the data, and generates [REST API endpoints](https://iexcloud.io/docs/datasets) automatically.
 
 The following diagram shows the back-end infrastructure you get on loading new data.
 

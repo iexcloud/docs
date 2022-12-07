@@ -1,4 +1,13 @@
 # comments start with "#"
+source/migrating-and-importing-data.md load-data.md
+migrating-and-importing-data/accessing-nested-json-data.md load-data/accessing-nested-json-data.md
+migrating-and-importing-data/accessing-s3-via-storage-integration.md load-data/accessing-s3-via-storage-integration.md
+migrating-and-importing-data/accessing-s3-via-your-access-key.md load-data/accessing-s3-via-your-access-key.md
+migrating-and-importing-data/loading-data-from-a-file.md load-data/loading-data-from-a-file.md
+migrating-and-importing-data/loading-data-from-a-url.md load-data/loading-data-from-a-url.md
+migrating-and-importing-data/loading-data-from-aws-s3.md load-data/loading-data-from-aws-s3.md
+migrating-and-importing-data/load-more-data-into-a-dataset.md load-data/load-more-data-into-a-dataset.md
+migrating-and-importing-data/scheduling-data-ingestion.md load-data/scheduling-data-ingestion.md
 interacting-with-your-data/querying-data.md search-data.md
 interacting-with-your-data/querying-data/batch-data-queries.md search-data/batch-data-queries.md
 interacting-with-your-data/querying-data/querying-datasets-with-iexjs.md search-data/querying-datasets-with-iexjs.md

@@ -88,7 +88,7 @@ Copy the record data and make if valid. Then add it back to the dataset using on
 
 - [Database Page](../managing-your-data/update-data.md)
 - [Data API](./creating-a-dataset-with-the-api.md)
-- [File](../migrating-and-importing-data/loading-data-from-a-file.md).
+- [File](../load-data/loading-data-from-a-file.md).
 
 Now you know how to update a dataset schema.
 
@@ -98,4 +98,4 @@ Now you know how to update a dataset schema.
 
 [Dataset Properties](../reference/dataset-properties.md) describes dataset property options.
 
-[Load More Data into a Dataset](../migrating-and-importing-data/load-more-data-into-a-dataset.md) explains how to ingest more data from a new or existing data source.
+[Load More Data into a Dataset](../load-data/load-more-data-into-a-dataset.md) explains how to ingest more data from a new or existing data source.

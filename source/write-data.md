@@ -25,9 +25,9 @@ The following articles get you started with storing data to Apperate.
 
 Apperate's data loading features are great for batch-writing data from various sources. Here are the data loading articles:
 
-- [Load Data From a File](./migrating-and-importing-data/loading-data-from-a-file.md)
-- [Load Data From AWS S3](./migrating-and-importing-data/loading-data-from-aws-s3.md)
-- [Load Data From a URL](./migrating-and-importing-data/loading-data-from-a-url.md)
+- [Load Data From a File](./load-data/loading-data-from-a-file.md)
+- [Load Data From AWS S3](./load-data/loading-data-from-aws-s3.md)
+- [Load Data From a URL](./load-data/loading-data-from-a-url.md)
 - [Load Data via the API](./managing-your-data/creating-a-dataset-with-the-api.md#adding-data-to-your-dataset)
 
 Enjoy writing and loading data into Apperate to support your applications!

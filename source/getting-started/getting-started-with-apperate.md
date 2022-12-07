@@ -109,10 +109,10 @@ Here are key features to dive into next:
 
 - [Production-Ready IEX Cloud Core Financial Data](./production-ready-core-data.md) introduces Apperate's built-in core financial datasets and [Using Core Financial Data](../using-core-data.md) guides you in using them.
 
-- [Load More Data into a Dataset](../migrating-and-importing-data/load-more-data-into-a-dataset.md) explains how to ingest more data from a new or existing data source.
+- [Load More Data into a Dataset](../load-data/load-more-data-into-a-dataset.md) explains how to ingest more data from a new or existing data source.
 
-- [Load Data](../migrating-and-importing-data.md) provides tutorials for loading data from various data sources including these:
+- [Load Data](../load-data.md) provides tutorials for loading data from various data sources including these:
 
-    - [AWS S3 buckets](../migrating-and-importing-data/loading-data-from-aws-s3.md)
-    - [URLs](../migrating-and-importing-data/loading-data-from-a-url.md)
-    - [Files](../migrating-and-importing-data/loading-data-from-a-file.md)
+    - [AWS S3 buckets](../load-data/loading-data-from-aws-s3.md)
+    - [URLs](../load-data/loading-data-from-a-url.md)
+    - [Files](../load-data/loading-data-from-a-file.md)

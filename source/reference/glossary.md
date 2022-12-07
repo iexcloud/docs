@@ -15,7 +15,7 @@ IEX Cloud API reference sites:
 
 Stands for Comma Separated Value. It is a text format for specifying data using rows and columns. The first row’s values describe each column. Each subsequent row represents an instance of the data, including values (in some cases empty values) for each column.
 
-``` {seealso} [Load Data from a File](../migrating-and-importing-data/loading-data-from-a-file.md) demonstrates importing data from a CSV file.
+``` {seealso} [Load Data from a File](../load-data/loading-data-from-a-file.md) demonstrates importing data from a CSV file.
 ```
 
 ## Data Source
@@ -24,8 +24,8 @@ A source from which data is ingested into Apperate.
 
 The following tutorials demonstrate using data sources:
 
-- [Load More Data into a Dataset](../migrating-and-importing-data/load-more-data-into-a-dataset.md)
-- [Schedule Data Ingestion](../migrating-and-importing-data/scheduling-data-ingestion.md)
+- [Load More Data into a Dataset](../load-data/load-more-data-into-a-dataset.md)
+- [Schedule Data Ingestion](../load-data/scheduling-data-ingestion.md)
 
 ## Dataset
 
@@ -49,14 +49,14 @@ Designates the time series index portion of a dataset's Unique Index. 
 
 To load data into a dataset. 
 
-``` {seealso} [Load More Data into a Dataset](../migrating-and-importing-data/load-more-data-into-a-dataset.md).
+``` {seealso} [Load More Data into a Dataset](../load-data/load-more-data-into-a-dataset.md).
 ```
 
 ## Ingestion Schedule
 
 A timetable, set by the user, to automatically ingest data from a given data source into IEX Cloud.
 
-``` {seealso} [Schedule Data Ingestion](../migrating-and-importing-data/scheduling-data-ingestion.md)
+``` {seealso} [Schedule Data Ingestion](../load-data/scheduling-data-ingestion.md)
 ```
 
 ## Job (Data Job)

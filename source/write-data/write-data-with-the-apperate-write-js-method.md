@@ -29,13 +29,13 @@ For example, you could write a news event using an array like this one:
 ]
 ```
 
-``` {note} The object array can include as many objects as you like; though the write method is intended for writing one or a few records in real time. [Load Data](../migrating-and-importing-data.md) describes recommended ways for writing large numbers of records in a single call.
+``` {note} The object array can include as many objects as you like; though the write method is intended for writing one or a few records in real time. [Load Data](../load-data.md) describes recommended ways for writing large numbers of records in a single call.
 ```
 
 ``` {note} The *apperate.write()* method doesn't guarantee the ordering of records.
 ```
 
-``` {note} The *apperate.write()* method doesn't write to any logs. If records fail validation, consider [*loading* the records](../migrating-and-importing-data.md) instead. After attempting to load records, you can view invalid records in the validation logs--See the load options at [Loading Data](../migrating-and-importing-data.md).
+``` {note} The *apperate.write()* method doesn't write to any logs. If records fail validation, consider [*loading* the records](../load-data.md) instead. After attempting to load records, you can view invalid records in the validation logs--See the load options at [Loading Data](../load-data.md).
 ```
 
 Let's write the data above.
@@ -113,4 +113,4 @@ Now that you know how to write data, here are some topics to consider next:
 
 [Production-Ready IEX Cloud Core Financial Data](../getting-started/production-ready-core-data.md): Introduces Apperate's 5+ terabytes of built-in financial data available for enriching your fintech applications.
 
-[Load Data](../migrating-and-importing-data.md): These tutorials show you how to load data from a URL, an AWS S3 bucket, and more.
+[Load Data](../load-data.md): These tutorials show you how to load data from a URL, an AWS S3 bucket, and more.
