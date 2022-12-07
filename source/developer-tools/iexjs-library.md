@@ -17,7 +17,7 @@ iexjs-library/iexjs-apperate-crud-methods.md
 Use [npm](https://www.npmjs.com) to install iexjs.
 
 ```bash
-npm install --save iexjs
+npm i @apperate/iexjs
 ```
 
 ``` {note} iexjs can also run in the browser via native *fetch* and *eventsource*, or from node via [cross-fetch](https://www.npmjs.com/package/cross-fetch) and [eventsource](https://github.com/EventSource/eventsource).

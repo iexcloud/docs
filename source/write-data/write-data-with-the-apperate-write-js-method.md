@@ -51,7 +51,7 @@ Here's how to write data using the `apperate.write()` [iexjs](https://www.npmjs.
     Optionally, you can install iexjs with [npm](https://www.npmjs.com) and use iexjs locally:
     
     ```bash
-    npm install --save iexjs
+    npm i @apperate/iexjs
     ```
 
 1. Copy the following code into your editor and replace the CAPITALIZED parameter values mentioned below. 
