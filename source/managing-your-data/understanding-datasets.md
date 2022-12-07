@@ -113,4 +113,4 @@ Now you know the fundamentals of Apperate dataset schemas, you know how to permi
 
 [Updating Dataset Schemas](./updating-a-dataset-schema.md) shows you how to update dataset schemas and explains how updates work.
 
-[Search Data](../interacting-with-your-data.md): These articles show how to query data.
+[Search Data](../search-data.md): These articles show how to query data.

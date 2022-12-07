@@ -33,7 +33,7 @@ Here are the notable changes.
 
 ## 2022-11-14
 
-- **(NEW feature)** [Batch Data Queries](https://iexcloud.io/documentation/interacting-with-your-data/querying-data/batch-data-queries.html)
+- **(NEW feature)** [Batch Data Queries](https://iexcloud.io/documentation/search-data/batch-data-queries.html)
 
 ## 2022-11-10
 
@@ -76,7 +76,7 @@ Here are the notable changes.
 - (NEW articles):
 
     - [iex.js JavaScript Library](https://iexcloud.io/documentation/developer-tools/iexjs-library.html)
-    - [Querying Datasets with iex.js](https://iexcloud.io/documentation/interacting-with-your-data/querying-data/querying-datasets-with-iexjs.html)
+    - [Querying Datasets with iex.js](https://iexcloud.io/documentation/search-data/querying-datasets-with-iexjs.html)
 
 ## 2022-09-22
 

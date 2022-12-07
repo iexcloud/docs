@@ -152,7 +152,7 @@ Writing and reading data in Apperate is just that easy! Congratulations on using
 
 Now that you know how to write and query data, here are some topics to consider next:
 
-[Search Data](../interacting-with-your-data.md): These articles show various ways to query data.
+[Search Data](../search-data.md): These articles show various ways to query data.
 
 [Managing Your Data](../managing-your-data.md): These guides explain dataset schema fundamentals, creating views, and creating datasets via the  Datasets API.
 

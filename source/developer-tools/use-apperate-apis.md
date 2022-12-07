@@ -15,7 +15,7 @@ Here are some of the API-related topics.
 
 ## Querying Data
 
-The Data API's [`GET /data`](https://iexcloud.io/docs/apperate-apis/data/get-data) endpoint returns data from the dataset you specify. The endpoint supports using windowing functions for [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md). [Your Datasets](https://iexcloud.io/docs/datasets) pages and [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) pages describe each dataset's `GET /data` endpoint parameters and response attributes.
+The Data API's [`GET /data`](https://iexcloud.io/docs/apperate-apis/data/get-data) endpoint returns data from the dataset you specify. The endpoint supports using windowing functions for [Querying Datasets](../search-data/querying-datasets.md). [Your Datasets](https://iexcloud.io/docs/datasets) pages and [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) pages describe each dataset's `GET /data` endpoint parameters and response attributes.
 
 ```{important} We are in the process of migrating legacy IEX Cloud Core Data to IEX Cloud Core Datasets in Apperate. IEX Cloud's API reference is currently split between Apperate's [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If the [API Reference](https://iexcloud.io/docs/) doesn't list the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
 ```
@@ -24,7 +24,7 @@ The **Example Request** on each dataset's **Overview** page demonstrates using t
 
 ![](./use-apperate-apis/example_request.png)
 
-[Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md) demonstrates applying windowing functions to the queries.
+[Querying Datasets](../search-data/querying-datasets.md) demonstrates applying windowing functions to the queries.
 
 ## Other Data Operations
 
@@ -42,4 +42,4 @@ The [`GET /openapi-doc` endpoint](https://iexcloud.io/docs/apperate-apis/advance
 
 - [Apperate API Reference](https://iexcloud.io/docs/): Visit the API Reference to get familiar with Apperate's APIs. 
 
-- [Query Data](../interacting-with-your-data/querying-data.md): Query data using Apperate's Data API or using the iex.js library. 
+- [Query Data](../search-data.md): Query data using Apperate's Data API or using the iex.js library. 

@@ -10,7 +10,7 @@ The following table explains how to fill in the request.
 
 | Placeholder | Replace with...
 | --- | --- |
-| `WORKSPACE` | Workspace is `CORE` for [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) or the workspace name for [your datasets](https://iexcloud.io/docs/datasets). A batch data query can work in only one workspace at a time. You can optionally [create a view](../../managing-your-data/creating-and-managing-views.md) from Core data and your workspace data, and batch query that view. |
+| `WORKSPACE` | Workspace is `CORE` for [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) or the workspace name for [your datasets](https://iexcloud.io/docs/datasets). A batch data query can work in only one workspace at a time. You can optionally [create a view](../managing-your-data/creating-and-managing-views.md) from Core data and your workspace data, and batch query that view. |
 | `DATASET_A,DATASET_B` | Example: `QUOTE,NEWS`. The list of datasets to query. Note, each **Dataset ID** is specified in the dataset's reference page. For example, see the [CASH_FLOW](https://iexcloud.io/docs/core/CASH_FLOW) reference page. |
 | `KEY_1,KEY_2` | Example: `AAPL,MSFT,TSLA`. The list of symbols to query for in the datasets. A dataset's primary index is labeled `key` in the dataset reference page's **Response Attributes** section. |
 | `batchSeparator=,` | **(Optional)** A character for separating the request's dataset IDs and keys; comma (<code>,</code>) is the default separator.<br><br>**Important:** Alpha-numeric characters are not supported as separators. |
@@ -79,7 +79,7 @@ The resulting array includes records for each key (`T`,`TMUS`,`VZ`) found in eac
 
 The response is an array of dataset records. Records are returned from each dataset for each matched key, in the order that the request specified the datasets and keys. If a key is not matched in a dataset, no record is returned for that key/dataset combination.
 
-If a query's [API token](../../reference/glossary.md#token-api-token) is unauthorized for a dataset, the endpoint returns a standard authorization error.
+If a query's [API token](../reference/glossary.md#token-api-token) is unauthorized for a dataset, the endpoint returns a standard authorization error.
 
 ``` {important} A batch data query must operate on either Core datasets or your datasets--the two dataset types can't be mixed. Batch queries are not supported across workspaces.
 ```
@@ -87,7 +87,7 @@ If a query's [API token](../../reference/glossary.md#token-api-token) is unautho
 ``` {important} A batch query is limited to 2,000 individual queries (i.e., queries = keys queried &times; datasets queried). If a batch query exceeds this limit, Apperate reports the error and skips executing the batch query.
 ```
 
-``` {note} Record data returned from each dataset counts as a read. See [Credits and Pricing](../../administration/credits-and-pricing.md) for details.
+``` {note} Record data returned from each dataset counts as a read. See [Credits and Pricing](../administration/credits-and-pricing.md) for details.
 ```
 
 ``` {note} Each record returned counts towards your plan's maximum records per second. See [Pricing](https://iexcloud.io/pricing/) for record rate details.
@@ -97,7 +97,7 @@ If a query's [API token](../../reference/glossary.md#token-api-token) is unautho
 
 Here are steps for making a batch data request.
 
-1. Determine the key values ([primary index](../../reference/glossary.md#primary-index) values) to query on.
+1. Determine the key values ([primary index](../reference/glossary.md#primary-index) values) to query on.
 
     Example: `T,TMUS,VZ` for AT&T, T-Mobile, and Verizon.
 
@@ -107,7 +107,7 @@ Here are steps for making a batch data request.
 
     You can browse [Your Datasets](https://iexcloud.io/docs/datasets) or the [Core Datasets](https://iexcloud.io/docs/core) in the API reference or in the [console](https://iexcloud.io/console) (requires Apperate plan).
 
-1. Construct your batch data request on the [`/data`](https://iexcloud.io/docs/apperate-apis/data/get-data) endpoint, including the dataset IDs, the key values, a `batchSeparator` parameter (optional), your [API token](../../reference/glossary.md#token-api-token), and any other [`Get Data`](https://iexcloud.io/docs/apperate-apis/data/get-data) query parameters you want.
+1. Construct your batch data request on the [`/data`](https://iexcloud.io/docs/apperate-apis/data/get-data) endpoint, including the dataset IDs, the key values, a `batchSeparator` parameter (optional), your [API token](../reference/glossary.md#token-api-token), and any other [`Get Data`](https://iexcloud.io/docs/apperate-apis/data/get-data) query parameters you want.
 
     Examples:
 
@@ -119,7 +119,7 @@ Here are steps for making a batch data request.
 
 1. Execute your batch request.
 
-    For example, click on the following URL and append your [API token](../../reference/glossary.md#token-api-token) as query parameter (e.g., `&token=YOUR_TOKEN`).
+    For example, click on the following URL and append your [API token](../reference/glossary.md#token-api-token) as query parameter (e.g., `&token=YOUR_TOKEN`).
 
     [`/data/CORE/QUOTE,FUNDAMENTALS,NEWS/T,TMUS,VZ?last=2`](https://apis.iex.cloud/v1/data/CORE/QUOTE,FUNDAMENTALS,NEWS/T,TMUS,VZ?last=2)
 
@@ -165,7 +165,7 @@ Now you know how to conveniently query for multiple keys in multiple datasets.
 
 ## What's Next
 
-[Create Views](../../managing-your-data/creating-and-managing-views.md) demonstrates combining Core data and workspace data into views.
+[Create Views](../managing-your-data/creating-and-managing-views.md) demonstrates combining Core data and workspace data into views.
 
 [Querying Datasets](./querying-datasets.md) shows how to search data from any dataset (Core or your) using the Get Data endpoint.
 

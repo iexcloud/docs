@@ -13,7 +13,7 @@ Here's how to update a record in the UI.
 
     ![](./update-data/database-page.png)
 
-1. Enter a [query](../interacting-with-your-data/querying-data.md) to return the data record you want to update. Then click **Run**. Apperate executes the statement and returns the matching data record.
+1. Enter a [query](../search-data.md) to return the data record you want to update. Then click **Run**. Apperate executes the statement and returns the matching data record.
 
     ![](./update-data/select-a-car.png)
 
@@ -39,7 +39,7 @@ The `wait` query parameter is another one to consider. By default, the endpoint 
 
 Let's use the API to overwrite a record.
 
-1. To specify your record update, you'll need to know its current values, including its Unique Index values (i.e., primary, secondary, and date indexes). You can fetch the record using the console's SQL editor or using the Data API's `GET /data/:workspace/:id/:key?/:subkey?` method as demonstrated in [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md).
+1. To specify your record update, you'll need to know its current values, including its Unique Index values (i.e., primary, secondary, and date indexes). You can fetch the record using the console's SQL editor or using the Data API's `GET /data/:workspace/:id/:key?/:subkey?` method as demonstrated in [Querying Datasets](../search-data/querying-datasets.md).
 
     This JSON object for example, is a CARS dataset record:
 
@@ -92,6 +92,6 @@ You're updating data like a champ!
 
 [Delete Data](https://iexcloud.io/docs/apperate-apis/data/delete-data): This reference page describes the `DELETE /data/:workspace/:id/:key/:subkey?/:date?` endpoint for deleting data.
 
-[Querying Data](../interacting-with-your-data/querying-data.md): Describes the various ways to query (get) data.
+[Querying Data](../search-data.md): Describes the various ways to query (get) data.
 
 [Create Views](./creating-and-managing-views.md): Demonstrates joining datasets to create views.

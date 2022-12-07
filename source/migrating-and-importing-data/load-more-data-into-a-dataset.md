@@ -81,6 +81,6 @@ Congratulations! You know three different ways to load more data into your datas
 
 - [Create Views](../managing-your-data/creating-and-managing-views.md) demonstrates joining datasets to create views.
 
-- [Query Data](../interacting-with-your-data/querying-data.md) shows how to search datasets using the `GET /data` REST endpoint and using the iex.js JavaScript Library.
+- [Query Data](../search-data.md) shows how to search datasets using the `GET /data` REST endpoint and using the iex.js JavaScript Library.
 
 - [Use Apperate's APIs](../developer-tools/use-apperate-apis.md) introduces Apperate REST endpoints to query for the exact data you want and CRUD endpoints to use Apperate programatically.

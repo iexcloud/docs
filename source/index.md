@@ -14,7 +14,7 @@ getting-started/production-ready-core-data.md
 
 using-core-data.md
 write-data.md
-interacting-with-your-data.md
+search-data.md
 migrating-and-importing-data.md
 managing-your-data.md
 faqs.md

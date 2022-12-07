@@ -99,7 +99,7 @@ Here's what the response looks like in RunKit.
 
 ![](./write-data-with-the-apperate-write-js-method/loadData-response.png)
 
-You can check for the new data in your dataset many different ways, including querying for the data in the dataset's Database page or [querying the dataset](../interacting-with-your-data/querying-data/querying-datasets.md) in your browser.
+You can check for the new data in your dataset many different ways, including querying for the data in the dataset's Database page or [querying the dataset](../search-data/querying-datasets.md) in your browser.
 
 That was fast and easy, right?! Congratulations on writing data to Apperate!
 
@@ -107,7 +107,7 @@ That was fast and easy, right?! Congratulations on writing data to Apperate!
 
 Now that you know how to write data, here are some topics to consider next:
 
-[Search Data](../interacting-with-your-data.md): These articles show various ways to query data.
+[Search Data](../search-data.md): These articles show various ways to query data.
 
 [Managing Your Data](../managing-your-data.md): These guides explain dataset schema fundamentals, creating views, and creating datasets via the  Datasets API.
 

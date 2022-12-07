@@ -1,4 +1,8 @@
 # comments start with "#"
+interacting-with-your-data/querying-data.md search-data.md
+interacting-with-your-data/querying-data/batch-data-queries.md search-data/batch-data-queries.md
+interacting-with-your-data/querying-data/querying-datasets-with-iexjs.md search-data/querying-datasets-with-iexjs.md
+interacting-with-your-data/querying-data/querying-datasets.md search-data/querying-datasets.md
 getting-started/write-and-read-a-record.md getting-started/write-and-read-data.md
 interacting-with-your-data/updating-a-data-record.md managing-your-data/update-data.md
 interacting-with-your-data/apperate-api-basics.md developer-tools/use-apperate-apis.md

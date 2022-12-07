@@ -57,7 +57,7 @@ client.apperate.queryData({key: "AAPL", workspace: "CORE", id: "CASH_FLOW"}).the
 
 The client's `apperate` object (shown above) has wrapper methods to [Apperate APIs](https://iexcloud.io/docs/apperate-apis/), including the [Data API](https://iexcloud.io/docs/apperate-apis/data/). The `queryData` method retrieves data from a dataset via the dataset `id`. You can retrieve data from a `CORE` dataset or any workspace dataset you have access to.
 
-``` {seealso} [Querying Datasets with iex.js](../interacting-with-your-data/querying-data/querying-datasets-with-iexjs.md) provides details on searching datasets.
+``` {seealso} [Querying Datasets with iex.js](../search-data/querying-datasets-with-iexjs.md) provides details on searching datasets.
 ```
 
 ## Open Source Project
@@ -66,7 +66,7 @@ The iex.js package is an open source project available at <https://www.npmjs.com
 
 ## What's Next
 
-[Querying Datasets with iex.js](../interacting-with-your-data/querying-data/querying-datasets-with-iexjs.md) demonstrates getting data from a dataset.
+[Querying Datasets with iex.js](../search-data/querying-datasets-with-iexjs.md) demonstrates getting data from a dataset.
 
 [iex.js Core Financial Data Methods](./iexjs-library/iexjs-core-data-methods.md) provides a reference to Core Financial Data available for current plans and legacy plans.
 

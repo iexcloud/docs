@@ -35,7 +35,7 @@ See these articles to understand datasets and learn how to use them:
 
 - [Getting Started with Apperate](../getting-started/getting-started-with-apperate.md)
 - [Understanding Datasets](../managing-your-data/understanding-datasets.md)
-- [Querying Data](../interacting-with-your-data/querying-data.md)
+- [Querying Data](../search-data.md)
 - [Managing Your Data](../managing-your-data.md)
 
 ## Date Index

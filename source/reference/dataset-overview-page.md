@@ -56,4 +56,4 @@ The **Delete Dataset** button enables you to remove the dataset.
 
 [Managing Your Data](../managing-your-data.md): These guides explain dataset schema fundamentals, creating views, and creating datasets via the  Datasets API.
 
-[Search Data](../interacting-with-your-data.md): These articles show how to query data.
+[Search Data](../search-data.md): These articles show how to query data.

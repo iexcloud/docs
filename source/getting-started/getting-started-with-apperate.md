@@ -86,7 +86,7 @@ The URL opens in a new browser tab and the request returns a JSON object contain
 ]
 ```
 
-``` {tip} The **Example request** URL uses the [Data API](https://iexcloud.io/docs/apperate-apis/data/). You can use the URL as a base on which to query the dataset using other parameters and values. See [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md) for examples.
+``` {tip} The **Example request** URL uses the [Data API](https://iexcloud.io/docs/apperate-apis/data/). You can use the URL as a base on which to query the dataset using other parameters and values. See [Querying Datasets](../search-data/querying-datasets.md) for examples.
 ```
 
 ## Visit Your API Docs

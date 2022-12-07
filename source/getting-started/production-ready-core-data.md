@@ -38,7 +38,7 @@ You can get core data by calling the REST endpoints. The following articles demo
 
 - [Get Real-Time IEX Cloud Core Financial Data](../using-core-data/getting-real-time-core-financial-data.md)
 - [Get Historical IEX Cloud Core Financial Data](../using-core-data/getting-time-series-core-financial-data.md)
-- [Querying Datasets](../interacting-with-your-data/querying-data/querying-datasets.md)
+- [Querying Datasets](../search-data/querying-datasets.md)
 
 ## Query Core Financial Data in the Console
 
@@ -78,7 +78,7 @@ Now that you've been introduced to IEX Cloud Core Financial Data, here are some 
 
 [Using Core Financial Data](../using-core-data.md): These articles demonstrate querying real-time and time series data, and leveraging normalized financial symbols. 
 
-[Search Data](../interacting-with-your-data.md): These articles show how to query data.
+[Search Data](../search-data.md): These articles show how to query data.
 
 [Load Data](../migrating-and-importing-data.md): These articles demonstrate loading data from various data sources, including AWS S3 buckets, URLs, and files.
 
