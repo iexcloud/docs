@@ -40,7 +40,7 @@ By stiff-arming the invalid data and providing an error log right away, you can 
 
 ## Data Matching via Identifier Translation
 
-A common requirement is to be able to reference the same data record using different identifiers (indexes). In the financial data, for example, a particular security can be represented using various types of identifiers, including CUSIP, FIGI, INET, ISIN, and more. Apperate's [SmartLinks](../reference/glossary.md#smartlink) feature translates security identifiers automatically, enabling you and your customers to query the data using ticker symbols you prefer. 
+A common requirement is to be able to reference the same data record using different identifiers (indexes). In the financial data, for example, a particular security can be represented using various types of identifiers, including CUSIP, FIGI, and ISIN. Apperate's [SmartLinks](../reference/glossary.md#smartlink) feature translates security identifiers automatically, enabling you and your customers to query the data using ticker symbols you prefer. 
 
 The following video shows how Apperate enables you to query across equivalent security identifiers and join data on the identifiers.
 

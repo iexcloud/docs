@@ -15,9 +15,9 @@ You can query normalized financial datasets using symbols of *any* supported [fi
 
 ![](./using-normalized-financial-data/apple-isin.png)
 
-You can, however, query the dataset refering to Apple via its `AAPL` INET symbol because INET is a supported [financial identifier type](../../reference/financial-identifiers.md). 
+You can, however, query the dataset refering to Apple as `AAPL`. 
 
-Here is a SQL query and HTTP request that use the INET symbol `AAPL` to query for Apple data in a dataset that uses ISIN symbols.
+Here is a SQL query and HTTP request that use the `AAPL` symbol to query for Apple data in a dataset that uses ISIN symbols.
 
 **SQL Query:**
 

@@ -1,6 +1,6 @@
 # Dataset Properties
 
-Properties define a dataset's content. Each property has a type, is required or optional, and may allow or forbid null. A property can be designated as an index and can be mapped to Apperate's 10+ supported [financial identifier types](../reference/financial-identifiers.md).
+Properties define a dataset's content. Each property has a type, is required or optional, and may allow or forbid null. A property can be designated as an index and can be mapped to Apperate's supported [financial identifier types](../reference/financial-identifiers.md).
 
 Here is an example schema's properties:
 
@@ -45,7 +45,7 @@ Allows null values for the property when checked, *unselect* the **Allows null**
 
 ## Opt-in to IEX Cloud's metadata graph
 
-A primary index property or secondary index property can be SmartLinked to IEX Cloud's metadata graph. A SmartLink associates the property's values with equivalent values from any of Apperate's 10+ supported [financial identifier types](../reference/financial-identifiers.md).
+A primary index property or secondary index property can be SmartLinked to IEX Cloud's metadata graph. A SmartLink associates the property's values with equivalent values from any of Apperate's supported [financial identifier types](../reference/financial-identifiers.md).
 
 The image below shows a property called `symbol` opted in to SmartLinks.
 

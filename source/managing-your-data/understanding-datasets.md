@@ -79,7 +79,7 @@ https://myworkspace.iex.cloud/v1/data/MYWORKSPACE/MY_DATASET/AAPL?token=TOKEN
 
 ## Normalizing with SmartLinks
 
-You can opt-in (SmartLink) a primary or secondary index property with IEX Cloud's metadata graph. A SmartLink associates the property's values with equivalent values from any of Apperate's 10+ supported [financial identifier types](../reference/financial-identifiers.md).
+You can opt-in (SmartLink) a primary or secondary index property with IEX Cloud's metadata graph. A SmartLink associates the property's values with equivalent values from any of Apperate's supported [financial identifier types](../reference/financial-identifiers.md).
 
 The image below shows a dataset's `symbol` property opted in to SmartLinks.
 
@@ -91,7 +91,7 @@ By SmartLinking a property you can:
 
 - Enrich your dataset by joining to any and all of IEX Cloud's core equities data
 - Join this dataset to any other dataset you have in IEX Cloud that is opted-in to IEX Cloud's metadata graph
-- Ingest and query for data in this dataset using any of IEX Cloud's 10+ supported financial identifiers
+- Ingest and query for data in this dataset using any of IEX Cloud's supported financial identifiers
 
 ``` {seealso} See SmartLinks in action in [Normalized Financial Symbols](../using-core-data/using-normalized-financial-data.md).
 ```

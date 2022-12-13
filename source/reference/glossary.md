@@ -104,7 +104,7 @@ Apperate plan subscribers have a *secret token* (aka secret key). A secret token
 
 ## SmartLink
 
-A mapping of a dataset property to Apperate's financial metadata graph. This mapping associates the property's values with equivalent values that use any of Apperate's 10+ supported [financial identifiers](./financial-identifiers.md).
+A mapping of a dataset property to Apperate's financial metadata graph. This mapping associates the property's values with equivalent values that use any of Apperate's supported [financial identifiers](./financial-identifiers.md).
 
 A dataset's SmartLinks enable you to query on or join other datasets on the associated property using any equivalent financial identifier type values. 
 
