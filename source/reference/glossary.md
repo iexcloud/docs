@@ -27,6 +27,10 @@ The following tutorials demonstrate using data sources:
 - [Load More Data into a Dataset](../load-data/load-more-data-into-a-dataset.md)
 - [Schedule Data Ingestion](../load-data/scheduling-data-ingestion.md)
 
+## Data Timing
+
+The typical frequency of new data being produced for an entity (e.g., a security, company, etc.) with respect to a topic (e.g., price quote, news, etc.). A Core Dataset endpoint doc's **Data Timing** section describes the new data frequency. See [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) in the API reference.
+
 ## Dataset
 
 A modifiable data collection (or table) that is defined by a schema, stored in IEX Cloud Apperate, and delivered via permissioned, auto-generated APIs.
@@ -138,6 +142,10 @@ A dataset's main key composed of the Primary index, Secondary index (optional), 
 
 ``` {seealso} [Understanding Datasets](../managing-your-data/understanding-datasets.md#indexing-with-unique-index)
 ```
+
+## Update Schedules
+
+The regular times new data is made available in a Core Dataset.  A Core Dataset endpoint doc's **Update Schedule** section describes the publishing times. See [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) in the API reference. 
 
 ## Workspace
 
