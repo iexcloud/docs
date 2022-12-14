@@ -13,4 +13,6 @@ If an indexed dataset property is opted in IEX Cloud's metadata graph, Apperate 
 
 - ISIN
 
+- Refinitiv PermID <sup>alpha</sup>
+
 - RIC (Reuters Instrument Code)
