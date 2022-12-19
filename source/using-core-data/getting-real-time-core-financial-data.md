@@ -236,7 +236,7 @@ Now you know how to get financial data from the Legacy API when you need to.
 
 [Real-Time Delayed and Intraday Stock Prices](./real-time-delayed-and-intraday-stock-prices.md)
 
-[Rules Engine Event Driven Alerts and Data Delivery](./rules-engine-event-driven-alerts-and-data-delivery.md)
+[Process Events](../process-events.md)
 
 [Stream Data Using SSE](./streaming-data-using-sse.md)
 

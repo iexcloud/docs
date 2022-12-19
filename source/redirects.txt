@@ -1,4 +1,6 @@
 # comments start with "#"
+using-core-data/rules-engine-event-driven-alerts-and-data-delivery.md process-events.md
+using-core-data/rules-engine-event-driven-alerts-and-data-deliver/creating-rules-and-sending-alerts.md process-events/creating-rules-and-sending-alerts.md
 migrating-and-importing-data.md load-data.md
 migrating-and-importing-data/accessing-nested-json-data.md load-data/accessing-nested-json-data.md
 migrating-and-importing-data/accessing-s3-via-storage-integration.md load-data/accessing-s3-via-storage-integration.md

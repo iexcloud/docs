@@ -15,6 +15,7 @@ getting-started/production-ready-core-data.md
 using-core-data.md
 write-data.md
 search-data.md
+process-events.md
 load-data.md
 managing-your-data.md
 faqs.md

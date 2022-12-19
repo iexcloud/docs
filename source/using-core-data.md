@@ -7,11 +7,12 @@ using-core-data/getting-real-time-core-financial-data.md
 using-core-data/getting-time-series-core-financial-data.md
 using-core-data/using-normalized-financial-data.md
 using-core-data/real-time-delayed-and-intraday-stock-prices.md
-using-core-data/rules-engine-event-driven-alerts-and-data-delivery.md
 using-core-data/streaming-data-using-sse.md
 using-core-data/getting-nasdaq-listed-utp-otc-stock-data.md
 using-core-data/finding-symbols.md
 ```
+
+<!-- using-core-data/rules-engine-event-driven-alerts-and-data-delivery.md -->
 
 IEX Cloud comes with 5+ terabytes of [production-ready financial data](./getting-started/production-ready-core-data.md) to power fintech applications. It includes real-time financial data and historical time series financial data. Both data types are described here.
 

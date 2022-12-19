@@ -1,12 +1,14 @@
-# Rules Engine: Event-Driven Alerts and Data Delivery
+# Process Events
+
+<!-- Rules Engine: Event-Driven Alerts and Data Delivery -->
 
 ```{toctree}
 :maxdepth: 1
 
-rules-engine-event-driven-alerts-and-data-delivery/creating-rules-and-sending-alerts.md
+process-events/creating-rules-and-sending-alerts.md
 ```
 
-Rules Engine is an easy-to-use product for using event-based rules to automatically push alerts and data from IEX Cloud. With the click of a button, you can schedule data delivery and notifications to be sent via SMS, email, webhooks, and more when conditions of your choice are met across IEX Cloud datasets.  
+Apperate's Rules Engine uses event-based rules to process events and push alerts and data from IEX Cloud. With the click of a button, you can schedule data delivery and notifications to be sent via SMS, email, webhooks, and more when conditions of your choice are met across IEX Cloud datasets.  
 
 Rules Engine helps you get data delivered how and when you need it: 
 
@@ -20,9 +22,9 @@ Rules Engine helps you get data delivered how and when you need it:
 
 This product is currently in beta for all paid IEX Cloud customers and is subject to changes as we iterate based on feedback. Please let us know if you experience unexpected behavior by emailing <support@iexcloud.io>.  
 
-![](./rules-engine-event-driven-alerts-and-data-delivery/rules-engine-1.gif)
+![](./process-events/rules-engine-1.gif)
 
-## Where should I use Rules Engine? 
+## Some Use Cases 
 
 Rules Engine helps make financial data more accessible for technical and non-technical users alike. While the functionality has a variety of applications, here are several important use cases: 
 
@@ -38,4 +40,4 @@ Have other use cases in mind? Reach out to <support@iexcloud.io> for more inform
 
 ## What's Next
 
-See examples in action and learn how to build rules and browse different alert types at [Creating Rules and Sending Alerts](./rules-engine-event-driven-alerts-and-data-delivery/creating-rules-and-sending-alerts.md).
+See examples in action and learn how to build rules and browse different alert types at [Creating Rules and Sending Alerts](./process-events/creating-rules-and-sending-alerts.md).
