@@ -249,7 +249,7 @@ Here are the notable changes.
 
 ## 2022-05-19
 
-- Support SQL views. See it in action at [Create Views](../managing-your-data/creating-and-managing-views.md).
+- Support SQL views. See it in action at [Create Views](../managing-your-data/create-a-view.md).
 - Limit dataset query results to 1000
 - Display AWS user ARN for [AWS integration](../load-data/accessing-s3-via-storage-integration.md)
 

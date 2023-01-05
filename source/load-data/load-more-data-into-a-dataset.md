@@ -79,7 +79,7 @@ Congratulations! You know three different ways to load more data into your datas
 
 ## What's Next?
 
-- [Create Views](../managing-your-data/creating-and-managing-views.md) demonstrates joining datasets to create views.
+- [Create Views](../managing-your-data/create-a-view.md) demonstrates joining datasets to create views.
 
 - [Query Data](../search-data.md) shows how to search datasets using the `GET /data` REST endpoint and using the iex.js JavaScript Library.
 

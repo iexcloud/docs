@@ -12,7 +12,7 @@ IEX Cloud Apperate comes with 5+ terabytes of built-in data to power fintech app
 - News
 - Symbols / Mappings
 
-All the data is available via REST endpoints and much of the data is available as [datasets](../reference/glossary.md#dataset) (requires an Apperate plan) that you can join together to make [views](../managing-your-data/creating-and-managing-views.md).
+All the data is available via REST endpoints and much of the data is available as [datasets](../reference/glossary.md#dataset) (requires an Apperate plan) that you can join together to make [views](../managing-your-data/create-a-view.md).
 
 ```{important} We are in the process of migrating legacy IEX Cloud Core Data to IEX Cloud Core Datasets in Apperate. IEX Cloud's API reference is currently split between Apperate's [API Reference](https://iexcloud.io/docs/) and the [Legacy API Reference](https://iexcloud.io/docs/api/). If the [API Reference](https://iexcloud.io/docs/) doesn't list the data you want, please check the [Legacy API Reference](https://iexcloud.io/docs/api/).
 ```

@@ -104,6 +104,6 @@ Here are some things to explore doing with your new data and data source.
 
 - [Load More Data into a Dataset](./load-more-data-into-a-dataset.md) explains how to ingest more data from a new or existing data source.
 
-- [Create Views](../managing-your-data/creating-and-managing-views.md) demonstrates joining datasets to create views.
+- [Create Views](../managing-your-data/create-a-view.md) demonstrates joining datasets to create views.
 
 - [Use Apperate's APIs](../developer-tools/use-apperate-apis.md) introduces Apperate REST endpoints to query for the exact data you want and CRUD endpoints to use Apperate programatically.

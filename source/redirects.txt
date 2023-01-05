@@ -1,4 +1,5 @@
 # comments start with "#"
+managing-your-data/creating-and-managing-views.md managing-your-data/create-a-view.md
 using-core-data/rules-engine-event-driven-alerts-and-data-delivery.md process-events.md
 using-core-data/rules-engine-event-driven-alerts-and-data-deliver/creating-rules-and-sending-alerts.md process-events/creating-rules-and-sending-alerts.md
 migrating-and-importing-data.md load-data.md
