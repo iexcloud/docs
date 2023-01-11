@@ -18,7 +18,7 @@ managing-your-data/creating-and-managing-indexes.md
 
 [Modify a Data Schema](./managing-your-data/updating-a-dataset-schema.md) - Learn how to view and update a schema and existing data.
 
-[Update Data](./managing-your-data/update-data.md) - Modify your data using the console or API.
+[Update Data](./managing-your-data/update-data.md) - Modify data records using the console or API.
 
 Defining Schemas:
 

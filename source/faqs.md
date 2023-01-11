@@ -106,14 +106,16 @@ No user may provide IEX Cloud data via their own API to users, or provide a mech
 Attribution is required for all users. It is as simple as putting “Data provided by IEX Cloud” somewhere on your site or app and linking that text to <https://iexcloud.io>.
 </details>
 
-<details><summary>What do the **Ignore matches** and **Replace matches** options mean when loading data?</summary>
+<details><summary>What do the "Ignore matches" and "Replace matches" options mean when loading or updating data?</summary>
 
-When you ingest more data into a dataset, you must decide how to handle incoming records that match (have the same [unique index](./reference/glossary.md#unique-index) as) an existing record).
+When you update data or ingest more data into a dataset, you must decide how to handle incoming records that match (have the same [unique index](./reference/glossary.md#unique-index) as) an existing record).
 
 Apperate gives you two options:
 
 - **Ignore matches:** Skip ingesting the new record. (Default)
 - **Replace matches:** Overwrite the existing record with the new record.
+
+The `duplicateKeyHandling=true` parameter setting for the [`POST /write`](https://iexcloud.io/docs/apperate-apis/data/write-data) and [`POST /data`](https://iexcloud.io/docs/apperate-apis/data/ingest-data) endpoints specifies to replace matching existing records; `duplicateKeyHandling=false` specifies to ignore incoming matching records.
 </details>
 
 <details><summary>Why are no rows returned when I SQL JOIN with QUOTE and other real-time datasets?</summary>

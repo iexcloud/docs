@@ -28,18 +28,16 @@ Here's how to update a record in the UI.
 
 You've updated the data record. Editing records using the API is easy too.
 
-## Updating a Record Using the API
+## Overwriting a Record Using the API
 
-The Data API [`POST /write/:workspace/:id`](https://iexcloud.io/docs/apperate-apis/data/write-data) endpoint's `duplicateKeyHandling=true` query parameter setting enables you to replace record values with values from an incoming matching record. 
+The Data API [`POST /write/:workspace/:id`](https://iexcloud.io/docs/apperate-apis/data/write-data) endpoint's `duplicateKeyHandling=true` query parameter setting enables you to replace (overwrite) records with an incoming matching records. 
 
-``` {important} The incoming record must match the existing record's [Unique Index](./understanding-datasets.md#indexing-with-unique-index).
+``` {important} An incoming record must match the existing record's [Unique Index](./understanding-datasets.md#indexing-with-unique-index).
 ```
 
-The `wait` query parameter is another one to consider. By default, the endpoint returns immediately after sending the request. If you prefer to wait for the update to be complete and available, set `wait=true`.
+Let's use the API to replace a record.
 
-Let's use the API to update a record's values.
-
-1. To specify your record update, you'll need to know its current values, including its Unique Index values (i.e., primary, secondary, and date indexes). You can fetch the record using the console's SQL editor or using the Data API's `GET /data/:workspace/:id/:key?/:subkey?` method, as demonstrated in [Querying Datasets](../search-data/querying-datasets.md).
+1. To specify your overwrite, you'll need to know its Unique Index values (i.e., primary, secondary, and date indexes) and you'll probably want to know its existing values so you can decide ones to preserve and ones to overwrite. You can fetch the record using the console's SQL editor or using the Data API's `GET /data/:workspace/:id/:key?/:subkey?` method, as demonstrated in [Querying Datasets](../search-data/querying-datasets.md).
 
     The following JSON object for example, represents data for a car:
 
@@ -47,7 +45,7 @@ Let's use the API to update a record's values.
     {"current_date":"2020-03-27","estimated_value":38650,"make":"Ford","mileage":8900,"model":"F-150","owner_count":1,"purchase_date":"2022-01-11","reg_state":23,"vin":"SD089VN7678997566","year":2022}
     ```
 
-1. Use the [`POST /write/:workspace/:id`](https://iexcloud.io/docs/apperate-apis/data/write-data) endpoint and the `duplicateKeyHandling=true` parameter setting to replace the existing record's values. For example, to change the previous example record's `model` value to `F-250`, you could run a cURL command like the one below, replacing `WORKSPACE`, `CARS`, and `SECRET_TOKEN` with your values:
+1. Use the [`POST /write/:workspace/:id`](https://iexcloud.io/docs/apperate-apis/data/write-data) endpoint and the `duplicateKeyHandling=true` parameter setting to replace the existing record. For example, you could change the above car record's `model` value to `F-250` by running a cURL command like the one below.
 
     ```bash
     curl -H "Content-Type: application/json" \
@@ -55,11 +53,13 @@ Let's use the API to update a record's values.
     -d '[{"current_date":"2020-03-27","estimated_value":38650,"make":"Ford","mileage":8900,"model":"F-250","owner_count":1,"purchase_date":"2022-01-11","vin":"SD089VN7678997566","year":2022}]'
     ```
 
-    Since the command specifies `duplicateKeyHandling=true`, the record values are replaced with the new values.
+    Since the command specifies `duplicateKeyHandling=true`, the new record replaces the matching existing record.
 
     ![](./update-data/cars-record-udpated.png)
 
-    Since the command specifies `wait=true`, the response returns *after* the update is complete and available. The response looks like this:
+    Since the command specifies `wait=true`, the response returns *after* the update is complete and available. By default, the `POST /write/:workspace/:id` endpoint returns immediately after sending the request. If you prefer to block until the update is complete and available for querying, set `wait=true`.
+
+    The response looks like this:
 
     ```javascript
     [
@@ -70,7 +70,9 @@ Let's use the API to update a record's values.
     ]
     ```
 
-You're updating data like a champ!
+You can replace records using similar requests to the [`POST /write/:workspace/:id`](https://iexcloud.io/docs/apperate-apis/data/write-data) endpoint. Just copy the above request, replace `WORKSPACE`, `CARS` dataset name, and `SECRET_TOKEN` with your own values, and pass in your replacement record.
+
+Now you can update data records like a champ!
 
 ## What's Next
 
