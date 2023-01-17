@@ -28,7 +28,7 @@ Defining Schemas:
 
 [Create a Dataset with the API](./managing-your-data/creating-a-dataset-with-the-api.md)
 
-[Create Views](./managing-your-data/create-a-view.md) - Aggregate data from various datasets, transform the data, and share the results with applications.
+[Create a View](./managing-your-data/create-a-view.md) - Aggregate data from various datasets, transform the data, and share the results with applications.
 
 [Example: Creating a View](./managing-your-data/example-creating-a-view.md) - Walk through an example of creating a view from datasets you create.
 
