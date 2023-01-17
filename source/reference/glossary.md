@@ -29,7 +29,7 @@ The following tutorials demonstrate using data sources:
 
 ## Data Timing
 
-The typical frequency of new data being produced for an entity (e.g., a security, company, etc.) with respect to a topic (e.g., price quote, news, etc.). A Core Dataset endpoint doc's **Data Timing** section describes the new data frequency. See [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) in the API reference.
+The typical frequency of new data being produced for an entity (e.g., stock price, company dividends, etc.). A Core Dataset endpoint doc's **Data Timing** section describes the new data frequency for the respective entity. For examples, see the **Data Timing** section of any dataset endpoint listed in [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) navigation in the API reference.
 
 ## Dataset
 
@@ -145,7 +145,7 @@ A dataset's main key composed of the Primary index, Secondary index (optional), 
 
 ## Update Schedules
 
-The regular times new data is made available in a Core Dataset.  A Core Dataset endpoint doc's **Update Schedule** section describes the publishing times. See [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) in the API reference. 
+The regular times Apperate publishes new data to a Core Dataset.  A Core Dataset endpoint doc's **Update Schedule** section describes the publishing times. For examples, see the **Update Schedule** section of any endpoint listed in [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) navigation in the API reference.
 
 ## Workspace
 

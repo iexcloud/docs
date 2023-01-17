@@ -18,7 +18,7 @@ managing-your-data/creating-and-managing-indexes.md
 
 [Modify a Data Schema](./managing-your-data/updating-a-dataset-schema.md) - Learn how to view and update a schema and existing data.
 
-[Update Data](./managing-your-data/update-data.md) - Modify your data using the console or API.
+[Update Data](./managing-your-data/update-data.md) - Modify data records using the console or API.
 
 Defining Schemas:
 
@@ -28,7 +28,7 @@ Defining Schemas:
 
 [Create a Dataset with the API](./managing-your-data/creating-a-dataset-with-the-api.md)
 
-[Create Views](./managing-your-data/create-a-view.md) - Aggregate data from various datasets, transform the data, and share the results with applications.
+[Create a View](./managing-your-data/create-a-view.md) - Aggregate data from various datasets, transform the data, and share the results with applications.
 
 [Example: Creating a View](./managing-your-data/example-creating-a-view.md) - Walk through an example of creating a view from datasets you create.
 
