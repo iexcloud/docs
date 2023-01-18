@@ -42,12 +42,14 @@ By stiff-arming the invalid data and providing an error log right away, you can 
 
 A common requirement is to be able to reference the same data record using different identifiers (indexes). In the financial data, for example, a particular security can be represented using various types of identifiers, including CUSIP, FIGI, and ISIN. Apperate's [SmartLinks](../reference/glossary.md#smartlink) feature translates security identifiers automatically, enabling you and your customers to query the data using ticker symbols you prefer. 
 
+<!-- TODO reactivate link after replacing the video.
 The following video shows how Apperate enables you to query across equivalent security identifiers and join data on the identifiers.
 
 <video width="320" height="240" controls>
   <source src="../_static/joining-on-normalized-aapl-data.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
+-->
 
 ```{seealso} [Normalized Financial Symbols](../using-core-data/using-normalized-financial-data.md) guides you through using SmartLinks to search for and join data on equivalent identifiers.
 ```
