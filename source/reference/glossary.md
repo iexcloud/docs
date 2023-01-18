@@ -147,6 +147,13 @@ A dataset's main key composed of the Primary index, Secondary index (optional), 
 
 The regular times Apperate publishes new data to a Core Dataset.  A Core Dataset endpoint doc's **Update Schedule** section describes the publishing times. For examples, see the **Update Schedule** section of any endpoint listed in [IEX Cloud Core Datasets](https://iexcloud.io/docs/core) navigation in the API reference.
 
+## View
+
+A virtual [dataset](#dataset) created from a SQL query that joins multiple datasets.
+
+``` {seealso} [Create a View](../managing-your-data/create-a-view.md).
+```
+
 ## Workspace
 
 Your unique domain for building and publishing datasets. The URL format and example below show workspace names and dataset names in bold.
