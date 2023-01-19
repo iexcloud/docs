@@ -1,16 +1,16 @@
-# Write Data with POST /write
+# Write Data with POST /record
 
-Apperate's `POST /write` endpoint and `apperate.write()` JS function are fast ways to write one or a few records. By default, they return after storing the data and making it available for querying. Alternatively you can run them asynchronously. When run asynchronously, the call returns immediately to unblock you, Apperate saves the data and makes the data available for query as soon as possible. The async mode facilitates writing to the same dataset simultaneously. Whenever you're ready to write data, Apperate is ready to store it.
+Apperate's `POST /record` endpoint and `apperate.write()` JS function are fast ways to write one or a few records. By default, they return after storing the data and making it available for querying. Alternatively you can run them asynchronously. When run asynchronously, the call returns immediately to unblock you, Apperate saves the data and makes the data available for query as soon as possible. The async mode facilitates writing to the same dataset simultaneously. Whenever you're ready to write data, Apperate is ready to store it.
 
-The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference doc describes the `POST /write` method and its parameters. 
+The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference doc describes the `POST /record` method and its parameters. 
 
-``` {note} *POST /write* doesn't guarantee the ordering of records.
+``` {note} *POST /record* doesn't guarantee the ordering of records.
 ```
 
-``` {note} *POST /write* doesn't write to any logs. If records fail validation, consider [*loading* the records](../load-data.md) instead. After attempting to load records, you can view invalid records in the validation logs--See the load options at [Loading Data](../load-data.md).
+``` {note} *POST /record* doesn't write to any logs. If records fail validation, consider [*loading* the records](../load-data.md) instead. After attempting to load records, you can view invalid records in the validation logs--See the load options at [Loading Data](../load-data.md).
 ```
 
-Here we'll write data using the `POST /write` endpoint.
+Here we'll write data using the `POST /record` endpoint.
 
 ``` {seealso}
 [Write Data with the apperate.write() JS Method](write-data-with-the-apperate-write-js-method.md)
@@ -18,10 +18,10 @@ Here we'll write data using the `POST /write` endpoint.
 
 ## Write Data
 
-1. Prepare a `POST /write/` method call. For example, use the following cURL command, replacing the `WORKSPACE`, `DATASET_ID`, and `SECRET_TOKEN` values with your own values and replacing the data (the single-quoted array following `-d`) with your own JavaScript object array.
+1. Prepare a `POST /record/` method call. For example, use the following cURL command, replacing the `WORKSPACE`, `DATASET_ID`, and `SECRET_TOKEN` values with your own values and replacing the data (the single-quoted array following `-d`) with your own JavaScript object array.
 
     ```bash
-    curl -X POST https://WORKSPACE.iex.cloud/v1/write/WORKSPACE/DATASET_ID?token=SECRET_TOKEN \
+    curl -X POST https://WORKSPACE.iex.cloud/v1/record/WORKSPACE/DATASET_ID?token=SECRET_TOKEN \
         -H 'Content-Type: application/json' \
         -d '[{"headline": "Are Hovercrafts the next big thing?", "content": "Here is what people are saying ...", "ticker": "GM", "source": "IEX Underground", "date": "2022-07-15"}]'
     ```
@@ -39,7 +39,7 @@ The method returns a response like the one below and writes the data to the data
 
 To see the data in the dataset go to the [Datasets](https://iexcloud.io/console/datasets/) page, click on your Workspace, and refresh the page. Then click on the target dataset's name. The dataset's **Database** page lists its values.
 
-Congratulations! You wrote your data to a dataset using the `POST /write` endpoint.
+Congratulations! You wrote your data to a dataset using the `POST /record` endpoint.
 
 ## What's Next
 

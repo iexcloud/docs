@@ -20,7 +20,7 @@ For example, you could write application user data from an array like this one:
 ``` {note} The object array can include as many objects as you like; though the write method is intended for writing one or a few records in real time. [Load Data](../load-data.md) describes recommended ways for writing large numbers of records in a single call.
 ```
 
-``` {seealso} The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference page describes the underlying *POST /write* method and its parameters.
+``` {seealso} The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference page describes the underlying *POST /record* method and its parameters.
 ```
 
 Let's write the above data to Apperate.

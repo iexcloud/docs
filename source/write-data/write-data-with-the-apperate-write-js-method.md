@@ -84,7 +84,7 @@ Here's how to write data using the `apperate.write()` [iexjs](https://www.npmjs.
     | `WORKSPACE` | Your [workspace](../reference/glossary.md#workspace) name |
     | `DATASET` | Target dataset ID (the ID of an existing dataset to populate or a new dataset to create) |
 
-    ``` {seealso} The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference page describes the underlying POST /write method and its parameters.
+    ``` {seealso} The [Write Data](https://iexcloud.io/docs/apperate-apis/data/write-data) reference page describes the underlying POST /record method and its parameters.
     ```
 
 1. Run the code. Apperate writes the data record to the target dataset and returns a response like this:
