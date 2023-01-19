@@ -2,6 +2,10 @@
 
 Here are the notable changes.
 
+## 2023-01-19
+
+- `POST /write` is deprecated and replaced with [POST /record](./write-data/write-data-with-post-write.md). This was done to comply to RESTful Maturity level 1 & 2.
+
 ## 2022-11-28
 
 - Fix weekend recognition for real-time quote endpoints
