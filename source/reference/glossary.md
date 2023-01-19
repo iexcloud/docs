@@ -138,7 +138,7 @@ Apperate plan subscribers have a *secret token* (aka secret key). This secret to
 
 ## Unique Index
 
-A dataset's main key composed of the Primary index, Secondary index (optional), and Date index.
+A dataset's main key composed of the [Primary index](#primary-index), [Secondary index](#secondary-index) (optional), and [Date index](#date-index).
 
 ``` {seealso} [Understanding Datasets](../managing-your-data/understanding-datasets.md#indexing-with-unique-index)
 ```

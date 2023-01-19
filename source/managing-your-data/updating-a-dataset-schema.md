@@ -1,96 +1,122 @@
 # Modify a Data Schema
 
-There are various reasons you may have for modifying a schema. Here are some possible reasons:
+Whether you hand-crafted your schema or Apperate inferred your schema from a data sampling, it's good to test your schema and fine-tune it to fit your needs. Here are some possible reasons to update a schema:
 
-- Enrich your dataset with a new property
+- Add property descriptions
+- Add a new property
 - Remove a deprecated property
 - Change a property type
-- Require values for a property
-- Forbid null values for a property
 - Index a property
 - SmartLink a property
+- Require values for a property
+- Forbid null values for a property
 - Rename your dataset
 
-Whether you hand-crafted your schema or Apperate inferred your schema from a data sampling, it's good to check your schema after creating it and testing it.
+Let's tour schema editing.
 
-Here's what's involved with updating your schema:
-
-- Edit your schema
-- Specify how to handle existing data
-- Save your changes
-- Troubleshoot any update issues
-
-``` {warning} Changing the schema of a parent dataset can break or alter its associated views.
+``` {warning} Changing the schema of a parent dataset can break or alter its associated [views](../reference/glossary.md#view).
 ```
 
-``` {important} If you update your schema, it's best to update it early.
+``` {important} If you update your schema, it's best to update it early before you add lots of data to it.
 ```
 
-## Edit Your Schema
+## Open the Schema Editor
 
-From your dataset's **Overview** page, click **Edit schema** to view your schema. The schema editor appears.
+From your dataset's **Overview** page, click **Edit schema**.
+
+![](./updating-a-dataset-schema/click-edit-schema.png)
+
+The schema editor appears.
 
 ![](./updating-a-dataset-schema/modify-schema-page.png)
 
 Here are the editor sections:
 
-**Select action for existing data:** This drop-down menu provides options for updating the dataset's existing data with regards to any schema modifications you apply. The next section [Specify how to handle existing data](#specify-how-to-handle-existing-data) explains the options and how they relate to various schema changes.
+**Dataset ID:** This field allows you to rename the dataset.
 
-**Properties:** This table shows your dataset columns, their types and constraints, and indexes.
+**Select action for existing data:** This drop-down menu provides options for updating the dataset's *existing data* with regards to any schema modifications you apply. The [Specify how to handle existing data](#specify-how-to-handle-existing-data) step below explains the options and how they relate to various schema changes.
 
-**Opt-in to IEX Cloud's metadata graph:** This section enables you to SmartLink a primary (or secondary) index property to the financial metadata graph. See [Understanding Datasets](./understanding-datasets.md) to learn more about SmartLinks.
+**Properties:** This table shows your dataset columns, their types and constraints, indexes, and descriptions. For details, see [Dataset Properties](../reference/dataset-properties.md).
 
-Update your metadata-graph mapping and modify your schema properties the way you want. Before executing the update, consider how you want to handle existing data in light of the schema changes.
+**Opt-in to IEX Cloud's metadata graph:** This section enables you to [SmartLink](../reference/glossary.md#smartlink) a primary (or secondary) index property to the financial metadata graph. See [Understanding Datasets](./understanding-datasets.md) to learn more about SmartLinks.
+
+## Update Your Properties
+
+In the **Properties** table, make any property modifications you want, delete unneeded properties, and or add any new properties. You can change a property's type, constraints, and description, and designate the property as one of the dataset's three indexes.
+
+``` {seealso} [Dataset Properties](../reference/dataset-properties.md) details the properties options.
+```
+
+``` {note} You can't change a property's name. Instead, add a new property as a replacement and remove the existing property.
+```
+
+## Update Your SmartLink Selection
+
+If you want to [SmartLink](../reference/glossary.md#smartlink) one of the index properties to leverage Appearte's securities identifier resolution capability, select that property in the **Opt-in to IEX Cloud's metadata graph** section. See [Understanding Datasets](./understanding-datasets.md) to learn more about SmartLinks.
+
+``` {important} Opting in a new or different index property requires reingesting all the existing data. This way, Apperate can tie in the property values to the metadata graph.
+```
 
 ## Specify How to Handle Existing Data
 
-You must select one of the following options for handling your existing data.
+Before you update the schema, you must inform Apperate how to handle the existing data. Here are the options:
 
 - **Leave existing data as is:** Preserves the existing data.
-- **Delete all existing data:** Removes ALL the existing data. Before doing this, MAKE SURE you don't need any of the data. 
+- **Delete all existing data:** Removes ALL the existing data. Before doing this, MAKE SURE to back up any data you want to preserve. 
 - **Update existing data:** Immediately modifies the data to adhere to the schema.
 - **Reingest data using a new schema:** Reloads the existing data, validating it with the new schema and replacing the existing data, indexes, and metadata graph mappings (SmartLinks).
 
 ``` {important} **Reingestion is only for datasets with 1,000,000 records or less.** Reingestion is only intended at the beginning of a dataset's lifetime.
 ```
 
+### Data Handling Best Practices
+
 Here are some best practices to consider for existing data with regards to specific schema modifications.
 
 | Modification | Considerations |
 | --- | --- |
-| Add a plain (unindexed, unmapped) property | If you want to update existing data, select **Update existing data** to add the new property with the type's default value.<br><br>The **Reingest data using a new schema** existing data action is unnecessary. |
-| Remove a plain (unindexed, unmapped) property | No particular best practices. |
-| Change a property type | If you want to update existing data, select **Update existing data**.<br><br>Supported conversions:<br>- integer &rarr; number<br>- date &rarr; string<br>- string &rarr; date |
+| 
+Specify a new/different index | Select **Reingest data using a new schema**. |
+| Specify a new/different SmartLink | Select **Reingest data using a new schema**. |
 | Allow/forbid null for a property | If you want to update existing data, select **Reingest data using a new schema**.<br><br>If you are forbidding null values for the property, existing records that have null values are dropped. See Troubleshooting Schema Update Issues below for guidance on handling these records. |
 | Require values for a property | If you want to update existing data, select **Update existing data**. Existing records missing the property are dropped. See Troubleshooting Schema Update Issues below for guidance on handling these records. |
-| Add/modify an index | Select **Reingest data using a new schema**. |
-| Add/modify a SmartLink | Select **Reingest data using a new schema**. |
+| Change a property type | If you want to update existing data, select **Update existing data**.<br><br>Supported conversions:<br>- integer &rarr; number<br>- date &rarr; string<br>- string &rarr; date |
+| Add a plain (unindexed, unmapped) property | If you want to update existing data, select **Update existing data** to add the new property with the type's default value.<br><br>The **Reingest data using a new schema** existing data action is unnecessary. |
+| Remove a plain (unindexed, unmapped) property | No particular best practices. |
 
-Select the existing data action that best fits your scenario.
+Select the action that best fits your scenario.
 
-## Save Your Changes
+## Apply Your Changes
 
 When you're done modifying the schema and selecting your existing data action, click **Update Dataset**. Apperate applies the schema modifications to your data and your dataset **Overview** appears.
 
-If you have schema update issues, see how you can handle them next.
+If you have schema update issues, see how you can troubleshoot them next. Otherwise, enjoy your updated schema!
 
 ## Troubleshooting Any Update Issues
 
-**If data reingestion fails** in a schema update, the invalid records are excluded from ingestion. Go to the Ingestion Logs page and check the ingestion job's **Invalid Records** column. The document icon in the Invalid Records column links to the ingestion job's invalid record list.
+**If data reingestion fails** for a schema update, the invalid records are excluded from ingestion. Here's how to troubleshoot the invalid records.
 
-![invalid-records-1.png](./updating-a-dataset-schema/invalid-records-1.png)
+1. Go to the [Ingestion Logs](https://iexcloud.io/console/logs).
 
-Click the Invalid Records icon to view or download the invalid records CSV file.
+1. Select the **Ingestion Jobs** tab.
 
-![](./updating-a-dataset-schema/invalid-records-csv.png)
+1. Check the job's **Invalid Records** column. The document icon in the Invalid Records column links to the ingestion job's invalid record list.
 
-Copy the record data and make if valid. Then add it back to the dataset using one of these ways:
+    ![invalid-records-1.png](./updating-a-dataset-schema/invalid-records-1.png)
 
-- [Database Page](../managing-your-data/update-data.md)
-- [Data API](./creating-a-dataset-with-the-api.md)
-- [File](../load-data/loading-data-from-a-file.md).
+1. Click the Invalid Records icon to view or download the invalid records CSV file.
 
-Now you know how to update a dataset schema.
+    ![](./updating-a-dataset-schema/invalid-records-csv.png)
+
+1. Copy the record data and fix it to make it valid.
+
+1. Add the record to the dataset using one of these ways:
+
+  - [Database Page](../managing-your-data/update-data.md)
+  - [Data API](./creating-a-dataset-with-the-api.md)
+  - [File](../load-data/loading-data-from-a-file.md)
+
+Terrific! You're becoming a schema management expert.
 
 ## Related Topics
 
