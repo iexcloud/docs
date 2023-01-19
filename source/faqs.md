@@ -115,7 +115,7 @@ Apperate gives you two options:
 - **Ignore matches:** Skip ingesting the new record. (Default)
 - **Replace matches:** Overwrite the existing record with the new record.
 
-The `duplicateKeyHandling=true` parameter setting for the [`POST /write`](https://iexcloud.io/docs/apperate-apis/data/write-data) and [`POST /data`](https://iexcloud.io/docs/apperate-apis/data/ingest-data) endpoints specifies to replace matching existing records; `duplicateKeyHandling=false` specifies to ignore incoming matching records.
+The `duplicateKeyHandling=true` parameter setting for the [`POST /record`](https://iexcloud.io/docs/apperate-apis/data/write-data) and [`POST /data`](https://iexcloud.io/docs/apperate-apis/data/ingest-data) endpoints specifies to replace matching existing records; `duplicateKeyHandling=false` specifies to ignore incoming matching records.
 </details>
 
 <details><summary>Why are no rows returned when I SQL JOIN with QUOTE and other real-time datasets?</summary>
