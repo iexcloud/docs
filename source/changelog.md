@@ -6,6 +6,57 @@ Here are the notable changes.
 
 - `POST /write` is deprecated and replaced with [POST /record](./write-data/write-data-with-post-write.md). This was done to comply to RESTful Maturity level 1 & 2.
 
+<!-- TODO fill in the remaining changelog. Jim -->
+
+## 2022-12-14
+
+- Add CUSIP, ISIN and PermID URL(permid) to Knowledge Graph corpactions view.
+- add PermID (alpha) to supported [securities identifier](./reference/financial-identifiers.md).
+
+## 2022-12-13
+
+- Improve `POST /write` speed.
+- Add **Data Timing** and **Update Schedule** details for Core Datasets.
+
+## 2022-12-12
+
+- INET is not a supported [securities identifier](./reference/financial-identifiers.md).
+
+## 2022-12-07
+
+- Fix iexjs installation command instructions.
+
+## 2022-12-06
+
+- Hide the Secret Key from dataset overview pages.
+- Reinstate the following common Apperate time series query parameters: `forward`, `future`, `offset`, `updated`
+- Describe Apperate's APIs:
+
+    - [Data](https://iexcloud.io/docs/apperate-apis/data)
+    - [Data Sources](https://iexcloud.io/docs/apperate-apis/data-sources)
+    - [Datasets](https://iexcloud.io/docs/apperate-apis/datasets)
+    - [Jobs](https://iexcloud.io/docs/apperate-apis/jobs)
+    - [Logs](https://iexcloud.io/docs/apperate-apis/logs)
+    - [Schedules](https://iexcloud.io/docs/apperate-apis/schedules)
+    - [Credentials](https://iexcloud.io/docs/apperate-apis/credentials)
+    - [Advanced](https://iexcloud.io/docs/apperate-apis/advanced)
+
+## 2022-12-05
+
+- Disable real-time datasets for free plans.
+- Pause Apperate input streams until the data sources attach.
+- Reinstate the following common Apperate query parameters: `cache`, `cacheTTL`, `callback`
+
+## 2022-12-02
+
+- Egress credits are now charged for all active membership plans, including free plans.
+- Describe the [GET /data](https://iexcloud.io/docs/apperate-apis/data/get-data) parameters.
+
+## 2022-12-01
+
+- Fix [`GET /data`](https://iexcloud.io/docs/apperate-apis/data/get-data) API param `includeSystemRecordProperties`.
+- Document [batch query error reporting](./search-data/batch-data-queries.md#error-reporting).
+
 ## 2022-11-28
 
 - Fix weekend recognition for real-time quote endpoints
@@ -37,7 +88,7 @@ Here are the notable changes.
 
 ## 2022-11-14
 
-- **(NEW feature)** [Batch Data Queries](https://iexcloud.io/documentation/search-data/batch-data-queries.html)
+- **(NEW feature)** [Batch Data Queries](./search-data/batch-data-queries.md)
 
 ## 2022-11-10
 
