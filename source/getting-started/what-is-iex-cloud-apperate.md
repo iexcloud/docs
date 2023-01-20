@@ -31,10 +31,7 @@ When you load data into Apperate, it automatically generates a data schema and i
 
 The following video demonstrates Apperate detecting invalid data during data ingestion.
 
-<video width="320" height="240" controls>
-  <source src="../_static/data-validation-demonstration.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DNHk3pplYpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 By stiff-arming the invalid data and providing an error log right away, you can keep your data safe and clean, and can address rejected data.
 

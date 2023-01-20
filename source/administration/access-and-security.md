@@ -11,6 +11,13 @@ You can control access to [your data endpoints](https://iexcloud.io/docs/dataset
 ``` {warning} Your *secret token* (aka *secret key*) allows you to perform any action on your data and account. **NEVER** share your secret token publicly.
 ```
 
+Here's a video that demonstrates creating a token.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rzHAYK3gJAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+Read on for steps to create a token.
+
 ## Creating an API Token
 
 Here's how to create and use a public API token.
