@@ -15,8 +15,8 @@ Here is a representative sampling of repository files:
 | --- | --- |
 | `source/administration/access-and-security.md` | Article called *Access and Security*. |
 | `source/administration/access-and-security/` | Folder contains the above article’s image files. |
-| `source/migrating-and-importing-data.md` | A section intro article (i.e., parent article) called *Migrating and Importing Data*. Its `{toc}` tree at the article top lists child articles. |
-| `source/migrating-and-importing-data/` | Folder…<br> - Contains the parent article’s image files<br>- Contains the child articles and their image file folders |
+| `source/load-data.md` | A section intro article (i.e., parent article) called *Load Data*. Its `{toc}` tree at the article top lists child articles. |
+| `source/load-data/` | Folder…<br> - Contains the parent article’s image files<br>- Contains the child articles and their image file folders |
 
 ## Related Topics
 
