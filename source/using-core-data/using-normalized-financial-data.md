@@ -15,9 +15,7 @@ You can query normalized financial datasets using symbols of *any* supported [fi
 
 ![](./using-normalized-financial-data/dataset-with-figi-tickers.png)
 
-You can, however, query the dataset refering to Apple as `AAPL`. 
-
-Here is a SQL query and HTTP request that use the `AAPL` symbol to query for Apple data in a dataset that uses FIGI symbols.
+You can, however, query the dataset refering to Apple as `AAPL`. Here is a SQL query and HTTP request that query the dataset using the `AAPL` symbol.
 
 **SQL Query:**
 
@@ -28,7 +26,7 @@ SELECT * FROM IEXCLOUDAPPERATE.`MY_NEWS_DATASET` where ticker='AAPL';
 **REST API URL:**
 
 ```
-https://IEXCLOUDAPPERATE.iex.cloud/v1/data/IEXCLOUDAPPERATE/IEXCLOUDAPPERATE_NEWS_DATASET/AAPL?token=TOKEN
+https://IEXCLOUDAPPERATE.iex.cloud/v1/data/IEXCLOUDAPPERATE/MY_NEWS_DATASET/AAPL?token=TOKEN
 ```
 
 **REST API URL Response:**
@@ -45,11 +43,17 @@ https://IEXCLOUDAPPERATE.iex.cloud/v1/data/IEXCLOUDAPPERATE/IEXCLOUDAPPERATE_NEW
 ]
 ```
 
-You can similarly join datasets on normalized symbol data.
+You can join datasets on normalized symbol data.
 
 ## Joining Datasets on Normalized Symbols
 
-You can, for example, create a view of Apple high, open, low, close data and corporate details by joinging this AAPL_FIGI dataset with the Core COMPANY_HISTORICAL dataset. Here's the SQL.
+The COMPANY Core dataset identifies Apple using the symbol value `AAPL`.
+
+![](./using-normalized-financial-data/company-uses-aapl.png)
+
+Despite COMPANY and the example MY_NEWS_DATASET dataset identifying Apple with different values (the `US0378331005` FIGI symbol and common `AAPL` symbol), both datasets normalize their ticker/symbol properties using Apperate [SmartLinks](../reference/glossary.md#smartlink). SmartLinks enables you to join datasets on equivalent, SmartLinked values.
+
+You can, for example, create a view of Apple news from MY_NEWS_DATASET and Apple company information from COMPANY by joining the datasets on their SmartLinked ticker/symbol properties.
 
 **SQL Query:**
 
