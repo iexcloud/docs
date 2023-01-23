@@ -134,7 +134,7 @@ html_theme_options = {
     # },
     # "dark_css_variables": {
     # }
-    "source_edit_link": "https://github.com/iexcloud/docs/edit/main/source/{filename}",
+    #"source_edit_link": "https://github.com/iexcloud/docs/edit/main/source/{filename}",
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
