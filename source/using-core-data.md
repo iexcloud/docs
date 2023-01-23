@@ -39,7 +39,6 @@ Here's an overview:
 
     - [Stocks / Equities](https://iexcloud.io/docs/api/#stocks-equities)
     - [News](https://iexcloud.io/docs/api/#news)
-    - [Cryptocurrency](https://iexcloud.io/docs/api/#cryptocurrency)
     - [Forex / Currencies](https://iexcloud.io/docs/api/#forex-currencies)
     - [Options](https://iexcloud.io/docs/api/#options)
     - [Futures](https://iexcloud.io/docs/api/#futures)

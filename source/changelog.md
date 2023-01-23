@@ -6,6 +6,16 @@ Here are the notable changes.
 
 - `POST /write` is deprecated and replaced with [POST /record](./write-data/write-data-with-post-write.md). This was done to comply to RESTful Maturity level 1 & 2.
 
+## 2023-01-13
+
+- The Crypto endpoints are [deprecated](https://iexcloud.io/docs/api-basics/deprecation). This affects the following endpoints:
+
+    - `GET /crypto/{symbol}/quote`
+    - `GET /crypto/{symbol}/book`
+    - `GET /crypto/{symbol}/price`
+    - `GET https://cloud-sse.iexapis.com/stable/cryptoEvents`
+    - `GET /ref-data/crypto/symbols`
+
 <!-- TODO fill in the remaining changelog. Jim -->
 
 ## 2022-12-14

@@ -167,7 +167,7 @@ This guide provides more detail on how Premium Data differs from Core Data and h
 
 ### Core Data vs. Premium Data
 
-**Core Data** is the data included with IEX Cloud subscriptions. This includes any endpoints listed outside of the Premium Data section in our [Legacy API Reference](https://iexcloud.io/docs/api/), such as stock data, cryptocurrency data, FX data, macroeconomic data, and more. The credits allocated with the IEX Cloud subscription can be used towards Core Data only. 
+**Core Data** is the data included with IEX Cloud subscriptions. This includes any endpoints listed outside of the Premium Data section in our [Legacy API Reference](https://iexcloud.io/docs/api/), such as stock data, FX data, macroeconomic data, and more. The credits allocated with the IEX Cloud subscription can be used towards Core Data only. 
 
 **Premium Data** is specialized data made available through the IEX Cloud API, sourced from various Data Partners directly. Premium Data consumption is on a pay-as-you-go basis using Premium Data credits, with different credit weights for each specific dataset. Premium Data is only included in paid IEX Cloud legacy subscriptions.  
 

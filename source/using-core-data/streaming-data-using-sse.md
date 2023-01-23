@@ -3,7 +3,6 @@
 We stream data using Server-Sent Events ([SSE](https://en.wikipedia.org/wiki/Server-sent_events)). We provide endpoints for streaming the following types of data:
 
 - US stocks and securities
-- Cryptocurrency
 - Forex / currencies
 - News
 - Social sentiment
