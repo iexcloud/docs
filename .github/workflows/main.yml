@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install software
         run: |
-          sudo apt-get install python3-sphinx
+          sudo pip install sphinx==4.5.0
           sudo pip install furo==2022.9.29
           sudo pip install myst-parser==0.17.2
           sudo pip install sphinx-copybutton==0.5.0
